@@ -132,7 +132,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="mailto:joyaseduardo&#64;gmail.com">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#117b7e6870627475647063757e373227252a767c70787d3f727e7c">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -185,9 +185,9 @@
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "140", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "141", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "142", "opciones": [{"peso": "", "ancho": "4,8 mm"}]}, {"codigo": "143", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "144", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "145", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "146", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "147", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "148", "opciones": [{"peso": "", "ancho": "7 mm"}]}, {"codigo": "149", "opciones": [{"peso": "", "ancho": "6 mm"}]}, {"codigo": "170", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "171", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "172", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "173", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "174", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "175", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "176", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "177", "opciones": [{"peso": "", "ancho": "7 mm"}]}, {"codigo": "178", "opciones": [{"peso": "", "ancho": "4,8 mm"}]}];
-const CARPETA = "imagenes/PLATA-ORO-18K";
+const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Plata y Oro";
 const CATEGORIA = "Plata y Oro 18k";
 
@@ -213,7 +213,7 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
+        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>⚜️</span><p>${a.codigo}</p>
@@ -253,12 +253,4 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
-  };
-  window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
-}
-
-render();
-</script>
-</body>
-</html>
+    reservar:  `¡Hola! Quiero RES

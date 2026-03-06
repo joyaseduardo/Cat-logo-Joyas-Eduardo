@@ -132,7 +132,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="mailto:joyaseduardo&#64;gmail.com">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#dfb5b0a6beacbabbaabeadbbb0f9fce9ebe4b8b2beb6b3f1bcb0b2">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -185,9 +185,9 @@
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "3110", "opciones": [{"peso": "0,6 gr", "ancho": "1,5 mm"}, {"peso": "1 gr", "ancho": "1,5 mm"}]}, {"codigo": "3120", "opciones": [{"peso": "1,2 gr", "ancho": "2,8 mm"}, {"peso": "1,2 gr", "ancho": "2,8 mm"}, {"peso": "1,5 gr", "ancho": "2,8 mm"}, {"peso": "2 gr", "ancho": "3,3 mm"}, {"peso": "3 gr", "ancho": "3,3 mm"}]}, {"codigo": "3125", "opciones": [{"peso": "4 gr", "ancho": "3,8 mm"}]}, {"codigo": "3130", "opciones": [{"peso": "2 gr", "ancho": "4 mm"}, {"peso": "3 gr", "ancho": "4,5 mm"}, {"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "3135", "opciones": [{"peso": "6 gr", "ancho": "5,5 mm"}, {"peso": "6 gr", "ancho": "6 mm"}]}, {"codigo": "3140", "opciones": [{"peso": "1,5 gr", "ancho": "1,75 mm"}, {"peso": "2 gr", "ancho": "2 mm"}, {"peso": "2 gr", "ancho": "2,5 mm"}]}, {"codigo": "3145", "opciones": [{"peso": "1,5 gr", "ancho": "2 mm"}, {"peso": "2 gr", "ancho": "2,5 mm"}]}, {"codigo": "3150", "opciones": [{"peso": "2 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "4,5 mm"}]}, {"codigo": "3160", "opciones": [{"peso": "2,5 gr", "ancho": "3,5 mm"}, {"peso": "3 gr", "ancho": "4 mm"}, {"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "3170", "opciones": [{"peso": "5,5 gr", "ancho": "3,8 mm"}]}];
-const CARPETA = "imagenes/ORO-18K-LISAS";
+const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Oro Lisa";
 const CATEGORIA = "Oro 18k Lisas";
 
@@ -213,7 +213,7 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
+        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>💍</span><p>${a.codigo}</p>
@@ -253,12 +253,4 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
-  };
-  window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
-}
-
-render();
-</script>
-</body>
-</html>
+    reservar:  `¡Hola! Quiero RES

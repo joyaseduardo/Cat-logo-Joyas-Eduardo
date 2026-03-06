@@ -132,7 +132,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="mailto:joyaseduardo&#64;gmail.com">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#f3999c8a92809697869281979cd5d0c5c7c8949e929a9fdd909c9e">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -185,9 +185,9 @@
   </div>
 </div>
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "2001", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "2002", "opciones": [{"peso": "6 gr", "ancho": "6 mm"}]}, {"codigo": "2003", "opciones": [{"peso": "6,5 gr", "ancho": "7 mm"}]}];
-const CARPETA = "imagenes/ORO-18K-ESMALTADAS";
+const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Oro Esmaltada";
 const CATEGORIA = "Oro 18k Esmaltadas";
 
@@ -213,7 +213,7 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
+        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>🎨</span><p>${a.codigo}</p>
@@ -253,12 +253,4 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
-  };
-  window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
-}
-
-render();
-</script>
-</body>
-</html>
+    reservar:  `¡Hola! Quiero RES
