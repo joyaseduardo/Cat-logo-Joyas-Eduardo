@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Plata y Oro 18k · Joyas Eduardo</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --gold: #C9993A;
+    --gold-light: #E8C060;
+    --gold-dark: #9A7020;
+    --dark: #111111;
+    --dark2: #1a1a1a;
+    --dark3: #242424;
+    --dark4: #2e2e2e;
+    --text: #e8e0d0;
+  }
+  * { box-sizing: border-box; }
+  body { font-family: 'Montserrat', sans-serif; background: var(--dark); color: var(--text); margin: 0; }
+  h1,h2,h3 { font-family: 'Playfair Display', serif; }
+
+  .oferta-banner {
+    background: linear-gradient(90deg, #8B0000, #cc2200, #8B0000);
+    background-size: 200% 100%;
+    animation: bannerSlide 3s linear infinite;
+    color: white; text-align: center; padding: 10px;
+    font-weight: 700; font-size: 0.9rem; letter-spacing: 0.05em;
+    position: sticky; top: 0; z-index: 100;
+  }
+  @keyframes bannerSlide { 0%{background-position:0%} 100%{background-position:200%} }
+
+  .site-header {
+    background: linear-gradient(180deg, #0a0a0a 0%, var(--dark2) 100%);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 2rem 1rem; text-align: center;
+  }
+  .site-header img { height: 80px; filter: drop-shadow(0 10px 30px rgba(212,168,67,0.4)); }
+  .site-header h1 { font-size: clamp(1.8rem,5vw,3rem); color: var(--gold); margin: 0.5rem 0; }
+  .site-header .volver { color: var(--gold); text-decoration: none; font-size: 0.85rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid var(--gold-dark); padding: 0.4rem 1rem; border-radius: 999px; transition: all 0.2s; display: inline-block; margin-top: 0.75rem; }
+  .site-header .volver:hover { background: var(--gold); color: var(--dark); }
+  .site-header .vistas { color: #555; font-size: 0.75rem; margin-top: 0.5rem; }
+
+  .grid-container { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px,1fr)); gap: 1.25rem; padding: 2rem 1rem; max-width: 1300px; margin: 0 auto; }
+
+  .card {
+    background: var(--dark3); border: 1px solid #2a2a2a; border-radius: 16px;
+    overflow: hidden; transition: all 0.3s; position: relative;
+  }
+  .card:hover { border-color: var(--gold-dark); transform: translateY(-4px); box-shadow: 0 16px 48px rgba(212,168,67,0.12); }
+
+  .card-foto { height: 220px; background: linear-gradient(135deg,#1a1a1a,#2a2a2a); display: flex; align-items: center; justify-content: center; overflow: hidden; }
+  .card-foto img { width:100%; height:100%; object-fit:contain; padding:8px; transition: transform 0.4s; }
+  .card:hover .card-foto img { transform: scale(1.05); }
+  .card-foto .placeholder { display:flex; flex-direction:column; align-items:center; color:#333; gap:0.5rem; }
+  .card-foto .placeholder span { font-size:3rem; }
+  .card-foto .placeholder p { font-size:0.7rem; letter-spacing:0.1em; margin:0; }
+
+  .card-body { padding: 1rem; }
+  .card-codigo { font-size:0.65rem; color:#555; letter-spacing:0.1em; text-transform:uppercase; margin-bottom:0.2rem; }
+  .card-nombre { font-family:'Playfair Display',serif; font-size:0.95rem; color:var(--text); margin-bottom:0.5rem; }
+
+  .opciones-form { background:rgba(255,255,255,0.03); border:1px solid #333; border-radius:8px; padding:0.75rem; margin-bottom:0.75rem; }
+  .opciones-form p { font-size:0.7rem; color:#888; font-weight:700; text-transform:uppercase; letter-spacing:0.08em; margin:0 0 0.5rem; }
+  .opcion-label { display:flex; align-items:center; gap:0.5rem; padding:0.4rem 0.6rem; border-radius:6px; cursor:pointer; font-size:0.8rem; color:#aaa; transition:all 0.2s; }
+  .opcion-label:hover { background:rgba(212,168,67,0.08); color:var(--gold-light); }
+  .opcion-radio:checked + .opcion-label { color:var(--gold); font-weight:700; }
+  .opcion-radio { display:none; }
+  .opcion-dot { width:12px; height:12px; border-radius:50%; border:2px solid #444; flex-shrink:0; transition:all 0.2s; }
+  .opcion-radio:checked + .opcion-label .opcion-dot { background:var(--gold); border-color:var(--gold); }
+
+  .card-simple-info { font-size:0.8rem; color:#777; margin-bottom:0.75rem; }
+
+  .btns { display:grid; grid-template-columns:1fr 1fr; gap:0.4rem; margin-bottom:0.4rem; }
+  .btns-full { display:grid; grid-template-columns:1fr 1fr; gap:0.4rem; }
+  .btn { padding:0.5rem 0; border-radius:8px; border:none; font-weight:700; font-size:0.75rem; cursor:pointer; font-family:'Montserrat',sans-serif; letter-spacing:0.04em; transition:all 0.2s; }
+  .btn-wa   { background:linear-gradient(135deg,#1a7a3a,#25a050); color:white; }
+  .btn-talla{ background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.2); }
+  .btn-envio{ background:rgba(6,182,212,0.12); color:#67e8f9; border:1px solid rgba(6,182,212,0.2); }
+  .btn-res  { background:linear-gradient(135deg,var(--gold-dark),var(--gold)); color:var(--dark); }
+  .btn:hover { opacity:0.85; transform:scale(1.02); }
+
+  .wa-float { position:fixed; bottom:1.5rem; right:1.5rem; width:60px; height:60px; background:#25D366; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:1.8rem; box-shadow:0 4px 20px rgba(37,211,102,0.4); cursor:pointer; z-index:99; text-decoration:none; transition:transform 0.2s; animation:waPulse 2.5s ease-in-out infinite; }
+  .wa-float:hover { transform:scale(1.1); }
+  @keyframes waPulse { 0%,100%{box-shadow:0 4px 20px rgba(37,211,102,0.4)} 50%{box-shadow:0 4px 32px rgba(37,211,102,0.7)} }
+
+  .modal { display:none; position:fixed; z-index:9999; inset:0; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; }
+  .modal.active { display:flex; }
+  .modal-box { background:var(--dark2); border:1px solid #333; border-radius:20px; padding:2rem; max-width:480px; width:90%; }
+  .modal-box h2 { color:var(--gold); font-size:1.8rem; margin:0 0 0.5rem; }
+  .modal-close { float:right; background:none; border:none; color:#666; font-size:1.8rem; cursor:pointer; margin:-0.5rem -0.5rem 0 0; }
+  .modal-close:hover { color:white; }
+  .modal-grid { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1rem; }
+  .modal-action { background:var(--dark3); border:1px solid #333; border-radius:12px; padding:1.5rem; text-align:center; text-decoration:none; color:var(--text); font-weight:700; font-size:0.85rem; transition:all 0.2s; }
+  .modal-action:hover { border-color:var(--gold-dark); color:var(--gold); }
+  .modal-action .icon { font-size:2rem; display:block; margin-bottom:0.5rem; }
+
+  .site-footer { background:#0a0a0a; border-top:1px solid #222; padding:3rem 1rem; margin-top:3rem; }
+  .footer-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:2rem; max-width:900px; margin:0 auto 2rem; }
+  .footer-grid h3 { color:var(--gold); font-size:0.95rem; margin-bottom:0.75rem; font-family:'Playfair Display',serif; }
+  .footer-grid p, .footer-grid a { font-size:0.82rem; color:#666; margin-bottom:0.4rem; display:block; text-decoration:none; }
+  .footer-grid a:hover { color:var(--gold); }
+  .footer-bottom { text-align:center; border-top:1px solid #222; padding-top:1.5rem; font-size:0.72rem; color:#444; letter-spacing:0.05em; }
+
+  @media (max-width:600px) {
+    .grid-container { grid-template-columns:repeat(2,1fr); gap:0.75rem; padding:1rem 0.75rem; }
+    .card-foto { height:160px; }
+    .btn { font-size:0.68rem; }
+  }
+</style>
+</head>
+<body>
+
+<div class="oferta-banner">
+  🔥 30% OFF en Transferencia &nbsp;|&nbsp; 📦 Envío GRATIS &nbsp;|&nbsp; ✨ Oro 18k Certificado
+</div>
+
+<header class="site-header">
+  <img src="VIP.jpg" alt="Joyas Eduardo" onerror="this.style.display='none'">
+  <h1>⚜️ Plata y Oro 18k</h1>
+  <a href="index.html" class="volver">← Volver al catálogo</a>
+  <div class="vistas">✨ <strong>19</strong> modelos disponibles</div>
+</header>
+
+<div class="grid-container" id="grid"></div>
+
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div>
+      <h3>📞 Contacto</h3>
+      <a href="https://wa.me/5492976235421">📱 2976 235421</a>
+      <a href="mailto:joyaseduardo&#64;gmail.com">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
+      <p>📍 Comodoro Rivadavia, Chubut</p>
+    </div>
+    <div>
+      <h3>🕐 Horarios</h3>
+      <p>Lunes a Viernes: 9:00 – 19:00</p>
+      <p>Sábados: 9:00 – 13:00</p>
+      <p>Domingos: Cerrado</p>
+    </div>
+    <div>
+      <h3>✨ Beneficios</h3>
+      <p>✅ Oro 18k Certificado</p>
+      <p>✅ Envío gratis</p>
+      <p>✅ 30% OFF transferencia</p>
+      <p>✅ Hasta 12 cuotas</p>
+    </div>
+    <div>
+      <h3>💳 Medios de Pago</h3>
+      <p>💵 Efectivo · 🏦 Transferencia</p>
+      <p>VISA · Mastercard · Amex</p>
+      <p>Naranja · Cabal · Mercado Pago</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2026 Joyas Eduardo · Comodoro Rivadavia · La Tierra de los Vientos · Patagonia Argentina
+  </div>
+</footer>
+
+
+<a href="https://wa.me/5492976235421?text=Hola!%20Vi%20el%20catálogo%20de%20Plata%20y%20Oro%2018k%20y%20quiero%20consultar." target="_blank" class="wa-float">💬</a>
+
+<div id="helpModal" class="modal">
+  <div class="modal-box">
+    <button class="modal-close" onclick="document.getElementById('helpModal').classList.remove('active')">✕</button>
+    <h2>¿Necesitás ayuda?</h2>
+    <div class="modal-grid">
+      <a href="https://wa.me/5492976235421?text=Hola!" target="_blank" class="modal-action">
+        <span class="icon">💬</span>WhatsApp
+      </a>
+      <a href="guia-tallas-v2.html" class="modal-action">
+        <span class="icon">📏</span>Guía de Tallas
+      </a>
+      <a href="https://wa.me/5492976235421?text=Quiero%20reservar" target="_blank" class="modal-action">
+        <span class="icon">🔒</span>Reservar
+      </a>
+      <a href="index.html" class="modal-action">
+        <span class="icon">📂</span>Categorías
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+const DATA = [{"codigo": "140", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "141", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "142", "opciones": [{"peso": "", "ancho": "4,8 mm"}]}, {"codigo": "143", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "144", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "145", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "146", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "147", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "148", "opciones": [{"peso": "", "ancho": "7 mm"}]}, {"codigo": "149", "opciones": [{"peso": "", "ancho": "6 mm"}]}, {"codigo": "170", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "171", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "172", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "173", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "174", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "175", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "176", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "177", "opciones": [{"peso": "", "ancho": "7 mm"}]}, {"codigo": "178", "opciones": [{"peso": "", "ancho": "4,8 mm"}]}];
+const CARPETA = "imagenes/PLATA-ORO-18K";
+const NOMBRE_PROD = "Alianza Plata y Oro";
+const CATEGORIA = "Plata y Oro 18k";
+
+function render() {
+  const grid = document.getElementById('grid');
+  grid.innerHTML = DATA.map(a => {
+    const multi = a.opciones.length > 1;
+    const op0 = a.opciones[0];
+    const infoSimple = [op0.peso, op0.ancho].filter(Boolean).join(' · ');
+
+    const opcionesHTML = multi
+      ? `<div class="opciones-form">
+           <p>Elegí tu opción:</p>
+           ${a.opciones.map((op,i) => {
+             const info = [op.peso, op.ancho].filter(Boolean).join(' · ');
+             return `<input type="radio" class="opcion-radio" name="op-${a.codigo}" id="op-${a.codigo}-${i}" value="${i}" ${i===0?'checked':''}>
+                     <label class="opcion-label" for="op-${a.codigo}-${i}">
+                       <span class="opcion-dot"></span>${info}
+                     </label>`;
+           }).join('')}
+         </div>`
+      : `<div class="card-simple-info">${infoSimple}</div>`;
+
+    return `<div class="card">
+      <div class="card-foto">
+        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <div class="placeholder" style="display:none">
+          <span>⚜️</span><p>${a.codigo}</p>
+        </div>
+      </div>
+      <div class="card-body">
+        <div class="card-codigo">${a.codigo}</div>
+        <div class="card-nombre">${NOMBRE_PROD}</div>
+        ${opcionesHTML}
+        <div class="btns">
+          <button class="btn btn-wa"   onclick="accion('consultar','${a.codigo}')">💬 Consultar</button>
+          <button class="btn btn-talla" onclick="accion('talla','${a.codigo}')">📏 Talla</button>
+        </div>
+        <div class="btns-full">
+          <button class="btn btn-envio" onclick="accion('envio','${a.codigo}')">📦 Envío</button>
+          <button class="btn btn-res"   onclick="accion('reservar','${a.codigo}')">🔒 Reservar</button>
+        </div>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function getOpcion(codigo) {
+  const a = DATA.find(x => x.codigo === codigo);
+  if (!a) return '';
+  if (a.opciones.length === 1) return [a.opciones[0].peso, a.opciones[0].ancho].filter(Boolean).join(' | ');
+  const checked = document.querySelector(`input[name="op-${codigo}"]:checked`);
+  const idx = checked ? parseInt(checked.value) : 0;
+  const op = a.opciones[idx];
+  return [op.peso, op.ancho].filter(Boolean).join(' | ');
+}
+
+function accion(tipo, codigo) {
+  const op = getOpcion(codigo);
+  const base = `Código: ${codigo} (${CATEGORIA})${op ? '\n' + op : ''}`;
+  const msgs = {
+    consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
+    talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
+    envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
+    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
+  };
+  window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
+}
+
+render();
+</script>
+</body>
+</html>
