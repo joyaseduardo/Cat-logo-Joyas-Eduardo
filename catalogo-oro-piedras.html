@@ -109,6 +109,12 @@
     .card-foto { height:160px; }
     .btn { font-size:0.68rem; }
   }
+  /* LIGHTBOX */
+  .lightbox { display:none; position:fixed; z-index:99999; inset:0; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
+  .lightbox.active { display:flex; }
+  .lightbox img { max-width:92vw; max-height:88vh; object-fit:contain; border-radius:12px; box-shadow:0 0 60px rgba(212,168,67,0.2); }
+  .lightbox-close { position:fixed; top:1rem; right:1.2rem; color:#fff; font-size:2.2rem; cursor:pointer; z-index:100000; background:none; border:none; line-height:1; }
+  .card-foto img { cursor:zoom-in; }
 </style>
 </head>
 <body>
@@ -132,7 +138,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#68020711091b0d0c1d091a0c074e4b5e5c530f05090104460b0705">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#a7cdc8dec6d4c2c3d2c6d5c3c8818491939cc0cac6cecb89c4c8ca">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -187,9 +193,21 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "5003", "opciones": [{"peso": "5 gr", "ancho": "6,6 mm"}]}, {"codigo": "5004", "opciones": [{"peso": "6 gr", "ancho": "6 mm"}]}, {"codigo": "5005", "opciones": [{"peso": "5 gr", "ancho": "5,5 mm"}]}, {"codigo": "5006", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5007", "opciones": [{"peso": "5 gr", "ancho": "5,5 mm"}]}, {"codigo": "5008", "opciones": [{"peso": "5 gr", "ancho": "3,8 mm"}]}, {"codigo": "5009", "opciones": [{"peso": "6 gr", "ancho": "5 mm"}]}, {"codigo": "5010", "opciones": [{"peso": "6 gr", "ancho": "5 mm"}]}, {"codigo": "5011", "opciones": [{"peso": "5,5 gr", "ancho": "6 mm"}]}, {"codigo": "5012", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5013", "opciones": [{"peso": "6 gr", "ancho": "6,6 mm"}]}, {"codigo": "5014", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5015", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5016", "opciones": [{"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "5017", "opciones": [{"peso": "3,5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5018", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "5019", "opciones": [{"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "5020", "opciones": [{"peso": "5 gr", "ancho": "5 mm"}]}, {"codigo": "5021", "opciones": [{"peso": "3,5 gr", "ancho": "4 mm"}]}, {"codigo": "5022", "opciones": [{"peso": "3,5 gr", "ancho": "4, mm"}]}, {"codigo": "5023", "opciones": [{"peso": "3,5 gr", "ancho": "4 mm"}]}, {"codigo": "5024", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "5025", "opciones": [{"peso": "3,5 gr", "ancho": "4 mm"}]}, {"codigo": "5026", "opciones": [{"peso": "4 gr", "ancho": "3 mm"}]}];
-const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
+const CARPETA = "imagenes/ORO-18K-CON-PIEDRAS";
 const NOMBRE_PROD = "Alianza Oro con Piedras";
 const CATEGORIA = "Oro 18k con Piedras";
+
+function abrirLightbox(src, alt) {
+  document.getElementById("lightboxImg").src = src;
+  document.getElementById("lightboxImg").alt = alt;
+  document.getElementById("lightbox").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+function cerrarLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+  document.body.style.overflow = "";
+}
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
 
 function render() {
   const grid = document.getElementById('grid');
@@ -253,12 +271,4 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
-  };
-  window.open("https://wa.me/5492976235421?text=" + encodeURIComponent(msgs[tipo]), "_blank");
-}
-
-render();
-</script>
-</body>
-</html>
+    reservar:  `¡Hola! Quiero RES

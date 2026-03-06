@@ -109,6 +109,12 @@
     .card-foto { height:160px; }
     .btn { font-size:0.68rem; }
   }
+  /* LIGHTBOX */
+  .lightbox { display:none; position:fixed; z-index:99999; inset:0; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
+  .lightbox.active { display:flex; }
+  .lightbox img { max-width:92vw; max-height:88vh; object-fit:contain; border-radius:12px; box-shadow:0 0 60px rgba(212,168,67,0.2); }
+  .lightbox-close { position:fixed; top:1rem; right:1.2rem; color:#fff; font-size:2.2rem; cursor:pointer; z-index:100000; background:none; border:none; line-height:1; }
+  .card-foto img { cursor:zoom-in; }
 </style>
 </head>
 <body>
@@ -132,7 +138,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#d3b9bcaab2a0b6b7a6b2a1b7bcf5f0e5e7e8b4beb2babffdb0bcbe">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#8ee4e1f7effdebeafbeffceae1a8adb8bab5e9e3efe7e2a0ede1e3">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -187,9 +193,21 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "1000", "opciones": [{"peso": "1 gr", "ancho": "1 mm"}]}, {"codigo": "1010", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "1020", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "1030", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "1040", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "1050", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "1060", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "1070", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "1726", "opciones": [{"peso": "3 gr", "ancho": "5,2 mm"}]}, {"codigo": "1727", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "1728", "opciones": [{"peso": "3 gr", "ancho": "5 mm"}]}, {"codigo": "1729", "opciones": [{"peso": "3 gr", "ancho": "4,5 mm"}]}, {"codigo": "1731", "opciones": [{"peso": "3,5 gr", "ancho": "5,2 mm"}]}, {"codigo": "1732", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "1733", "opciones": [{"peso": "2,5 gr", "ancho": "4,8 mm"}]}, {"codigo": "1734", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "1735", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "1736", "opciones": [{"peso": "3 gr", "ancho": "4,5 mm"}]}, {"codigo": "1737", "opciones": [{"peso": "3 gr", "ancho": "3,8 mm"}]}, {"codigo": "1738", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "1739", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "1740", "opciones": [{"peso": "2 gr", "ancho": "3,3 mm"}]}, {"codigo": "1741", "opciones": [{"peso": "2 gr", "ancho": "3,8 mm"}]}, {"codigo": "1742", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "1743", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "2050", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "2060", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "2070", "opciones": [{"peso": "2,5 gr", "ancho": "4,8 mm"}]}, {"codigo": "2080", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "2081", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "2090", "opciones": [{"peso": "2,5 gr", "ancho": "4,8 mm"}]}, {"codigo": "2110", "opciones": [{"peso": "2 gr", "ancho": "3,3 mm"}]}, {"codigo": "2120", "opciones": [{"peso": "2 gr", "ancho": "3,3 mm"}]}, {"codigo": "2130", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "4,2 mm"}]}, {"codigo": "2140", "opciones": [{"peso": "2 gr", "ancho": "3,3 mm"}]}, {"codigo": "2150", "opciones": [{"peso": "2 gr", "ancho": "3,3 mm"}]}, {"codigo": "2160", "opciones": [{"peso": "4 gr", "ancho": "5,2 mm"}]}, {"codigo": "2170", "opciones": [{"peso": "3,5 gr", "ancho": "4,5 mm"}]}, {"codigo": "2180", "opciones": [{"peso": "2 gr", "ancho": "3,3 mm"}]}, {"codigo": "2190", "opciones": [{"peso": "2 gr", "ancho": "3,3 mm"}]}, {"codigo": "2200", "opciones": [{"peso": "3 gr", "ancho": "5 mm"}]}, {"codigo": "4170", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "4180", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "4190", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "4200", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "4210", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "5220", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "5230", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "5240", "opciones": [{"peso": "1,5 gr", "ancho": "3 mm"}, {"peso": "2 gr", "ancho": "4 mm"}, {"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "5250", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "5260", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "6260", "opciones": [{"peso": "2 gr", "ancho": "3,8 mm"}]}, {"codigo": "6270", "opciones": [{"peso": "2 gr", "ancho": "3,8 mm"}]}, {"codigo": "6280", "opciones": [{"peso": "2 gr", "ancho": "3,8 mm"}]}, {"codigo": "6290", "opciones": [{"peso": "2 gr", "ancho": "3,8 mm"}]}, {"codigo": "6300", "opciones": [{"peso": "2 gr", "ancho": "3,8 mm"}]}, {"codigo": "6310", "opciones": [{"peso": "2 gr", "ancho": "3,8 mm"}]}, {"codigo": "6320", "opciones": [{"peso": "2 gr", "ancho": "4 mm"}]}, {"codigo": "7330", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "7340", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "7350", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "7360", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "7370", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}, {"codigo": "7390", "opciones": [{"peso": "2,5 gr", "ancho": "3,8 mm"}]}, {"codigo": "8380", "opciones": [{"peso": "2 gr", "ancho": "4,2 mm"}]}, {"codigo": "8400", "opciones": [{"peso": "2,5 gr", "ancho": "4 mm"}]}, {"codigo": "8410", "opciones": [{"peso": "2,5 gr", "ancho": "4 mm"}]}, {"codigo": "8420", "opciones": [{"peso": "2,5 gr", "ancho": "4,8 mm"}]}, {"codigo": "8430", "opciones": [{"peso": "2,5 gr", "ancho": "4,2 mm"}]}, {"codigo": "9210", "opciones": [{"peso": "2,5 gr", "ancho": "3,8 mm"}]}, {"codigo": "9220", "opciones": [{"peso": "2,5 gr", "ancho": "3,8 mm"}]}, {"codigo": "9230", "opciones": [{"peso": "2,5 gr", "ancho": "3,8 mm"}]}, {"codigo": "9240", "opciones": [{"peso": "2,5 gr", "ancho": "3,8 mm"}]}, {"codigo": "9250", "opciones": [{"peso": "3 gr", "ancho": "4,8 mm"}]}];
-const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
+const CARPETA = "imagenes/ORO-18K-FACETADAS";
 const NOMBRE_PROD = "Alianza Oro Facetada";
 const CATEGORIA = "Oro 18k Facetadas";
+
+function abrirLightbox(src, alt) {
+  document.getElementById("lightboxImg").src = src;
+  document.getElementById("lightboxImg").alt = alt;
+  document.getElementById("lightbox").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+function cerrarLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+  document.body.style.overflow = "";
+}
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
 
 function render() {
   const grid = document.getElementById('grid');
@@ -253,12 +271,4 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
-  };
-  window.open("https://wa.me/5492976235421?text=" + encodeURIComponent(msgs[tipo]), "_blank");
-}
-
-render();
-</script>
-</body>
-</html>
+    reservar:  `¡Hola! Quiero RES
