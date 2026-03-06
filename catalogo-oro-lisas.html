@@ -109,6 +109,7 @@
     .card-foto { height:160px; }
     .btn { font-size:0.68rem; }
   }
+
   /* LIGHTBOX */
   .lightbox { display:none; position:fixed; z-index:99999; inset:0; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
   .lightbox.active { display:flex; }
@@ -197,18 +198,6 @@ const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Oro Lisa";
 const CATEGORIA = "Oro 18k Lisas";
 
-function abrirLightbox(src, alt) {
-  document.getElementById("lightboxImg").src = src;
-  document.getElementById("lightboxImg").alt = alt;
-  document.getElementById("lightbox").classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-function cerrarLightbox() {
-  document.getElementById("lightbox").classList.remove("active");
-  document.body.style.overflow = "";
-}
-document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
-
 function render() {
   const grid = document.getElementById('grid');
   grid.innerHTML = DATA.map(a => {
@@ -232,7 +221,7 @@ function render() {
     return `<div class="card">
       <div class="card-foto">
         <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>💍</span><p>${a.codigo}</p>
         </div>
@@ -280,10 +269,23 @@ ${base}`
 
 render();
 </script>
+
 <div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
-  <button class="lightbox-close" onclick="cerrarLightbox()">✕</button>
+  <button class="lightbox-close" onclick="event.stopPropagation();cerrarLightbox()">✕</button>
   <img id="lightboxImg" src="" alt="">
 </div>
-
+<script>
+function abrirLightbox(src, alt) {
+  document.getElementById("lightboxImg").src = src;
+  document.getElementById("lightboxImg").alt = alt;
+  document.getElementById("lightbox").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+function cerrarLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+  document.body.style.overflow = "";
+}
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
+</script>
 </body>
 </html>

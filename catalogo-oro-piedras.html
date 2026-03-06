@@ -4,9 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oro 18k con Piedras · Joyas Eduardo</title>
-<script src="https://cdn.tailwindcss.com">
-render();
-</script>
+<script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -141,7 +139,7 @@ render();
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#0c6663756d7f6968796d7e68632a2f3a38376b616d6560226f6361">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="mailto:joyaseduardo&#64;gmail.com">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -222,8 +220,8 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" onclick="abrirLightbox(this.src,this.alt)" alt="${a.codigo}"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
+          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>💎</span><p>${a.codigo}</p>
         </div>
@@ -262,4 +260,30 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RES
+    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
+  };
+  window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
+}
+
+render();
+</script>
+
+<div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+  <button class="lightbox-close" onclick="event.stopPropagation();cerrarLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+<script>
+function abrirLightbox(src, alt) {
+  document.getElementById("lightboxImg").src = src;
+  document.getElementById("lightboxImg").alt = alt;
+  document.getElementById("lightbox").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+function cerrarLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+  document.body.style.overflow = "";
+}
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
+</script>
+</body>
+</html>
