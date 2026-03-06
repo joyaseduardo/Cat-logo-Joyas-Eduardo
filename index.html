@@ -811,7 +811,7 @@
 <!-- Header -->
 <header class="site-header">
   <div class="mb-2">
-    <img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/VIP.jpg" alt="Joyas Eduardo" style="height:130px;mix-blend-mode:screen;filter:drop-shadow(0 8px 32px rgba(201,153,58,0.5));" onerror="this.style.display='none'">
+    <img src="VIP.jpg" alt="Joyas Eduardo" style="height:130px;mix-blend-mode:screen;filter:drop-shadow(0 8px 32px rgba(201,153,58,0.5));" onerror="this.style.display='none'">
   </div>
   <h1>Joyas Eduardo</h1>
   <p class="subtitle">Comodoro Rivadavia · Chubut · Patagonia Argentina</p>
@@ -821,7 +821,7 @@
     <button class="tab-btn active" onclick="cambiarTab('alianzas')" id="tab-alianzas">
       💍 Alianzas <span class="tab-badge">338</span>
     </button>
-    <button class="tab-btn" onclick="cambiarTab('joyas')" id="tab-joyas">
+    <button class="tab-btn" onclick="cambiarTab('joyas')" id="tab-joyas" style="display:none">
       Joyas
     </button>
   </div>
@@ -1177,7 +1177,7 @@ function renderJoyas() {
     var carpeta = carpetas[j.categoria] || j.categoria || 'OTROS';
     // Archivos de foto usan espacio en lugar de guion (ej: AN 185.jpg)
     var nombreFoto = j.foto ? j.foto.replace(/-/g, ' ') : '';
-    var rutaFoto = nombreFoto ? 'https://res.cloudinary.com/dfsnzdwqx/image/upload/imagenes/' + carpeta + '/' + nombreFoto : '';
+    var rutaFoto = nombreFoto ? 'imagenes/' + carpeta + '/' + nombreFoto : '';
     var precio = j.precioARS > 0 ? '$' + j.precioARS.toLocaleString('es-AR') : 'Consultar precio';
     var sinStock = j.cantidad === 0;
     var msgWA = encodeURIComponent('Hola! Me interesa 💎\n\nProducto: ' + j.nombre + '\nCódigo: ' + j.sku + '\nMaterial: ' + (j.material||'') + '\n\n¿Está disponible?');
@@ -1312,7 +1312,7 @@ function renderCarritoItems() {
     var joya = joyasData.find(function(j){ return j.sku === item.sku; }) || {};
     var carpeta = carpetas[item.categoria] || 'OTROS';
     var nombreFoto = joya.foto ? joya.foto.replace(/-/g,' ') : '';
-    var rutaFoto = nombreFoto ? 'https://res.cloudinary.com/dfsnzdwqx/image/upload/imagenes/' + carpeta + '/' + nombreFoto : '';
+    var rutaFoto = nombreFoto ? 'imagenes/' + carpeta + '/' + nombreFoto : '';
     var desc = DESCUENTOS[medioSeleccionado] || 0;
     var precioFinal = item.precio > 0 ? Math.round(item.precio * (1 - desc)) : 0;
     return '<div class="carrito-item">' +
