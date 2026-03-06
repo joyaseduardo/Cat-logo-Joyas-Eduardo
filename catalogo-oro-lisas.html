@@ -253,4 +253,14 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RES
+    reservar:  `¡Hola! Quiero RESERVAR:
+
+${base}`
+  };
+  window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
+}
+
+render();
+</script>
+</body>
+</html>
