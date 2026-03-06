@@ -104,6 +104,13 @@
   .footer-grid a:hover { color:var(--gold); }
   .footer-bottom { text-align:center; border-top:1px solid #222; padding-top:1.5rem; font-size:0.72rem; color:#444; letter-spacing:0.05em; }
 
+  /* LIGHTBOX */
+  .lightbox { display:none; position:fixed; z-index:99999; inset:0; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
+  .lightbox.active { display:flex; }
+  .lightbox img { max-width:92vw; max-height:88vh; object-fit:contain; border-radius:12px; box-shadow:0 0 60px rgba(212,168,67,0.2); }
+  .lightbox-close { position:fixed; top:1rem; right:1.2rem; color:#fff; font-size:2.2rem; cursor:pointer; z-index:100000; background:none; border:none; line-height:1; }
+  .card-foto img { cursor:zoom-in; }
+
   @media (max-width:600px) {
     .grid-container { grid-template-columns:repeat(2,1fr); gap:0.75rem; padding:1rem 0.75rem; }
     .card-foto { height:160px; }
@@ -185,11 +192,28 @@
   </div>
 </div>
 
+<div id="lightbox" class="lightbox" onclick="cerrarLightbox()">
+  <button class="lightbox-close" onclick="cerrarLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+</div>
+
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "3110", "opciones": [{"peso": "0,6 gr", "ancho": "1,5 mm"}, {"peso": "1 gr", "ancho": "1,5 mm"}]}, {"codigo": "3120", "opciones": [{"peso": "1,2 gr", "ancho": "2,8 mm"}, {"peso": "1,2 gr", "ancho": "2,8 mm"}, {"peso": "1,5 gr", "ancho": "2,8 mm"}, {"peso": "2 gr", "ancho": "3,3 mm"}, {"peso": "3 gr", "ancho": "3,3 mm"}]}, {"codigo": "3125", "opciones": [{"peso": "4 gr", "ancho": "3,8 mm"}]}, {"codigo": "3130", "opciones": [{"peso": "2 gr", "ancho": "4 mm"}, {"peso": "3 gr", "ancho": "4,5 mm"}, {"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "3135", "opciones": [{"peso": "6 gr", "ancho": "5,5 mm"}, {"peso": "6 gr", "ancho": "6 mm"}]}, {"codigo": "3140", "opciones": [{"peso": "1,5 gr", "ancho": "1,75 mm"}, {"peso": "2 gr", "ancho": "2 mm"}, {"peso": "2 gr", "ancho": "2,5 mm"}]}, {"codigo": "3145", "opciones": [{"peso": "1,5 gr", "ancho": "2 mm"}, {"peso": "2 gr", "ancho": "2,5 mm"}]}, {"codigo": "3150", "opciones": [{"peso": "2 gr", "ancho": "3 mm"}, {"peso": "3 gr", "ancho": "4,5 mm"}]}, {"codigo": "3160", "opciones": [{"peso": "2,5 gr", "ancho": "3,5 mm"}, {"peso": "3 gr", "ancho": "4 mm"}, {"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "3170", "opciones": [{"peso": "5,5 gr", "ancho": "3,8 mm"}]}];
 const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Oro Lisa";
 const CATEGORIA = "Oro 18k Lisas";
+
+function abrirLightbox(src, alt) {
+  document.getElementById("lightboxImg").src = src;
+  document.getElementById("lightboxImg").alt = alt;
+  document.getElementById("lightbox").classList.add("active");
+  document.body.style.overflow = "hidden";
+}
+function cerrarLightbox() {
+  document.getElementById("lightbox").classList.remove("active");
+  document.body.style.overflow = "";
+}
+document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
 
 function render() {
   const grid = document.getElementById('grid');
@@ -213,7 +237,7 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
+        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}" onclick="abrirLightbox(this.src, this.alt)"
           onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>💍</span><p>${a.codigo}</p>
