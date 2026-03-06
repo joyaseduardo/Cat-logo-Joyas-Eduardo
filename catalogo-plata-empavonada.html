@@ -109,6 +109,7 @@
     .card-foto { height:160px; }
     .btn { font-size:0.68rem; }
   }
+
   /* LIGHTBOX */
   .lightbox { display:none; position:fixed; z-index:99999; inset:0; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
   .lightbox.active { display:flex; }
@@ -138,7 +139,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#2c4643554d5f4948594d5e48430a0f1a18174b414d4540024f4341">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#355f5a4c54465051405447515a131603010e5258545c591b565a58">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -193,21 +194,9 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "3001", "opciones": [{"peso": "", "ancho": "4,2 mm"}]}, {"codigo": "3002", "opciones": [{"peso": "", "ancho": "6 mm"}]}];
-const CARPETA = "imagenes/PLATA-EMPAVONADA";
+const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Plata Empavonada";
 const CATEGORIA = "Plata Empavonada";
-
-function abrirLightbox(src, alt) {
-  document.getElementById("lightboxImg").src = src;
-  document.getElementById("lightboxImg").alt = alt;
-  document.getElementById("lightbox").classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-function cerrarLightbox() {
-  document.getElementById("lightbox").classList.remove("active");
-  document.body.style.overflow = "";
-}
-document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
 
 function render() {
   const grid = document.getElementById('grid');
@@ -231,8 +220,8 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
+          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>⚫</span><p>${a.codigo}</p>
         </div>

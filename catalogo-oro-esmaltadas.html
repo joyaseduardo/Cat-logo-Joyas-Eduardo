@@ -109,6 +109,7 @@
     .card-foto { height:160px; }
     .btn { font-size:0.68rem; }
   }
+
   /* LIGHTBOX */
   .lightbox { display:none; position:fixed; z-index:99999; inset:0; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
   .lightbox.active { display:flex; }
@@ -193,21 +194,9 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "2001", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "2002", "opciones": [{"peso": "6 gr", "ancho": "6 mm"}]}, {"codigo": "2003", "opciones": [{"peso": "6,5 gr", "ancho": "7 mm"}]}];
-const CARPETA = "imagenes/ORO-18K-ESMALTADAS";
+const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Oro Esmaltada";
 const CATEGORIA = "Oro 18k Esmaltadas";
-
-function abrirLightbox(src, alt) {
-  document.getElementById("lightboxImg").src = src;
-  document.getElementById("lightboxImg").alt = alt;
-  document.getElementById("lightbox").classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-function cerrarLightbox() {
-  document.getElementById("lightbox").classList.remove("active");
-  document.body.style.overflow = "";
-}
-document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
 
 function render() {
   const grid = document.getElementById('grid');
@@ -231,8 +220,8 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
+          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>🎨</span><p>${a.codigo}</p>
         </div>

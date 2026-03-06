@@ -109,6 +109,7 @@
     .card-foto { height:160px; }
     .btn { font-size:0.68rem; }
   }
+
   /* LIGHTBOX */
   .lightbox { display:none; position:fixed; z-index:99999; inset:0; background:rgba(0,0,0,0.92); align-items:center; justify-content:center; cursor:zoom-out; }
   .lightbox.active { display:flex; }
@@ -138,7 +139,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#600a0f1901130504150112040f464356545b070d01090c4e030f0d">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#e3898c9a82908687968291878cc5c0d5d7d8848e828a8fcd808c8e">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -193,21 +194,9 @@
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 const DATA = [{"codigo": "150", "opciones": [{"peso": "", "ancho": "3,3 mm"}]}, {"codigo": "151", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "152", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "153", "opciones": [{"peso": "", "ancho": "4,5 mm"}]}, {"codigo": "154", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "155", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "156", "opciones": [{"peso": "", "ancho": "4,5 mm"}]}, {"codigo": "157", "opciones": [{"peso": "", "ancho": "4,5 mm"}]}, {"codigo": "158", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "159", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "160", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "161", "opciones": [{"peso": "", "ancho": "6,5 mm"}]}, {"codigo": "162", "opciones": [{"peso": "", "ancho": "6,5 mm"}]}, {"codigo": "163", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "164", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "165", "opciones": [{"peso": "", "ancho": "6 mm"}]}, {"codigo": "166", "opciones": [{"peso": "", "ancho": "4,8 mm"}]}, {"codigo": "167", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "168", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "169", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}];
-const CARPETA = "imagenes/PLATA-CON-PIEDRAS";
+const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Plata con Piedras";
 const CATEGORIA = "Plata con Piedras";
-
-function abrirLightbox(src, alt) {
-  document.getElementById("lightboxImg").src = src;
-  document.getElementById("lightboxImg").alt = alt;
-  document.getElementById("lightbox").classList.add("active");
-  document.body.style.overflow = "hidden";
-}
-function cerrarLightbox() {
-  document.getElementById("lightbox").classList.remove("active");
-  document.body.style.overflow = "";
-}
-document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
 
 function render() {
   const grid = document.getElementById('grid');
@@ -231,8 +220,8 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
-          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="${CARPETA}/${a.codigo}.png" alt="${a.codigo}"
+          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>💎</span><p>${a.codigo}</p>
         </div>
