@@ -4,7 +4,7 @@ var NOMBRE="Anillo Oro Mujer";
 var CAT="Anillos Oro Mujer";
 var WA="5492976235421";
 
-document.addEventListener("DOMContentLoaded", function() {
+function renderGrid() {
   var grid = document.getElementById("grid");
   if (!grid) return;
   var html = "";
@@ -29,7 +29,9 @@ document.addEventListener("DOMContentLoaded", function() {
           + "</div></div>";
   }
   grid.innerHTML = html;
-});
+}
+
+window.onload = renderGrid;
 
 function waMsg(tipo, cod) {
   var base = "Codigo: " + cod + " (" + CAT + ")";
