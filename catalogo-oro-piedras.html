@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Oro 18k con Piedras · Joyas Eduardo</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com">
+render();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -139,7 +141,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#fe9491879f8d9b9a8b9f8c9a91d8ddc8cac599939f9792d09d9193">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#0c6663756d7f6968796d7e68632a2f3a38376b616d6560226f6361">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -192,7 +194,7 @@
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const DATA = [{"codigo": "5003", "opciones": [{"peso": "5 gr", "ancho": "6,6 mm"}]}, {"codigo": "5004", "opciones": [{"peso": "6 gr", "ancho": "6 mm"}]}, {"codigo": "5005", "opciones": [{"peso": "5 gr", "ancho": "5,5 mm"}]}, {"codigo": "5006", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5007", "opciones": [{"peso": "5 gr", "ancho": "5,5 mm"}]}, {"codigo": "5008", "opciones": [{"peso": "5 gr", "ancho": "3,8 mm"}]}, {"codigo": "5009", "opciones": [{"peso": "6 gr", "ancho": "5 mm"}]}, {"codigo": "5010", "opciones": [{"peso": "6 gr", "ancho": "5 mm"}]}, {"codigo": "5011", "opciones": [{"peso": "5,5 gr", "ancho": "6 mm"}]}, {"codigo": "5012", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5013", "opciones": [{"peso": "6 gr", "ancho": "6,6 mm"}]}, {"codigo": "5014", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5015", "opciones": [{"peso": "5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5016", "opciones": [{"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "5017", "opciones": [{"peso": "3,5 gr", "ancho": "4,8 mm"}]}, {"codigo": "5018", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "5019", "opciones": [{"peso": "3 gr", "ancho": "3 mm"}]}, {"codigo": "5020", "opciones": [{"peso": "5 gr", "ancho": "5 mm"}]}, {"codigo": "5021", "opciones": [{"peso": "3,5 gr", "ancho": "4 mm"}]}, {"codigo": "5022", "opciones": [{"peso": "3,5 gr", "ancho": "4, mm"}]}, {"codigo": "5023", "opciones": [{"peso": "3,5 gr", "ancho": "4 mm"}]}, {"codigo": "5024", "opciones": [{"peso": "4 gr", "ancho": "4,8 mm"}]}, {"codigo": "5025", "opciones": [{"peso": "3,5 gr", "ancho": "4 mm"}]}, {"codigo": "5026", "opciones": [{"peso": "4 gr", "ancho": "3 mm"}]}];
 const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Oro con Piedras";
@@ -220,8 +222,8 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
-          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="${CARPETA}/${a.codigo}.jpg" onclick="abrirLightbox(this.src,this.alt)" alt="${a.codigo}"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>💎</span><p>${a.codigo}</p>
         </div>

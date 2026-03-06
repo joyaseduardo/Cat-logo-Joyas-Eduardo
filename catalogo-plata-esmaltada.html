@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plata Esmaltada · Joyas Eduardo</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com">
+render();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -139,7 +141,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#8ce6e3f5edffe9e8f9edfee8e3aaafbab8b7ebe1ede5e0a2efe3e1">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#e2888d9b83918786978390868dc4c1d4d6d9858f838b8ecc818d8f">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -192,7 +194,7 @@
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const DATA = [{"codigo": "2001", "opciones": [{"peso": "", "ancho": "4,8 mm"}]}, {"codigo": "2002", "opciones": [{"peso": "", "ancho": "6 mm"}]}, {"codigo": "2003", "opciones": [{"peso": "", "ancho": "7 mm"}]}, {"codigo": "2004", "opciones": [{"peso": "", "ancho": "7 mm"}]}];
 const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Plata Esmaltada";
@@ -220,8 +222,8 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
-          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="${CARPETA}/${a.codigo}.jpg" onclick="abrirLightbox(this.src,this.alt)" alt="${a.codigo}"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>🌈</span><p>${a.codigo}</p>
         </div>

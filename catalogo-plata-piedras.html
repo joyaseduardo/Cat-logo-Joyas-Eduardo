@@ -4,7 +4,9 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Plata con Piedras · Joyas Eduardo</title>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com">
+render();
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
@@ -139,7 +141,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#e8828791899b8d8c9d899a8c87cecbdedcd38f85898184c68b8785">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#43292c3a22302627362231272c6560757778242e222a2f6d202c2e">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -192,7 +194,7 @@
   </div>
 </div>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 const DATA = [{"codigo": "150", "opciones": [{"peso": "", "ancho": "3,3 mm"}]}, {"codigo": "151", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "152", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "153", "opciones": [{"peso": "", "ancho": "4,5 mm"}]}, {"codigo": "154", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "155", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "156", "opciones": [{"peso": "", "ancho": "4,5 mm"}]}, {"codigo": "157", "opciones": [{"peso": "", "ancho": "4,5 mm"}]}, {"codigo": "158", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "159", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "160", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "161", "opciones": [{"peso": "", "ancho": "6,5 mm"}]}, {"codigo": "162", "opciones": [{"peso": "", "ancho": "6,5 mm"}]}, {"codigo": "163", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "164", "opciones": [{"peso": "", "ancho": "5,5 mm"}]}, {"codigo": "165", "opciones": [{"peso": "", "ancho": "6 mm"}]}, {"codigo": "166", "opciones": [{"peso": "", "ancho": "4,8 mm"}]}, {"codigo": "167", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "168", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}, {"codigo": "169", "opciones": [{"peso": "", "ancho": "5,2 mm"}]}];
 const CARPETA = "https://res.cloudinary.com/dfsnzdwqx/image/upload";
 const NOMBRE_PROD = "Alianza Plata con Piedras";
@@ -220,8 +222,8 @@ function render() {
 
     return `<div class="card">
       <div class="card-foto">
-        <img src="${CARPETA}/${a.codigo}.jpg" alt="${a.codigo}"
-          onclick="abrirLightbox(this.src,this.alt)" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+        <img src="${CARPETA}/${a.codigo}.jpg" onclick="abrirLightbox(this.src,this.alt)" alt="${a.codigo}"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
         <div class="placeholder" style="display:none">
           <span>💎</span><p>${a.codigo}</p>
         </div>
