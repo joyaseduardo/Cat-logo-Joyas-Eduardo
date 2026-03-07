@@ -139,7 +139,7 @@
     <div>
       <h3>📞 Contacto</h3>
       <a href="https://wa.me/5492976235421">📱 2976 235421</a>
-      <a href="/cdn-cgi/l/email-protection#600a0f1901130504150112040f464356545b070d01090c4e030f0d">📧 joyaseduardo&#64;gmail.com</a>
+      <a href="/cdn-cgi/l/email-protection#c1abaeb8a0b2a4a5b4a0b3a5aee7e2f7f5faa6aca0a8adefa2aeac">📧 joyaseduardo&#64;gmail.com</a>
       <a href="https://www.instagram.com/joyaseduardo" target="_blank">📸 @joyaseduardo</a>
       <p>📍 Comodoro Rivadavia, Chubut</p>
     </div>
@@ -260,7 +260,9 @@ function accion(tipo, codigo) {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-		reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
+    reservar:  `¡Hola! Quiero RESERVAR:
+
+${base}`
   };
   window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
 }
