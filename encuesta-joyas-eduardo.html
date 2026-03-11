@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Joyas Eduardo · Tu Perfil</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --oro: #C9993A;
+    --oro-claro: #E8C97A;
+    --oro-oscuro: #8B6914;
+    --negro: #0D0D0D;
+    --gris-oscuro: #1A1A1A;
+    --gris-medio: #2A2A2A;
+    --gris-borde: #3A3A3A;
+    --blanco: #F5F0E8;
+    --blanco-suave: #EDE8DC;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: var(--negro);
+    color: var(--blanco);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    min-height: 100vh;
+    overflow-x: hidden;
+  }
+
+  /* Fondo animado con partículas doradas */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(201,153,58,0.06) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(201,153,58,0.04) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 80%, rgba(201,153,58,0.03) 0%, transparent 40%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 560px;
+    margin: 0 auto;
+    padding: 0 0 60px 0;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    text-align: center;
+    padding: 48px 24px 36px;
+    position: relative;
+  }
+
+  .header::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--oro), transparent);
+    margin: 24px auto 0;
+  }
+
+  .logo-icon {
+    font-size: 36px;
+    margin-bottom: 12px;
+    display: block;
+    animation: flotar 3s ease-in-out infinite;
+  }
+
+  @keyframes flotar {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+  }
+
+  .logo-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 32px;
+    font-weight: 300;
+    color: var(--oro-claro);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+
+  .logo-sub {
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: rgba(201,153,58,0.6);
+    text-transform: uppercase;
+    margin-top: 4px;
+  }
+
+  .header-desc {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: rgba(245,240,232,0.6);
+    margin-top: 20px;
+    line-height: 1.6;
+    padding: 0 12px;
+  }
+
+  /* ===== PASOS ===== */
+  .steps-bar {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 24px 32px;
+  }
+
+  .step-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--gris-borde);
+    transition: all 0.4s ease;
+  }
+
+  .step-dot.active {
+    background: var(--oro);
+    width: 24px;
+    border-radius: 3px;
+  }
+
+  .step-dot.done {
+    background: var(--oro-oscuro);
+  }
+
+  /* ===== SECCIONES ===== */
+  .seccion {
+    display: none;
+    padding: 0 20px;
+    animation: fadeSlide 0.4s ease;
+  }
+
+  .seccion.activa { display: block; }
+
+  @keyframes fadeSlide {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .sec-header {
+    text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .sec-num {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--oro);
+    border-radius: 50%;
+    line-height: 32px;
+    font-size: 12px;
+    color: var(--oro);
+    letter-spacing: 0;
+    margin-bottom: 12px;
+  }
+
+  .sec-titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--oro-claro);
+    letter-spacing: 1px;
+  }
+
+  .sec-desc {
+    font-size: 12px;
+    color: rgba(245,240,232,0.45);
+    margin-top: 6px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== CAMPOS ===== */
+  .campo {
+    margin-bottom: 20px;
+  }
+
+  .campo label {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(201,153,58,0.7);
+    margin-bottom: 8px;
+  }
+
+  .campo input,
+  .campo select,
+  .campo textarea {
+    width: 100%;
+    background: var(--gris-medio);
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    color: var(--blanco);
+    font-family: 'Jost', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    padding: 14px 16px;
+    outline: none;
+    transition: border-color 0.3s ease, background 0.3s ease;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+
+  .campo input:focus,
+  .campo select:focus,
+  .campo textarea:focus {
+    border-color: var(--oro);
+    background: rgba(201,153,58,0.05);
+  }
+
+  .campo input::placeholder,
+  .campo textarea::placeholder {
+    color: rgba(245,240,232,0.25);
+  }
+
+  .campo textarea {
+    resize: none;
+    height: 90px;
+  }
+
+  .campo select option {
+    background: var(--gris-oscuro);
+  }
+
+  /* Select con flecha dorada */
+  .select-wrap {
+    position: relative;
+  }
+
+  .select-wrap::after {
+    content: '▾';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--oro);
+    pointer-events: none;
+    font-size: 14px;
+  }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+
+  /* ===== CHIPS / BOTONES DE OPCIÓN ===== */
+  .chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 9px 16px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 40px;
+    font-size: 13px;
+    color: rgba(245,240,232,0.6);
+    cursor: pointer;
+    transition: all 0.25s ease;
+    user-select: none;
+    background: transparent;
+  }
+
+  .chip:hover {
+    border-color: var(--oro-oscuro);
+    color: var(--blanco);
+  }
+
+  .chip.sel {
+    border-color: var(--oro);
+    background: rgba(201,153,58,0.12);
+    color: var(--oro-claro);
+  }
+
+  .chip input { display: none; }
+
+  /* ===== ESCALA PRESUPUESTO ===== */
+  .escala {
+    display: flex;
+    gap: 6px;
+  }
+
+  .escala-item {
+    flex: 1;
+    text-align: center;
+    padding: 12px 4px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 11px;
+    color: rgba(245,240,232,0.5);
+    transition: all 0.25s ease;
+    line-height: 1.3;
+  }
+
+  .escala-item:hover { border-color: var(--oro-oscuro); }
+
+  .escala-item.sel {
+    border-color: var(--oro);
+    background: rgba(201,153,58,0.12);
+    color: var(--oro-claro);
+  }
+
+  .escala-item .icon { font-size: 18px; display: block; margin-bottom: 4px; }
+
+  /* ===== SEPARADOR ===== */
+  .sep {
+    border: none;
+    border-top: 1px solid var(--gris-borde);
+    margin: 24px 0;
+  }
+
+  /* ===== BOTONES NAV ===== */
+  .nav-btns {
+    display: flex;
+    gap: 12px;
+    padding: 28px 20px 0;
+  }
+
+  .btn-prev {
+    padding: 14px 24px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    background: transparent;
+    color: rgba(245,240,232,0.5);
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .btn-prev:hover {
+    border-color: var(--oro-oscuro);
+    color: var(--blanco);
+  }
+
+  .btn-next {
+    flex: 1;
+    padding: 14px 24px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--oro-oscuro), var(--oro));
+    color: var(--negro);
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn-next::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(255,255,255,0);
+    transition: background 0.3s ease;
+  }
+
+  .btn-next:hover::after { background: rgba(255,255,255,0.1); }
+
+  /* ===== RESULTADO FINAL ===== */
+  #resultado {
+    display: none;
+    padding: 0 20px;
+    animation: fadeSlide 0.5s ease;
+  }
+
+  .resultado-header {
+    text-align: center;
+    padding: 20px 0 32px;
+  }
+
+  .check-circle {
+    width: 64px;
+    height: 64px;
+    border: 2px solid var(--oro);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px;
+    margin: 0 auto 16px;
+    animation: scaleIn 0.4s ease;
+  }
+
+  @keyframes scaleIn {
+    from { transform: scale(0.5); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+
+  .resultado-titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 26px;
+    color: var(--oro-claro);
+    margin-bottom: 8px;
+  }
+
+  .resultado-sub {
+    font-size: 13px;
+    color: rgba(245,240,232,0.45);
+  }
+
+  /* Tarjeta resumen */
+  .resumen-card {
+    background: var(--gris-medio);
+    border: 1px solid var(--gris-borde);
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 16px;
+  }
+
+  .resumen-card-header {
+    background: rgba(201,153,58,0.1);
+    border-bottom: 1px solid var(--gris-borde);
+    padding: 10px 16px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--oro);
+  }
+
+  .resumen-card-body {
+    padding: 14px 16px;
+  }
+
+  .resumen-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.04);
+    gap: 12px;
+  }
+
+  .resumen-fila:last-child { border-bottom: none; }
+
+  .resumen-key {
+    font-size: 11px;
+    color: rgba(245,240,232,0.4);
+    letter-spacing: 0.5px;
+    flex-shrink: 0;
+    padding-top: 1px;
+  }
+
+  .resumen-val {
+    font-size: 13px;
+    color: var(--blanco);
+    text-align: right;
+    word-break: break-word;
+  }
+
+  /* Caja de texto copiable */
+  .copia-box {
+    background: var(--negro);
+    border: 1px solid var(--gris-borde);
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 12px;
+    line-height: 1.8;
+    color: rgba(245,240,232,0.7);
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: 'Jost', monospace;
+    margin-bottom: 12px;
+    max-height: 260px;
+    overflow-y: auto;
+  }
+
+  .btn-copiar {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, var(--oro-oscuro), var(--oro));
+    border: none;
+    border-radius: 8px;
+    color: var(--negro);
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: opacity 0.3s;
+    margin-bottom: 12px;
+  }
+
+  .btn-copiar:hover { opacity: 0.85; }
+
+  .btn-nueva {
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    color: rgba(245,240,232,0.5);
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+
+  .btn-nueva:hover { border-color: var(--oro-oscuro); color: var(--blanco); }
+
+  .nota-instruccion {
+    background: rgba(201,153,58,0.08);
+    border: 1px solid rgba(201,153,58,0.2);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 12px;
+    color: rgba(201,153,58,0.8);
+    line-height: 1.6;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+
+  /* ===== ESTRELLAS ===== */
+  .estrellas {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+  }
+
+  .estrella {
+    font-size: 28px;
+    cursor: pointer;
+    opacity: 0.25;
+    transition: opacity 0.2s, transform 0.2s;
+  }
+
+  .estrella.sel { opacity: 1; transform: scale(1.15); }
+  .estrella:hover { opacity: 0.7; }
+
+  /* Ornamento divisor */
+  .ornamento {
+    text-align: center;
+    color: var(--oro-oscuro);
+    font-size: 18px;
+    letter-spacing: 8px;
+    margin: 8px 0 24px;
+  }
+
+  /* Obligatorio */
+  .req { color: var(--oro); margin-left: 2px; }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%) translateY(80px);
+    background: var(--oro);
+    color: var(--negro);
+    padding: 12px 24px;
+    border-radius: 40px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: transform 0.4s ease;
+    z-index: 999;
+    white-space: nowrap;
+  }
+
+  .toast.show { transform: translateX(-50%) translateY(0); }
+
+  @media (max-width: 400px) {
+    .logo-title { font-size: 26px; }
+    .escala-item { padding: 10px 2px; font-size: 10px; }
+    .chip { font-size: 12px; padding: 8px 12px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+  <!-- HEADER -->
+  <div class="header">
+    <span class="logo-icon">💎</span>
+    <div class="logo-title">Joyas Eduardo</div>
+    <div class="logo-sub">Comodoro Rivadavia · Patagonia</div>
+    <p class="header-desc">Completá este breve formulario para que podamos conocerte mejor y ofrecerte las joyas que realmente te van a enamorar.</p>
+  </div>
+
+  <!-- BARRA DE PASOS -->
+  <div class="steps-bar" id="stepsBar"></div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- SECCIÓN 1: DATOS PERSONALES    -->
+  <!-- ═══════════════════════════════ -->
+  <div class="seccion activa" id="sec1">
+    <div class="sec-header">
+      <div class="sec-num">1</div>
+      <div class="sec-titulo">Datos Personales</div>
+      <div class="sec-desc">Para conocerte y saludarte en las fechas especiales</div>
+    </div>
+
+    <div class="campo">
+      <label>Nombre y Apellido <span class="req">*</span></label>
+      <input type="text" id="nombre" placeholder="¿Cómo te llamás?" autocomplete="name">
+    </div>
+
+    <div class="campo">
+      <label>WhatsApp / Teléfono</label>
+      <input type="tel" id="telefono" placeholder="Ej: 2976 235 421" autocomplete="tel">
+    </div>
+
+    <div class="campo">
+      <label>Email</label>
+      <input type="email" id="email" placeholder="tu@email.com" autocomplete="email">
+    </div>
+
+    <hr class="sep">
+
+    <div class="campo">
+      <label>Fecha de Cumpleaños 🎂</label>
+      <input type="date" id="cumpleanos">
+    </div>
+
+    <div class="grid-2">
+      <div class="campo">
+        <label>Aniversario de Pareja 💑</label>
+        <input type="date" id="aniversario">
+      </div>
+      <div class="campo">
+        <label>Otra Fecha Especial ✨</label>
+        <input type="date" id="otraFecha">
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Qué se celebra en esa otra fecha?</label>
+      <input type="text" id="otraFechaDesc" placeholder="Ej: Día de la Madre, graduación...">
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- SECCIÓN 2: GUSTOS Y ESTILO     -->
+  <!-- ═══════════════════════════════ -->
+  <div class="seccion" id="sec2">
+    <div class="sec-header">
+      <div class="sec-num">2</div>
+      <div class="sec-titulo">Tu Estilo</div>
+      <div class="sec-desc">Podés elegir más de una opción</div>
+    </div>
+
+    <div class="campo">
+      <label>¿Qué metal preferís?</label>
+      <div class="chips" id="chips-metal">
+        <label class="chip"><input type="checkbox" value="Oro 18k"> 🥇 Oro 18k</label>
+        <label class="chip"><input type="checkbox" value="Plata 925"> 🥈 Plata 925</label>
+        <label class="chip"><input type="checkbox" value="Oro blanco"> ⚪ Oro blanco</label>
+        <label class="chip"><input type="checkbox" value="Acero quirúrgico"> 🔩 Acero</label>
+        <label class="chip"><input type="checkbox" value="Me da lo mismo"> 🎨 Me da igual</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Qué estilo describe tu gusto?</label>
+      <div class="chips" id="chips-estilo">
+        <label class="chip"><input type="checkbox" value="Clásico"> 🏛️ Clásico</label>
+        <label class="chip"><input type="checkbox" value="Moderno"> ✨ Moderno</label>
+        <label class="chip"><input type="checkbox" value="Minimalista"> ⬜ Minimalista</label>
+        <label class="chip"><input type="checkbox" value="Romántico"> 🌹 Romántico</label>
+        <label class="chip"><input type="checkbox" value="Llamativo"> 💥 Llamativo</label>
+        <label class="chip"><input type="checkbox" value="Boho / Natural"> 🌿 Boho</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Qué piedras te gustan más?</label>
+      <div class="chips" id="chips-piedra">
+        <label class="chip"><input type="checkbox" value="Sin piedras"> 💛 Sin piedras</label>
+        <label class="chip"><input type="checkbox" value="Diamante"> 💎 Diamante</label>
+        <label class="chip"><input type="checkbox" value="Rubí"> 🔴 Rubí</label>
+        <label class="chip"><input type="checkbox" value="Esmeralda"> 💚 Esmeralda</label>
+        <label class="chip"><input type="checkbox" value="Zafiro"> 🔵 Zafiro</label>
+        <label class="chip"><input type="checkbox" value="Ópalo"> 🌈 Ópalo</label>
+        <label class="chip"><input type="checkbox" value="Perla"> ⚪ Perla</label>
+        <label class="chip"><input type="checkbox" value="Circón"> ✨ Circón</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Qué joyas usás más seguido?</label>
+      <div class="chips" id="chips-categoria">
+        <label class="chip"><input type="checkbox" value="Anillos"> 💍 Anillos</label>
+        <label class="chip"><input type="checkbox" value="Cadenas"> ⛓️ Cadenas</label>
+        <label class="chip"><input type="checkbox" value="Aros"> 🔵 Aros</label>
+        <label class="chip"><input type="checkbox" value="Pulseras"> 📿 Pulseras</label>
+        <label class="chip"><input type="checkbox" value="Dijes"> 🌟 Dijes</label>
+        <label class="chip"><input type="checkbox" value="Alianzas"> 👫 Alianzas</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- SECCIÓN 3: TALLAS Y MEDIDAS    -->
+  <!-- ═══════════════════════════════ -->
+  <div class="seccion" id="sec3">
+    <div class="sec-header">
+      <div class="sec-num">3</div>
+      <div class="sec-titulo">Tallas & Medidas</div>
+      <div class="sec-desc">Para que todo encaje perfecto</div>
+    </div>
+
+    <div class="campo">
+      <label>Talla(s) de dedo para anillos 💍</label>
+      <input type="text" id="tallasDedo" placeholder="Ej: 14 · Anular 15½ · Medio 12">
+      <div style="font-size:11px; color:rgba(245,240,232,0.3); margin-top:6px;">Si no sabés tu talla, Eduardo puede medirte en el local.</div>
+    </div>
+
+    <div class="grid-2">
+      <div class="campo">
+        <label>Muñeca (para pulseras)</label>
+        <input type="text" id="tallaMuneca" placeholder="Ej: 16 cm">
+      </div>
+      <div class="campo">
+        <label>Largo cadena preferido</label>
+        <div class="select-wrap">
+          <select id="largoCadena">
+            <option value="">— No sé / Indiferente</option>
+            <option value="40cm (gargantilla)">40cm — Gargantilla</option>
+            <option value="45cm (estándar)">45cm — Estándar</option>
+            <option value="50cm (media)">50cm — Media</option>
+            <option value="60cm (larga)">60cm — Larga</option>
+            <option value="Más de 60cm">Más de 60cm</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <hr class="sep">
+
+    <div class="campo">
+      <label>¿Para quién comprás joyas mayormente?</label>
+      <div class="chips" id="chips-para">
+        <label class="chip"><input type="checkbox" value="Para mí"> 🙋 Para mí</label>
+        <label class="chip"><input type="checkbox" value="Para regalar a pareja"> 💑 Pareja</label>
+        <label class="chip"><input type="checkbox" value="Para regalar a hijos/as"> 👶 Hijos/as</label>
+        <label class="chip"><input type="checkbox" value="Para regalar a amigas"> 👯 Amigas</label>
+        <label class="chip"><input type="checkbox" value="Para regalar a mamá"> 👩 Mamá</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- SECCIÓN 4: PREFERENCIAS        -->
+  <!-- ═══════════════════════════════ -->
+  <div class="seccion" id="sec4">
+    <div class="sec-header">
+      <div class="sec-num">4</div>
+      <div class="sec-titulo">Preferencias de compra</div>
+      <div class="sec-desc">Para ofrecerte siempre lo que buscás</div>
+    </div>
+
+    <div class="campo">
+      <label>¿Cuánto solés invertir en una joya?</label>
+      <div class="escala" id="escala-presupuesto">
+        <div class="escala-item" data-val="Hasta $50.000">
+          <span class="icon">💸</span>Hasta<br>$50k
+        </div>
+        <div class="escala-item" data-val="$50.000 - $150.000">
+          <span class="icon">💰</span>$50k -<br>$150k
+        </div>
+        <div class="escala-item" data-val="$150.000 - $400.000">
+          <span class="icon">💎</span>$150k -<br>$400k
+        </div>
+        <div class="escala-item" data-val="Más de $400.000">
+          <span class="icon">👑</span>+$400k
+        </div>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Cómo preferís enterarte de novedades?</label>
+      <div class="chips" id="chips-contacto">
+        <label class="chip"><input type="checkbox" value="WhatsApp"> 💬 WhatsApp</label>
+        <label class="chip"><input type="checkbox" value="Instagram"> 📸 Instagram</label>
+        <label class="chip"><input type="checkbox" value="Email"> 📧 Email</label>
+        <label class="chip"><input type="checkbox" value="No quiero avisos"> 🔕 Sin avisos</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>Instagram (si querés seguirnos / mencionarte) 📸</label>
+      <input type="text" id="instagram" placeholder="@tu_usuario">
+    </div>
+
+    <hr class="sep">
+
+    <div class="campo">
+      <label>¿Cómo llegaste a Joyas Eduardo?</label>
+      <div class="select-wrap">
+        <select id="comollego">
+          <option value="">— Seleccioná una opción</option>
+          <option value="Recomendación de amiga/familiar">👯 Recomendación de amiga/familiar</option>
+          <option value="Instagram">📸 Instagram</option>
+          <option value="Google">🔍 Google</option>
+          <option value="Pasé por el local">🚶 Pasé por el local</option>
+          <option value="Ya era clienta">⭐ Ya era clienta</option>
+          <option value="Otro">Otro</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Algún deseo especial o joya con la que soñás? 💭</label>
+      <textarea id="deseos" placeholder="Contanos... ¡A Eduardo le encanta escuchar ideas y hacerlas realidad!"></textarea>
+    </div>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- SECCIÓN 5: VALORACIÓN          -->
+  <!-- ═══════════════════════════════ -->
+  <div class="seccion" id="sec5">
+    <div class="sec-header">
+      <div class="sec-num">5</div>
+      <div class="sec-titulo">Tu opinión</div>
+      <div class="sec-desc">Solo si ya nos conocías — si sos nueva ¡bienvenida!</div>
+    </div>
+
+    <div class="campo" style="text-align:center;">
+      <label style="text-align:center; display:block; margin-bottom:16px;">¿Cómo calificarías tu experiencia con nosotros?</label>
+      <div class="estrellas" id="estrellas">
+        <span class="estrella" data-val="1">⭐</span>
+        <span class="estrella" data-val="2">⭐</span>
+        <span class="estrella" data-val="3">⭐</span>
+        <span class="estrella" data-val="4">⭐</span>
+        <span class="estrella" data-val="5">⭐</span>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Qué es lo que más valorás de Joyas Eduardo?</label>
+      <div class="chips" id="chips-valora">
+        <label class="chip"><input type="checkbox" value="Calidad"> 🏆 Calidad</label>
+        <label class="chip"><input type="checkbox" value="Atención personalizada"> 🤝 Atención</label>
+        <label class="chip"><input type="checkbox" value="Diseño exclusivo"> 🎨 Diseño</label>
+        <label class="chip"><input type="checkbox" value="Precio justo"> 💰 Precio</label>
+        <label class="chip"><input type="checkbox" value="Garantía"> ✅ Garantía</label>
+        <label class="chip"><input type="checkbox" value="Variedad"> 🌟 Variedad</label>
+      </div>
+    </div>
+
+    <div class="campo">
+      <label>¿Algo que podríamos mejorar? (opcional)</label>
+      <textarea id="mejoras" placeholder="Toda sugerencia es bienvenida con el corazón abierto 🙏"></textarea>
+    </div>
+
+    <div class="campo">
+      <label>¿Nos recomendarías a una amiga?</label>
+      <div class="chips" id="chips-recomienda">
+        <label class="chip"><input type="radio" name="recomienda" value="¡Sin dudarlo!"> 💯 ¡Sin dudarlo!</label>
+        <label class="chip"><input type="radio" name="recomienda" value="Sí, probablemente"> 👍 Probablemente</label>
+        <label class="chip"><input type="radio" name="recomienda" value="No sé"> 🤔 No sé</label>
+        <label class="chip"><input type="radio" name="recomienda" value="Todavía no te conozco"> 🆕 Recién llego</label>
+      </div>
+    </div>
+  </div>
+
+  <!-- BOTONES DE NAVEGACIÓN -->
+  <div class="nav-btns" id="navBtns">
+    <button class="btn-prev" id="btnPrev" onclick="cambiarSec(-1)" style="display:none">← Anterior</button>
+    <button class="btn-next" id="btnNext" onclick="cambiarSec(1)">Continuar →</button>
+  </div>
+
+  <!-- ═══════════════════════════════ -->
+  <!-- RESULTADO FINAL                -->
+  <!-- ═══════════════════════════════ -->
+  <div id="resultado">
+    <div class="resultado-header">
+      <div class="check-circle">✓</div>
+      <div class="resultado-titulo">¡Muchas gracias!</div>
+      <p class="resultado-sub">Tu perfil está completo. Eduardo lo va a amar 💛</p>
+    </div>
+
+    <div class="ornamento">· · ·</div>
+
+    <div class="nota-instruccion">
+      📋 Mostrá esta pantalla a Eduardo o copiá el resumen para cargarlo en el sistema.
+    </div>
+
+    <!-- Resumen visual -->
+    <div class="resumen-card" id="resumenCard"></div>
+
+    <!-- Texto copiable para la app -->
+    <div class="resumen-card">
+      <div class="resumen-card-header">📋 Texto para copiar a la app</div>
+      <div class="resumen-card-body">
+        <div class="copia-box" id="textoCopiable"></div>
+        <button class="btn-copiar" onclick="copiarTexto()">📋 Copiar al portapapeles</button>
+        <button class="btn-nueva" onclick="reiniciar()">↺ Nueva encuesta</button>
+      </div>
+    </div>
+
+  </div><!-- fin resultado -->
+
+</div><!-- fin wrapper -->
+
+<div class="toast" id="toast">✓ ¡Copiado!</div>
+
+<script>
+const TOTAL_SECS = 5;
+let secActual = 1;
+let presupuestoSel = '';
+let estrellasSel = 0;
+
+// ── Chips toggle ──────────────────────────────
+document.querySelectorAll('.chips').forEach(group => {
+  group.querySelectorAll('.chip').forEach(chip => {
+    chip.addEventListener('click', () => {
+      const inp = chip.querySelector('input');
+      if (inp.type === 'radio') {
+        group.querySelectorAll('.chip').forEach(c => c.classList.remove('sel'));
+        chip.classList.add('sel');
+      } else {
+        chip.classList.toggle('sel');
+      }
+    });
+  });
+});
+
+// ── Escala presupuesto ───────────────────────
+document.querySelectorAll('#escala-presupuesto .escala-item').forEach(item => {
+  item.addEventListener('click', () => {
+    document.querySelectorAll('#escala-presupuesto .escala-item').forEach(i => i.classList.remove('sel'));
+    item.classList.add('sel');
+    presupuestoSel = item.dataset.val;
+  });
+});
+
+// ── Estrellas ────────────────────────────────
+document.querySelectorAll('#estrellas .estrella').forEach(star => {
+  star.addEventListener('click', () => {
+    estrellasSel = parseInt(star.dataset.val);
+    document.querySelectorAll('#estrellas .estrella').forEach((s, i) => {
+      s.classList.toggle('sel', i < estrellasSel);
+    });
+  });
+});
+
+// ── Steps bar ────────────────────────────────
+function renderSteps() {
+  const bar = document.getElementById('stepsBar');
+  bar.innerHTML = '';
+  for (let i = 1; i <= TOTAL_SECS; i++) {
+    const d = document.createElement('div');
+    d.className = 'step-dot' + (i === secActual ? ' active' : i < secActual ? ' done' : '');
+    bar.appendChild(d);
+  }
+}
+
+// ── Navegación ───────────────────────────────
+function cambiarSec(dir) {
+  if (dir === 1 && secActual === 1) {
+    if (!document.getElementById('nombre').value.trim()) {
+      document.getElementById('nombre').focus();
+      document.getElementById('nombre').style.borderColor = '#c0392b';
+      setTimeout(() => document.getElementById('nombre').style.borderColor = '', 2000);
+      return;
+    }
+  }
+
+  if (dir === 1 && secActual === TOTAL_SECS) {
+    mostrarResultado();
+    return;
+  }
+
+  document.getElementById('sec' + secActual).classList.remove('activa');
+  secActual += dir;
+  document.getElementById('sec' + secActual).classList.add('activa');
+
+  document.getElementById('btnPrev').style.display = secActual > 1 ? 'block' : 'none';
+  document.getElementById('btnNext').textContent = secActual === TOTAL_SECS ? '✓ Finalizar' : 'Continuar →';
+
+  renderSteps();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// ── Leer chips seleccionados ─────────────────
+function leerChips(id) {
+  return Array.from(document.querySelectorAll('#' + id + ' .chip.sel input'))
+    .map(i => i.value).join(', ') || '—';
+}
+
+function leerRadio(name) {
+  const sel = document.querySelector(`input[name="${name}"]:checked`);
+  return sel ? sel.value : '—';
+}
+
+// ── Resultado ────────────────────────────────
+function mostrarResultado() {
+  document.querySelectorAll('.seccion').forEach(s => s.classList.remove('activa'));
+  document.getElementById('navBtns').style.display = 'none';
+  document.getElementById('stepsBar').style.display = 'none';
+
+  const d = recolectar();
+
+  // Resumen visual
+  const card = document.getElementById('resumenCard');
+  const rows = [
+    ['👤 Nombre', d.nombre],
+    ['📱 WhatsApp', d.telefono || '—'],
+    ['📧 Email', d.email || '—'],
+    ['🎂 Cumpleaños', d.cumpleanos || '—'],
+    ['💑 Aniversario', d.aniversario || '—'],
+    ['✨ Otra fecha', d.otraFecha ? `${d.otraFecha} (${d.otraFechaDesc || 's/d'})` : '—'],
+    ['🥇 Metal', d.metal],
+    ['🎨 Estilo', d.estilo],
+    ['💎 Piedra', d.piedra],
+    ['💍 Categoría', d.categoria],
+    ['💍 Talla dedo', d.tallasDedo || '—'],
+    ['📿 Muñeca', d.tallaMuneca || '—'],
+    ['⛓️ Largo cadena', d.largoCadena || '—'],
+    ['🛍️ Compra para', d.para],
+    ['💰 Presupuesto', d.presupuesto || '—'],
+    ['📣 Contacto pref.', d.contacto],
+    ['📸 Instagram', d.instagram || '—'],
+    ['🔍 Cómo llegó', d.comoLlego || '—'],
+    ['⭐ Calificación', d.estrellas ? '⭐'.repeat(d.estrellas) : '—'],
+    ['🏆 Valora', d.valora],
+    ['💯 Recomendaría', d.recomienda],
+    ['💭 Deseos', d.deseos || '—'],
+    ['📝 Mejoras', d.mejoras || '—'],
+  ];
+
+  card.innerHTML = `<div class="resumen-card-header">✨ Perfil de ${d.nombre}</div><div class="resumen-card-body">` +
+    rows.map(([k, v]) => v && v !== '—' ? `<div class="resumen-fila"><span class="resumen-key">${k}</span><span class="resumen-val">${v}</span></div>` : '').join('') +
+    '</div>';
+
+  // Texto para copiar a la app
+  const lineas = [
+    `PERFIL DE CLIENTA — ${new Date().toLocaleDateString('es-AR')}`,
+    `${'─'.repeat(36)}`,
+    `Nombre: ${d.nombre}`,
+    d.telefono ? `Tel/WhatsApp: ${d.telefono}` : '',
+    d.email ? `Email: ${d.email}` : '',
+    d.cumpleanos ? `Cumpleaños: ${d.cumpleanos}` : '',
+    d.aniversario ? `Aniversario: ${d.aniversario}` : '',
+    d.otraFecha ? `Fecha especial: ${d.otraFecha} (${d.otraFechaDesc || 's/d'})` : '',
+    '',
+    `Metal preferido: ${d.metal}`,
+    `Estilo: ${d.estilo}`,
+    `Piedra favorita: ${d.piedra}`,
+    `Categoría favorita: ${d.categoria}`,
+    d.tallasDedo ? `Talla de dedo: ${d.tallasDedo}` : '',
+    d.tallaMuneca ? `Muñeca: ${d.tallaMuneca}` : '',
+    d.largoCadena ? `Cadena: ${d.largoCadena}` : '',
+    `Compra para: ${d.para}`,
+    d.presupuesto ? `Presupuesto habitual: ${d.presupuesto}` : '',
+    `Contacto preferido: ${d.contacto}`,
+    d.instagram ? `Instagram: ${d.instagram}` : '',
+    d.comoLlego ? `Cómo llegó: ${d.comoLlego}` : '',
+    '',
+    d.estrellas ? `Calificación: ${'⭐'.repeat(d.estrellas)} (${d.estrellas}/5)` : '',
+    d.valora !== '—' ? `Lo que valora: ${d.valora}` : '',
+    d.recomienda !== '—' ? `¿Recomendaría?: ${d.recomienda}` : '',
+    d.deseos ? `Deseos/Sueños: ${d.deseos}` : '',
+    d.mejoras ? `Sugerencias: ${d.mejoras}` : '',
+  ].filter(Boolean).join('\n');
+
+  document.getElementById('textoCopiable').textContent = lineas;
+
+  document.getElementById('resultado').style.display = 'block';
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+function recolectar() {
+  return {
+    nombre: document.getElementById('nombre').value.trim(),
+    telefono: document.getElementById('telefono').value.trim(),
+    email: document.getElementById('email').value.trim(),
+    cumpleanos: document.getElementById('cumpleanos').value,
+    aniversario: document.getElementById('aniversario').value,
+    otraFecha: document.getElementById('otraFecha').value,
+    otraFechaDesc: document.getElementById('otraFechaDesc').value.trim(),
+    metal: leerChips('chips-metal'),
+    estilo: leerChips('chips-estilo'),
+    piedra: leerChips('chips-piedra'),
+    categoria: leerChips('chips-categoria'),
+    tallasDedo: document.getElementById('tallasDedo').value.trim(),
+    tallaMuneca: document.getElementById('tallaMuneca').value.trim(),
+    largoCadena: document.getElementById('largoCadena').value,
+    para: leerChips('chips-para'),
+    presupuesto: presupuestoSel,
+    contacto: leerChips('chips-contacto'),
+    instagram: document.getElementById('instagram').value.trim(),
+    comoLlego: document.getElementById('comollego').value,
+    deseos: document.getElementById('deseos').value.trim(),
+    estrellas: estrellasSel,
+    valora: leerChips('chips-valora'),
+    mejoras: document.getElementById('mejoras').value.trim(),
+    recomienda: leerRadio('recomienda'),
+  };
+}
+
+function copiarTexto() {
+  const txt = document.getElementById('textoCopiable').textContent;
+  navigator.clipboard.writeText(txt).then(() => {
+    const t = document.getElementById('toast');
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 2500);
+  });
+}
+
+function reiniciar() {
+  location.reload();
+}
+
+// Init
+renderSteps();
+</script>
+</body>
+</html>
