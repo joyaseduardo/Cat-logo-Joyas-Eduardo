@@ -267,6 +267,43 @@
     border-color: var(--gold);
   }
 
+  /* Buscador alianzas */
+  .busqueda-alianzas {
+    max-width: 600px;
+    margin: 1.5rem auto 1rem;
+    padding: 0 1rem;
+    position: relative;
+  }
+  .busqueda-alianzas input {
+    width: 100%;
+    background: var(--dark3);
+    border: 1px solid #333;
+    color: var(--text);
+    padding: 0.85rem 1rem 0.85rem 3rem;
+    border-radius: 999px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.95rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .busqueda-alianzas input:focus { border-color: var(--gold-dark); }
+  .busqueda-alianzas input::placeholder { color: #555; }
+  .busqueda-alianzas .sicon {
+    position: absolute; left: 1.9rem; top: 50%;
+    transform: translateY(-50%); color: #777; pointer-events: none;
+  }
+  .busqueda-alianzas .clear-btn {
+    position: absolute; right: 1.5rem; top: 50%;
+    transform: translateY(-50%); background: none; border: none;
+    color: #666; cursor: pointer; font-size: 1.1rem; padding: 0;
+    display: none;
+  }
+  .categoria-card.oculta { display: none; }
+  .sin-resultados-alianzas {
+    grid-column: 1/-1; text-align: center; padding: 3rem 1rem; color: #555;
+  }
+  .sin-resultados-alianzas .icon { font-size: 3rem; margin-bottom: 0.5rem; }
+
   /* Búsqueda joyas */
   .busqueda-container {
     max-width: 500px;
@@ -835,7 +872,17 @@
      TAB: ALIANZAS
 ═══════════════════════════════════════════ -->
 <div id="content-alianzas" class="tab-content active">
-  <div class="categorias-grid">
+
+  <!-- Buscador de alianzas -->
+  <div class="busqueda-alianzas">
+    <span class="sicon">🔍</span>
+    <input type="text" id="busquedaAlianzas" placeholder="Buscar categoría de alianza..."
+      oninput="filtrarAlianzas(this.value)"
+      autocomplete="off"/>
+    <button class="clear-btn" id="clearAlianzas" onclick="limpiarBusquedaAlianzas()">✕</button>
+  </div>
+
+  <div class="categorias-grid" id="categoriasGrid">
 
     <a href="catalogo-oro-lisas.html" class="categoria-card">
       <div class="emoji">💍</div>
@@ -914,7 +961,7 @@
       <span class="arrow">→</span>
     </a>
 
-  </div>
+  </div><!-- /categorias-grid -->
 </div>
 
 <!-- ══════════════════════════════════════════
@@ -1383,6 +1430,45 @@ function enviarPedido() {
 
   window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msg), '_blank');
   cerrarCarrito();
+}
+
+// BUSCADOR ALIANZAS
+function filtrarAlianzas(q) {
+  var query = q.toLowerCase().trim();
+  var cards = document.querySelectorAll('#categoriasGrid .categoria-card');
+  var clearBtn = document.getElementById('clearAlianzas');
+  var grid = document.getElementById('categoriasGrid');
+  var encontrados = 0;
+
+  // Mostrar/ocultar botón limpiar
+  if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
+
+  // Eliminar mensaje anterior de sin resultados
+  var sinRes = document.getElementById('sinResultadosAlianzas');
+  if (sinRes) sinRes.remove();
+
+  cards.forEach(function(card) {
+    var texto = card.innerText.toLowerCase();
+    if (!query || texto.indexOf(query) > -1) {
+      card.classList.remove('oculta');
+      encontrados++;
+    } else {
+      card.classList.add('oculta');
+    }
+  });
+
+  if (encontrados === 0 && query) {
+    var msg = document.createElement('div');
+    msg.id = 'sinResultadosAlianzas';
+    msg.className = 'sin-resultados-alianzas';
+    msg.innerHTML = '<div class="icon">🔍</div><p>No se encontraron categorías para "<strong>' + q + '</strong>"</p>';
+    grid.appendChild(msg);
+  }
+}
+
+function limpiarBusquedaAlianzas() {
+  var input = document.getElementById('busquedaAlianzas');
+  if (input) { input.value = ''; filtrarAlianzas(''); input.focus(); }
 }
 
 // WELCOME MODAL
