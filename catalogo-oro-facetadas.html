@@ -115,6 +115,55 @@
   .lightbox img { max-width:92vw; max-height:88vh; object-fit:contain; border-radius:12px; box-shadow:0 0 60px rgba(212,168,67,0.2); }
   .lightbox-close { position:fixed; top:1rem; right:1.2rem; color:#fff; font-size:2.2rem; cursor:pointer; z-index:100000; background:none; border:none; line-height:1; }
   .card-foto img { cursor:zoom-in; }
+
+  /* ── MODAL GUÍA DE TALLAS ── */
+  #tallaModal{display:none;position:fixed;z-index:99990;inset:0;background:rgba(0,0,0,0.88);align-items:flex-end;justify-content:center;padding:0}
+  #tallaModal.active{display:flex}
+  @media(min-width:600px){#tallaModal{align-items:center;padding:1rem}}
+  .talla-box{background:#111827;border:1px solid rgba(201,153,58,0.25);border-radius:20px 20px 0 0;width:100%;max-width:480px;max-height:90vh;overflow-y:auto;box-shadow:0 -8px 40px rgba(0,0,0,0.6);animation:tbSlideUp .25s ease}
+  @media(min-width:600px){.talla-box{border-radius:20px;animation:tbFadeIn .2s ease}}
+  @keyframes tbSlideUp{from{transform:translateY(60px);opacity:0}to{transform:translateY(0);opacity:1}}
+  @keyframes tbFadeIn{from{opacity:0;transform:scale(.97)}to{opacity:1;transform:scale(1)}}
+  .talla-hdr{display:flex;align-items:center;justify-content:space-between;padding:1rem 1.2rem .75rem;border-bottom:1px solid #1f2937;position:sticky;top:0;background:#111827;z-index:1}
+  .talla-hdr-txt h3{color:#fbbf24;font-size:1.05rem;font-weight:700;margin:0;font-family:'Playfair Display',serif}
+  .talla-hdr-txt p{color:#6b7280;font-size:.72rem;margin:2px 0 0}
+  .talla-cerrar{background:none;border:none;color:#6b7280;font-size:1.8rem;cursor:pointer;line-height:1;padding:0}
+  .talla-cerrar:hover{color:#fff}
+  .talla-ref{margin:.75rem 1.2rem 0;background:rgba(201,153,58,.08);border:1px solid rgba(201,153,58,.2);border-radius:10px;padding:.5rem .75rem;font-size:.78rem;color:#e8c060;font-weight:700}
+  .talla-tabs{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid #1f2937}
+  .talla-tab{background:none;border:none;border-bottom:2px solid transparent;color:#6b7280;font-size:.7rem;font-weight:700;padding:.65rem .2rem;cursor:pointer;font-family:'Montserrat',sans-serif;text-align:center;line-height:1.3;transition:.2s}
+  .talla-tab.on{color:#fbbf24;border-bottom-color:#fbbf24;background:rgba(251,191,36,.04)}
+  .talla-tab:hover:not(.on){color:#e5e7eb}
+  .talla-panel{display:none;padding:1rem 1.2rem}
+  .talla-panel.on{display:block}
+  .tp-card{border-radius:10px;padding:.85rem 1rem;margin-bottom:.85rem;font-size:.82rem}
+  .tp-card.am{background:rgba(251,191,36,.07);border:1px solid rgba(251,191,36,.2)}
+  .tp-card.az{background:rgba(59,130,246,.07);border:1px solid rgba(59,130,246,.2)}
+  .tp-card.ve{background:rgba(34,197,94,.07);border:1px solid rgba(34,197,94,.2)}
+  .tp-card.gr{background:#1f2937;border:1px solid #374151}
+  .tp-card-tit{font-weight:700;margin-bottom:3px}
+  .tp-card-tit.a{color:#fbbf24}.tp-card-tit.b{color:#93c5fd}.tp-card-tit.v{color:#86efac}
+  .tp-card p{color:#d1d5db;line-height:1.55;margin:0}
+  .tp-pasos{display:flex;flex-direction:column;gap:.65rem}
+  .tp-paso{display:flex;gap:.65rem;align-items:flex-start}
+  .tp-num{width:22px;height:22px;border-radius:50%;font-size:.68rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:1px}
+  .tp-num.a{background:#f59e0b;color:#000}.tp-num.v{background:#22c55e;color:#000}
+  .tp-paso p{font-size:.82rem;color:#e5e7eb;line-height:1.5;margin:0}
+  .tp-tabla-wrap{border-radius:10px;overflow:hidden;border:1px solid #374151;margin-bottom:.6rem}
+  .tp-tabla-hd{display:grid;grid-template-columns:1fr 1fr;background:#374151;padding:.5rem 1rem}
+  .tp-tabla-hd span{font-size:.7rem;font-weight:700;color:#fbbf24}
+  .tp-tabla-hd span:last-child{text-align:right}
+  .tp-tabla-row{display:grid;grid-template-columns:1fr 1fr;padding:.45rem 1rem;border-top:1px solid rgba(55,65,81,.5)}
+  .tp-tabla-row:nth-child(even){background:rgba(31,41,55,.4)}
+  .tp-tabla-row .mm{font-family:monospace;font-size:.82rem;color:#e5e7eb}
+  .tp-tabla-row .tn{font-size:.82rem;font-weight:700;color:#fcd34d;text-align:right}
+  .tp-nota{background:#1f2937;border-radius:8px;padding:.5rem .75rem;text-align:center;font-size:.72rem;color:#9ca3af}
+  .tp-ejemplo{font-family:monospace;font-size:.82rem;text-align:center;background:#111827;border-radius:8px;padding:.85rem;line-height:2}
+  .tp-ejemplo .dim{color:#9ca3af}.tp-ejemplo .res{color:#fcd34d;font-weight:700}.tp-ejemplo .ok{color:#4ade80;font-weight:700}
+  .talla-footer{padding:.85rem 1.2rem 1.2rem}
+  .talla-wa-btn{display:flex;align-items:center;justify-content:center;gap:.5rem;width:100%;background:linear-gradient(135deg,#16a34a,#15803d);color:#fff;font-weight:700;font-size:.9rem;padding:.85rem;border-radius:12px;text-decoration:none;transition:.2s;border:none;cursor:pointer;font-family:'Montserrat',sans-serif}
+  .talla-wa-btn:hover{background:linear-gradient(135deg,#15803d,#166534);transform:scale(1.01)}
+  .talla-wa-sub{text-align:center;font-size:.7rem;color:#6b7280;margin-top:.4rem}
 </style>
 </head>
 <body>
@@ -169,6 +218,99 @@
 
 
 <a href="https://wa.me/5492976235421?text=Hola!%20Vi%20el%20catálogo%20de%20Oro%2018k%20Facetadas%20y%20quiero%20consultar." target="_blank" class="wa-float">💬</a>
+
+
+<div id="tallaModal">
+  <div class="talla-box">
+    <div class="talla-hdr">
+      <div class="talla-hdr-txt">
+        <h3>📏 ¿Cuál es tu talla?</h3>
+        <p>Tres métodos — elegí el que tengas a mano</p>
+      </div>
+      <button class="talla-cerrar" onclick="cerrarTalla()">×</button>
+    </div>
+    <div class="talla-ref" id="tallaRef"></div>
+    <div class="talla-tabs">
+      <button class="talla-tab on" onclick="tallaTab(0)">📏 Hilo / Papel</button>
+      <button class="talla-tab"    onclick="tallaTab(1)">📐 Tabla mm</button>
+      <button class="talla-tab"    onclick="tallaTab(2)">💍 Con alianza</button>
+    </div>
+    <div class="talla-panel on" id="tpanel0">
+      <div class="tp-card am" style="margin-top:.85rem">
+        <div class="tp-card-tit a">¿Qué necesitás?</div>
+        <p>Un hilo, tira de papel o cinta métrica · Una regla</p>
+      </div>
+      <div class="tp-pasos">
+        <div class="tp-paso"><span class="tp-num a">1</span><p>Enrollá el hilo (o una tira de papel) alrededor del dedo donde vas a usar la alianza.</p></div>
+        <div class="tp-paso"><span class="tp-num a">2</span><p>Marcá con una lapicera el punto donde se cruzan los extremos.</p></div>
+        <div class="tp-paso"><span class="tp-num a">3</span><p>Estirá el hilo sobre la regla y medí la distancia hasta la marca.</p></div>
+        <div class="tp-paso"><span class="tp-num a">4</span><p>Ese número en <strong>milímetros</strong> es tu circunferencia de dedo.</p></div>
+        <div class="tp-paso"><span class="tp-num a">5</span><p>Tocá el tab <strong>"📐 Tabla mm"</strong> para encontrar tu número de talla.</p></div>
+      </div>
+      <div class="tp-card az" style="margin-top:.85rem">
+        <div class="tp-card-tit b">💡 Consejo importante</div>
+        <p>Medite a la <strong>tarde o noche</strong> — los dedos se hinchan con el calor. Si el nudillo es más grande que la base del dedo, medí ambos y avisanos.</p>
+      </div>
+    </div>
+    <div class="talla-panel" id="tpanel1">
+      <p style="font-size:.78rem;color:#9ca3af;margin:.85rem 0 .65rem">Tomá tu medida en mm y buscá tu número de talla:</p>
+      <div class="tp-tabla-wrap">
+        <div class="tp-tabla-hd"><span>Circunferencia (mm)</span><span>Nº de Talla</span></div>
+        <div class="tp-tabla-row"><span class="mm">44 mm</span><span class="tn">14</span></div>
+        <div class="tp-tabla-row"><span class="mm">45 mm</span><span class="tn">14,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">47 mm</span><span class="tn">15</span></div>
+        <div class="tp-tabla-row"><span class="mm">48 mm</span><span class="tn">15,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">50 mm</span><span class="tn">16</span></div>
+        <div class="tp-tabla-row"><span class="mm">51 mm</span><span class="tn">16,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">52 mm</span><span class="tn">17</span></div>
+        <div class="tp-tabla-row"><span class="mm">54 mm</span><span class="tn">17,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">55 mm</span><span class="tn">18</span></div>
+        <div class="tp-tabla-row"><span class="mm">57 mm</span><span class="tn">18,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">58 mm</span><span class="tn">19</span></div>
+        <div class="tp-tabla-row"><span class="mm">60 mm</span><span class="tn">19,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">62 mm</span><span class="tn">20</span></div>
+        <div class="tp-tabla-row"><span class="mm">63 mm</span><span class="tn">20,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">65 mm</span><span class="tn">21</span></div>
+        <div class="tp-tabla-row"><span class="mm">67 mm</span><span class="tn">21,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">68 mm</span><span class="tn">22</span></div>
+        <div class="tp-tabla-row"><span class="mm">70 mm</span><span class="tn">22,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">71 mm</span><span class="tn">23</span></div>
+        <div class="tp-tabla-row"><span class="mm">73 mm</span><span class="tn">23,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">75 mm</span><span class="tn">24</span></div>
+        <div class="tp-tabla-row"><span class="mm">76 mm</span><span class="tn">24,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">78 mm</span><span class="tn">25</span></div>
+      </div>
+      <div class="tp-nota">Si tu medida queda entre dos valores, elegí siempre la talla más grande.</div>
+    </div>
+    <div class="talla-panel" id="tpanel2">
+      <div class="tp-card ve" style="margin-top:.85rem">
+        <div class="tp-card-tit v">¿Cuándo usar este método?</div>
+        <p>Cuando ya tenés una alianza que te queda bien y querés saber el número exacto.</p>
+      </div>
+      <div class="tp-pasos">
+        <div class="tp-paso"><span class="tp-num v">1</span><p>Tomá la alianza que ya usás y te queda cómoda.</p></div>
+        <div class="tp-paso"><span class="tp-num v">2</span><p>Medí el <strong>diámetro interior</strong> — de borde a borde por el centro del hueco — con una regla.</p></div>
+        <div class="tp-paso"><span class="tp-num v">3</span><p>Multiplicá ese valor en mm por <strong>3,14</strong> (π) para obtener la circunferencia.</p></div>
+        <div class="tp-paso"><span class="tp-num v">4</span><p>Buscá esa circunferencia en el tab <strong>"📐 Tabla mm"</strong>.</p></div>
+        <div class="tp-paso"><span class="tp-num v">5</span><p>También podés traer la alianza al local y la medimos con el medidor oficial.</p></div>
+      </div>
+      <div class="tp-card gr" style="margin-top:.85rem">
+        <p style="font-weight:700;color:#d1d5db;margin-bottom:.5rem!important">🧮 Ejemplo rápido:</p>
+        <div class="tp-ejemplo">
+          <div><span class="dim">Diámetro: </span><span style="color:#fff;font-weight:700">17 mm</span></div>
+          <div><span class="dim">17 × 3,14 = </span><span class="res">53 mm</span></div>
+          <div><span class="ok">→ Talla 17</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="talla-footer">
+      <a id="tallaWaBtn" href="#" target="_blank" class="talla-wa-btn">
+        💬 Ya sé mi talla — enviarla por WhatsApp
+      </a>
+      <p class="talla-wa-sub">Se abre WhatsApp con tu talla y el modelo que elegiste</p>
+    </div>
+  </div>
+</div>
 
 <div id="helpModal" class="modal">
   <div class="modal-box">
@@ -267,13 +409,11 @@ function getOpcion(codigo) {
 function accion(tipo, codigo) {
   const op = getOpcion(codigo);
   const base = `Código: ${codigo} (${CATEGORIA})${op ? '\n' + op : ''}`;
+  if (tipo === 'talla') { abrirGuiaTallas(codigo, op); return; }
   const msgs = {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
-    talla:     `¡Hola! Necesito ayuda con la talla para:\n\n${base}`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RESERVAR:
-
-${base}`
+    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
   };
   window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
 }
