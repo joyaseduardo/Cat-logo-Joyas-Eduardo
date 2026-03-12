@@ -220,99 +220,6 @@
 
 <a href="https://wa.me/5492976235421?text=Hola!%20Vi%20el%20catálogo%20de%20Oro%2018k%20Esmaltadas%20y%20quiero%20consultar." target="_blank" class="wa-float">💬</a>
 
-
-<div id="tallaModal">
-  <div class="talla-box">
-    <div class="talla-hdr">
-      <div class="talla-hdr-txt">
-        <h3>📏 ¿Cuál es tu talla?</h3>
-        <p>Tres métodos — elegí el que tengas a mano</p>
-      </div>
-      <button class="talla-cerrar" onclick="cerrarTalla()">×</button>
-    </div>
-    <div class="talla-ref" id="tallaRef"></div>
-    <div class="talla-tabs">
-      <button class="talla-tab on" onclick="tallaTab(0)">📏 Hilo / Papel</button>
-      <button class="talla-tab"    onclick="tallaTab(1)">📐 Tabla mm</button>
-      <button class="talla-tab"    onclick="tallaTab(2)">💍 Con alianza</button>
-    </div>
-    <div class="talla-panel on" id="tpanel0">
-      <div class="tp-card am" style="margin-top:.85rem">
-        <div class="tp-card-tit a">¿Qué necesitás?</div>
-        <p>Un hilo, tira de papel o cinta métrica · Una regla</p>
-      </div>
-      <div class="tp-pasos">
-        <div class="tp-paso"><span class="tp-num a">1</span><p>Enrollá el hilo (o una tira de papel) alrededor del dedo donde vas a usar la alianza.</p></div>
-        <div class="tp-paso"><span class="tp-num a">2</span><p>Marcá con una lapicera el punto donde se cruzan los extremos.</p></div>
-        <div class="tp-paso"><span class="tp-num a">3</span><p>Estirá el hilo sobre la regla y medí la distancia hasta la marca.</p></div>
-        <div class="tp-paso"><span class="tp-num a">4</span><p>Ese número en <strong>milímetros</strong> es tu circunferencia de dedo.</p></div>
-        <div class="tp-paso"><span class="tp-num a">5</span><p>Tocá el tab <strong>"📐 Tabla mm"</strong> para encontrar tu número de talla.</p></div>
-      </div>
-      <div class="tp-card az" style="margin-top:.85rem">
-        <div class="tp-card-tit b">💡 Consejo importante</div>
-        <p>Medite a la <strong>tarde o noche</strong> — los dedos se hinchan con el calor. Si el nudillo es más grande que la base del dedo, medí ambos y avisanos.</p>
-      </div>
-    </div>
-    <div class="talla-panel" id="tpanel1">
-      <p style="font-size:.78rem;color:#9ca3af;margin:.85rem 0 .65rem">Tomá tu medida en mm y buscá tu número de talla:</p>
-      <div class="tp-tabla-wrap">
-        <div class="tp-tabla-hd"><span>Circunferencia (mm)</span><span>Nº de Talla</span></div>
-        <div class="tp-tabla-row"><span class="mm">44 mm</span><span class="tn">14</span></div>
-        <div class="tp-tabla-row"><span class="mm">45 mm</span><span class="tn">14,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">47 mm</span><span class="tn">15</span></div>
-        <div class="tp-tabla-row"><span class="mm">48 mm</span><span class="tn">15,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">50 mm</span><span class="tn">16</span></div>
-        <div class="tp-tabla-row"><span class="mm">51 mm</span><span class="tn">16,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">52 mm</span><span class="tn">17</span></div>
-        <div class="tp-tabla-row"><span class="mm">54 mm</span><span class="tn">17,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">55 mm</span><span class="tn">18</span></div>
-        <div class="tp-tabla-row"><span class="mm">57 mm</span><span class="tn">18,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">58 mm</span><span class="tn">19</span></div>
-        <div class="tp-tabla-row"><span class="mm">60 mm</span><span class="tn">19,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">62 mm</span><span class="tn">20</span></div>
-        <div class="tp-tabla-row"><span class="mm">63 mm</span><span class="tn">20,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">65 mm</span><span class="tn">21</span></div>
-        <div class="tp-tabla-row"><span class="mm">67 mm</span><span class="tn">21,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">68 mm</span><span class="tn">22</span></div>
-        <div class="tp-tabla-row"><span class="mm">70 mm</span><span class="tn">22,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">71 mm</span><span class="tn">23</span></div>
-        <div class="tp-tabla-row"><span class="mm">73 mm</span><span class="tn">23,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">75 mm</span><span class="tn">24</span></div>
-        <div class="tp-tabla-row"><span class="mm">76 mm</span><span class="tn">24,5</span></div>
-        <div class="tp-tabla-row"><span class="mm">78 mm</span><span class="tn">25</span></div>
-      </div>
-      <div class="tp-nota">Si tu medida queda entre dos valores, elegí siempre la talla más grande.</div>
-    </div>
-    <div class="talla-panel" id="tpanel2">
-      <div class="tp-card ve" style="margin-top:.85rem">
-        <div class="tp-card-tit v">¿Cuándo usar este método?</div>
-        <p>Cuando ya tenés una alianza que te queda bien y querés saber el número exacto.</p>
-      </div>
-      <div class="tp-pasos">
-        <div class="tp-paso"><span class="tp-num v">1</span><p>Tomá la alianza que ya usás y te queda cómoda.</p></div>
-        <div class="tp-paso"><span class="tp-num v">2</span><p>Medí el <strong>diámetro interior</strong> — de borde a borde por el centro del hueco — con una regla.</p></div>
-        <div class="tp-paso"><span class="tp-num v">3</span><p>Multiplicá ese valor en mm por <strong>3,14</strong> (π) para obtener la circunferencia.</p></div>
-        <div class="tp-paso"><span class="tp-num v">4</span><p>Buscá esa circunferencia en el tab <strong>"📐 Tabla mm"</strong>.</p></div>
-        <div class="tp-paso"><span class="tp-num v">5</span><p>También podés traer la alianza al local y la medimos con el medidor oficial.</p></div>
-      </div>
-      <div class="tp-card gr" style="margin-top:.85rem">
-        <p style="font-weight:700;color:#d1d5db;margin-bottom:.5rem!important">🧮 Ejemplo rápido:</p>
-        <div class="tp-ejemplo">
-          <div><span class="dim">Diámetro: </span><span style="color:#fff;font-weight:700">17 mm</span></div>
-          <div><span class="dim">17 × 3,14 = </span><span class="res">53 mm</span></div>
-          <div><span class="ok">→ Talla 17</span></div>
-        </div>
-      </div>
-    </div>
-    <div class="talla-footer">
-      <a id="tallaWaBtn" href="#" target="_blank" class="talla-wa-btn">
-        💬 Ya sé mi talla — enviarla por WhatsApp
-      </a>
-      <p class="talla-wa-sub">Se abre WhatsApp con tu talla y el modelo que elegiste</p>
-    </div>
-  </div>
-</div>
-
 <div id="helpModal" class="modal">
   <div class="modal-box">
     <button class="modal-close" onclick="document.getElementById('helpModal').classList.remove('active')">✕</button>
@@ -397,12 +304,14 @@ function getOpcion(codigo) {
 
 function accion(tipo, codigo) {
   const op = getOpcion(codigo);
-  const base = `Código: ${codigo} (${CATEGORIA})${op ? '\n' + op : ''}`;
   if (tipo === 'talla') { abrirGuiaTallas(codigo, op); return; }
+  const base = `Código: ${codigo} (${CATEGORIA})${op ? '\n' + op : ''}`;
   const msgs = {
     consultar: `¡Hola! Me interesa 💍\n\n${base}\n\n¿Está disponible?`,
     envio:     `¡Hola! ¿Cuál es el costo de envío para:\n\n${base}?`,
-    reservar:  `¡Hola! Quiero RESERVAR:\n\n${base}`
+    reservar:  `¡Hola! Quiero RESERVAR:
+
+${base}`
   };
   window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msgs[tipo]), '_blank');
 }
@@ -426,6 +335,113 @@ function cerrarLightbox() {
   document.body.style.overflow = "";
 }
 document.addEventListener("keydown", function(e){ if(e.key==="Escape") cerrarLightbox(); });
+</script>
+<div id="tallaModal">
+  <div class="talla-box">
+    <div class="talla-hdr">
+      <div class="talla-hdr-txt">
+        <h3>📏 ¿Cuál es tu talla?</h3>
+        <p>Tres métodos — elegí el que tengas a mano</p>
+      </div>
+      <button class="talla-cerrar" onclick="cerrarTalla()">×</button>
+    </div>
+    <div class="talla-ref" id="tallaRef"></div>
+    <div class="talla-tabs">
+      <button class="talla-tab on" onclick="tallaTab(0)">📏 Hilo / Papel</button>
+      <button class="talla-tab"    onclick="tallaTab(1)">📐 Tabla mm</button>
+      <button class="talla-tab"    onclick="tallaTab(2)">💍 Con alianza</button>
+    </div>
+    <div class="talla-panel on" id="tpanel0">
+      <div class="tp-card am" style="margin-top:.85rem"><div class="tp-card-tit a">¿Qué necesitás?</div><p>Un hilo, tira de papel o cinta métrica · Una regla</p></div>
+      <div class="tp-pasos">
+        <div class="tp-paso"><span class="tp-num a">1</span><p>Enrollá el hilo (o una tira de papel) alrededor del dedo donde vas a usar la alianza.</p></div>
+        <div class="tp-paso"><span class="tp-num a">2</span><p>Marcá con una lapicera el punto donde se cruzan los extremos.</p></div>
+        <div class="tp-paso"><span class="tp-num a">3</span><p>Estirá el hilo sobre la regla y medí la distancia hasta la marca.</p></div>
+        <div class="tp-paso"><span class="tp-num a">4</span><p>Ese número en <strong>milímetros</strong> es tu circunferencia de dedo.</p></div>
+        <div class="tp-paso"><span class="tp-num a">5</span><p>Tocá el tab <strong>"📐 Tabla mm"</strong> para encontrar tu número de talla.</p></div>
+      </div>
+      <div class="tp-card az" style="margin-top:.85rem"><div class="tp-card-tit b">💡 Consejo importante</div><p>Medite a la <strong>tarde o noche</strong> — los dedos se hinchan con el calor. Si el nudillo es más grande que la base del dedo, medí ambos y avisanos.</p></div>
+    </div>
+    <div class="talla-panel" id="tpanel1">
+      <p style="font-size:.78rem;color:#9ca3af;margin:.85rem 0 .65rem">Tomá tu medida en mm y buscá tu número de talla:</p>
+      <div class="tp-tabla-wrap">
+        <div class="tp-tabla-hd"><span>Circunferencia (mm)</span><span>Nº de Talla</span></div>
+        <div class="tp-tabla-row"><span class="mm">44 mm</span><span class="tn">14</span></div>
+        <div class="tp-tabla-row"><span class="mm">45 mm</span><span class="tn">14,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">47 mm</span><span class="tn">15</span></div>
+        <div class="tp-tabla-row"><span class="mm">48 mm</span><span class="tn">15,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">50 mm</span><span class="tn">16</span></div>
+        <div class="tp-tabla-row"><span class="mm">51 mm</span><span class="tn">16,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">52 mm</span><span class="tn">17</span></div>
+        <div class="tp-tabla-row"><span class="mm">54 mm</span><span class="tn">17,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">55 mm</span><span class="tn">18</span></div>
+        <div class="tp-tabla-row"><span class="mm">57 mm</span><span class="tn">18,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">58 mm</span><span class="tn">19</span></div>
+        <div class="tp-tabla-row"><span class="mm">60 mm</span><span class="tn">19,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">62 mm</span><span class="tn">20</span></div>
+        <div class="tp-tabla-row"><span class="mm">63 mm</span><span class="tn">20,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">65 mm</span><span class="tn">21</span></div>
+        <div class="tp-tabla-row"><span class="mm">67 mm</span><span class="tn">21,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">68 mm</span><span class="tn">22</span></div>
+        <div class="tp-tabla-row"><span class="mm">70 mm</span><span class="tn">22,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">71 mm</span><span class="tn">23</span></div>
+        <div class="tp-tabla-row"><span class="mm">73 mm</span><span class="tn">23,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">75 mm</span><span class="tn">24</span></div>
+        <div class="tp-tabla-row"><span class="mm">76 mm</span><span class="tn">24,5</span></div>
+        <div class="tp-tabla-row"><span class="mm">78 mm</span><span class="tn">25</span></div>
+      </div>
+      <div class="tp-nota">Si tu medida queda entre dos valores, elegí siempre la talla más grande.</div>
+    </div>
+    <div class="talla-panel" id="tpanel2">
+      <div class="tp-card ve" style="margin-top:.85rem"><div class="tp-card-tit v">¿Cuándo usar este método?</div><p>Cuando ya tenés una alianza que te queda bien y querés saber el número exacto.</p></div>
+      <div class="tp-pasos">
+        <div class="tp-paso"><span class="tp-num v">1</span><p>Tomá la alianza que ya usás y te queda cómoda.</p></div>
+        <div class="tp-paso"><span class="tp-num v">2</span><p>Medí el <strong>diámetro interior</strong> — de borde a borde por el centro del hueco — con una regla.</p></div>
+        <div class="tp-paso"><span class="tp-num v">3</span><p>Multiplicá ese valor en mm por <strong>3,14</strong> (π) para obtener la circunferencia.</p></div>
+        <div class="tp-paso"><span class="tp-num v">4</span><p>Buscá esa circunferencia en el tab <strong>"📐 Tabla mm"</strong>.</p></div>
+        <div class="tp-paso"><span class="tp-num v">5</span><p>También podés traer la alianza al local y la medimos con el medidor oficial.</p></div>
+      </div>
+      <div class="tp-card gr" style="margin-top:.85rem">
+        <p style="font-weight:700;color:#d1d5db;margin-bottom:.5rem!important">🧮 Ejemplo rápido:</p>
+        <div class="tp-ejemplo"><div><span class="dim">Diámetro: </span><span style="color:#fff;font-weight:700">17 mm</span></div><div><span class="dim">17 × 3,14 = </span><span class="res">53 mm</span></div><div><span class="ok">→ Talla 17</span></div></div>
+      </div>
+    </div>
+    <div class="talla-footer">
+      <a id="tallaWaBtn" href="#" target="_blank" class="talla-wa-btn">💬 Ya sé mi talla — enviarla por WhatsApp</a>
+      <p class="talla-wa-sub">Se abre WhatsApp con tu talla y el modelo que elegiste</p>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── GUÍA DE TALLAS ──────────────────────────────────────────────────────────
+var _tCod = '', _tOp = '';
+function abrirGuiaTallas(cod, op) {
+  _tCod = cod; _tOp = op || '';
+  var nom = (typeof NOMBRE_PROD !== 'undefined') ? NOMBRE_PROD : (typeof NOMBRE !== 'undefined' ? NOMBRE : 'Alianza');
+  document.getElementById('tallaRef').textContent = '💍 Para: ' + nom + ' · Cód. ' + cod + (_tOp ? ' · ' + _tOp : '');
+  actualizarWaTalla('');
+  tallaTab(0);
+  document.getElementById('tallaModal').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+function cerrarTalla() {
+  document.getElementById('tallaModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+function tallaTab(i) {
+  document.querySelectorAll('.talla-tab').forEach(function(b,j){ b.classList.toggle('on', j===i); });
+  document.querySelectorAll('.talla-panel').forEach(function(p,j){ p.classList.toggle('on', j===i); });
+}
+function actualizarWaTalla(talla) {
+  var nom = (typeof NOMBRE_PROD !== 'undefined') ? NOMBRE_PROD : (typeof NOMBRE !== 'undefined' ? NOMBRE : 'Alianza');
+  var base = nom + ' · Cód. ' + _tCod + (_tOp ? ' · ' + _tOp : '');
+  var msg = talla
+    ? '¡Hola Eduardo! 💍\n\nMe tomé la medida y mi talla es: *' + talla + '*\n\n' + base + '\n\n¿Podés asesorarme?'
+    : '¡Hola Eduardo! 💍\n\nEstoy mirando esta alianza y me gustaría saber mi talla:\n\n' + base + '\n\n¿Podés ayudarme?';
+  document.getElementById('tallaWaBtn').href = 'https://wa.me/5492976235421?text=' + encodeURIComponent(msg);
+}
+document.getElementById('tallaModal').addEventListener('click', function(e){ if(e.target===this) cerrarTalla(); });
 </script>
 </body>
 </html>
