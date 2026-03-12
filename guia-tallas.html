@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo medir tu talla de alianza – Joyas Eduardo</title>
+<meta name="description" content="Guía paso a paso para medir la talla de tu dedo antes de comprar una alianza en Joyas Eduardo, Comodoro Rivadavia.">
+<style>
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{background:#111827;color:#f3f4f6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh}
+
+  .header{background:#1f2937;border-bottom:1px solid #374151;padding:16px 20px;position:sticky;top:0;z-index:10}
+  .header-inner{max-width:480px;margin:0 auto;display:flex;align-items:center;gap:12px}
+  .header-back{color:#9ca3af;text-decoration:none;font-size:18px}
+  .header-title{font-size:18px;font-weight:700;color:#fbbf24}
+  .header-sub{font-size:12px;color:#6b7280;margin-top:2px}
+
+  .container{max-width:480px;margin:0 auto;padding:16px}
+
+  /* Tabs */
+  .tabs{display:grid;grid-template-columns:1fr 1fr 1fr;border-bottom:1px solid #374151;margin-bottom:0}
+  .tab-btn{background:none;border:none;color:#9ca3af;font-size:11px;font-weight:700;padding:12px 4px;cursor:pointer;border-bottom:2px solid transparent;transition:.2s;text-align:center;line-height:1.3}
+  .tab-btn.active{color:#fbbf24;border-bottom-color:#fbbf24;background:rgba(251,191,36,.05)}
+  .tab-btn:hover:not(.active){color:#f3f4f6}
+
+  .tab-content{display:none;padding:20px 0}
+  .tab-content.active{display:block}
+
+  /* Cards */
+  .card{border-radius:12px;padding:16px;margin-bottom:12px}
+  .card-yellow{background:rgba(251,191,36,.08);border:1px solid rgba(251,191,36,.25)}
+  .card-blue{background:rgba(59,130,246,.08);border:1px solid rgba(59,130,246,.25)}
+  .card-green{background:rgba(34,197,94,.08);border:1px solid rgba(34,197,94,.25)}
+  .card-gray{background:#1f2937;border:1px solid #374151}
+  .card-dark{background:#111827;border-radius:8px;padding:12px;margin-top:8px}
+
+  .card-title{font-weight:700;margin-bottom:4px}
+  .card-title.yellow{color:#fbbf24}
+  .card-title.blue{color:#93c5fd}
+  .card-title.green{color:#86efac}
+  .card p{font-size:14px;color:#d1d5db;line-height:1.5}
+
+  /* Pasos */
+  .steps{display:flex;flex-direction:column;gap:12px}
+  .step{display:flex;gap:12px;align-items:flex-start}
+  .step-num{width:24px;height:24px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:2px}
+  .step-num.yellow{background:#f59e0b;color:#000}
+  .step-num.green{background:#22c55e;color:#000}
+  .step p{font-size:14px;color:#e5e7eb;line-height:1.5}
+
+  /* Tabla */
+  .table-wrap{border-radius:12px;overflow:hidden;border:1px solid #374151}
+  .table-header{display:grid;grid-template-columns:1fr 1fr;background:#374151;padding:10px 16px}
+  .table-header span{font-size:11px;font-weight:700;color:#fbbf24}
+  .table-header span:last-child{text-align:right}
+  .table-row{display:grid;grid-template-columns:1fr 1fr;padding:9px 16px;border-top:1px solid rgba(55,65,81,.6)}
+  .table-row:nth-child(even){background:rgba(31,41,55,.4)}
+  .table-row .mm{font-family:monospace;font-size:14px;color:#e5e7eb}
+  .table-row .talla{font-size:14px;font-weight:700;color:#fcd34d;text-align:right}
+  .table-note{background:#1f2937;border-radius:8px;padding:10px;text-align:center;font-size:12px;color:#9ca3af;margin-top:8px}
+
+  /* Ejemplo */
+  .ejemplo{font-family:monospace;font-size:14px;text-align:center;background:#111827;border-radius:8px;padding:12px;line-height:2}
+  .ejemplo .dim{color:#9ca3af}
+  .ejemplo .val{color:#fff;font-weight:700}
+  .ejemplo .result{color:#fcd34d;font-weight:700}
+  .ejemplo .ok{color:#4ade80;font-weight:700}
+
+  /* CTA WhatsApp */
+  .cta-wa{display:flex;align-items:center;justify-content:center;gap:8px;background:#16a34a;color:#fff;font-weight:700;font-size:15px;padding:14px;border-radius:12px;text-decoration:none;margin-top:4px;transition:.2s}
+  .cta-wa:hover{background:#15803d}
+
+  .wa-inline{color:#4ade80;font-weight:700;text-decoration:underline}
+
+  footer{text-align:center;padding:24px 20px;color:#4b5563;font-size:12px}
+  footer a{color:#6b7280}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-inner">
+    <a href="https://joyaseduardo.github.io/Cat-logo-Joyas-Eduardo/" class="header-back">←</a>
+    <div>
+      <div class="header-title">📏 Cómo medir tu talla</div>
+      <div class="header-sub">Tres métodos — elegí el que tengas a mano</div>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="tabs">
+    <button class="tab-btn active" onclick="showTab(0)">📏 Hilo / Papel</button>
+    <button class="tab-btn" onclick="showTab(1)">📐 Tabla mm</button>
+    <button class="tab-btn" onclick="showTab(2)">💍 Con alianza</button>
+  </div>
+
+  <!-- TAB 0 — Hilo / Papel -->
+  <div class="tab-content active" id="tab0">
+    <div class="card card-yellow">
+      <div class="card-title yellow">¿Qué necesitás?</div>
+      <p>Un hilo, tira de papel o cinta métrica · Una regla</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num yellow">1</div>
+        <p>Enrollá el hilo (o una tira de papel) alrededor del dedo donde vas a usar la alianza.</p>
+      </div>
+      <div class="step">
+        <div class="step-num yellow">2</div>
+        <p>Marcá con una lapicera el punto donde se cruzan los extremos.</p>
+      </div>
+      <div class="step">
+        <div class="step-num yellow">3</div>
+        <p>Estirá el hilo sobre la regla y medí la distancia hasta la marca.</p>
+      </div>
+      <div class="step">
+        <div class="step-num yellow">4</div>
+        <p>Ese número en <strong>milímetros</strong> es tu circunferencia de dedo.</p>
+      </div>
+      <div class="step">
+        <div class="step-num yellow">5</div>
+        <p>Tocá el tab <strong>"📐 Tabla mm"</strong> para encontrar tu número de talla.</p>
+      </div>
+    </div>
+
+    <div class="card card-blue" style="margin-top:16px">
+      <div class="card-title blue">💡 Consejo importante</div>
+      <p>Medite a la <strong>tarde o noche</strong> — los dedos se hinchan con el calor del día. Si el nudillo es más grande que la base del dedo, medí ambos y avisanos.</p>
+    </div>
+  </div>
+
+  <!-- TAB 1 — Tabla -->
+  <div class="tab-content" id="tab1">
+    <p style="font-size:14px;color:#9ca3af;margin-bottom:12px">Tomá tu medida en mm y buscá tu número de talla:</p>
+    <div class="table-wrap">
+      <div class="table-header">
+        <span>Circunferencia (mm)</span>
+        <span>Nº de Talla</span>
+      </div>
+      <div class="table-row"><span class="mm">44 mm</span><span class="talla">14</span></div>
+      <div class="table-row"><span class="mm">45 mm</span><span class="talla">14,5</span></div>
+      <div class="table-row"><span class="mm">47 mm</span><span class="talla">15</span></div>
+      <div class="table-row"><span class="mm">48 mm</span><span class="talla">15,5</span></div>
+      <div class="table-row"><span class="mm">50 mm</span><span class="talla">16</span></div>
+      <div class="table-row"><span class="mm">51 mm</span><span class="talla">16,5</span></div>
+      <div class="table-row"><span class="mm">52 mm</span><span class="talla">17</span></div>
+      <div class="table-row"><span class="mm">54 mm</span><span class="talla">17,5</span></div>
+      <div class="table-row"><span class="mm">55 mm</span><span class="talla">18</span></div>
+      <div class="table-row"><span class="mm">57 mm</span><span class="talla">18,5</span></div>
+      <div class="table-row"><span class="mm">58 mm</span><span class="talla">19</span></div>
+      <div class="table-row"><span class="mm">60 mm</span><span class="talla">19,5</span></div>
+      <div class="table-row"><span class="mm">62 mm</span><span class="talla">20</span></div>
+      <div class="table-row"><span class="mm">63 mm</span><span class="talla">20,5</span></div>
+      <div class="table-row"><span class="mm">65 mm</span><span class="talla">21</span></div>
+      <div class="table-row"><span class="mm">67 mm</span><span class="talla">21,5</span></div>
+      <div class="table-row"><span class="mm">68 mm</span><span class="talla">22</span></div>
+      <div class="table-row"><span class="mm">70 mm</span><span class="talla">22,5</span></div>
+      <div class="table-row"><span class="mm">71 mm</span><span class="talla">23</span></div>
+      <div class="table-row"><span class="mm">73 mm</span><span class="talla">23,5</span></div>
+      <div class="table-row"><span class="mm">75 mm</span><span class="talla">24</span></div>
+      <div class="table-row"><span class="mm">76 mm</span><span class="talla">24,5</span></div>
+      <div class="table-row"><span class="mm">78 mm</span><span class="talla">25</span></div>
+    </div>
+    <div class="table-note">Si tu medida queda entre dos valores, elegí siempre la talla más grande.</div>
+  </div>
+
+  <!-- TAB 2 — Con alianza -->
+  <div class="tab-content" id="tab2">
+    <div class="card card-green">
+      <div class="card-title green">¿Cuándo usar este método?</div>
+      <p>Cuando ya tenés una alianza que te queda bien y querés saber el número exacto.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num green">1</div>
+        <p>Tomá la alianza que ya usás y te queda cómoda.</p>
+      </div>
+      <div class="step">
+        <div class="step-num green">2</div>
+        <p>Medí el <strong>diámetro interior</strong> — de borde a borde por el centro del hueco — con una regla.</p>
+      </div>
+      <div class="step">
+        <div class="step-num green">3</div>
+        <p>Multiplicá ese valor en mm por <strong>3.14</strong> (π) para obtener la circunferencia.</p>
+      </div>
+      <div class="step">
+        <div class="step-num green">4</div>
+        <p>Buscá esa circunferencia en el tab <strong>"📐 Tabla mm"</strong>.</p>
+      </div>
+      <div class="step">
+        <div class="step-num green">5</div>
+        <p>También podés traer la alianza al local y la medimos con el medidor oficial.</p>
+      </div>
+    </div>
+
+    <div class="card card-gray" style="margin-top:16px">
+      <p style="font-weight:700;color:#d1d5db;margin-bottom:8px">🧮 Ejemplo rápido:</p>
+      <div class="ejemplo">
+        <div><span class="dim">Diámetro: </span><span class="val">17 mm</span></div>
+        <div><span class="dim">17 × 3.14 = </span><span class="result">53 mm</span></div>
+        <div><span class="ok">→ Talla 17</span></div>
+      </div>
+    </div>
+
+    <div class="card card-yellow" style="margin-top:12px">
+      <p style="font-size:14px;color:#d1d5db">
+        <strong style="color:#fbbf24">¿Tenés dudas?</strong>
+        Mandanos foto del dedo con la alianza puesta y lo calculamos nosotros.
+        <a href="https://wa.me/5492976235421?text=Hola%20Eduardo%2C%20quiero%20saber%20mi%20talla%20de%20alianza%20%F0%9F%92%8D" target="_blank" class="wa-inline">📲 Escribinos por WhatsApp</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- CTA fijo -->
+  <a href="https://wa.me/5492976235421?text=Hola%20Eduardo%2C%20tengo%20una%20consulta%20sobre%20la%20talla%20de%20mi%20alianza%20%F0%9F%92%8D" target="_blank" class="cta-wa" style="margin-top:20px">
+    💬 Consultar talla por WhatsApp
+  </a>
+
+</div>
+
+<footer>
+  <p>💍 Joyas Eduardo · Comodoro Rivadavia, Patagonia</p>
+  <p style="margin-top:4px"><a href="https://joyaseduardo.github.io/Cat-logo-Joyas-Eduardo/">← Volver al catálogo</a></p>
+</footer>
+
+<script>
+function showTab(i) {
+  document.querySelectorAll('.tab-btn').forEach((b,j) => b.classList.toggle('active', i===j));
+  document.querySelectorAll('.tab-content').forEach((c,j) => c.classList.toggle('active', i===j));
+}
+</script>
+</body>
+</html>
