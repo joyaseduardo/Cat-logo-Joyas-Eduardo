@@ -960,13 +960,17 @@ let estrellasSel = 0;
 // ── Chips toggle ──────────────────────────────
 document.querySelectorAll('.chips').forEach(group => {
   group.querySelectorAll('.chip').forEach(chip => {
-    chip.addEventListener('click', () => {
-      const inp = chip.querySelector('input');
+    const inp = chip.querySelector('input');
+    // Usar 'change' en el input — así el browser maneja el toggle del checkbox/radio
+    // y nosotros solo sincronizamos la clase visual
+    inp.addEventListener('change', () => {
       if (inp.type === 'radio') {
+        // Desmarcar todos los del grupo, marcar solo el seleccionado
         group.querySelectorAll('.chip').forEach(c => c.classList.remove('sel'));
         chip.classList.add('sel');
       } else {
-        chip.classList.toggle('sel');
+        // Checkbox: clase = estado del input
+        chip.classList.toggle('sel', inp.checked);
       }
     });
   });
@@ -1031,7 +1035,7 @@ function cambiarSec(dir) {
 
 // ── Leer chips seleccionados ─────────────────
 function leerChips(id) {
-  return Array.from(document.querySelectorAll('#' + id + ' .chip.sel input'))
+  return Array.from(document.querySelectorAll('#' + id + ' input:checked'))
     .map(i => i.value).join(', ') || '—';
 }
 
