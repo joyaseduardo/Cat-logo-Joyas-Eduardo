@@ -501,33 +501,83 @@
     margin-bottom: 10px;
   }
 
+  @keyframes pulsarVerde {
+    0%   { box-shadow: 0 0 0 0 rgba(37,211,102,0.7), 0 4px 24px rgba(37,211,102,0.3); transform: scale(1); }
+    50%  { box-shadow: 0 0 0 14px rgba(37,211,102,0), 0 4px 24px rgba(37,211,102,0.3); transform: scale(1.02); }
+    100% { box-shadow: 0 0 0 0 rgba(37,211,102,0), 0 4px 24px rgba(37,211,102,0.3); transform: scale(1); }
+  }
+
   .btn-wa {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 12px;
+    gap: 14px;
     width: 100%;
-    padding: 20px;
+    padding: 22px 20px;
     background: linear-gradient(135deg, #1fbe5e, #25D366);
     border: none;
-    border-radius: 14px;
+    border-radius: 16px;
     color: #fff;
     font-family: 'Jost', sans-serif;
-    font-size: 17px;
-    font-weight: 500;
-    letter-spacing: 0.5px;
+    font-size: 19px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
     cursor: pointer;
     text-decoration: none;
     margin-bottom: 14px;
     box-shadow: 0 4px 24px rgba(37,211,102,0.3);
+    animation: pulsarVerde 1.8s ease-in-out infinite;
     transition: all 0.3s ease;
   }
 
-  .btn-wa:hover { opacity: 0.9; transform: translateY(-1px); box-shadow: 0 6px 30px rgba(37,211,102,0.4); }
+  .btn-wa:hover { 
+    animation: none;
+    opacity: 0.92; 
+    transform: scale(1.03); 
+    box-shadow: 0 8px 36px rgba(37,211,102,0.5); 
+  }
 
-  .btn-wa-icon { font-size: 26px; }
+  .btn-wa-icon { font-size: 32px; }
 
-  .btn-wa-texto { line-height: 1.3; }
+  .btn-wa-texto { line-height: 1.4; text-align: left; }
+  
+  .btn-wa-sub { display: block; font-size: 12px; font-weight: 300; opacity: 0.85; margin-top: 2px; }
+
+  .paso-final {
+    background: linear-gradient(135deg, rgba(37,211,102,0.15), rgba(37,211,102,0.05));
+    border: 2px solid rgba(37,211,102,0.5);
+    border-radius: 16px;
+    padding: 20px 18px;
+    text-align: center;
+    margin-bottom: 16px;
+  }
+
+  .paso-final-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background: #25D366;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+
+  .paso-final-titulo {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 22px;
+    color: #fff;
+    margin-bottom: 6px;
+  }
+
+  .paso-final-desc {
+    font-size: 14px;
+    color: rgba(255,255,255,0.7);
+    line-height: 1.5;
+  }
 
   .btn-copiar:hover { opacity: 0.85; }
 
@@ -800,19 +850,19 @@
     </div>
 
     <div class="campo">
-      <label>¿Cuánto solés invertir en una joya?</label>
+      <label>¿Cuánto invertís habitualmente en una joya? (pesos argentinos)</label>
       <div class="escala" id="escala-presupuesto">
-        <div class="escala-item" data-val="Hasta $50.000">
-          <span class="icon">💸</span>Hasta<br>$50k
+        <div class="escala-item" data-val="Hasta $100.000">
+          <span class="icon">💸</span>Hasta<br>$100.000
         </div>
-        <div class="escala-item" data-val="$50.000 - $150.000">
-          <span class="icon">💰</span>$50k -<br>$150k
+        <div class="escala-item" data-val="$100.000 - $500.000">
+          <span class="icon">💰</span>$500k -<br>$1,5M
         </div>
-        <div class="escala-item" data-val="$150.000 - $400.000">
-          <span class="icon">💎</span>$150k -<br>$400k
+        <div class="escala-item" data-val="$1.500.000 - $4.000.000">
+          <span class="icon">💎</span>$1,5M -<br>$4M
         </div>
-        <div class="escala-item" data-val="Más de $400.000">
-          <span class="icon">👑</span>+$400k
+        <div class="escala-item" data-val="Más de $4.000.000">
+          <span class="icon">👑</span>+$4M
         </div>
       </div>
     </div>
@@ -920,27 +970,35 @@
       <p class="resultado-sub">Tu perfil está completo. Eduardo lo va a amar 💛</p>
     </div>
 
-    <div class="ornamento">· · ·</div>
-
-    <div class="nota-instruccion" style="font-size:15px; padding:18px 16px; line-height:1.8;">
-      📱 <strong>Tocá el botón verde</strong> de abajo<br>
-      y mandanos tu perfil por WhatsApp.<br>
-      <span style="font-size:12px; opacity:0.7;">¡Solo un toque y listo! Eduardo lo recibe al instante.</span>
+    <!-- PASO FINAL — botón WA grande e imposible de ignorar -->
+    <div class="paso-final">
+      <div class="paso-final-num">→</div>
+      <div class="paso-final-titulo">⚠️ Último paso obligatorio</div>
+      <div class="paso-final-desc">
+        Tocá el botón verde para enviarle tu perfil a Eduardo.<br>
+        <strong style="color:#25D366;">Sin este paso, no recibe nada.</strong>
+      </div>
     </div>
 
-    <!-- Resumen visual -->
+    <a class="btn-wa" id="btnWhatsapp" href="#" target="_blank">
+      <span class="btn-wa-icon">💬</span>
+      <span class="btn-wa-texto">
+        Enviar mi perfil a Eduardo
+        <span class="btn-wa-sub">Tocá acá — abre WhatsApp directo</span>
+      </span>
+    </a>
+
+    <div class="ornamento">· · ·</div>
+
+    <!-- Resumen visual (secundario) -->
     <div class="resumen-card" id="resumenCard"></div>
 
-    <!-- Texto copiable para la app -->
+    <!-- Texto copiable (solo si no puede usar WA) -->
     <div class="resumen-card">
-      <div class="resumen-card-header">📋 Alternativa: texto para copiar manualmente</div>
+      <div class="resumen-card-header">📋 ¿No podés usar WhatsApp? Copiá el texto</div>
       <div class="resumen-card-body">
         <div class="copia-box" id="textoCopiable"></div>
-        <a class="btn-wa" id="btnWhatsapp" href="#" target="_blank">
-          <span class="btn-wa-icon">💬</span>
-          <span class="btn-wa-texto">Enviar a Eduardo por WhatsApp</span>
-        </a>
-        <button class="btn-copiar" onclick="copiarTexto()">📋 Copiar texto (alternativa)</button>
+        <button class="btn-copiar" onclick="copiarTexto()">📋 Copiar texto</button>
         <button class="btn-nueva" onclick="reiniciar()">↺ Nueva encuesta</button>
       </div>
     </div>
