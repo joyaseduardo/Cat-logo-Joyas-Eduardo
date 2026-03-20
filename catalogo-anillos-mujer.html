@@ -177,7 +177,7 @@ window.onload = function() {
           + "<div class='card-nombre'>" + NOMBRE + "</div>"
           + "<div class='btns'>"
           + "<button class='btn btn-wa' onclick='waMsg(\"consultar\",\"" + cod + "\")'>💬 Consultar</button>"
-          + "<button class='btn btn-cart' onclick='agregarAlCarrito(\"" + cod + "\",null,CARPETA+'/'+cod+'.jpg','')'>🛒 Agregar</button>"
+          + "<button class='btn btn-cart' data-cod='" + cod + "' onclick='_addCart(this)'>🛒 Agregar</button>"
           + "<button class='btn btn-talla' onclick='waMsg(\"talla\",\"" + cod + "\")'>📏 Talla</button>"
           + "</div>"
           + "<div class='btns-full'>"
@@ -403,6 +403,11 @@ function toggleCart() {
   document.getElementById('cartPanel').classList.toggle('open', _cartOpen);
 }
 
+function _addCart(btn) {
+  var cod = btn.getAttribute('data-cod');
+  agregarAlCarrito(cod, null, CARPETA + '/' + cod + '.jpg', '');
+}
+
 function agregarAlCarrito(cod, nombre, imgSrc, talla) {
   var key = cod + '|' + (talla||'');
   var existe = _carrito.findIndex(function(i){ return i.key === key; });
@@ -439,7 +444,14 @@ function guardarCarrito() {
 function cargarCarrito() {
   try {
     var saved = localStorage.getItem('joyas_carrito');
-    if (saved) _carrito = JSON.parse(saved);
+    if (saved) {
+      var previo = JSON.parse(saved);
+      // Fusionar: agregar items del localStorage que no estén ya en _carrito
+      previo.forEach(function(item) {
+        var existe = _carrito.findIndex(function(i){ return i.key === item.key; });
+        if (existe < 0) _carrito.push(item);
+      });
+    }
   } catch(e) {}
 }
 window.addEventListener('load', function() { cargarCarrito(); renderCarrito(); });

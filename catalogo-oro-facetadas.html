@@ -580,7 +580,14 @@ function guardarCarrito() {
 function cargarCarrito() {
   try {
     var saved = localStorage.getItem('joyas_carrito');
-    if (saved) _carrito = JSON.parse(saved);
+    if (saved) {
+      var previo = JSON.parse(saved);
+      // Fusionar: agregar items del localStorage que no estén ya en _carrito
+      previo.forEach(function(item) {
+        var existe = _carrito.findIndex(function(i){ return i.key === item.key; });
+        if (existe < 0) _carrito.push(item);
+      });
+    }
   } catch(e) {}
 }
 window.addEventListener('load', function() { cargarCarrito(); renderCarrito(); });
