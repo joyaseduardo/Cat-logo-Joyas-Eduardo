@@ -579,7 +579,8 @@ function cargarCarrito() {
     }
   } catch(e) {}
 }
-window.addEventListener('load', function() { cargarCarrito(); renderCarrito(); });
+// Cargar carrito cuando el DOM esté listo
+setTimeout(function(){ cargarCarrito(); renderCarrito(); }, 0);
 
 
 function renderCarrito() {
