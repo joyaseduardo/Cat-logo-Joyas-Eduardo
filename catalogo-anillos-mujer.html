@@ -404,18 +404,21 @@ function toggleCart() {
 }
 
 function agregarAlCarrito(cod, nombre, imgSrc, talla) {
-  var existe = _carrito.findIndex(function(i){ return i.cod === cod && i.talla === (talla||''); });
+  // Cada código es único — siempre agregar como item nuevo
+  var key = cod + '|' + (talla||'');
+  var existe = _carrito.findIndex(function(i){ return i.key === key; });
   if (existe >= 0) {
     _carrito[existe].qty++;
   } else {
-    _carrito.push({ cod: cod, nombre: nombre || (NOMBRE + ' ' + cod), img: imgSrc || '', talla: talla || '', qty: 1 });
+    _carrito.push({ key: key, cod: cod, nombre: nombre || cod, img: imgSrc || '', talla: talla || '', qty: 1 });
   }
   renderCarrito();
   mostrarToast('✅ ' + cod + ' agregado al pedido');
 }
 
 function quitarDelCarrito(cod, talla) {
-  _carrito = _carrito.filter(function(i){ return !(i.cod === cod && i.talla === (talla||'')); });
+  var key = cod + '|' + (talla||'');
+  _carrito = _carrito.filter(function(i){ return i.key !== key; });
   renderCarrito();
 }
 
