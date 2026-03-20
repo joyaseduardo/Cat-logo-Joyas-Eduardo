@@ -545,14 +545,16 @@ function toggleCart() {
 }
 
 function agregarAlCarrito(cod, nombre, imgSrc, talla) {
-  // Cada código es único — siempre agregar como item nuevo
   var key = cod + '|' + (talla||'');
   var existe = _carrito.findIndex(function(i){ return i.key === key; });
+  var cat = (typeof CAT !== 'undefined') ? CAT : (typeof NOMBRE_PROD !== 'undefined') ? NOMBRE_PROD : (typeof NOMBRE !== 'undefined') ? NOMBRE : '';
+  var nomFinal = nombre || (cat ? cat + ' ' + cod : cod);
   if (existe >= 0) {
     _carrito[existe].qty++;
   } else {
-    _carrito.push({ key: key, cod: cod, nombre: nombre || cod, img: imgSrc || '', talla: talla || '', qty: 1 });
+    _carrito.push({ key: key, cod: cod, nombre: nomFinal, img: imgSrc || '', talla: talla || '', qty: 1 });
   }
+  guardarCarrito();
   renderCarrito();
   mostrarToast('✅ ' + cod + ' agregado al pedido');
 }
@@ -560,6 +562,7 @@ function agregarAlCarrito(cod, nombre, imgSrc, talla) {
 function quitarDelCarrito(cod, talla) {
   var key = cod + '|' + (talla||'');
   _carrito = _carrito.filter(function(i){ return i.key !== key; });
+  guardarCarrito();
   renderCarrito();
 }
 
@@ -567,8 +570,21 @@ function vaciarCarrito() {
   if (_carrito.length === 0) return;
   if (!confirm('¿Vaciar todo el pedido?')) return;
   _carrito = [];
+  guardarCarrito();
   renderCarrito();
 }
+// ── PERSISTENCIA CARRITO EN LOCALSTORAGE ──────────────────────────────────
+function guardarCarrito() {
+  try { localStorage.setItem('joyas_carrito', JSON.stringify(_carrito)); } catch(e) {}
+}
+function cargarCarrito() {
+  try {
+    var saved = localStorage.getItem('joyas_carrito');
+    if (saved) _carrito = JSON.parse(saved);
+  } catch(e) {}
+}
+window.addEventListener('load', function() { cargarCarrito(); renderCarrito(); });
+
 
 function renderCarrito() {
   var badge = document.getElementById('cartBadge');
@@ -601,12 +617,12 @@ function renderCarrito() {
 
 function enviarPedidoWA() {
   if (_carrito.length === 0) return alert('Tu pedido está vacío');
-  var cat = (typeof CAT !== 'undefined') ? CAT : 'Catálogo';
+  // Agrupar por catálogo
   var lineas = _carrito.map(function(i){
     return '• ' + i.cod + (i.talla ? ' (Talla ' + i.talla + ')' : '') + ' — ' + i.nombre;
   });
   var msg = '¡Hola Eduardo! 💍\n\n' +
-    'Quiero consultar sobre los siguientes productos de *' + cat + '*:\n\n' +
+    'Quiero consultar sobre los siguientes productos:\n\n' +
     lineas.join('\n') +
     '\n\n¿Están disponibles y cuál es el precio?';
   window.open('https://wa.me/' + WA + '?text=' + encodeURIComponent(msg), '_blank');
