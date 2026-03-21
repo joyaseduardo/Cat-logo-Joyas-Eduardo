@@ -884,77 +884,77 @@
 
   <div class="categorias-grid" id="categoriasGrid">
 
-    <a href="catalogo-oro-lisas.html" class="categoria-card">
+    <a href="catalogo-oro-lisas.html" class="categoria-card" data-nombre="oro 18k lisas lisas oro">
       <div class="emoji">💍</div>
       <h3>Oro 18k Lisas</h3>
       <p>10 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-oro-facetadas.html" class="categoria-card">
+    <a href="catalogo-oro-facetadas.html" class="categoria-card" data-nombre="oro 18k facetadas facetadas oro">
       <div class="emoji">✨</div>
       <h3>Oro 18k Facetadas</h3>
       <p>74 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-oro-especiales.html" class="categoria-card">
+    <a href="catalogo-oro-especiales.html" class="categoria-card" data-nombre="oro 18k especiales especiales oro">
       <div class="emoji">⭐</div>
       <h3>Oro 18k Especiales</h3>
       <p>79 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-oro-piedras.html" class="categoria-card">
+    <a href="catalogo-oro-piedras.html" class="categoria-card" data-nombre="oro 18k con piedras piedras oro">
       <div class="emoji">💎</div>
       <h3>Oro 18k con Piedras</h3>
       <p>24 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-oro-esmaltadas.html" class="categoria-card">
+    <a href="catalogo-oro-esmaltadas.html" class="categoria-card" data-nombre="oro 18k esmaltadas esmaltadas oro esmalte">
       <div class="emoji">🎨</div>
       <h3>Oro 18k Esmaltadas</h3>
       <p>3 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-anillos-mujer.html" class="categoria-card">
+    <a href="catalogo-anillos-mujer.html" class="categoria-card" data-nombre="anillos oro mujer anillo mujer oro">
       <div class="emoji">💍</div>
       <h3>Anillos Oro Mujer</h3>
       <p>73 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-plata-oro.html" class="categoria-card">
+    <a href="catalogo-plata-oro.html" class="categoria-card" data-nombre="plata y oro 18k plata oro combinada">
       <div class="emoji">⚜️</div>
       <h3>Plata y Oro 18k</h3>
       <p>19 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-plata-double.html" class="categoria-card">
+    <a href="catalogo-plata-double.html" class="categoria-card" data-nombre="plata oro double doble doublé bañada dorado">
       <div class="emoji">🎨</div>
       <h3>Plata Oro Doublé</h3>
       <p>59 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-plata-esmaltada.html" class="categoria-card">
+    <a href="catalogo-plata-esmaltada.html" class="categoria-card" data-nombre="plata esmaltada esmalte color plata">
       <div class="emoji">🌈</div>
       <h3>Plata Esmaltada</h3>
       <p>4 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-plata-empavonada.html" class="categoria-card">
+    <a href="catalogo-plata-empavonada.html" class="categoria-card" data-nombre="plata empavonada negra pavonada oscura">
       <div class="emoji">⚫</div>
       <h3>Plata Empavonada</h3>
       <p>2 modelos</p>
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-plata-piedras.html" class="categoria-card">
+    <a href="catalogo-plata-piedras.html" class="categoria-card" data-nombre="plata con piedras piedras plata brillantes">
       <div class="emoji">💎</div>
       <h3>Plata con Piedras</h3>
       <p>20 modelos</p>
@@ -1440,15 +1440,18 @@ function filtrarAlianzas(q) {
   var grid = document.getElementById('categoriasGrid');
   var encontrados = 0;
 
-  // Mostrar/ocultar botón limpiar
   if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
 
-  // Eliminar mensaje anterior de sin resultados
   var sinRes = document.getElementById('sinResultadosAlianzas');
   if (sinRes) sinRes.remove();
 
   cards.forEach(function(card) {
-    var texto = card.innerText.toLowerCase();
+    // Usar data-nombre + h3 textContent para búsqueda robusta
+    var nombre = (card.getAttribute('data-nombre') || '').toLowerCase();
+    var h3 = card.querySelector('h3');
+    var textoH3 = h3 ? h3.textContent.toLowerCase() : '';
+    var texto = nombre + ' ' + textoH3;
+
     if (!query || texto.indexOf(query) > -1) {
       card.classList.remove('oculta');
       encontrados++;
