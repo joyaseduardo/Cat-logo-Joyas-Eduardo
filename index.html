@@ -1433,28 +1433,53 @@ function enviarPedido() {
 }
 
 // BUSCADOR ALIANZAS
+var BUSQUEDA_CATS = {
+  'catalogo-oro-lisas.html':       'oro lisas lisa liso simple 18k',
+  'catalogo-oro-facetadas.html':   'oro facetadas facetada 18k',
+  'catalogo-oro-especiales.html':  'oro especiales especial 18k',
+  'catalogo-oro-piedras.html':     'oro piedras piedra brillante 18k con',
+  'catalogo-oro-esmaltadas.html':  'oro esmaltadas esmaltada esmalte color 18k',
+  'catalogo-anillos-mujer.html':   'anillos anillo mujer femenino oro 18k',
+  'catalogo-plata-oro.html':       'plata oro combinada combinado bicolor 18k',
+  'catalogo-plata-double.html':    'plata double doble doublé bañada dorado',
+  'catalogo-plata-esmaltada.html': 'plata esmaltada esmalte color',
+  'catalogo-plata-empavonada.html':'plata empavonada negra negro oscura pavonada',
+  'catalogo-plata-piedras.html':   'plata piedras piedra brillante con'
+};
+
 function filtrarAlianzas(q) {
   var query = (q || '').toLowerCase().trim();
-  var cards = document.querySelectorAll('#categoriasGrid .categoria-card');
-  var clearBtn = document.getElementById('clearAlianzas');
   var grid = document.getElementById('categoriasGrid');
-  var encontrados = 0;
+  var clearBtn = document.getElementById('clearAlianzas');
+  if (!grid) return;
 
   if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
 
   var sinRes = document.getElementById('sinResultadosAlianzas');
   if (sinRes) sinRes.remove();
 
-  cards.forEach(function(card) {
+  var cards = grid.querySelectorAll('.categoria-card');
+  var encontrados = 0;
+
+  for (var i = 0; i < cards.length; i++) {
+    var card = cards[i];
+
     if (!query) {
       card.style.display = '';
       encontrados++;
-      return;
+      continue;
     }
-    var textoBusqueda = [
-      card.getAttribute('data-nombre') || '',
-      card.textContent || ''
-    ].join(' ').toLowerCase();
+
+    // Obtener href de la tarjeta y extraer solo el nombre del archivo
+    var href = card.getAttribute('href') || '';
+    var archivoHref = href.split('/').pop(); // solo "catalogo-xxx.html"
+
+    // Texto de búsqueda: mapa hardcodeado + data-nombre + h3
+    var terminos = BUSQUEDA_CATS[archivoHref] || '';
+    var dataNombre = card.getAttribute('data-nombre') || '';
+    var h3El = card.querySelector('h3');
+    var h3Texto = h3El ? h3El.textContent : '';
+    var textoBusqueda = (terminos + ' ' + dataNombre + ' ' + h3Texto).toLowerCase();
 
     if (textoBusqueda.indexOf(query) > -1) {
       card.style.display = '';
@@ -1462,7 +1487,7 @@ function filtrarAlianzas(q) {
     } else {
       card.style.display = 'none';
     }
-  });
+  }
 
   if (encontrados === 0 && query) {
     var msg = document.createElement('div');
