@@ -1434,17 +1434,65 @@ function enviarPedido() {
 
 // BUSCADOR ALIANZAS
 var BUSQUEDA_CATS = {
-  'catalogo-oro-lisas.html':       'oro lisas lisa liso simple 18k',
-  'catalogo-oro-facetadas.html':   'oro facetadas facetada 18k',
-  'catalogo-oro-especiales.html':  'oro especiales especial 18k',
-  'catalogo-oro-piedras.html':     'oro piedras piedra brillante 18k con',
-  'catalogo-oro-esmaltadas.html':  'oro esmaltadas esmaltada esmalte color 18k',
-  'catalogo-anillos-mujer.html':   'anillos anillo mujer femenino oro 18k',
-  'catalogo-plata-oro.html':       'plata oro combinada combinado bicolor 18k',
-  'catalogo-plata-double.html':    'plata double doble doublé bañada dorado',
-  'catalogo-plata-esmaltada.html': 'plata esmaltada esmalte color',
-  'catalogo-plata-empavonada.html':'plata empavonada negra negro oscura pavonada',
-  'catalogo-plata-piedras.html':   'plata piedras piedra brillante con'
+  'catalogo-oro-lisas.html':
+    'oro lisas lisa liso simple 18k ' +
+    '3110 3120 3125 3130 3135 3140 3145 3150 3160 3170',
+
+  'catalogo-oro-facetadas.html':
+    'oro facetadas facetada 18k ' +
+    '1000 1010 1020 1030 1040 1050 1060 1070 ' +
+    '1726 1727 1728 1729 1731 1732 1733 1734 1735 1736 1737 1738 1739 1740 1741 1742 1743 ' +
+    '2050 2060 2070 2080 2081 2090 2110 2120 2130 2140 2150 2160 2170 2180 2190 2200 ' +
+    '4170 4180 4190 4200 4210 ' +
+    '5220 5230 5240 5250 5260 ' +
+    '6260 6270 6280 6290 6300 6310 6320 ' +
+    '7330 7340 7350 7360 7370 7390 ' +
+    '8380 8400 8410 8420 8430 ' +
+    '9210 9220 9230 9240 9250',
+
+  'catalogo-oro-especiales.html':
+    'oro especiales especial 18k ' +
+    '1602 1603 1604 1605 1606 1607 1705 ' +
+    '2939 2949 2951 2952 ' +
+    '3010 3012 3013 3014 3015 3016 3017 3018 3019 3020 3021 3022 3023 3024 3025 3029 3030 3034 ' +
+    '3040 3041 3042 3043 3044 3045 3046 3047 3048 3049 3050 ' +
+    '3080 3081 3086 3087 3088 3089 3090 3091 3092 3093 3094 ' +
+    '3416 3422 3423 3424 3425 3426 3427 3428 3429 3430 3431 3432 ' +
+    '5000 5001 5002 ' +
+    '6726 6727 6728 6729 6730 6731 6732 ' +
+    '7827 7828 7829 7830 7831 7832',
+
+  'catalogo-oro-piedras.html':
+    'oro piedras piedra brillante 18k con ' +
+    '5003 5004 5005 5006 5007 5008 5009 5010 5011 5012 ' +
+    '5013 5014 5015 5016 5017 5018 5019 5020 5021 5022 5023 5024 5025 5026',
+
+  'catalogo-oro-esmaltadas.html':
+    'oro esmaltadas esmaltada esmalte color 18k ' +
+    '2001 2002 2003 2004',
+
+  'catalogo-anillos-mujer.html':
+    'anillos anillo mujer femenino oro 18k ' +
+    '8501 8502 8503 8504 8505 8506 8507 8508 8509 8510 ' +
+    '8511 8512 8513 8514 8515 8516 8517 8518 8519 8520 ' +
+    '8521 8522 8523 8524 8525 8526 8527 8528 8529 8530 ' +
+    '8531 8532 8533 8534 8535 8536 8537 8538 8539 8540 ' +
+    '8541 8542 8543',
+
+  'catalogo-plata-oro.html':
+    'plata oro combinada combinado bicolor 18k',
+
+  'catalogo-plata-double.html':
+    'plata double doble doublé bañada dorado',
+
+  'catalogo-plata-esmaltada.html':
+    'plata esmaltada esmalte color',
+
+  'catalogo-plata-empavonada.html':
+    'plata empavonada negra negro oscura pavonada',
+
+  'catalogo-plata-piedras.html':
+    'plata piedras piedra brillante con'
 };
 
 function filtrarAlianzas(q) {
