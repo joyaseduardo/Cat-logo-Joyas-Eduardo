@@ -438,8 +438,55 @@
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--gold);
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.25rem;
   }
+  .joya-card .precio-lista {
+    font-size: 0.75rem;
+    color: #555;
+    text-decoration: line-through;
+    margin-bottom: 0.1rem;
+  }
+  .joya-card .precio-transferencia {
+    font-size: 0.78rem;
+    color: #7ec8a0;
+    font-weight: 600;
+    margin-bottom: 0.1rem;
+  }
+  .joya-card .precio-cuotas {
+    font-size: 0.72rem;
+    color: #6aa0d4;
+    margin-bottom: 0.6rem;
+  }
+  /* Selector de talle */
+  .talle-selector {
+    margin-bottom: 0.6rem;
+  }
+  .talle-selector label {
+    display: block;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #666;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.3rem;
+  }
+  .talle-selector select {
+    width: 100%;
+    background: #1e1e1e;
+    border: 1px solid #333;
+    color: var(--text);
+    padding: 0.45rem 0.6rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    outline: none;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23888'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.6rem center;
+  }
+  .talle-selector select:focus { border-color: var(--gold-dark); }
 
   .joya-card .notas-badge {
     font-size: 0.65rem;
@@ -1229,7 +1276,27 @@ function renderJoyas() {
     // Archivos de foto usan espacio en lugar de guion (ej: AN 185.jpg)
     var nombreFoto = j.foto ? j.foto.replace(/-/g, ' ') : '';
     var rutaFoto = nombreFoto ? 'imagenes/' + carpeta + '/' + nombreFoto : '';
-    var precio = j.precioARS > 0 ? '$' + j.precioARS.toLocaleString('es-AR') : 'Consultar precio';
+    var precio = j.precioARS > 0 ? '$' + j.precioARS.toLocaleString('es-AR') : null;
+    var precioTransf = j.precioARS > 0 ? Math.round(j.precioARS * 0.80) : null;
+    var precioCuota  = j.precioARS > 0 ? Math.round(j.precioARS / 6) : null;
+    // Bloque de precios triple
+    var precioHTML = precio
+      ? '<div class="precio-lista">Precio lista: $' + j.precioARS.toLocaleString('es-AR') + '</div>' +
+        '<div class="precio">💵 Efectivo: $' + Math.round(j.precioARS * 0.80).toLocaleString('es-AR') + ' <span style="font-size:.65rem;color:#888">(20% OFF)</span></div>' +
+        '<div class="precio-transferencia">🏦 Transferencia: $' + Math.round(j.precioARS * 0.90).toLocaleString('es-AR') + ' (10% OFF)</div>' +
+        '<div class="precio-cuotas">💳 6 cuotas sin interés de $' + precioCuota.toLocaleString('es-AR') + '</div>'
+      : '<div class="precio">Consultar precio</div>';
+    // Selector de talle solo para Anillos
+    var talleHTML = '';
+    if (j.categoria === 'Anillos') {
+      var talles = [8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23];
+      talleHTML = '<div class="talle-selector">' +
+        '<label>Talle del anillo · <a href="guia-tallas.html" target="_blank" style="color:var(--gold);text-decoration:underline;font-weight:600;letter-spacing:0">📏 ¿Cómo medir?</a></label>' +
+        '<select id="talle-' + j.sku + '">' +
+        '<option value="">No sé mi talle (te contactamos)</option>' +
+        talles.map(function(t){ return '<option value="' + t + '">Talle ' + t + '</option>'; }).join('') +
+        '</select></div>';
+    }
     var sinStock = j.cantidad === 0;
     var msgWA = encodeURIComponent('Hola! Me interesa 💎\n\nProducto: ' + j.nombre + '\nCódigo: ' + j.sku + '\nMaterial: ' + (j.material||'') + '\n\n¿Está disponible?');
     return '<div class="joya-card' + (sinStock ? ' opacity-50' : '') + '">' +
@@ -1244,13 +1311,34 @@ function renderJoyas() {
       '<div class="nombre">' + j.nombre + '</div>' +
       '<div class="material">' + (j.material||'') + '</div>' +
       (j.notas ? '<div class="notas-badge">📝 ' + j.notas + '</div>' : '') +
-      '<div class="precio">' + precio + '</div>' +
+      precioHTML +
+      talleHTML +
       '<button class="btn-carrito" id="btn-' + j.sku + '" onclick="agregarAlCarrito(\'' + j.sku + '\')" ' + (sinStock ? 'disabled style="opacity:0.4;cursor:not-allowed"' : '') + '>🛒 Agregar al carrito</button>' +
-      '<button class="btn-consultar" onclick="consultarJoya(\'' + msgWA + '\')" ' + (sinStock ? 'disabled style="opacity:0.4;cursor:not-allowed"' : '') + '>💬 Consultar</button>' +
+      '<button class="btn-consultar" onclick="consultarJoyaConTalle(\'' + j.sku + '\',\'' + j.nombre + '\',\'' + (j.categoria||'') + '\')" ' + (sinStock ? 'disabled style="opacity:0.4;cursor:not-allowed"' : '') + '>💬 Consultar por WA</button>' +
       '</div></div>';
   }).join('');
 }
 
+
+function consultarJoyaConTalle(sku, nombre, categoria) {
+  var talle = '';
+  var sel = document.getElementById('talle-' + sku);
+  if (sel) {
+    talle = sel.value
+      ? '\nTalle elegido: ' + sel.value
+      : '\nTalle: No sé mi talle (consultame para que te ayude a medirte)';
+  }
+  var joya = joyasData.find(function(j){ return j.sku === sku; }) || {};
+  var precio = joya.precioARS > 0
+    ? '\nPrecio efectivo: $' + Math.round(joya.precioARS * 0.80).toLocaleString('es-AR') + ' (20% OFF)'
+    : '';
+  var msg = '¡Hola! Me interesa esta joya 💎\n\n' +
+    'Producto: ' + nombre + '\nCódigo: ' + sku +
+    (joya.material ? '\nMaterial: ' + joya.material : '') +
+    precio + talle +
+    '\n\n¿Está disponible?';
+  window.open('https://wa.me/5492976235421?text=' + encodeURIComponent(msg), '_blank');
+}
 
 function consultarJoya(msgWA) {
   window.open('https://wa.me/5492976235421?text=' + msgWA, '_blank');
@@ -1433,101 +1521,28 @@ function enviarPedido() {
 }
 
 // BUSCADOR ALIANZAS
-var BUSQUEDA_CATS = {
-  'catalogo-oro-lisas.html':
-    'oro lisas lisa liso simple 18k ' +
-    '3110 3120 3125 3130 3135 3140 3145 3150 3160 3170',
-
-  'catalogo-oro-facetadas.html':
-    'oro facetadas facetada 18k ' +
-    '1000 1010 1020 1030 1040 1050 1060 1070 ' +
-    '1726 1727 1728 1729 1731 1732 1733 1734 1735 1736 1737 1738 1739 1740 1741 1742 1743 ' +
-    '2050 2060 2070 2080 2081 2090 2110 2120 2130 2140 2150 2160 2170 2180 2190 2200 ' +
-    '4170 4180 4190 4200 4210 ' +
-    '5220 5230 5240 5250 5260 ' +
-    '6260 6270 6280 6290 6300 6310 6320 ' +
-    '7330 7340 7350 7360 7370 7390 ' +
-    '8380 8400 8410 8420 8430 ' +
-    '9210 9220 9230 9240 9250',
-
-  'catalogo-oro-especiales.html':
-    'oro especiales especial 18k ' +
-    '1602 1603 1604 1605 1606 1607 1705 ' +
-    '2939 2949 2951 2952 ' +
-    '3010 3012 3013 3014 3015 3016 3017 3018 3019 3020 3021 3022 3023 3024 3025 3029 3030 3034 ' +
-    '3040 3041 3042 3043 3044 3045 3046 3047 3048 3049 3050 ' +
-    '3080 3081 3086 3087 3088 3089 3090 3091 3092 3093 3094 ' +
-    '3416 3422 3423 3424 3425 3426 3427 3428 3429 3430 3431 3432 ' +
-    '5000 5001 5002 ' +
-    '6726 6727 6728 6729 6730 6731 6732 ' +
-    '7827 7828 7829 7830 7831 7832',
-
-  'catalogo-oro-piedras.html':
-    'oro piedras piedra brillante 18k con ' +
-    '5003 5004 5005 5006 5007 5008 5009 5010 5011 5012 ' +
-    '5013 5014 5015 5016 5017 5018 5019 5020 5021 5022 5023 5024 5025 5026',
-
-  'catalogo-oro-esmaltadas.html':
-    'oro esmaltadas esmaltada esmalte color 18k ' +
-    '2001 2002 2003 2004',
-
-  'catalogo-anillos-mujer.html':
-    'anillos anillo mujer femenino oro 18k ' +
-    '8501 8502 8503 8504 8505 8506 8507 8508 8509 8510 ' +
-    '8511 8512 8513 8514 8515 8516 8517 8518 8519 8520 ' +
-    '8521 8522 8523 8524 8525 8526 8527 8528 8529 8530 ' +
-    '8531 8532 8533 8534 8535 8536 8537 8538 8539 8540 ' +
-    '8541 8542 8543',
-
-  'catalogo-plata-oro.html':
-    'plata oro combinada combinado bicolor 18k',
-
-  'catalogo-plata-double.html':
-    'plata double doble doublé bañada dorado',
-
-  'catalogo-plata-esmaltada.html':
-    'plata esmaltada esmalte color',
-
-  'catalogo-plata-empavonada.html':
-    'plata empavonada negra negro oscura pavonada',
-
-  'catalogo-plata-piedras.html':
-    'plata piedras piedra brillante con'
-};
-
 function filtrarAlianzas(q) {
   var query = (q || '').toLowerCase().trim();
-  var grid = document.getElementById('categoriasGrid');
+  var cards = document.querySelectorAll('#categoriasGrid .categoria-card');
   var clearBtn = document.getElementById('clearAlianzas');
-  if (!grid) return;
+  var grid = document.getElementById('categoriasGrid');
+  var encontrados = 0;
 
   if (clearBtn) clearBtn.style.display = query ? 'block' : 'none';
 
   var sinRes = document.getElementById('sinResultadosAlianzas');
   if (sinRes) sinRes.remove();
 
-  var cards = grid.querySelectorAll('.categoria-card');
-  var encontrados = 0;
-
-  for (var i = 0; i < cards.length; i++) {
-    var card = cards[i];
-
+  cards.forEach(function(card) {
     if (!query) {
       card.style.display = '';
       encontrados++;
-      continue;
+      return;
     }
-
-    // Obtener href de la tarjeta y extraer solo el nombre del archivo
-    var href = card.getAttribute('href') || '';
-    var archivoHref = href.split('/').pop(); // solo "catalogo-xxx.html"
-
-    // Texto de búsqueda: mapa hardcodeado + data-nombre + h3
-    var terminos = BUSQUEDA_CATS[archivoHref] || '';
-    var dataNombre = card.getAttribute('data-nombre') || '';
-    var h3El = card.querySelector('h3');
-    var h3Texto = h3El ? h3El.textContent : '';
-    var textoBusqueda = (terminos + ' ' + dataNombre + ' ' + h3Texto).toLowerCase();
+    var textoBusqueda = [
+      card.getAttribute('data-nombre') || '',
+      card.textContent || ''
+    ].join(' ').toLowerCase();
 
     if (textoBusqueda.indexOf(query) > -1) {
       card.style.display = '';
@@ -1535,7 +1550,7 @@ function filtrarAlianzas(q) {
     } else {
       card.style.display = 'none';
     }
-  }
+  });
 
   if (encontrados === 0 && query) {
     var msg = document.createElement('div');
