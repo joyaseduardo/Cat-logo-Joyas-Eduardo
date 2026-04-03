@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Colecciones Patagónicas – Joyas Eduardo</title>
+<meta name="description" content="Tres colecciones de joyería inspiradas en la Patagonia argentina. Vientos del Sur, Mar Adentro y Tierra Roja. Plata 925 y Oro 18K. Joyas Eduardo, Comodoro Rivadavia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --dark:  #0e0e0e;
+    --dark2: #141414;
+    --gold:  #C9923A;
+    --gold2: #E8C060;
+    --text:  #e8e0d0;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--dark);
+    color: var(--text);
+    font-family: 'Montserrat', sans-serif;
+    min-height: 100vh;
+  }
+
+  /* ── HEADER ── */
+  .site-header {
+    background: linear-gradient(180deg,#080808,#0f0f0f);
+    border-bottom: 1px solid #222;
+    padding: 1.25rem 1.25rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+  }
+  .back-btn {
+    color: #666;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color .2s;
+  }
+  .back-btn:hover { color: var(--gold); }
+  .header-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.15rem;
+    color: var(--gold);
+    font-weight: 400;
+  }
+  .header-sub {
+    font-size: 0.7rem;
+    color: #555;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+
+  /* ── HERO ── */
+  .hero {
+    text-align: center;
+    padding: 3.5rem 1.5rem 2.5rem;
+    background: linear-gradient(180deg, #080808 0%, var(--dark) 100%);
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .hero-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    color: var(--gold);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  .hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.8rem, 5vw, 3rem);
+    font-weight: 400;
+    color: #fff;
+    line-height: 1.15;
+    margin-bottom: 0.75rem;
+  }
+  .hero h1 em {
+    color: var(--gold);
+    font-style: italic;
+  }
+  .hero p {
+    font-size: 0.88rem;
+    color: #666;
+    letter-spacing: 0.08em;
+    max-width: 420px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  /* ── COLECCIÓN CARD ── */
+  .coleccion {
+    max-width: 720px;
+    margin: 2rem auto;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--c-border);
+  }
+
+  /* Header de colección */
+  .col-header {
+    background: var(--c-bg);
+    padding: 2rem 1.75rem 1.5rem;
+    border-bottom: 1px solid var(--c-border);
+  }
+  .col-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.3em;
+    color: var(--c-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+  .col-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+  .col-emoji {
+    font-size: 3rem;
+    flex-shrink: 0;
+    opacity: 0.8;
+  }
+  .col-nombre {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(1.6rem, 5vw, 2.2rem);
+    font-weight: 300;
+    color: #fff;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+  }
+  .col-tagline {
+    font-size: 0.85rem;
+    color: var(--c-color);
+    font-style: italic;
+    line-height: 1.6;
+    max-width: 380px;
+  }
+  .col-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.25rem;
+  }
+  .badge {
+    font-size: 0.7rem;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .badge-color {
+    background: color-mix(in srgb, var(--c-color) 15%, transparent);
+    color: var(--c-color);
+    border: 1px solid color-mix(in srgb, var(--c-color) 35%, transparent);
+  }
+  .badge-neutral {
+    background: #1a1a2a;
+    color: #555;
+    border: 1px solid #2a2a3a;
+  }
+
+  /* Historia */
+  .col-historia {
+    padding: 1.5rem 1.75rem;
+    border-bottom: 1px solid #1a1a1a;
+  }
+  .col-historia-label {
+    font-size: 0.65rem;
+    letter-spacing: 0.25em;
+    color: var(--c-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 0.9rem;
+  }
+  .col-historia p {
+    font-size: 0.9rem;
+    color: #888;
+    line-height: 1.85;
+    margin-bottom: 0.75rem;
+  }
+  .col-historia p:last-child { margin-bottom: 0; }
+
+  /* CTA */
+  .col-cta {
+    padding: 1.25rem 1.75rem;
+    background: #0a0a0a;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  @media (min-width: 480px) {
+    .col-cta { flex-direction: row; align-items: center; }
+  }
+  .btn-wa {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #128C7E, #25D366);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 10px;
+    text-decoration: none;
+    letter-spacing: 0.03em;
+    transition: opacity .2s;
+  }
+  .btn-wa:hover { opacity: 0.88; }
+  .btn-catalogo {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background: transparent;
+    color: var(--c-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    padding: 0.85rem 1.25rem;
+    border-radius: 10px;
+    border: 1px solid color-mix(in srgb, var(--c-color) 40%, transparent);
+    text-decoration: none;
+    transition: all .2s;
+  }
+  .btn-catalogo:hover {
+    background: color-mix(in srgb, var(--c-color) 10%, transparent);
+  }
+
+  /* ── SEPARADOR ── */
+  .separador {
+    text-align: center;
+    padding: 1rem 0;
+    color: #2a2a2a;
+    font-size: 1.2rem;
+    letter-spacing: 0.5em;
+  }
+
+  /* ── FOOTER ── */
+  .site-footer {
+    background: #0a0a0a;
+    border-top: 1px solid #1a1a1a;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+  .site-footer p {
+    font-size: 0.78rem;
+    color: #444;
+    margin-bottom: 0.4rem;
+    letter-spacing: 0.05em;
+  }
+  .site-footer a {
+    color: #555;
+    text-decoration: none;
+    transition: color .2s;
+  }
+  .site-footer a:hover { color: var(--gold); }
+
+  /* ── WA FLOAT ── */
+  .wa-float {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    width: 58px;
+    height: 58px;
+    background: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    box-shadow: 0 4px 20px rgba(37,211,102,.4);
+    text-decoration: none;
+    z-index: 99;
+    transition: transform .2s;
+    animation: pulse 2.5s ease-in-out infinite;
+  }
+  .wa-float:hover { transform: scale(1.1); }
+  @keyframes pulse {
+    0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,.4); }
+    50%      { box-shadow: 0 4px 32px rgba(37,211,102,.7); }
+  }
+
+  /* ── RESPONSIVE ── */
+  @media (max-width: 600px) {
+    .coleccion { margin: 1.25rem 0.75rem; border-radius: 12px; }
+    .col-header { padding: 1.5rem 1.25rem 1.25rem; }
+    .col-historia { padding: 1.25rem; }
+    .col-cta { padding: 1rem 1.25rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header class="site-header">
+  <a href="index.html" class="back-btn" title="Volver al catálogo">←</a>
+  <div>
+    <div class="header-title">✨ Colecciones Patagónicas</div>
+    <div class="header-sub">Joyas Eduardo · Comodoro Rivadavia</div>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero">
+  <div class="hero-label">✦ Colecciones exclusivas ✦</div>
+  <h1>Joyas que llevan<br><em>la Patagonia en la piel</em></h1>
+  <p>Tres identidades. Tres historias. Cada pieza nació de esta tierra — del viento, del mar y de la meseta roja que no cede.</p>
+</div>
+
+<!-- ═══════════════════════════════════
+     COLECCIÓN 1 — VIENTOS DEL SUR
+════════════════════════════════════ -->
+<div class="coleccion" style="--c-color:#5FA8D3; --c-bg:#0D1E2D; --c-border:rgba(95,168,211,0.25); max-width:720px; margin: 2rem auto;">
+
+  <div class="col-header">
+    <div class="col-label">✦ Colección Exclusiva</div>
+    <div class="col-top">
+      <div>
+        <div class="col-nombre">Vientos del Sur</div>
+        <div class="col-tagline">La fuerza invisible que esculpe cada roca, cada historia.</div>
+      </div>
+      <div class="col-emoji">🌬️</div>
+    </div>
+    <div class="col-badges">
+      <span class="badge badge-color">Anillos · Aros</span>
+      <span class="badge badge-neutral">Plata 925</span>
+      <span class="badge badge-neutral">Uso diario · Minimalismo</span>
+    </div>
+  </div>
+
+  <div class="col-historia">
+    <div class="col-historia-label">Historia de la colección</div>
+    <p>El viento patagónico no destruye: esculpe. Durante miles de años moldeó la piedra y dio carácter a todo lo que toca. Esta colección nació de esa energía: piezas de líneas limpias que llevan la fuerza del sur sin necesitar demostrarlo.</p>
+    <p>Para la mujer que camina segura. Que sabe lo que quiere. Que lleva la Patagonia en la piel.</p>
+  </div>
+
+  <div class="col-cta">
+    <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Me%20interesa%20la%20colecci%C3%B3n%20%22Vientos%20del%20Sur%22%20%F0%9F%8C%AC%EF%B8%8F%20%C2%BFPod%C3%A9s%20mostrarme%20las%20piezas%20disponibles%3F" target="_blank" class="btn-wa">
+      💬 Consultar por WhatsApp
+    </a>
+    <a href="index.html" class="btn-catalogo">
+      💍 Ver catálogo completo
+    </a>
+  </div>
+</div>
+
+<div class="separador">· · ·</div>
+
+<!-- ═══════════════════════════════════
+     COLECCIÓN 2 — MAR ADENTRO
+════════════════════════════════════ -->
+<div class="coleccion" style="--c-color:#3DADA8; --c-bg:#061A1A; --c-border:rgba(61,173,168,0.25); max-width:720px; margin: 2rem auto;">
+
+  <div class="col-header">
+    <div class="col-label">✦ Colección Exclusiva</div>
+    <div class="col-top">
+      <div>
+        <div class="col-nombre">Mar Adentro</div>
+        <div class="col-tagline">La profundidad del Atlántico Sur. Salvaje, libre, eterno.</div>
+      </div>
+      <div class="col-emoji">🌊</div>
+    </div>
+    <div class="col-badges">
+      <span class="badge badge-color">Cadenas · Dijes</span>
+      <span class="badge badge-neutral">Plata 925</span>
+      <span class="badge badge-neutral">Regalo romántico · Aniversario</span>
+    </div>
+  </div>
+
+  <div class="col-historia">
+    <div class="col-historia-label">Historia de la colección</div>
+    <p>El mar patagónico no es uno solo: es azul, verde, gris, negro. Nunca el mismo. Cada ola trae algo del fondo y se lleva algo de la orilla.</p>
+    <p>Cadenas que caen como corrientes. Dijes que guardan historias como el mar guarda secretos.</p>
+  </div>
+
+  <div class="col-cta">
+    <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Me%20interesa%20la%20colecci%C3%B3n%20%22Mar%20Adentro%22%20%F0%9F%8C%8A%20%C2%BFPod%C3%A9s%20mostrarme%20las%20piezas%20disponibles%3F" target="_blank" class="btn-wa">
+      💬 Consultar por WhatsApp
+    </a>
+    <a href="index.html" class="btn-catalogo">
+      💍 Ver catálogo completo
+    </a>
+  </div>
+</div>
+
+<div class="separador">· · ·</div>
+
+<!-- ═══════════════════════════════════
+     COLECCIÓN 3 — TIERRA ROJA
+════════════════════════════════════ -->
+<div class="coleccion" style="--c-color:#D4874A; --c-bg:#1E1005; --c-border:rgba(212,135,74,0.25); max-width:720px; margin: 2rem auto;">
+
+  <div class="col-header">
+    <div class="col-label">✦ Colección Exclusiva</div>
+    <div class="col-top">
+      <div>
+        <div class="col-nombre">Tierra Roja</div>
+        <div class="col-tagline">Basalto, meseta y raíz. La Patagonia que no cede.</div>
+      </div>
+      <div class="col-emoji">🗻</div>
+    </div>
+    <div class="col-badges">
+      <span class="badge badge-color">Oro 18K · Pulseras · Aros</span>
+      <span class="badge badge-neutral">Plata 925 & Oro 18K</span>
+      <span class="badge badge-neutral">Compromiso · Ocasión especial</span>
+    </div>
+  </div>
+
+  <div class="col-historia">
+    <div class="col-historia-label">Historia de la colección</div>
+    <p>La meseta patagónica es roja, ígnea, nacida del fuego. No pide permiso: existe. Esta colección es para quienes llevan esa raíz: piezas de carácter, con peso real, con presencia.</p>
+    <p>Oro, plata y volumen. Para momentos que merecen ser recordados.</p>
+  </div>
+
+  <div class="col-cta">
+    <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Me%20interesa%20la%20colecci%C3%B3n%20%22Tierra%20Roja%22%20%F0%9F%97%BB%20%C2%BFPod%C3%A9s%20mostrarme%20las%20piezas%20disponibles%3F" target="_blank" class="btn-wa">
+      💬 Consultar por WhatsApp
+    </a>
+    <a href="index.html" class="btn-catalogo">
+      💍 Ver catálogo completo
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="site-footer">
+  <p>💎 Joyas Eduardo · Plata 925 · Oro 18K · Comodoro Rivadavia, Patagonia Argentina</p>
+  <p>📱 2976 235421 &nbsp;·&nbsp; <a href="https://www.instagram.com/joyaseduardo" target="_blank">@joyaseduardo</a></p>
+  <p style="margin-top:1rem"><a href="index.html">← Volver al catálogo</a></p>
+</footer>
+
+<!-- WhatsApp flotante -->
+<a href="https://wa.me/5492976235421?text=Hola!%20Vi%20las%20Colecciones%20Patagónicas%20y%20quiero%20consultar." target="_blank" class="wa-float" title="Consultanos por WhatsApp">💬</a>
+
+</body>
+</html>
