@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guía de Compromiso · Joyas Eduardo · Patagonia</title>
+<meta name="description" content="Todo lo que necesitás saber para elegir el anillo de compromiso o alianzas de casamiento perfectas. Guía completa de Joyas Eduardo, Comodoro Rivadavia.">
+<meta property="og:title" content="Guía de Compromiso · Joyas Eduardo">
+<meta property="og:description" content="Elegí con confianza. Tipos de anillo, metales, talles y las colecciones Patagónicas para el momento más importante.">
+<style>
+  :root {
+    --gold: #C9923A;
+    --gold-light: #F5E6CC;
+    --gold-dark: #8B6520;
+    --dark: #0F0F0F;
+    --dark2: #1A1A1A;
+    --dark3: #252525;
+    --dark4: #2F2F2F;
+    --text: #E8E8E8;
+    --text-muted: #999;
+    --text-dim: #666;
+    --white: #FFFFFF;
+    --font: 'Georgia', 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: var(--dark); color: var(--text); font-family: var(--font); line-height: 1.7; }
+
+  /* HEADER */
+  .site-header {
+    background: var(--dark2);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .site-header a { color: var(--gold); text-decoration: none; font-family: var(--sans); font-size: 13px; }
+  .site-logo { font-family: var(--sans); font-size: 15px; font-weight: 700; color: var(--gold); letter-spacing: 1px; }
+
+  /* HERO */
+  .hero {
+    background: var(--dark2);
+    border-bottom: 1px solid #2a2a2a;
+    text-align: center;
+    padding: 72px 24px 64px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 0%, rgba(201,146,58,0.08) 0%, transparent 65%);
+    pointer-events: none;
+  }
+  .hero-eyebrow {
+    font-family: var(--sans);
+    font-size: 11px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 20px;
+  }
+  .hero h1 {
+    font-size: clamp(30px, 6vw, 54px);
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.2;
+    margin-bottom: 20px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .hero h1 em { color: var(--gold); font-style: italic; }
+  .hero-sub {
+    font-family: var(--sans);
+    font-size: 16px;
+    color: var(--text-muted);
+    max-width: 520px;
+    margin: 0 auto 36px;
+    line-height: 1.6;
+  }
+  .hero-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: var(--gold);
+    color: var(--dark);
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 999px;
+    text-decoration: none;
+    letter-spacing: 0.5px;
+    transition: opacity 0.2s;
+  }
+  .hero-cta:hover { opacity: 0.88; }
+
+  /* NAV ANCHORS */
+  .nav-anchors {
+    background: var(--dark3);
+    border-bottom: 1px solid #2a2a2a;
+    padding: 0 24px;
+    display: flex;
+    gap: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .nav-anchors::-webkit-scrollbar { display: none; }
+  .nav-anchors a {
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--text-muted);
+    text-decoration: none;
+    padding: 14px 16px;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+  }
+  .nav-anchors a:hover { color: var(--gold); border-bottom-color: var(--gold); }
+
+  /* CONTAINER */
+  .container { max-width: 760px; margin: 0 auto; padding: 0 24px; }
+
+  /* SECTION */
+  .section { padding: 72px 0; border-bottom: 1px solid #222; }
+  .section:last-child { border-bottom: none; }
+
+  .section-eyebrow {
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 12px;
+  }
+  .section h2 {
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 400;
+    color: var(--white);
+    line-height: 1.25;
+    margin-bottom: 16px;
+  }
+  .section h2 em { color: var(--gold); font-style: italic; }
+  .section-intro {
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 48px;
+    max-width: 620px;
+  }
+
+  /* CARDS GRID */
+  .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; }
+  .card {
+    background: var(--dark3);
+    border: 1px solid #303030;
+    border-radius: 16px;
+    padding: 28px 24px;
+    transition: border-color 0.2s;
+  }
+  .card:hover { border-color: var(--gold); }
+  .card-icon { font-size: 32px; margin-bottom: 16px; line-height: 1; }
+  .card h3 { font-size: 20px; font-weight: 400; color: var(--white); margin-bottom: 10px; }
+  .card-tag {
+    display: inline-block;
+    font-family: var(--sans);
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--gold);
+    background: rgba(201,146,58,0.12);
+    border: 1px solid rgba(201,146,58,0.3);
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 14px;
+  }
+  .card p {
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.65;
+  }
+  .card-ideal {
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #333;
+    font-family: var(--sans);
+    font-size: 12px;
+    color: var(--gold-dark);
+  }
+  .card-ideal strong { color: var(--gold); }
+
+  /* METAL COMPARISON */
+  .metal-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 36px; }
+  .metal-card {
+    border-radius: 14px;
+    padding: 24px 20px;
+    border: 1px solid;
+  }
+  .metal-card.oro { background: rgba(201,146,58,0.08); border-color: rgba(201,146,58,0.3); }
+  .metal-card.plata-oro { background: rgba(180,160,100,0.08); border-color: rgba(180,160,100,0.3); }
+  .metal-card.plata { background: rgba(160,160,180,0.08); border-color: rgba(160,160,180,0.3); }
+  .metal-card.double { background: rgba(120,100,160,0.08); border-color: rgba(120,100,160,0.3); }
+  .metal-card h3 { font-size: 17px; font-weight: 400; color: var(--white); margin-bottom: 8px; }
+  .metal-card .metal-subtitle { font-family: var(--sans); font-size: 11px; color: var(--text-dim); margin-bottom: 14px; }
+  .metal-card ul { list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .metal-card ul li { font-family: var(--sans); font-size: 13px; color: var(--text-muted); display: flex; gap: 8px; }
+  .metal-card ul li::before { content: '—'; color: var(--gold); flex-shrink: 0; }
+
+  /* TALLE */
+  .talle-methods { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; margin-bottom: 36px; }
+  .talle-method {
+    background: var(--dark3);
+    border: 1px solid #303030;
+    border-radius: 14px;
+    padding: 22px 20px;
+  }
+  .talle-method h3 { font-size: 16px; font-weight: 400; color: var(--white); margin-bottom: 10px; }
+  .talle-step { font-family: var(--sans); font-size: 13px; color: var(--text-muted); display: flex; gap: 10px; margin-bottom: 8px; align-items: flex-start; }
+  .talle-step-num { background: var(--gold); color: var(--dark); font-weight: 700; font-size: 10px; border-radius: 999px; width: 18px; height: 18px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 2px; }
+
+  .talle-table { width: 100%; border-collapse: collapse; font-family: var(--sans); font-size: 13px; margin-bottom: 16px; }
+  .talle-table th { background: var(--dark4); color: var(--gold); padding: 10px 14px; text-align: left; font-size: 11px; letter-spacing: 1px; text-transform: uppercase; }
+  .talle-table td { padding: 9px 14px; border-bottom: 1px solid #252525; color: var(--text-muted); }
+  .talle-table tr:last-child td { border-bottom: none; }
+  .talle-table tr:hover td { background: rgba(201,146,58,0.04); }
+  .talle-tip {
+    background: rgba(201,146,58,0.08);
+    border-left: 3px solid var(--gold);
+    padding: 14px 18px;
+    border-radius: 0 10px 10px 0;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-top: 16px;
+  }
+  .talle-tip strong { color: var(--gold); }
+
+  /* COLECCIONES */
+  .colecciones { display: flex; flex-direction: column; gap: 24px; }
+  .coleccion-card {
+    border-radius: 18px;
+    padding: 32px 28px;
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 24px;
+    align-items: start;
+  }
+  .coleccion-card.vientos { background: linear-gradient(135deg, rgba(100,140,180,0.08), rgba(60,80,110,0.05)); border-color: rgba(100,140,200,0.25); }
+  .coleccion-card.mar { background: linear-gradient(135deg, rgba(30,100,140,0.08), rgba(20,70,100,0.05)); border-color: rgba(30,120,170,0.25); }
+  .coleccion-card.tierra { background: linear-gradient(135deg, rgba(180,80,40,0.08), rgba(120,50,20,0.05)); border-color: rgba(200,90,40,0.25); }
+  .coleccion-nombre { font-size: 22px; font-weight: 400; color: var(--white); margin-bottom: 6px; }
+  .coleccion-subtitulo { font-family: var(--sans); font-size: 12px; color: var(--text-dim); letter-spacing: 1px; margin-bottom: 14px; }
+  .coleccion-texto { font-family: var(--sans); font-size: 14px; color: var(--text-muted); line-height: 1.65; margin-bottom: 18px; }
+  .coleccion-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 18px; }
+  .coleccion-tag { font-family: var(--sans); font-size: 11px; color: var(--text-dim); background: rgba(255,255,255,0.05); padding: 3px 10px; border-radius: 999px; border: 1px solid #333; }
+  .coleccion-icon { font-size: 52px; line-height: 1; }
+  .coleccion-cta {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(201,146,58,0.12);
+    color: var(--gold);
+    font-family: var(--sans);
+    font-size: 13px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border-radius: 999px;
+    text-decoration: none;
+    border: 1px solid rgba(201,146,58,0.3);
+    transition: all 0.2s;
+  }
+  .coleccion-cta:hover { background: var(--gold); color: var(--dark); }
+
+  /* PREGUNTAS */
+  .faq { display: flex; flex-direction: column; gap: 2px; }
+  .faq-item { background: var(--dark3); border-radius: 12px; overflow: hidden; }
+  .faq-q {
+    padding: 18px 22px;
+    font-family: var(--sans);
+    font-size: 15px;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    user-select: none;
+  }
+  .faq-q:hover { color: var(--gold); }
+  .faq-a {
+    padding: 0 22px;
+    font-family: var(--sans);
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.7;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+  }
+  .faq-item.open .faq-a { max-height: 300px; padding: 0 22px 18px; }
+  .faq-chevron { color: var(--gold); transition: transform 0.3s; font-style: normal; font-size: 18px; flex-shrink: 0; }
+  .faq-item.open .faq-chevron { transform: rotate(180deg); }
+
+  /* CTA FINAL */
+  .cta-final {
+    background: var(--dark2);
+    border-top: 1px solid #2a2a2a;
+    text-align: center;
+    padding: 80px 24px;
+  }
+  .cta-final h2 { font-size: clamp(24px, 4vw, 38px); font-weight: 400; color: var(--white); margin-bottom: 14px; }
+  .cta-final h2 em { color: var(--gold); font-style: italic; }
+  .cta-final p { font-family: var(--sans); font-size: 15px; color: var(--text-muted); margin-bottom: 36px; max-width: 460px; margin-left: auto; margin-right: auto; }
+  .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+  .btn-primary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: var(--gold); color: var(--dark);
+    font-family: var(--sans); font-size: 15px; font-weight: 700;
+    padding: 16px 32px; border-radius: 999px;
+    text-decoration: none; transition: opacity 0.2s;
+  }
+  .btn-primary:hover { opacity: 0.88; }
+  .btn-secondary {
+    display: inline-flex; align-items: center; gap: 10px;
+    background: transparent; color: var(--gold);
+    font-family: var(--sans); font-size: 15px; font-weight: 700;
+    padding: 16px 32px; border-radius: 999px;
+    text-decoration: none; border: 1px solid rgba(201,146,58,0.4);
+    transition: all 0.2s;
+  }
+  .btn-secondary:hover { background: rgba(201,146,58,0.1); }
+
+  /* DIVIDER */
+  .divider { text-align: center; color: var(--gold); opacity: 0.4; font-size: 20px; margin: 0 0 48px; letter-spacing: 8px; }
+
+  /* FOOTER */
+  .footer {
+    background: var(--dark);
+    border-top: 1px solid #222;
+    text-align: center;
+    padding: 40px 24px;
+    font-family: var(--sans);
+    font-size: 13px;
+    color: var(--text-dim);
+  }
+  .footer a { color: var(--gold); text-decoration: none; }
+
+  /* FLOAT WA */
+  .wa-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    background: #25D366;
+    color: white;
+    border-radius: 999px;
+    padding: 14px 20px;
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 20px rgba(37,211,102,0.3);
+    transition: transform 0.2s;
+  }
+  .wa-float:hover { transform: scale(1.05); }
+
+  @media (max-width: 600px) {
+    .coleccion-card { grid-template-columns: 1fr; }
+    .coleccion-icon { display: none; }
+    .hero { padding: 52px 20px 48px; }
+    .section { padding: 52px 0; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <a href="index.html">← Catálogo</a>
+  <div class="site-logo">JOYAS EDUARDO</div>
+  <a href="https://wa.me/5492976235421?text=Hola!%20Leí%20la%20guía%20de%20compromiso%20y%20quiero%20consultar.">💬 Consultar</a>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-eyebrow">✦ Guía de Compromiso · Joyas Eduardo ✦</div>
+  <h1>Elegí con <em>todo el corazón</em> y toda la información</h1>
+  <p class="hero-sub">
+    Todo lo que necesitás saber para elegir el anillo o la alianza perfecta. Tipos, metales, talles y las colecciones únicas de la Patagonia — sin apuro.
+  </p>
+  <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Leí%20la%20guía%20de%20compromiso%20y%20me%20gustaría%20que%20me%20asesorés%20💍" class="hero-cta">
+    💬 Asesoramiento personalizado gratis
+  </a>
+</section>
+
+<!-- NAV -->
+<nav class="nav-anchors">
+  <a href="#tipos">Tipos de anillo</a>
+  <a href="#metales">Metales</a>
+  <a href="#talles">Guía de talles</a>
+  <a href="#colecciones">Colecciones Patagónicas</a>
+  <a href="#preguntas">Preguntas</a>
+</nav>
+
+<!-- SECCIÓN 1: TIPOS DE ANILLO -->
+<section id="tipos" class="section">
+  <div class="container">
+    <div class="section-eyebrow">01 · Tipos de anillo</div>
+    <h2>¿Cuál es <em>el tuyo</em>?</h2>
+    <p class="section-intro">
+      No existe el anillo perfecto en abstracto — existe el que refleja a esa persona. Cada estilo tiene su carácter. Conocerlos es el primer paso.
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <div class="card-icon">💎</div>
+        <div class="card-tag">Clásico atemporal</div>
+        <h3>Solitario</h3>
+        <p>Una piedra central que lo dice todo. El diseño más elegido para el compromiso porque pone toda la atención en la gema. Puede ir en Oro 18K blanco, amarillo o rosa.</p>
+        <div class="card-ideal">Ideal para: <strong>persona de estilo clásico y sofisticado</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">💍</div>
+        <div class="card-tag">El símbolo del casamiento</div>
+        <h3>Alianza</h3>
+        <p>La alianza es el anillo del casamiento — la promesa sin fin. Puede ser lisa, facetada, especial o combinada con piedras. Se usa sola o junto al anillo de compromiso.</p>
+        <div class="card-ideal">Ideal para: <strong>la ceremonia y el uso diario toda la vida</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">♾️</div>
+        <div class="card-tag">Moderno y versátil</div>
+        <h3>Sin Fin</h3>
+        <p>Un aro con piedras que da la vuelta completa al dedo. Simboliza que el amor no tiene inicio ni fin. Muy elegido como compromiso por parejas de estilo actual.</p>
+        <div class="card-ideal">Ideal para: <strong>estilo contemporáneo y uso diario</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">✨</div>
+        <div class="card-tag">Romántico y especial</div>
+        <h3>Con Piedras</h3>
+        <p>Anillos con piedras engarzadas en distintas formaciones — pavé, riel, flores. Tienen más brillo y movimiento visual. Pueden combinar oro y plata con piedras de colores.</p>
+        <div class="card-ideal">Ideal para: <strong>persona que ama el brillo y lo llamativo</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🌊</div>
+        <div class="card-tag">Único y artesanal</div>
+        <h3>Diseño a medida</h3>
+        <p>Si ningún modelo te cierra exactamente, hacemos la joya desde cero según lo que imaginás. Podés traer una referencia, un boceto o simplemente contarnos la idea.</p>
+        <div class="card-ideal">Ideal para: <strong>quienes buscan algo que no existe en ningún otro lado</strong></div>
+      </div>
+
+      <div class="card">
+        <div class="card-icon">🤝</div>
+        <div class="card-tag">Los dos juntos</div>
+        <h3>Par de alianzas</h3>
+        <p>El par clásico del casamiento. Se elige un modelo que combine — iguales o complementarios. Podemos hacer el talle de cada uno y grabarlos con la fecha o un mensaje.</p>
+        <div class="card-ideal">Ideal para: <strong>la ceremonia y que los dos usen el mismo diseño</strong></div>
+      </div>
+    </div>
+
+    <div style="margin-top: 36px; text-align: center;">
+      <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Leí%20la%20guía%20y%20quiero%20que%20me%20ayudés%20a%20elegir%20el%20tipo%20de%20anillo%20💍"
+         class="coleccion-cta">💬 Ayudame a elegir el tipo</a>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 2: METALES -->
+<section id="metales" class="section">
+  <div class="container">
+    <div class="section-eyebrow">02 · Los metales</div>
+    <h2>¿Oro, plata <em>o combinado</em>?</h2>
+    <p class="section-intro">
+      El metal define el carácter de la joya, su durabilidad y su precio. Acá te explicamos las diferencias reales para que elijas sabiendo qué llevás puesto.
+    </p>
+
+    <div class="metal-grid">
+      <div class="metal-card oro">
+        <h3>Oro 18K</h3>
+        <div class="metal-subtitle">75% oro puro · el más noble</div>
+        <ul>
+          <li>El metal más valorado y duradero</li>
+          <li>No se oxida, no mancha la piel</li>
+          <li>Amarillo, blanco o rosa</li>
+          <li>Certificado de autenticidad</li>
+          <li>Para toda la vida</li>
+        </ul>
+      </div>
+
+      <div class="metal-card plata-oro">
+        <h3>Plata y Oro 18K</h3>
+        <div class="metal-subtitle">Plata 925 con detalles en Oro 18K</div>
+        <ul>
+          <li>Combinación de ambos metales nobles</li>
+          <li>Precio intermedio accesible</li>
+          <li>Diseños que combinan ambos tonos</li>
+          <li>Muy elegido para alianzas</li>
+          <li>Alta durabilidad</li>
+        </ul>
+      </div>
+
+      <div class="metal-card plata">
+        <h3>Plata 925</h3>
+        <div class="metal-subtitle">92.5% plata pura · clásica</div>
+        <ul>
+          <li>La más accesible de las nobles</li>
+          <li>Gran variedad de diseños</li>
+          <li>Se puede pul. si oscurece</li>
+          <li>Ideal para uso diario</li>
+          <li>Amplio catálogo disponible</li>
+        </ul>
+      </div>
+
+      <div class="metal-card double">
+        <h3>Plata Oro Doublé</h3>
+        <div class="metal-subtitle">Plata 925 con baño de Oro 18K</div>
+        <ul>
+          <li>Apariencia de oro a menor precio</li>
+          <li>Brillo dorado elegante</li>
+          <li>Requiere cuidado del baño</li>
+          <li>Excelente opción regalo</li>
+          <li>Diseños actuales y modernos</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="talle-tip">
+      <strong>Consejo:</strong> Para el anillo de compromiso o las alianzas de casamiento, siempre recomendamos Oro 18K o al menos Plata con Oro 18K. Son joyas para toda la vida — vale la pena invertir en el metal que acompañe esa historia.
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 3: TALLES -->
+<section id="talles" class="section">
+  <div class="container">
+    <div class="section-eyebrow">03 · Guía de talles</div>
+    <h2>Encontrá tu <em>número de talla</em></h2>
+    <p class="section-intro">
+      El talle correcto hace que el anillo se sienta como si siempre estuvo ahí. Tres métodos para medirte — elegí el que tengas a mano.
+    </p>
+
+    <div class="talle-methods">
+      <div class="talle-method">
+        <h3>📏 Hilo o papel</h3>
+        <div class="talle-step"><div class="talle-step-num">1</div><span>Enrollá un hilo o tira de papel alrededor del dedo</span></div>
+        <div class="talle-step"><div class="talle-step-num">2</div><span>Marcá donde se cruzan los extremos</span></div>
+        <div class="talle-step"><div class="talle-step-num">3</div><span>Estirá sobre una regla y medí en milímetros</span></div>
+        <div class="talle-step"><div class="talle-step-num">4</div><span>Buscá ese número en la tabla</span></div>
+      </div>
+
+      <div class="talle-method">
+        <h3>💍 Con otra alianza</h3>
+        <div class="talle-step"><div class="talle-step-num">1</div><span>Tomá una alianza que ya te quede bien</span></div>
+        <div class="talle-step"><div class="talle-step-num">2</div><span>Medí el diámetro interior (de borde a borde)</span></div>
+        <div class="talle-step"><div class="talle-step-num">3</div><span>Multiplicá ese valor en mm × 3.14</span></div>
+        <div class="talle-step"><div class="talle-step-num">4</div><span>Buscá el resultado en la tabla</span></div>
+      </div>
+
+      <div class="talle-method">
+        <h3>🤝 En el local</h3>
+        <div class="talle-step"><div class="talle-step-num">1</div><span>Venite a Comodoro Rivadavia</span></div>
+        <div class="talle-step"><div class="talle-step-num">2</div><span>Te medimos con el calibrador oficial</span></div>
+        <div class="talle-step"><div class="talle-step-num">3</div><span>Encontrás tu talla exacta en segundos</span></div>
+        <div class="talle-step"><div class="talle-step-num">4</div><span>Sin turno, sin costo</span></div>
+      </div>
+    </div>
+
+    <table class="talle-table">
+      <thead>
+        <tr>
+          <th>Circunferencia (mm)</th>
+          <th>Nº de talla</th>
+          <th>Circunferencia (mm)</th>
+          <th>Nº de talla</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>44 mm</td><td>14</td><td>57 mm</td><td>18</td></tr>
+        <tr><td>45 mm</td><td>14.5</td><td>58 mm</td><td>18.5</td></tr>
+        <tr><td>47 mm</td><td>15</td><td>60 mm</td><td>19</td></tr>
+        <tr><td>48 mm</td><td>15.5</td><td>62 mm</td><td>19.5</td></tr>
+        <tr><td>50 mm</td><td>16</td><td>63 mm</td><td>20</td></tr>
+        <tr><td>51 mm</td><td>16.5</td><td>65 mm</td><td>20.5</td></tr>
+        <tr><td>52 mm</td><td>17</td><td>67 mm</td><td>21</td></tr>
+        <tr><td>54 mm</td><td>17.5</td><td>68 mm</td><td>21.5</td></tr>
+      </tbody>
+    </table>
+
+    <div class="talle-tip">
+      <strong>Tip importante:</strong> Medite a la <strong>tarde o noche</strong> — los dedos se hinchan con el calor del día. Si tu nudillo es más ancho que la base, medí ambos y tomá el promedio. Si estás entre dos tallas, siempre elegí la más grande.
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 4: COLECCIONES -->
+<section id="colecciones" class="section">
+  <div class="container">
+    <div class="section-eyebrow">04 · Colecciones Patagónicas</div>
+    <h2>Joyas con <em>identidad propia</em></h2>
+    <p class="section-intro">
+      Mientras otras joyerías importan diseños, las colecciones de Joyas Eduardo nacieron acá. Cada pieza lleva algo de la Patagonia — para parejas que también tienen historia.
+    </p>
+
+    <div class="colecciones">
+
+      <div class="coleccion-card vientos">
+        <div>
+          <div class="coleccion-nombre">Vientos del Sur</div>
+          <div class="coleccion-subtitulo">La fuerza que esculpe sin destruir</div>
+          <div class="coleccion-tags">
+            <span class="coleccion-tag">Anillos</span>
+            <span class="coleccion-tag">Aros</span>
+            <span class="coleccion-tag">Plata 925</span>
+            <span class="coleccion-tag">Minimalismo</span>
+            <span class="coleccion-tag">Uso diario</span>
+          </div>
+          <p class="coleccion-texto">
+            El viento patagónico no destruye: esculpe. Esta colección nació de esa energía — líneas limpias, peso real, carácter sin adornos innecesarios. Para la pareja que no necesita decirlo todo. Para el compromiso que ya se sabe.
+          </p>
+          <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Me%20interesa%20la%20colección%20Vientos%20del%20Sur%20para%20un%20compromiso%20💍" class="coleccion-cta">
+            💬 Consultar esta colección
+          </a>
+        </div>
+        <div class="coleccion-icon">🌬️</div>
+      </div>
+
+      <div class="coleccion-card mar">
+        <div>
+          <div class="coleccion-nombre">Mar Adentro</div>
+          <div class="coleccion-subtitulo">La profundidad del Atlántico Sur</div>
+          <div class="coleccion-tags">
+            <span class="coleccion-tag">Cadenas</span>
+            <span class="coleccion-tag">Dijes</span>
+            <span class="coleccion-tag">Plata 925</span>
+            <span class="coleccion-tag">Regalo romántico</span>
+            <span class="coleccion-tag">Aniversario</span>
+          </div>
+          <p class="coleccion-texto">
+            El mar patagónico no es uno solo: es azul, verde, gris, negro. Nunca el mismo. Cadenas que caen como corrientes. Dijes que guardan historias como el mar guarda secretos. Para regalar cuando las palabras no alcanzan.
+          </p>
+          <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Me%20interesa%20la%20colección%20Mar%20Adentro%20para%20regalo%20o%20compromiso%20🌊" class="coleccion-cta">
+            💬 Consultar esta colección
+          </a>
+        </div>
+        <div class="coleccion-icon">🌊</div>
+      </div>
+
+      <div class="coleccion-card tierra">
+        <div>
+          <div class="coleccion-nombre">Tierra Roja</div>
+          <div class="coleccion-subtitulo">Basalto, meseta y raíz · Las piezas más especiales</div>
+          <div class="coleccion-tags">
+            <span class="coleccion-tag">Oro 18K</span>
+            <span class="coleccion-tag">Pulseras</span>
+            <span class="coleccion-tag">Aros</span>
+            <span class="coleccion-tag">Plata y Oro 18K</span>
+            <span class="coleccion-tag">Ocasión especial</span>
+          </div>
+          <p class="coleccion-texto">
+            La meseta patagónica es roja, ígnea, nacida del fuego. Esta colección es para momentos que merecen ser recordados — el casamiento, el aniversario importante, el regalo que dura décadas. Oro, volumen, presencia real.
+          </p>
+          <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Me%20interesa%20la%20colección%20Tierra%20Roja%20para%20un%20momento%20especial%20🗻" class="coleccion-cta">
+            💬 Consultar esta colección
+          </a>
+        </div>
+        <div class="coleccion-icon">🗻</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN 5: PREGUNTAS -->
+<section id="preguntas" class="section">
+  <div class="container">
+    <div class="section-eyebrow">05 · Preguntas frecuentes</div>
+    <h2>Las dudas <em>más comunes</em></h2>
+    <p class="section-intro">Preguntas reales de clientes reales. Si la tuya no está, escribinos por WhatsApp.</p>
+
+    <div class="faq">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Cuánto tiempo antes del casamiento hay que encargar las alianzas?</span>
+          <em class="faq-chevron">⌄</em>
+        </div>
+        <div class="faq-a">
+          Depende del modelo. Las alianzas de nuestro catálogo estándar pueden estar listas en pocos días. Si querés un diseño especial, personalizado o que no esté en stock, lo ideal es encargar con al menos 3 a 4 semanas de anticipación. Para casamientos en fechas importantes (diciembre, febrero) recomendamos encargar antes.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Puedo traer mi propia piedra o joya para reambientar?</span>
+          <em class="faq-chevron">⌄</em>
+        </div>
+        <div class="faq-a">
+          Sí. Si tenés una piedra preciosa, una joya familiar o una piedra especial que querés incorporar en un diseño nuevo, lo coordinamos. También hacemos reforma de joyas — actualizamos diseños viejos para que tengan una nueva vida.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Hacen envíos a todo el país?</span>
+          <em class="faq-chevron">⌄</em>
+        </div>
+        <div class="faq-a">
+          Sí, enviamos a todo el país por Correo Argentino, OCA o Andreani. Las joyas viajan aseguradas y con número de seguimiento. Consultanos por WhatsApp los costos y tiempos según tu código postal.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Qué pasa si el talle no es el correcto?</span>
+          <em class="faq-chevron">⌄</em>
+        </div>
+        <div class="faq-a">
+          Las alianzas de oro se pueden agrandar o achicar dentro de ciertos límites según el modelo. Por eso es importante medir bien antes de hacer el pedido — usá nuestra guía de talles o vení al local que te medimos en el momento sin costo.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Puedo pagar en cuotas?</span>
+          <em class="faq-chevron">⌄</em>
+        </div>
+        <div class="faq-a">
+          Sí. Aceptamos todas las tarjetas de crédito hasta 6 cuotas sin interés (VISA, Mastercard, Amex, Naranja, Cabal, Mercado Pago). También hay descuento del 20% pagando en efectivo y 10% por transferencia. Consultanos para coordinar el pago que mejor se adapte a vos.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Se puede grabar un mensaje en el interior de la alianza?</span>
+          <em class="faq-chevron">⌄</em>
+        </div>
+        <div class="faq-a">
+          Sí, hacemos grabado de texto en el interior de anillos y alianzas. Podés poner una fecha, sus nombres, una frase corta o incluso un símbolo. El grabado se coordina al momento del encargo y tiene un costo adicional según el largo del texto.
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">
+          <span>¿Cómo sé si el Oro 18K es auténtico?</span>
+          <em class="faq-chevron">⌄</em>
+        </div>
+        <div class="faq-a">
+          Todas las joyas en Oro 18K llevan sello de contraste (el marcaje oficial que certifica la ley del metal) y entregamos certificado de autenticidad con cada pieza. El oro 18K tiene 75% de oro puro — es el estándar más común en joyería fina argentina y el que mejor combina dureza y color.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="cta-final">
+  <h2>Listo para dar <em>el paso</em>?</h2>
+  <p>Escribinos por WhatsApp. Te acompañamos desde la idea hasta que la joya está en tu mano.</p>
+  <div class="cta-buttons">
+    <a href="https://wa.me/5492976235421?text=Hola%20Eduardo!%20Leí%20la%20guía%20de%20compromiso%20y%20quiero%20que%20me%20asesorés%20para%20elegir%20la%20joya%20perfecta%20💍" class="btn-primary">
+      💬 Empezar el asesoramiento
+    </a>
+    <a href="index.html" class="btn-secondary">
+      💍 Ver catálogo completo
+    </a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p style="margin-bottom: 8px;"><strong style="color: var(--gold);">Joyas Eduardo</strong> · Comodoro Rivadavia, Chubut · Patagonia Argentina</p>
+  <p>
+    <a href="https://wa.me/5492976235421">📱 2976 235421</a>
+    &nbsp;·&nbsp;
+    <a href="https://www.instagram.com/joyaseduardo">📸 @joyaseduardo</a>
+    &nbsp;·&nbsp;
+    Lun–Vie 9:00–19:00 · Sáb 9:00–13:00
+  </p>
+  <p style="margin-top: 16px; font-size: 11px;">© 2026 Joyas Eduardo · La Tierra de los Vientos</p>
+</footer>
+
+<!-- FLOAT WA -->
+<a href="https://wa.me/5492976235421?text=Hola!%20Vi%20la%20guía%20de%20compromiso%20y%20quiero%20consultar." class="wa-float">
+  💬 Consultar
+</a>
+
+<script>
+function toggleFaq(el) {
+  const item = el.parentElement;
+  const isOpen = item.classList.contains('open');
+  document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+</script>
+
+</body>
+</html>
