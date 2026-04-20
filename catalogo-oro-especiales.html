@@ -212,7 +212,7 @@ function cardHTML(a){
   var grid='grid-template-columns:'+(cols===3?'1fr 1fr 1fr':'1fr 1fr');
   return '<div class="card">'+
     '<div class="foto">'+
-      '<img src="'+CAR+'/'+a.codigo+'.jpg" alt="'+a.codigo+'" onclick="openLB(this.src)" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'+
+      '<img src="'+CAR+'/'+a.codigo.replace(/ /g,'%20')+'.jpg" alt="'+a.codigo+'" onclick="openLB(this.src)" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'+
       '<div class="ph"><span>⭐</span><p>'+a.codigo+'</p></div>'+
     '</div>'+
     '<div class="cbody">'+
