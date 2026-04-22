@@ -154,9 +154,9 @@ const DATA = [
   {codigo:'3093',opciones:[{"peso": "3,5 grs", "ancho": "4.2 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
   {codigo:'3094',opciones:[{"peso": "4 grs", "ancho": "4.8 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
   {codigo:'3110',opciones:[{"peso": "6 grs", "ancho": "7 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
-  {codigo:'3110 (2)',opciones:[{"peso": "6 grs", "ancho": "7 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
-  {codigo:'3110 (3)',opciones:[{"peso": "6 grs", "ancho": "7 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
-  {codigo:'3110 (4)',opciones:[{"peso": "6 grs", "ancho": "7 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
+  {codigo:'3110_2',opciones:[{"peso": "6 grs", "ancho": "7 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
+  {codigo:'3110_3',opciones:[{"peso": "6 grs", "ancho": "7 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
+  {codigo:'3110_4',opciones:[{"peso": "6 grs", "ancho": "7 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
   {codigo:'3416',opciones:[{"peso": "6 grs", "ancho": "6 mm"}],precio_plata:'$ 29,00',precio_oro:'$ 38,00'},
   {codigo:'3422',opciones:[{"peso": "5 grs", "ancho": "5.5 mm"}],precio_plata:'$ 40,00',precio_oro:'$ 50,00'},
   {codigo:'3423',opciones:[{"peso": "4 grs", "ancho": "4.8 mm"}],precio_plata:'$ 30,00',precio_oro:'$ 40,00'},
@@ -212,7 +212,7 @@ function cardHTML(a){
   var grid='grid-template-columns:'+(cols===3?'1fr 1fr 1fr':'1fr 1fr');
   return '<div class="card">'+
     '<div class="foto">'+
-      '<img src="'+CAR+'/'+a.codigo.replace(/ /g,'%20')+'.jpg" alt="'+a.codigo+'" onclick="openLB(this.src)" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'+
+      '<img src="'+CAR+'/'+a.codigo+'.jpg" alt="'+a.codigo+'" onclick="openLB(this.src)" onerror="this.style.display=\'none\';this.nextElementSibling.style.display=\'flex\'">'+
       '<div class="ph"><span>⭐</span><p>'+a.codigo+'</p></div>'+
     '</div>'+
     '<div class="cbody">'+
