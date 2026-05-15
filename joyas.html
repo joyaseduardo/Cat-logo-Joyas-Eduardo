@@ -1120,25 +1120,47 @@
   ═══════════════════════════════════════ */
   async function cargarJoyas() {
     try {
-      const res  = await fetch('joyas-data.json');
-      if (!res.ok) throw new Error('No se pudo cargar joyas-data.json');
-      const data = await res.json();
-      todasLasJoyas = data.joyas || [];
+      const res = await fetch('joyas-data.json');
+      if (!res.ok) throw new Error('HTTP ' + res.status + ' — no se pudo cargar joyas-data.json');
 
-      // Badge en tab
+      const data = await res.json();
+
+      // Acepta tanto { joyas: [...] } como un array directo
+      if (Array.isArray(data)) {
+        todasLasJoyas = data;
+      } else if (Array.isArray(data.joyas)) {
+        todasLasJoyas = data.joyas;
+      } else {
+        throw new Error('El archivo joyas-data.json no tiene el formato esperado.');
+      }
+
+      if (!todasLasJoyas.length) {
+        document.getElementById('joyasGrid').innerHTML = `
+          <div class="empty-state" style="grid-column:1/-1">
+            <div class="icon">📭</div>
+            <p>El archivo <strong>joyas-data.json</strong> está vacío o sin stock.<br>
+            <small style="color:#444">Exportalo de nuevo desde la gestión con el botón 🌐 Catálogo.</small></p>
+          </div>`;
+        return;
+      }
+
       const badge = document.getElementById('badge-joyas');
       badge.textContent = todasLasJoyas.length;
       badge.style.display = '';
 
       construirFiltros();
       renderJoyas(todasLasJoyas);
+
     } catch (err) {
       document.getElementById('joyasGrid').innerHTML = `
         <div class="empty-state" style="grid-column:1/-1">
           <div class="icon">⚠️</div>
-          <p>No se encontró el archivo <strong>joyas-data.json</strong>.<br>
-          <small style="color:#444;display:block;margin-top:0.5rem;">
-            Asegurate de que esté en la misma carpeta que este archivo HTML.
+          <p><strong>Error al cargar joyas-data.json</strong><br>
+          <small style="color:#c55;display:block;margin-top:0.5rem;">${err.message}</small>
+          <small style="color:#444;display:block;margin-top:0.75rem;">
+            ✔ Verificá que el archivo esté en <strong>C:\xampp\htdocs\joyas\</strong><br>
+            ✔ Que Apache esté corriendo en XAMPP<br>
+            ✔ Que estés abriendo por <strong>http://localhost/joyas/joyas.html</strong> (no doble clic)
           </small></p>
         </div>`;
     }
