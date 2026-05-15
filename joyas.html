@@ -1152,17 +1152,16 @@
       renderJoyas(todasLasJoyas);
 
     } catch (err) {
-      document.getElementById('joyasGrid').innerHTML = `
-        <div class="empty-state" style="grid-column:1/-1">
-          <div class="icon">⚠️</div>
-          <p><strong>Error al cargar joyas-data.json</strong><br>
-          <small style="color:#c55;display:block;margin-top:0.5rem;">${err.message}</small>
-          <small style="color:#444;display:block;margin-top:0.75rem;">
-            ✔ Verificá que el archivo esté en <strong>C:\xampp\htdocs\joyas\</strong><br>
-            ✔ Que Apache esté corriendo en XAMPP<br>
-            ✔ Que estés abriendo por <strong>http://localhost/joyas/joyas.html</strong> (no doble clic)
-          </small></p>
-        </div>`;
+      document.getElementById('joyasGrid').innerHTML =
+        '<div class="empty-state" style="grid-column:1/-1">'
+        + '<div class="icon">⚠️</div>'
+        + '<p><strong>Error al cargar joyas-data.json</strong><br>'
+        + '<small style="color:#c55;font-size:0.8rem;display:block;margin-top:0.5rem;">' + err.message + '</small>'
+        + '<small style="color:#444;font-size:0.75rem;display:block;margin-top:0.75rem;">'
+        + 'Verificá: 1) joyas-data.json está en la misma carpeta que joyas.html<br>'
+        + '2) Apache corre en XAMPP<br>'
+        + '3) Abrís por http://localhost/joyas/joyas.html'
+        + '</small></p></div>';
     }
   }
 
