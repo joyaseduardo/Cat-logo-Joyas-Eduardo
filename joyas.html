@@ -1097,17 +1097,19 @@
      JAVASCRIPT
 ═══════════════════════════════════════════ -->
 <script>
-  /* ── NÚMERO DE WHATSAPP ── */
-  const WA_NUMBER = '5492976235421';
+  const WA_NUMBER  = '5492976235421';
+  const CLOUD_BASE = 'https://res.cloudinary.com/dfsnzdwqx/image/upload';
+  const CARPETA_MAP = {
+    'Anillos':'ANILLOS','Aros':'AROS','Aros Bebe':'ABRIDORES',
+    'Cadenas':'CADENAS','Dijes':'DIJES','Pulseras':'PULSERAS',
+    'Collares':'COLLARES','Otros':'OTROS'
+  };
 
-  /* ── ESTADO ── */
-  let todasLasJoyas  = [];
-  let filtroActual   = 'todos';
-  let carrito        = [];   // array de SKUs
+  let todasLasJoyas = [];
+  let filtroActual  = 'todos';
+  let carrito       = [];
 
-  /* ═══════════════════════════════════════
-     TABS
-  ═══════════════════════════════════════ */
+  /* ── TAB ── */
   function cambiarTab(tab) {
     document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
     document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
@@ -1115,65 +1117,70 @@
     document.getElementById('tab-' + tab).classList.add('active');
   }
 
-  /* ═══════════════════════════════════════
-     CARGA DE DATOS
-  ═══════════════════════════════════════ */
+  /* ── URL CLOUDINARY ── */
+  function buildFotoUrl(j) {
+    var foto = j.foto || '';
+    if (!foto || foto.indexOf('data:') === 0) return '';
+
+    // Extraemos solo el nombre del archivo, sin carpeta ni extensión
+    // Ej: "https://.../upload/ANILLOS/AN-133.jpg"  → "AN-133.jpg"
+    // Ej: "AN-133.jpg" (nombre solo)               → "AN-133.jpg"
+    var archivo = foto;
+    if (foto.indexOf('http') === 0) {
+      // Sacamos todo lo que viene después de /upload/
+      var idx = foto.indexOf('/upload/');
+      if (idx !== -1) {
+        archivo = foto.substring(idx + 8); // después de "/upload/"
+        // Si tiene subcarpeta (ANILLOS/AN-133.jpg), nos quedamos solo con el archivo
+        var slash = archivo.lastIndexOf('/');
+        if (slash !== -1) archivo = archivo.substring(slash + 1);
+      }
+    }
+
+    // Transformamos al formato real de Cloudinary:
+    // guiones → guiones bajos, extensión → .png
+    var nombre = archivo
+      .replace(/-/g, '_')          // AN-133 → AN_133
+      .replace(/\.[^/.]+$/, '');   // quita .jpg o lo que sea
+    return CLOUD_BASE + '/' + nombre + '.png';
+  }
+
+  /* ── CARGA JSON ── */
   async function cargarJoyas() {
     try {
-      const res = await fetch('joyas-data.json');
-      if (!res.ok) throw new Error('HTTP ' + res.status + ' — no se pudo cargar joyas-data.json');
-
-      const data = await res.json();
-
-      // Acepta tanto { joyas: [...] } como un array directo
-      if (Array.isArray(data)) {
-        todasLasJoyas = data;
-      } else if (Array.isArray(data.joyas)) {
-        todasLasJoyas = data.joyas;
-      } else {
-        throw new Error('El archivo joyas-data.json no tiene el formato esperado.');
-      }
+      var res = await fetch('joyas-data.json');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      var data = await res.json();
+      if (Array.isArray(data))       todasLasJoyas = data;
+      else if (Array.isArray(data.joyas)) todasLasJoyas = data.joyas;
+      else throw new Error('Formato de joyas-data.json incorrecto');
 
       if (!todasLasJoyas.length) {
-        document.getElementById('joyasGrid').innerHTML = `
-          <div class="empty-state" style="grid-column:1/-1">
-            <div class="icon">📭</div>
-            <p>El archivo <strong>joyas-data.json</strong> está vacío o sin stock.<br>
-            <small style="color:#444">Exportalo de nuevo desde la gestión con el botón 🌐 Catálogo.</small></p>
-          </div>`;
+        document.getElementById('joyasGrid').innerHTML =
+          '<div class="empty-state" style="grid-column:1/-1"><div class="icon">📭</div>' +
+          '<p>joyas-data.json está vacío o sin stock.</p></div>';
         return;
       }
-
-      const badge = document.getElementById('badge-joyas');
+      var badge = document.getElementById('badge-joyas');
       badge.textContent = todasLasJoyas.length;
       badge.style.display = '';
-
       construirFiltros();
       renderJoyas(todasLasJoyas);
-
-    } catch (err) {
+    } catch(err) {
       document.getElementById('joyasGrid').innerHTML =
-        '<div class="empty-state" style="grid-column:1/-1">'
-        + '<div class="icon">⚠️</div>'
-        + '<p><strong>Error al cargar joyas-data.json</strong><br>'
-        + '<small style="color:#c55;font-size:0.8rem;display:block;margin-top:0.5rem;">' + err.message + '</small>'
-        + '<small style="color:#444;font-size:0.75rem;display:block;margin-top:0.75rem;">'
-        + 'Verificá: 1) joyas-data.json está en la misma carpeta que joyas.html<br>'
-        + '2) Apache corre en XAMPP<br>'
-        + '3) Abrís por http://localhost/joyas/joyas.html'
-        + '</small></p></div>';
+        '<div class="empty-state" style="grid-column:1/-1"><div class="icon">⚠️</div>' +
+        '<p><strong>Error:</strong> ' + err.message + '<br>' +
+        '<small style="color:#666">Verificá que joyas-data.json esté en la misma carpeta y Apache esté corriendo.</small></p></div>';
     }
   }
 
-  /* ═══════════════════════════════════════
-     FILTROS DE CATEGORÍA
-  ═══════════════════════════════════════ */
+  /* ── FILTROS ── */
   function construirFiltros() {
-    const cats = [...new Set(todasLasJoyas.map(j => j.categoria).filter(Boolean))].sort();
-    const bar  = document.getElementById('filtrosBar');
-    bar.innerHTML = `<button class="filtro-btn active" onclick="setFiltro('todos', this)">Todos</button>`;
-    cats.forEach(cat => {
-      const btn = document.createElement('button');
+    var cats = [...new Set(todasLasJoyas.map(j => j.categoria).filter(Boolean))].sort();
+    var bar  = document.getElementById('filtrosBar');
+    bar.innerHTML = '<button class="filtro-btn active" onclick="setFiltro(\'todos\',this)">Todos</button>';
+    cats.forEach(function(cat) {
+      var btn = document.createElement('button');
       btn.className = 'filtro-btn';
       btn.textContent = cat;
       btn.onclick = function() { setFiltro(cat, this); };
@@ -1188,110 +1195,93 @@
     aplicarFiltros();
   }
 
-  /* ═══════════════════════════════════════
-     BÚSQUEDA
-  ═══════════════════════════════════════ */
   function filtrarJoyas() { aplicarFiltros(); }
 
   function aplicarFiltros() {
-    const q = (document.getElementById('busquedaJoyas').value || '').toLowerCase().trim();
-    let lista = todasLasJoyas;
+    var q = (document.getElementById('busquedaJoyas').value || '').toLowerCase().trim();
+    var lista = todasLasJoyas;
     if (filtroActual !== 'todos') lista = lista.filter(j => j.categoria === filtroActual);
     if (q) lista = lista.filter(j =>
-      (j.nombre  || '').toLowerCase().includes(q) ||
-      (j.sku     || '').toLowerCase().includes(q) ||
-      (j.notas   || '').toLowerCase().includes(q)
+      (j.nombre||'').toLowerCase().includes(q) ||
+      (j.sku||'').toLowerCase().includes(q) ||
+      (j.notas||'').toLowerCase().includes(q)
     );
     renderJoyas(lista);
   }
 
-  /* ═══════════════════════════════════════
-     RENDER CARDS
-  ═══════════════════════════════════════ */
+  /* ── EMOJI ── */
   function emojiPorCategoria(cat) {
-    const mapa = {
+    var mapa = {
       'Cadenas':'⛓️','Pulseras':'📿','Aros':'💫','Anillos':'💍',
-      'Colgantes':'✨','Dijes':'🌟','Broches':'🔐','Tobilleras':'🦶'
+      'Dijes':'✨','Otros':'🌟','Collares':'📿'
     };
     return mapa[cat] || '💎';
   }
 
+  /* ── RENDER CARDS ── */
   function renderJoyas(lista) {
-    const grid = document.getElementById('joyasGrid');
+    var grid = document.getElementById('joyasGrid');
     if (!lista.length) {
-      grid.innerHTML = `
-        <div class="empty-state" style="grid-column:1/-1">
-          <div class="icon">🔍</div>
-          <p>No encontramos joyas con esa búsqueda.<br>
-          <small style="color:#444">Probá con otro nombre o categoría.</small></p>
-        </div>`;
+      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="icon">🔍</div><p>No se encontraron joyas.</p></div>';
       return;
     }
+    grid.innerHTML = lista.map(function(j) {
+      var enCarrito = carrito.includes(j.sku);
+      var emoji     = emojiPorCategoria(j.categoria);
+      var fotoUrl   = buildFotoUrl(j);
+      var fotoHtml  = fotoUrl
+        ? '<img src="' + fotoUrl + '" alt="' + (j.nombre||'') + '" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display=\'none\'">'
+        : '<div class="foto-placeholder"><span>' + emoji + '</span></div>';
 
-    grid.innerHTML = lista.map(j => {
-      const enCarrito = carrito.includes(j.sku);
-      const emoji = emojiPorCategoria(j.categoria);
-      const fotoHtml = j.foto
-        ? `<img src="${j.foto}" alt="${j.nombre}" loading="lazy" onerror="this.parentElement.innerHTML='<div class=&quot;foto-placeholder&quot;><span>${emoji}</span><p>${j.categoria || ''}</p></div>'">`
-        : `<div class="foto-placeholder"><span>${emoji}</span><p>${j.categoria || ''}</p></div>`;
-
-      return `
-        <div class="joya-card" id="card-${j.sku}">
-          <div class="foto-container">
-            ${fotoHtml}
-            <span class="badge-categoria">${j.categoria || ''}</span>
-            ${!j.stock ? '<div class="sin-stock">Sin stock</div>' : ''}
-          </div>
-          <div class="info">
-            <div class="sku"># ${j.sku}</div>
-            <div class="nombre">${j.nombre}</div>
-            <div class="material">${j.material || ''}</div>
-            ${j.notas ? `<div class="notas-badge">📝 ${j.notas}</div>` : ''}
-            <div class="card-actions">
-              <button class="btn-carrito ${enCarrito ? 'en-carrito' : ''}"
-                id="btn-${j.sku}"
-                onclick="toggleCarrito('${j.sku}')"
-                ${!j.stock ? 'disabled style="opacity:0.4;cursor:not-allowed"' : ''}>
-                ${enCarrito ? '✓ Agregado' : '🛍️ Agregar'}
-              </button>
-              <a class="btn-consultar"
-                href="https://wa.me/${WA_NUMBER}?text=${encodeURIComponent('Hola! Me interesa consultar por: ' + j.nombre + ' (Ref: ' + j.sku + ')')}"
-                target="_blank">
-                💬 Consultar
-              </a>
-            </div>
-          </div>
-        </div>`;
+      return '<div class="joya-card" id="card-' + j.sku + '">' +
+        '<div class="foto-container">' +
+          fotoHtml +
+          '<span class="badge-categoria">' + (j.categoria||'') + '</span>' +
+          (!j.stock ? '<div class="sin-stock">Sin stock</div>' : '') +
+        '</div>' +
+        '<div class="info">' +
+          '<div class="sku"># ' + j.sku + '</div>' +
+          '<div class="nombre">' + (j.nombre||'') + '</div>' +
+          '<div class="material">' + (j.material||'') + '</div>' +
+          (j.notas ? '<div class="notas-badge">📝 ' + j.notas + '</div>' : '') +
+          '<div class="card-actions">' +
+            '<button class="btn-carrito ' + (enCarrito ? 'en-carrito' : '') + '" ' +
+              'id="btn-' + j.sku + '" onclick="toggleCarrito(\'' + j.sku + '\')"' +
+              (!j.stock ? ' disabled style="opacity:0.4;cursor:not-allowed"' : '') + '>' +
+              (enCarrito ? '✓ Agregado' : '🛍️ Agregar') +
+            '</button>' +
+            '<a class="btn-consultar" target="_blank" ' +
+              'href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent('Hola! Me interesa: ') + (j.nombre||'') + encodeURIComponent(' (Ref: ') + j.sku + encodeURIComponent(')')  + '">' +
+              '💬 Consultar' +
+            '</a>' +
+          '</div>' +
+        '</div>' +
+      '</div>';
     }).join('');
   }
 
-  /* ═══════════════════════════════════════
-     CARRITO
-  ═══════════════════════════════════════ */
+  /* ── CARRITO ── */
   function toggleCarrito(sku) {
-    const idx = carrito.indexOf(sku);
-    if (idx === -1) {
-      carrito.push(sku);
-    } else {
-      carrito.splice(idx, 1);
-    }
+    var idx = carrito.indexOf(sku);
+    if (idx === -1) carrito.push(sku);
+    else carrito.splice(idx, 1);
     actualizarBtnCard(sku);
     actualizarContador();
   }
 
   function actualizarBtnCard(sku) {
-    const btn = document.getElementById('btn-' + sku);
+    var btn = document.getElementById('btn-' + sku);
     if (!btn) return;
-    const en = carrito.includes(sku);
+    var en = carrito.includes(sku);
     btn.textContent = en ? '✓ Agregado' : '🛍️ Agregar';
     btn.classList.toggle('en-carrito', en);
   }
 
   function actualizarContador() {
-    const n    = carrito.length;
-    const cnt  = document.getElementById('carritoCount');
-    const fl   = document.getElementById('carritoFloat');
-    cnt.textContent = n;
+    var n   = carrito.length;
+    var cnt = document.getElementById('carritoCount');
+    var fl  = document.getElementById('carritoFloat');
+    cnt.textContent  = n;
     cnt.style.display = n ? '' : 'none';
     fl.style.display  = n ? '' : 'none';
   }
@@ -1308,36 +1298,27 @@
   }
 
   function renderCarritoPanel() {
-    const items  = document.getElementById('carritoItems');
-    const footer = document.getElementById('carritoFooter');
-    const total  = document.getElementById('carritoTotal');
-
+    var items  = document.getElementById('carritoItems');
+    var footer = document.getElementById('carritoFooter');
+    var total  = document.getElementById('carritoTotal');
     if (!carrito.length) {
-      items.innerHTML = `
-        <div class="carrito-empty">
-          <span>🛍️</span>
-          <p>Tu selección está vacía.<br>
-          Agregá joyas del catálogo para consultar su precio por WhatsApp.</p>
-        </div>`;
+      items.innerHTML = '<div class="carrito-empty"><span>🛍️</span><p>Tu selección está vacía.<br>Agregá joyas para consultar precio por WhatsApp.</p></div>';
       footer.style.display = 'none';
       return;
     }
-
-    items.innerHTML = carrito.map(sku => {
-      const j = todasLasJoyas.find(x => x.sku === sku);
+    items.innerHTML = carrito.map(function(sku) {
+      var j = todasLasJoyas.find(x => x.sku === sku);
       if (!j) return '';
-      return `
-        <div class="carrito-item">
-          <div class="carrito-item-icon">${emojiPorCategoria(j.categoria)}</div>
-          <div class="carrito-item-info">
-            <div class="ci-nombre">${j.nombre}</div>
-            <div class="ci-material">${j.material || ''}</div>
-            <div class="ci-sku"># ${j.sku}</div>
-          </div>
-          <button class="carrito-item-remove" onclick="quitarDelCarrito('${sku}')" title="Quitar">✕</button>
-        </div>`;
+      return '<div class="carrito-item">' +
+        '<div class="carrito-item-icon">' + emojiPorCategoria(j.categoria) + '</div>' +
+        '<div class="carrito-item-info">' +
+          '<div class="ci-nombre">' + j.nombre + '</div>' +
+          '<div class="ci-material">' + (j.material||'') + '</div>' +
+          '<div class="ci-sku"># ' + j.sku + '</div>' +
+        '</div>' +
+        '<button class="carrito-item-remove" onclick="quitarDelCarrito(\'' + sku + '\')">✕</button>' +
+      '</div>';
     }).join('');
-
     total.textContent = carrito.length;
     footer.style.display = '';
   }
@@ -1351,7 +1332,7 @@
   }
 
   function vaciarCarrito() {
-    const anterior = [...carrito];
+    var anterior = [...carrito];
     carrito = [];
     anterior.forEach(actualizarBtnCard);
     actualizarContador();
@@ -1360,38 +1341,27 @@
 
   function consultarPorWA() {
     if (!carrito.length) return;
-    const lineas = carrito.map(sku => {
-      const j = todasLasJoyas.find(x => x.sku === sku);
-      return j ? `• ${j.nombre} (Ref: ${j.sku})` : '';
+    var lineas = carrito.map(function(sku) {
+      var j = todasLasJoyas.find(x => x.sku === sku);
+      return j ? ('- ' + j.nombre + ' (Ref: ' + j.sku + ')') : '';
     }).filter(Boolean);
-
-    const msg = `¡Hola! Vi el catálogo online y me gustaría consultar el precio de las siguientes joyas:\n\n${lineas.join('\n')}\n\n¿Me podés indicar precios y disponibilidad? ¡Muchas gracias! 😊`;
+    var msg = 'Hola! Me gustaria consultar precio de:\n\n' + lineas.join('\n') + '\n\nGracias!';
     window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
   }
 
-  /* ═══════════════════════════════════════
-     MODAL BIENVENIDA
-  ═══════════════════════════════════════ */
   function cerrarWelcome() {
     document.getElementById('welcomeModal').classList.remove('active');
   }
 
-  /* ═══════════════════════════════════════
-     INIT
-  ═══════════════════════════════════════ */
-  window.addEventListener('DOMContentLoaded', () => {
-    // Modal bienvenida (solo una vez por sesión)
+  window.addEventListener('DOMContentLoaded', function() {
     if (!sessionStorage.getItem('welcomed')) {
       document.getElementById('welcomeModal').classList.add('active');
       sessionStorage.setItem('welcomed', '1');
     }
-
-    // Cargar joyas
     cargarJoyas();
   });
 
-  // Cerrar carrito con Escape
-  document.addEventListener('keydown', e => {
+  document.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') cerrarCarrito();
   });
 </script>
