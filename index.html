@@ -599,7 +599,7 @@
       💍 Alianzas <span class="tab-badge">338</span>
     </button>
     <button class="tab-btn" onclick="cambiarTab('joyas')" id="tab-joyas">
-      💎 Joyas
+      💎 Joyas <span class="tab-badge" id="badge-joyas" style="display:none"></span>
     </button>
   </div>
 </header>
@@ -788,3 +788,507 @@
 </div>
 
 <s
+<!-- ══════════════════════════════════════════
+     LIGHTBOX
+═══════════════════════════════════════════ -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-cerrar" id="lightboxCerrar">✕</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-info">
+    <div class="lightbox-nombre" id="lightboxNombre"></div>
+    <div class="lightbox-material" id="lightboxMaterial"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     BACKUP BAR
+═══════════════════════════════════════════ -->
+<div class="backup-bar">
+  <span class="backup-info" id="backupInfo">Sin backup guardado</span>
+  <button class="backup-btn" onclick="hacerBackup()">💾 Guardar backup</button>
+  <button class="backup-btn restaurar" onclick="restaurarBackup()">📂 Restaurar backup</button>
+</div>
+
+<!-- ══════════════════════════════════════════
+     CARRITO FLOTANTE
+═══════════════════════════════════════════ -->
+<div class="carrito-float" id="carritoFloat" style="display:none">
+  <button class="carrito-btn" onclick="abrirCarrito()" title="Ver carrito de consulta">
+    🛍️
+    <span class="carrito-count" id="carritoCount">0</span>
+  </button>
+</div>
+
+<!-- Panel lateral carrito -->
+<div class="carrito-panel" id="carritoPanel">
+  <div class="carrito-overlay" onclick="cerrarCarrito()"></div>
+  <div class="carrito-drawer">
+    <div class="carrito-header">
+      <h3>🛍️ Mi consulta</h3>
+      <button class="carrito-cerrar" onclick="cerrarCarrito()">✕</button>
+    </div>
+    <div class="carrito-items" id="carritoItems">
+      <!-- Items se renderizan aquí -->
+    </div>
+    <div class="carrito-footer" id="carritoFooter" style="display:none">
+      <div class="resumen">
+        <span>Productos seleccionados:</span>
+        <strong id="carritoTotal">0</strong>
+      </div>
+      <button class="btn-wa-consultar" onclick="consultarPorWA()">
+        💬 Consultar por WhatsApp
+      </button>
+      <button class="btn-vaciar" onclick="vaciarCarrito()">🗑️ Vaciar selección</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+  const WA_NUMBER  = '5492976235421';
+  const CLOUD_BASE = 'https://res.cloudinary.com/dfsnzdwqx/image/upload';
+  const CARPETA_MAP = {
+    'Anillos':'ANILLOS','Aros':'AROS','Aros Bebe':'ABRIDORES',
+    'Cadenas':'CADENAS','Dijes':'DIJES','Pulseras':'PULSERAS',
+    'Collares':'COLLARES','Otros':'OTROS'
+  };
+
+  let todasLasJoyas = [];
+  let filtroActual  = 'todos';
+  let carrito       = [];
+
+  /* ── TAB ── */
+  function cambiarTab(tab) {
+    document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.tab-btn').forEach(el => el.classList.remove('active'));
+    document.getElementById('content-' + tab).classList.add('active');
+    document.getElementById('tab-' + tab).classList.add('active');
+  }
+
+  /* ── URL CLOUDINARY ── */
+  function buildFotoUrl(j) {
+    var foto = j.foto || '';
+    if (!foto || foto.indexOf('data:') === 0) return '';
+    // Extraer solo el nombre de archivo sin carpeta
+    var archivo = foto;
+    if (foto.indexOf('http') === 0) {
+      var idx = foto.indexOf('/upload/');
+      if (idx !== -1) {
+        archivo = foto.substring(idx + 8);
+        var slash = archivo.lastIndexOf('/');
+        if (slash !== -1) archivo = archivo.substring(slash + 1);
+        // quitar versión tipo v1234567/ si quedó
+        archivo = archivo.replace(/^v[0-9]+\//, '');
+      }
+    }
+    // guiones a guiones bajos, quitar extensión, agregar f_auto
+    var nombre = archivo.replace(/-/g, '_').split('.')[0];
+    return CLOUD_BASE + '/f_auto,q_auto/' + nombre;
+  }
+
+  /* ── CARGA JSON ── */
+  async function cargarJoyas() {
+    try {
+      var res = await fetch('joyas-data.json');
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      var data = await res.json();
+      if (Array.isArray(data))       todasLasJoyas = data;
+      else if (Array.isArray(data.joyas)) todasLasJoyas = data.joyas;
+      else throw new Error('Formato de joyas-data.json incorrecto');
+
+      if (!todasLasJoyas.length) {
+        document.getElementById('joyasGrid').innerHTML =
+          '<div class="empty-state" style="grid-column:1/-1"><div class="icon">📭</div>' +
+          '<p>joyas-data.json está vacío o sin stock.</p></div>';
+        return;
+      }
+      var badge = document.getElementById('badge-joyas');
+      if (badge) { badge.textContent = todasLasJoyas.length; badge.style.display = ''; }
+      construirFiltros();
+      renderJoyas(todasLasJoyas);
+    } catch(err) {
+      document.getElementById('joyasGrid').innerHTML =
+        '<div class="empty-state" style="grid-column:1/-1"><div class="icon">⚠️</div>' +
+        '<p><strong>Error:</strong> ' + err.message + '<br>' +
+        '<small style="color:#666">Verificá que joyas-data.json esté en la misma carpeta y Apache esté corriendo.</small></p></div>';
+    }
+  }
+
+  /* ── FILTROS ── */
+  function construirFiltros() {
+    var cats = [...new Set(todasLasJoyas.map(j => j.categoria).filter(Boolean))].sort();
+    var bar  = document.getElementById('filtrosBar');
+    bar.innerHTML = '<button class="filtro-btn active" onclick="setFiltro(\'todos\',this)">Todos</button>';
+    cats.forEach(function(cat) {
+      var btn = document.createElement('button');
+      btn.className = 'filtro-btn';
+      btn.textContent = cat;
+      btn.onclick = function() { setFiltro(cat, this); };
+      bar.appendChild(btn);
+    });
+  }
+
+  function setFiltro(cat, btn) {
+    filtroActual = cat;
+    document.querySelectorAll('.filtro-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    aplicarFiltros();
+  }
+
+  function filtrarJoyas() { aplicarFiltros(); }
+
+  function aplicarFiltros() {
+    var q = (document.getElementById('busquedaJoyas').value || '').toLowerCase().trim();
+    var lista = todasLasJoyas;
+    if (filtroActual !== 'todos') lista = lista.filter(j => j.categoria === filtroActual);
+    if (q) lista = lista.filter(j =>
+      (j.nombre||'').toLowerCase().includes(q) ||
+      (j.sku||'').toLowerCase().includes(q) ||
+      (j.notas||'').toLowerCase().includes(q)
+    );
+    renderJoyas(lista);
+  }
+
+  /* ── EMOJI ── */
+  function emojiPorCategoria(cat) {
+    var mapa = {
+      'Cadenas':'⛓️','Pulseras':'📿','Aros':'💫','Anillos':'💍',
+      'Dijes':'✨','Otros':'🌟','Collares':'📿'
+    };
+    return mapa[cat] || '💎';
+  }
+
+  /* ── RENDER CARDS ── */
+  function emojiPorCategoria(cat) {
+    var mapa = {
+      'Cadenas':'⛓️','Pulseras':'📿','Aros':'💫','Anillos':'💍',
+      'Dijes':'✨','Otros':'🌟','Collares':'📿'
+    };
+    return mapa[cat] || '💎';
+  }
+
+  function abrirLightboxPorSku(sku) {
+    var j = todasLasJoyas.find(function(x){ return x.sku === sku; });
+    if (!j) return;
+    var url = buildFotoUrl(j);
+    if (!url) return;
+    document.getElementById('lightboxImg').src = url;
+    document.getElementById('lightboxNombre').textContent = j.nombre || '';
+    document.getElementById('lightboxMaterial').textContent = j.material || '';
+    var lb = document.getElementById('lightbox');
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function cerrarLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.getElementById('lightboxImg').src = '';
+    document.body.style.overflow = '';
+  }
+
+  function crearCard(j) {
+    var enCarrito = carrito.includes(j.sku);
+    var emoji     = emojiPorCategoria(j.categoria);
+    var fotoUrl   = buildFotoUrl(j);
+    var sku       = j.sku || '';
+
+    var card = document.createElement('div');
+    card.className = 'joya-card';
+    card.id = 'card-' + sku;
+
+    // Foto container
+    var fotoDiv = document.createElement('div');
+    fotoDiv.className = 'foto-container';
+    if (fotoUrl) {
+      fotoDiv.style.cursor = 'zoom-in';
+      fotoDiv.addEventListener('click', function(e) { e.stopPropagation(); abrirLightboxPorSku(sku); });
+      var img = document.createElement('img');
+      img.src = fotoUrl;
+      img.alt = j.nombre || '';
+      img.loading = 'lazy';
+      img.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+      img.onerror = function() { this.style.display = 'none'; };
+      fotoDiv.appendChild(img);
+    } else {
+      var ph = document.createElement('div');
+      ph.className = 'foto-placeholder';
+      ph.innerHTML = '<span>' + emoji + '</span>';
+      fotoDiv.appendChild(ph);
+    }
+
+    var badge = document.createElement('span');
+    badge.className = 'badge-categoria';
+    badge.textContent = j.categoria || '';
+    fotoDiv.appendChild(badge);
+
+    if (!j.stock) {
+      var sinStock = document.createElement('div');
+      sinStock.className = 'sin-stock';
+      sinStock.textContent = 'Sin stock';
+      fotoDiv.appendChild(sinStock);
+    }
+    card.appendChild(fotoDiv);
+
+    // Info
+    var info = document.createElement('div');
+    info.className = 'info';
+
+    var skuEl = document.createElement('div');
+    skuEl.className = 'sku';
+    skuEl.textContent = '# ' + sku;
+    info.appendChild(skuEl);
+
+    var nombreEl = document.createElement('div');
+    nombreEl.className = 'nombre';
+    nombreEl.textContent = j.nombre || '';
+    info.appendChild(nombreEl);
+
+    var matEl = document.createElement('div');
+    matEl.className = 'material';
+    matEl.textContent = j.material || '';
+    info.appendChild(matEl);
+
+    if (j.notas) {
+      var notasEl = document.createElement('div');
+      notasEl.className = 'notas-badge';
+      notasEl.textContent = '📝 ' + j.notas;
+      info.appendChild(notasEl);
+    }
+
+    // Botones
+    var actions = document.createElement('div');
+    actions.className = 'card-actions';
+
+    var btnCarrito = document.createElement('button');
+    btnCarrito.className = 'btn-carrito' + (enCarrito ? ' en-carrito' : '');
+    btnCarrito.id = 'btn-' + sku;
+    btnCarrito.textContent = enCarrito ? '✓ Agregado' : '🛍️ Agregar';
+    if (!j.stock) { btnCarrito.disabled = true; btnCarrito.style.opacity = '0.4'; }
+    btnCarrito.addEventListener('click', function() { toggleCarrito(sku); });
+    actions.appendChild(btnCarrito);
+
+    var btnConsultar = document.createElement('a');
+    btnConsultar.className = 'btn-consultar';
+    btnConsultar.target = '_blank';
+    btnConsultar.href = 'https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent('Hola! Me interesa: ' + (j.nombre||'') + ' (Ref: ' + sku + ')');
+    btnConsultar.textContent = '💬 Consultar';
+    actions.appendChild(btnConsultar);
+
+    info.appendChild(actions);
+    card.appendChild(info);
+    return card;
+  }
+
+  function renderJoyas(lista) {
+    var grid = document.getElementById('joyasGrid');
+    grid.innerHTML = '';
+    if (!lista.length) {
+      grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="icon">🔍</div><p>No se encontraron joyas.</p></div>';
+      return;
+    }
+    lista.forEach(function(j) {
+      grid.appendChild(crearCard(j));
+    });
+  }
+
+  /* ── CARRITO ── */
+  function toggleCarrito(sku) {
+    var idx = carrito.indexOf(sku);
+    if (idx === -1) carrito.push(sku);
+    else carrito.splice(idx, 1);
+    actualizarBtnCard(sku);
+    actualizarContador();
+  }
+
+  function actualizarBtnCard(sku) {
+    var btn = document.getElementById('btn-' + sku);
+    if (!btn) return;
+    var en = carrito.includes(sku);
+    btn.textContent = en ? '✓ Agregado' : '🛍️ Agregar';
+    btn.classList.toggle('en-carrito', en);
+  }
+
+  function actualizarContador() {
+    var n   = carrito.length;
+    var cnt = document.getElementById('carritoCount');
+    var fl  = document.getElementById('carritoFloat');
+    cnt.textContent  = n;
+    cnt.style.display = n ? '' : 'none';
+    fl.style.display  = n ? '' : 'none';
+  }
+
+  function abrirCarrito() {
+    renderCarritoPanel();
+    document.getElementById('carritoPanel').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function cerrarCarrito() {
+    document.getElementById('carritoPanel').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  function renderCarritoPanel() {
+    var items  = document.getElementById('carritoItems');
+    var footer = document.getElementById('carritoFooter');
+    var total  = document.getElementById('carritoTotal');
+    if (!carrito.length) {
+      items.innerHTML = '<div class="carrito-empty"><span>🛍️</span><p>Tu selección está vacía.<br>Agregá joyas para consultar precio por WhatsApp.</p></div>';
+      footer.style.display = 'none';
+      return;
+    }
+    items.innerHTML = carrito.map(function(sku) {
+      var j = todasLasJoyas.find(x => x.sku === sku);
+      if (!j) return '';
+      return '<div class="carrito-item">' +
+        '<div class="carrito-item-icon">' + emojiPorCategoria(j.categoria) + '</div>' +
+        '<div class="carrito-item-info">' +
+          '<div class="ci-nombre">' + j.nombre + '</div>' +
+          '<div class="ci-material">' + (j.material||'') + '</div>' +
+          '<div class="ci-sku"># ' + j.sku + '</div>' +
+        '</div>' +
+        '<button class="carrito-item-remove" onclick="quitarDelCarrito(\'' + sku + '\')">✕</button>' +
+      '</div>';
+    }).join('');
+    total.textContent = carrito.length;
+    footer.style.display = '';
+  }
+
+  function quitarDelCarrito(sku) {
+    carrito = carrito.filter(s => s !== sku);
+    actualizarBtnCard(sku);
+    actualizarContador();
+    renderCarritoPanel();
+    if (!carrito.length) cerrarCarrito();
+  }
+
+  function vaciarCarrito() {
+    var anterior = [...carrito];
+    carrito = [];
+    anterior.forEach(actualizarBtnCard);
+    actualizarContador();
+    cerrarCarrito();
+  }
+
+  function consultarPorWA() {
+    if (!carrito.length) return;
+    var lineas = carrito.map(function(sku) {
+      var j = todasLasJoyas.find(x => x.sku === sku);
+      return j ? ('- ' + j.nombre + ' (Ref: ' + j.sku + ')') : '';
+    }).filter(Boolean);
+    var msg = 'Hola! Me gustaria consultar precio de:\n\n' + lineas.join('\n') + '\n\nGracias!';
+    window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
+  }
+
+  function cerrarWelcome() {
+    document.getElementById('welcomeModal').classList.remove('active');
+  }
+
+  /* ═══════════════════════════════════════
+     LIGHTBOX
+  ═══════════════════════════════════════ */
+
+
+
+
+  /* ═══════════════════════════════════════
+     BACKUP
+  ═══════════════════════════════════════ */
+  function hacerBackup() {
+    try {
+      var backup = {
+        fecha:  new Date().toISOString(),
+        joyas:  todasLasJoyas,
+        version: '1.0'
+      };
+      var json = JSON.stringify(backup, null, 2);
+      var blob = new Blob([json], { type: 'application/json' });
+      var url  = URL.createObjectURL(blob);
+      var a    = document.createElement('a');
+      var fecha = new Date().toLocaleDateString('es-AR').replace(/\//g, '-');
+      a.href     = url;
+      a.download = 'backup-joyas-' + fecha + '.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      actualizarInfoBackup('Backup descargado: ' + new Date().toLocaleString('es-AR'));
+    } catch(e) {
+      alert('Error al hacer backup: ' + e.message);
+    }
+  }
+
+  function restaurarBackup() {
+    var input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = function(e) {
+      var file = e.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function(ev) {
+        try {
+          var data = JSON.parse(ev.target.result);
+          var joyas = data.joyas || (Array.isArray(data) ? data : null);
+          if (!joyas) throw new Error('Formato de backup incorrecto');
+          todasLasJoyas = joyas;
+          construirFiltros();
+          renderJoyas(todasLasJoyas);
+          var badge = document.getElementById('badge-joyas');
+          badge.textContent = todasLasJoyas.length;
+          badge.style.display = '';
+          actualizarInfoBackup('Restaurado: ' + file.name + ' (' + joyas.length + ' joyas)');
+        } catch(err) {
+          alert('Error al restaurar: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+    };
+    input.click();
+  }
+
+  function actualizarInfoBackup(texto) {
+    var el = document.getElementById('backupInfo');
+    if (el) el.textContent = texto;
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    // Lightbox
+    var lb = document.getElementById('lightbox');
+    var lbImg = document.getElementById('lightboxImg');
+    var lbCerrar = document.getElementById('lightboxCerrar');
+    if (lb) {
+      // Cerrar al tocar el fondo oscuro
+      lb.addEventListener('click', function(e) {
+        if (e.target === lb) cerrarLightbox();
+      });
+    }
+    if (lbImg) {
+      // Evitar que el click en la imagen cierre el lightbox
+      lbImg.addEventListener('click', function(e) { e.stopPropagation(); });
+    }
+    if (lbCerrar) {
+      lbCerrar.addEventListener('click', function(e) {
+        e.stopPropagation();
+        cerrarLightbox();
+      });
+    }
+    // Cerrar con Escape
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') cerrarLightbox();
+    });
+
+    if (!sessionStorage.getItem('welcomed')) {
+      document.getElementById('welcomeModal').classList.add('active');
+      sessionStorage.setItem('welcomed', '1');
+    }
+    cargarJoyas();
+  });
+
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+      cerrarCarrito();
+      cerrarLightbox();
+    }
+  });
+</script>
+</body>
+</html>
