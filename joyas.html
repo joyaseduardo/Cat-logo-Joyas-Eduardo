@@ -843,6 +843,116 @@
     font-family: 'Montserrat', sans-serif;
   }
 
+  /* ── BACKUP ── */
+  .backup-bar {
+    background: var(--dark3);
+    border-top: 1px solid #2a2a2a;
+    padding: 0.6rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+  }
+
+  .backup-btn {
+    background: transparent;
+    border: 1px solid #333;
+    color: #888;
+    padding: 0.4rem 1rem;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+  }
+
+  .backup-btn:hover { border-color: var(--gold-dark); color: var(--gold); }
+  .backup-btn.restaurar:hover { border-color: #166534; color: #4ade80; }
+
+  .backup-info {
+    font-size: 0.68rem;
+    color: #444;
+    font-style: italic;
+  }
+
+  /* ── LIGHTBOX ── */
+  .lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.95);
+    z-index: 99999;
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+    animation: fadeIn 0.2s ease;
+  }
+
+  .lightbox.open { display: flex; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  .lightbox img {
+    max-width: 92vw;
+    max-height: 88vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 0 80px rgba(0,0,0,0.8);
+    animation: zoomIn 0.25s ease;
+  }
+
+  @keyframes zoomIn {
+    from { transform: scale(0.85); opacity: 0; }
+    to   { transform: scale(1);    opacity: 1; }
+  }
+
+  .lightbox-info {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    pointer-events: none;
+  }
+
+  .lightbox-nombre {
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    color: white;
+    margin-bottom: 0.25rem;
+  }
+
+  .lightbox-material {
+    font-size: 0.75rem;
+    color: #aaa;
+  }
+
+  .lightbox-cerrar {
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    background: none;
+    border: none;
+    color: #888;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: color 0.2s;
+    line-height: 1;
+  }
+
+  .lightbox-cerrar:hover { color: white; }
+
+  /* Cursor en foto de card */
+  .joya-card .foto-container { cursor: zoom-in; }
+
   /* ── RESPONSIVE ── */
   @media (max-width: 600px) {
     .tab-btn { font-size: 0.8rem; padding: 0.8rem 1rem; }
@@ -1045,6 +1155,27 @@
 </footer>
 
 <!-- ══════════════════════════════════════════
+     LIGHTBOX
+═══════════════════════════════════════════ -->
+<div class="lightbox" id="lightbox" onclick="cerrarLightbox()">
+  <button class="lightbox-cerrar" onclick="cerrarLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-info">
+    <div class="lightbox-nombre" id="lightboxNombre"></div>
+    <div class="lightbox-material" id="lightboxMaterial"></div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════
+     BACKUP BAR
+═══════════════════════════════════════════ -->
+<div class="backup-bar">
+  <span class="backup-info" id="backupInfo">Sin backup guardado</span>
+  <button class="backup-btn" onclick="hacerBackup()">💾 Guardar backup</button>
+  <button class="backup-btn restaurar" onclick="restaurarBackup()">📂 Restaurar backup</button>
+</div>
+
+<!-- ══════════════════════════════════════════
      CARRITO FLOTANTE
 ═══════════════════════════════════════════ -->
 <div class="carrito-float" id="carritoFloat" style="display:none">
@@ -1220,48 +1351,58 @@
   }
 
   /* ── RENDER CARDS ── */
+  function emojiPorCategoria(cat) {
+    var mapa = {
+      'Cadenas':'⛓️','Pulseras':'📿','Aros':'💫','Anillos':'💍',
+      'Dijes':'✨','Otros':'🌟','Collares':'📿'
+    };
+    return mapa[cat] || '💎';
+  }
+
   function renderJoyas(lista) {
     var grid = document.getElementById('joyasGrid');
     if (!lista.length) {
       grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="icon">🔍</div><p>No se encontraron joyas.</p></div>';
       return;
     }
-    grid.innerHTML = lista.map(function(j) {
+    var html = '';
+    lista.forEach(function(j) {
       var enCarrito = carrito.includes(j.sku);
       var emoji     = emojiPorCategoria(j.categoria);
       var fotoUrl   = buildFotoUrl(j);
-      var fotoHtml  = fotoUrl
-        ? '<img src="' + fotoUrl + '" alt="' + (j.nombre||'') + '" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display=\'none\'">'
+
+      var fotoInner = fotoUrl
+        ? '<img src="' + fotoUrl + '" alt="' + (j.nombre||'') + '" loading="lazy" style="width:100%;height:100%;object-fit:cover;" onerror="this.style.display='none'">'
         : '<div class="foto-placeholder"><span>' + emoji + '</span></div>';
 
-      return '<div class="joya-card" id="card-' + j.sku + '">' +
-        '<div class="foto-container">' +
-          fotoHtml +
-          '<span class="badge-categoria">' + (j.categoria||'') + '</span>' +
-          (!j.stock ? '<div class="sin-stock">Sin stock</div>' : '') +
-        '</div>' +
-        '<div class="info">' +
-          '<div class="sku"># ' + j.sku + '</div>' +
-          '<div class="nombre">' + (j.nombre||'') + '</div>' +
-          '<div class="material">' + (j.material||'') + '</div>' +
-          (j.notas ? '<div class="notas-badge">📝 ' + j.notas + '</div>' : '') +
-          '<div class="card-actions">' +
-            '<button class="btn-carrito ' + (enCarrito ? 'en-carrito' : '') + '" ' +
-              'id="btn-' + j.sku + '" onclick="toggleCarrito(\'' + j.sku + '\')"' +
-              (!j.stock ? ' disabled style="opacity:0.4;cursor:not-allowed"' : '') + '>' +
-              (enCarrito ? '✓ Agregado' : '🛍️ Agregar') +
-            '</button>' +
-            '<a class="btn-consultar" target="_blank" ' +
-              'href="https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent('Hola! Me interesa: ') + (j.nombre||'') + encodeURIComponent(' (Ref: ') + j.sku + encodeURIComponent(')')  + '">' +
-              '💬 Consultar' +
-            '</a>' +
-          '</div>' +
-        '</div>' +
-      '</div>';
-    }).join('');
+      var fotoOnclick = fotoUrl
+        ? ' onclick="abrirLightbox('' + fotoUrl + '','' + (j.nombre||'') + '','' + (j.material||'') + '')" style="cursor:zoom-in"'
+        : '';
+
+      html += '<div class="joya-card" id="card-' + j.sku + '">';
+      html += '<div class="foto-container"' + fotoOnclick + '>';
+      html += fotoInner;
+      html += '<span class="badge-categoria">' + (j.categoria||'') + '</span>';
+      if (!j.stock) html += '<div class="sin-stock">Sin stock</div>';
+      html += '</div>';
+      html += '<div class="info">';
+      html += '<div class="sku"># ' + j.sku + '</div>';
+      html += '<div class="nombre">' + (j.nombre||'') + '</div>';
+      html += '<div class="material">' + (j.material||'') + '</div>';
+      if (j.notas) html += '<div class="notas-badge">📝 ' + j.notas + '</div>';
+      html += '<div class="card-actions">';
+      html += '<button class="btn-carrito ' + (enCarrito ? 'en-carrito' : '') + '" ';
+      html += 'id="btn-' + j.sku + '" onclick="toggleCarrito('' + j.sku + '')"';
+      if (!j.stock) html += ' disabled style="opacity:0.4;cursor:not-allowed"';
+      html += '>' + (enCarrito ? '✓ Agregado' : '🛍️ Agregar') + '</button>';
+      var waMsg = encodeURIComponent('Hola! Me interesa: ' + (j.nombre||'') + ' (Ref: ' + j.sku + ')');
+      html += '<a class="btn-consultar" target="_blank" href="https://wa.me/' + WA_NUMBER + '?text=' + waMsg + '">💬 Consultar</a>';
+      html += '</div></div></div>';
+    });
+    grid.innerHTML = html;
   }
 
-  /* ── CARRITO ── */
+    /* ── CARRITO ── */
   function toggleCarrito(sku) {
     var idx = carrito.indexOf(sku);
     if (idx === -1) carrito.push(sku);
@@ -1352,6 +1493,82 @@
 
   function cerrarWelcome() {
     document.getElementById('welcomeModal').classList.remove('active');
+  }
+
+  /* ═══════════════════════════════════════
+     LIGHTBOX
+  ═══════════════════════════════════════ */
+  function abrirLightbox(fotoUrl, nombre, material) {
+    var lb = document.getElementById('lightbox');
+    document.getElementById('lightboxImg').src = fotoUrl;
+    document.getElementById('lightboxNombre').textContent = nombre;
+    document.getElementById('lightboxMaterial').textContent = material || '';
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function cerrarLightbox() {
+    document.getElementById('lightbox').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  /* ═══════════════════════════════════════
+     BACKUP
+  ═══════════════════════════════════════ */
+  function hacerBackup() {
+    try {
+      var backup = {
+        fecha:  new Date().toISOString(),
+        joyas:  todasLasJoyas,
+        version: '1.0'
+      };
+      var json = JSON.stringify(backup, null, 2);
+      var blob = new Blob([json], { type: 'application/json' });
+      var url  = URL.createObjectURL(blob);
+      var a    = document.createElement('a');
+      var fecha = new Date().toLocaleDateString('es-AR').replace(/\//g, '-');
+      a.href     = url;
+      a.download = 'backup-joyas-' + fecha + '.json';
+      a.click();
+      URL.revokeObjectURL(url);
+      actualizarInfoBackup('Backup descargado: ' + new Date().toLocaleString('es-AR'));
+    } catch(e) {
+      alert('Error al hacer backup: ' + e.message);
+    }
+  }
+
+  function restaurarBackup() {
+    var input = document.createElement('input');
+    input.type = 'file';
+    input.accept = '.json';
+    input.onchange = function(e) {
+      var file = e.target.files[0];
+      if (!file) return;
+      var reader = new FileReader();
+      reader.onload = function(ev) {
+        try {
+          var data = JSON.parse(ev.target.result);
+          var joyas = data.joyas || (Array.isArray(data) ? data : null);
+          if (!joyas) throw new Error('Formato de backup incorrecto');
+          todasLasJoyas = joyas;
+          construirFiltros();
+          renderJoyas(todasLasJoyas);
+          var badge = document.getElementById('badge-joyas');
+          badge.textContent = todasLasJoyas.length;
+          badge.style.display = '';
+          actualizarInfoBackup('Restaurado: ' + file.name + ' (' + joyas.length + ' joyas)');
+        } catch(err) {
+          alert('Error al restaurar: ' + err.message);
+        }
+      };
+      reader.readAsText(file);
+    };
+    input.click();
+  }
+
+  function actualizarInfoBackup(texto) {
+    var el = document.getElementById('backupInfo');
+    if (el) el.textContent = texto;
   }
 
   window.addEventListener('DOMContentLoaded', function() {
