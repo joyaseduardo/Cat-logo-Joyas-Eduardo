@@ -990,8 +990,7 @@ function renderJoyas(lista) {
           var clone = imgOrig.cloneNode(true);
           clone.style.cssText = 'max-width:92vw;max-height:85vh;object-fit:contain;border-radius:8px;box-shadow:0 0 60px rgba(0,0,0,0.8);';
           contenido.appendChild(clone);
-          document.getElementById('lightboxNombre').textContent = nombre;
-          document.getElementById('lightboxMaterial').textContent = material || '';
+
           var lb = document.getElementById('lightbox');
           lb.style.display = 'flex';
           document.body.style.overflow = 'hidden';
