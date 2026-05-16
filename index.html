@@ -179,6 +179,19 @@
     margin-bottom: 1rem;
   }
 
+  .emoji-img {
+    margin-bottom: 1rem;
+  }
+
+  .emoji-img img {
+    border: 1px solid rgba(201,153,58,0.2);
+    transition: transform 0.3s;
+  }
+
+  .categoria-card:hover .emoji-img img {
+    transform: scale(1.08);
+  }
+
   .categoria-card h3 {
     font-size: 1.1rem;
     color: var(--gold-light);
@@ -582,24 +595,25 @@
 
 <!-- Banner oferta -->
 <div class="oferta-banner">
-  🔥 10% OFF en Transferencia &nbsp;|&nbsp; 📦 Envío GRATIS &nbsp;|&nbsp; ✨ Oro 18k Certificado
+  🔥 15% OFF en Transferencia &nbsp;|&nbsp; 📦 Envío GRATIS &nbsp;|&nbsp; ✨ Oro 18k Certificado
 </div>
 
 <!-- Header -->
 <header class="site-header">
-  <div class="mb-4">
-    <img src="VIP.jpg" alt="Joyas Eduardo" style="height:100px;filter:drop-shadow(0 20px 40px rgba(212,168,67,0.4));" onerror="this.style.display='none'">
+  <div style="display:flex;flex-direction:column;align-items:center;gap:0.5rem;padding-bottom:0.5rem;">
+    <img src="https://raw.githubusercontent.com/joyaseduardo/Cat-logo-Joyas-Eduardo/main/VIP.jpg" alt="Joyas Eduardo"
+      style="height:140px;width:auto;object-fit:contain;filter:drop-shadow(0 8px 32px rgba(201,153,58,0.45));"
+      onerror="this.style.display='none'">
+    <p class="subtitle" style="margin:0;">Comodoro Rivadavia · Chubut · Patagonia Argentina</p>
   </div>
-  <h1>💎 Joyas Eduardo</h1>
-  <p class="subtitle">Comodoro Rivadavia · Chubut · Patagonia Argentina</p>
 
   <!-- SOLAPAS -->
   <div class="tabs-container">
     <button class="tab-btn active" onclick="cambiarTab('alianzas')" id="tab-alianzas">
-      💍 Alianzas <span class="tab-badge">338</span>
+      <img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/5003" alt="Alianzas" style="height:28px;width:28px;object-fit:cover;border-radius:50%;"> Alianzas <span class="tab-badge">338</span>
     </button>
     <button class="tab-btn" onclick="cambiarTab('joyas')" id="tab-joyas">
-      💎 Joyas <span class="tab-badge" id="badge-joyas" style="display:none"></span>
+      <img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/PUL_77" alt="Joyas" style="height:28px;width:28px;object-fit:cover;border-radius:50%;"> Joyas <span class="tab-badge" id="badge-joyas" style="display:none"></span>
     </button>
   </div>
 </header>
@@ -611,77 +625,77 @@
   <div class="categorias-grid">
 
     <a href="catalogo-oro-lisas.html" class="categoria-card">
-      <div class="emoji">💍</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/3190" alt="Oro 18k Lisas" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Oro 18k Lisas</h3>
       <p>10 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-oro-facetadas.html" class="categoria-card">
-      <div class="emoji">✨</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/9300" alt="Oro 18k Facetadas" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Oro 18k Facetadas</h3>
       <p>74 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-oro-especiales.html" class="categoria-card">
-      <div class="emoji">⭐</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/6728" alt="Oro 18k Especiales" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Oro 18k Especiales</h3>
       <p>79 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-oro-piedras.html" class="categoria-card">
-      <div class="emoji">💎</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/5013" alt="Oro 18k con Piedras" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Oro 18k con Piedras</h3>
       <p>24 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-oro-esmaltadas.html" class="categoria-card">
-      <div class="emoji">🎨</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/2000" alt="Oro 18k Esmaltadas" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Oro 18k Esmaltadas</h3>
       <p>3 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-anillos-mujer.html" class="categoria-card">
-      <div class="emoji">💍</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/8515" alt="Anillos Oro Mujer" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Anillos Oro Mujer</h3>
       <p>44 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-plata-oro.html" class="categoria-card">
-      <div class="emoji">⚜️</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/145" alt="Plata y Oro 18k" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Plata y Oro 18k</h3>
       <p>19 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-plata-double.html" class="categoria-card">
-      <div class="emoji">🎨</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/120" alt="Plata Oro Doublé" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Plata Oro Doublé</h3>
       <p>59 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-plata-esmaltada.html" class="categoria-card">
-      <div class="emoji">🌈</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/2004" alt="Plata Esmaltada" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Plata Esmaltada</h3>
       <p>4 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-plata-empavonada.html" class="categoria-card">
-      <div class="emoji">⚫</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/3001" alt="Plata Empavonada" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Plata Empavonada</h3>
       <p>2 modelos</p>
       <span class="arrow">→</span>
     </a>
 
     <a href="catalogo-plata-piedras.html" class="categoria-card">
-      <div class="emoji">💎</div>
+      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/150" alt="Plata con Piedras" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Plata con Piedras</h3>
       <p>20 modelos</p>
       <span class="arrow">→</span>
@@ -749,7 +763,7 @@
       <h3>✨ Beneficios</h3>
       <p>✅ Oro 18k Certificado</p>
       <p>✅ Envío gratis a todo el país</p>
-      <p>✅ 30% OFF con transferencia</p>
+      <p>✅ 15% OFF con transferencia</p>
       <p>✅ Hasta 6 cuotas sin interés sin interés</p>
     </div>
     <div>
@@ -782,7 +796,7 @@
     <h2>¡Bienvenida!</h2>
     <p>Descubrí nuestra colección exclusiva de joyas y alianzas en oro 18k y plata.</p>
     <div style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.3);border-radius:12px;padding:1rem;margin-bottom:1.5rem;">
-      <p style="color:var(--gold);font-weight:700;font-size:1.1rem;margin:0;">🔥 30% OFF pagando con transferencia</p>
+      <p style="color:var(--gold);font-weight:700;font-size:1.1rem;margin:0;">🔥 15% OFF pagando con transferencia</p>
     </div>
     <button class="modal-btn-gold" onclick="cerrarWelcome()">¡Ver catálogo!</button>
   </div>
@@ -796,15 +810,6 @@
     <div id="lightboxNombre" style="font-family:'Playfair Display',serif;color:white;font-size:1rem;"></div>
     <div id="lightboxMaterial" style="color:#aaa;font-size:0.75rem;margin-top:0.25rem;"></div>
   </div>
-</div>
-
-<!-- ══════════════════════════════════════════
-     BACKUP BAR
-═══════════════════════════════════════════ -->
-<div class="backup-bar">
-  <span class="backup-info" id="backupInfo">Sin backup guardado</span>
-  <button class="backup-btn" onclick="hacerBackup()">💾 Guardar backup</button>
-  <button class="backup-btn restaurar" onclick="restaurarBackup()">📂 Restaurar backup</button>
 </div>
 
 <!-- ══════════════════════════════════════════
@@ -1150,39 +1155,7 @@ function consultarPorWA() {
   window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg), '_blank');
 }
 
-/* ── BACKUP ── */
-function hacerBackup() {
-  var blob = new Blob([JSON.stringify({fecha:new Date().toISOString(),joyas:todasLasJoyas},null,2)],{type:'application/json'});
-  var url  = URL.createObjectURL(blob);
-  var a    = document.createElement('a');
-  var f    = new Date().toLocaleDateString('es-AR').replace(/\//g,'-');
-  a.href = url; a.download = 'backup-joyas-' + f + '.json'; a.click();
-  URL.revokeObjectURL(url);
-  var el = document.getElementById('backupInfo');
-  if (el) el.textContent = 'Backup guardado: ' + new Date().toLocaleString('es-AR');
-}
 
-function restaurarBackup() {
-  var input = document.createElement('input');
-  input.type = 'file'; input.accept = '.json';
-  input.onchange = function(e){
-    var file = e.target.files[0]; if(!file) return;
-    var reader = new FileReader();
-    reader.onload = function(ev){
-      try {
-        var data = JSON.parse(ev.target.result);
-        todasLasJoyas = data.joyas || (Array.isArray(data) ? data : []);
-        construirFiltros(); renderJoyas(todasLasJoyas);
-        var badge = document.getElementById('badge-joyas');
-        if (badge){ badge.textContent=todasLasJoyas.length; badge.style.display=''; }
-        var el = document.getElementById('backupInfo');
-        if (el) el.textContent = 'Restaurado: ' + file.name;
-      } catch(err){ alert('Error al restaurar: ' + err.message); }
-    };
-    reader.readAsText(file);
-  };
-  input.click();
-}
 
 /* ── WELCOME ── */
 function cerrarWelcome() {
