@@ -763,6 +763,7 @@
         <span class="medio-tag">Naranja</span>
         <span class="medio-tag">Cabal</span>
         <span class="medio-tag">Mercado Pago</span>
+        <span class="medio-tag">Patagonia 365</span>
       </div>
     </div>
   </div>
@@ -788,6 +789,15 @@
 </div>
 
 <s
+<div id="lightbox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.95);z-index:99999;align-items:center;justify-content:center;flex-direction:column;gap:1rem;" onclick="cerrarLightbox()">
+  <button onclick="event.stopPropagation();cerrarLightbox()" style="position:absolute;top:1rem;right:1.5rem;background:none;border:none;color:white;font-size:2rem;cursor:pointer;z-index:1;">✕</button>
+  <div id="lightboxContenido" style="max-width:92vw;max-height:85vh;display:flex;align-items:center;justify-content:center;" onclick="event.stopPropagation()"></div>
+  <div style="text-align:center;pointer-events:none;">
+    <div id="lightboxNombre" style="font-family:'Playfair Display',serif;color:white;font-size:1rem;"></div>
+    <div id="lightboxMaterial" style="color:#aaa;font-size:0.75rem;margin-top:0.25rem;"></div>
+  </div>
+</div>
+
 <!-- ══════════════════════════════════════════
      BACKUP BAR
 ═══════════════════════════════════════════ -->
@@ -967,14 +977,24 @@ function renderJoyas(lista) {
       img.onerror = function(){ this.style.display='none'; };
       fotoDiv.appendChild(img);
       fotoDiv.style.cursor = 'zoom-in';
-      // Click en foto → abre imagen en nueva pestaña (sin CORS ni freeze)
-      (function(div){
+      // Click en foto → lightbox clonando imagen ya cargada (sin nueva petición)
+      (function(div, nombre, material){
         div.addEventListener('click', function(e){
           e.stopPropagation();
-          var img = div.querySelector('img');
-          if (img && img.src) window.open(img.src, '_blank');
+          var imgOrig = div.querySelector('img');
+          if (!imgOrig) return;
+          var contenido = document.getElementById('lightboxContenido');
+          contenido.innerHTML = '';
+          var clone = imgOrig.cloneNode(true);
+          clone.style.cssText = 'max-width:92vw;max-height:85vh;object-fit:contain;border-radius:8px;box-shadow:0 0 60px rgba(0,0,0,0.8);';
+          contenido.appendChild(clone);
+          document.getElementById('lightboxNombre').textContent = nombre;
+          document.getElementById('lightboxMaterial').textContent = material || '';
+          var lb = document.getElementById('lightbox');
+          lb.style.display = 'flex';
+          document.body.style.overflow = 'hidden';
         });
-      })(fotoDiv);
+      })(fotoDiv, j.nombre||'', j.material||'');
     } else {
       var ph = document.createElement('div');
       ph.className = 'foto-placeholder';
@@ -1030,6 +1050,14 @@ function renderJoyas(lista) {
 
 /* ── LIGHTBOX ── */
 
+
+/* ── LIGHTBOX ── */
+function cerrarLightbox() {
+  var lb = document.getElementById('lightbox');
+  lb.style.display = 'none';
+  document.getElementById('lightboxContenido').innerHTML = '';
+  document.body.style.overflow = '';
+}
 
 /* ── CARRITO ── */
 function toggleCarrito(sku) {
@@ -1171,7 +1199,7 @@ window.addEventListener('DOMContentLoaded', function(){
 
   // Escape cierra carrito
   document.addEventListener('keydown', function(e){
-    if (e.key === 'Escape') cerrarCarrito();
+    if (e.key === 'Escape'){ cerrarCarrito(); cerrarLightbox(); }
   });
 });
 </script>
