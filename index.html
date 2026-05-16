@@ -984,16 +984,8 @@ function renderJoyas(lista) {
         div.addEventListener('click', function(e){
           e.stopPropagation();
           var imgOrig = div.querySelector('img');
-          if (!imgOrig) return;
-          var contenido = document.getElementById('lightboxContenido');
-          contenido.innerHTML = '';
-          var clone = imgOrig.cloneNode(true);
-          clone.style.cssText = 'max-width:92vw;max-height:85vh;object-fit:contain;border-radius:8px;box-shadow:0 0 60px rgba(0,0,0,0.8);';
-          contenido.appendChild(clone);
-
-          var lb = document.getElementById('lightbox');
-          lb.style.display = 'flex';
-          document.body.style.overflow = 'hidden';
+          if (!imgOrig || !imgOrig.src) return;
+          abrirLightbox(imgOrig.src, '', '');
         });
       })(fotoDiv, j.nombre||'', j.material||'');
     } else {
