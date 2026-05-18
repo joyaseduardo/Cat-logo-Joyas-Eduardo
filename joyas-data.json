@@ -2,10 +2,10 @@
   "joyas": [
     {
       "sku": "AN-100",
-      "nombre": "ANILLO PLATA",
-      "material": "PLATA",
+      "nombre": "RUSTICO",
+      "material": "PLATA Y ORO",
       "categoria": "Anillos",
-      "cantidad": 6,
+      "cantidad": 1,
       "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/ANILLOS/AN-100.jpg",
       "notas": "",
       "stock": true
@@ -682,20 +682,20 @@
     },
     {
       "sku": "AN-169",
-      "nombre": "ARBOL DE LA VIDA",
+      "nombre": "Arbol de la Vida",
       "material": "PLATA Y ORO",
       "categoria": "Anillos",
-      "cantidad": 5,
+      "cantidad": 1,
       "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/ANILLOS/AN-169.jpg",
       "notas": "",
       "stock": true
     },
     {
       "sku": "AN-170",
-      "nombre": "PLATA PIEDRA NEGRA",
+      "nombre": "PLATA PIEDRA",
       "material": "PLATA",
       "categoria": "Anillos",
-      "cantidad": 1,
+      "cantidad": 2,
       "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/ANILLOS/AN-170.jpg",
       "notas": "",
       "stock": true
@@ -802,7 +802,7 @@
     },
     {
       "sku": "AN-181",
-      "nombre": "ANILLO PIEDRAS",
+      "nombre": "ANILLO PLATA",
       "material": "PLATA",
       "categoria": "Anillos",
       "cantidad": 1,
@@ -863,7 +863,7 @@
     {
       "sku": "AN-187",
       "nombre": "ANILLO PLATA",
-      "material": "PLATA Y ORO",
+      "material": "PLATA",
       "categoria": "Anillos",
       "cantidad": 1,
       "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/ANILLOS/AN-187.jpg",
@@ -2507,16 +2507,6 @@
       "categoria": "Anillos",
       "cantidad": 1,
       "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/ANILLOS/AN-422.jpg",
-      "notas": "",
-      "stock": true
-    },
-    {
-      "sku": "AN-423",
-      "nombre": "OLA",
-      "material": "PLATA",
-      "categoria": "Anillos",
-      "cantidad": 1,
-      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/ANILLOS/AN-423.jpg",
       "notas": "",
       "stock": true
     },
@@ -9337,6 +9327,16 @@
       "categoria": "Pulseras",
       "cantidad": 1,
       "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/PULSERAS/PUL-140.jpg",
+      "notas": "",
+      "stock": true
+    },
+    {
+      "sku": "PUL-143",
+      "nombre": "CLAPTON",
+      "material": "ACERO",
+      "categoria": "Pulseras",
+      "cantidad": 1,
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/PULSERAS/PUL-143",
       "notas": "",
       "stock": true
     },
