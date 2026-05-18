@@ -871,12 +871,13 @@ function buildFotoUrl(j) {
     var idx = foto.indexOf('/upload/');
     if (idx !== -1) {
       archivo = foto.substring(idx + 8);
-      // quitar versión v1234/
       archivo = archivo.replace(/^v[0-9]+\//, '');
-      // quitar subcarpeta ANILLOS/
       var slash = archivo.lastIndexOf('/');
       if (slash !== -1) archivo = archivo.substring(slash + 1);
     }
+  }
+  var nombre = archivo.split('.')[0].replace(/-/g, '_');
+  return CLOUD_BASE + '/f_auto,q_auto/' + nombre;
   }
   var nombre = archivo.replace(/-/g, '_').replace(/\.[^.]+$/, '');
   return CLOUD_BASE + '/f_auto,q_auto/' + nombre;
