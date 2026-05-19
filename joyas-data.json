@@ -9336,7 +9336,17 @@
       "material": "ACERO",
       "categoria": "Pulseras",
       "cantidad": 1,
-      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/PULSERAS/PUL-143",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/PULSERAS/PUL-143.jpg",
+      "notas": "",
+      "stock": true
+    },
+    {
+      "sku": "PUL-150",
+      "nombre": "PANDORA",
+      "material": "PLATA",
+      "categoria": "Pulseras",
+      "cantidad": 1,
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/PULSERAS/PUL-150.jpg",
       "notas": "",
       "stock": true
     },
