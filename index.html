@@ -848,16 +848,88 @@
 <!-- Botón WhatsApp flotante -->
 <a href="https://wa.me/5492976235421?text=Hola!%20Vi%20el%20catálogo%20y%20quiero%20consultar." target="_blank" class="wa-float" title="Consultanos por WhatsApp">💬</a>
 
-<!-- Modal bienvenida -->
-<div id="welcomeModal" class="modal">
-  <div class="modal-box">
-    <div style="font-size:3rem;margin-bottom:1rem;">💎</div>
-    <h2>¡Bienvenida!</h2>
-    <p>Descubrí nuestra colección exclusiva de joyas y alianzas en oro 18k y plata.</p>
-    <div style="background:rgba(212,168,67,0.1);border:1px solid rgba(212,168,67,0.3);border-radius:12px;padding:1rem;margin-bottom:1.5rem;">
-      <p style="color:var(--gold);font-weight:700;font-size:1.1rem;margin:0;">🔥 15% OFF pagando con transferencia</p>
+<!-- Modal captura de datos -->
+<div id="welcomeModal" class="modal" style="align-items:center;justify-content:center;">
+  <div class="modal-box" style="max-width:460px;width:94%;text-align:left;padding:2rem;">
+
+    <!-- Header -->
+    <div style="text-align:center;margin-bottom:1.5rem;">
+      <img src="https://raw.githubusercontent.com/joyaseduardo/Cat-logo-Joyas-Eduardo/main/VIP.jpg"
+        alt="Joyas Eduardo" style="height:70px;object-fit:contain;filter:drop-shadow(0 4px 12px rgba(201,153,58,0.4));"
+        onerror="this.style.display='none'">
+      <p style="color:var(--gold);font-weight:700;font-size:0.9rem;margin:0.5rem 0 0;letter-spacing:0.1em;">
+        🔥 15% OFF pagando con transferencia</p>
     </div>
-    <button class="modal-btn-gold" onclick="cerrarWelcome()">¡Ver catálogo!</button>
+
+    <h2 style="font-size:1.3rem;color:var(--gold);margin-bottom:0.25rem;text-align:center;">
+      ¡Bienvenida!</h2>
+    <p style="color:#888;font-size:0.82rem;text-align:center;margin-bottom:1.25rem;">
+      Dejanos tus datos y te avisamos de novedades y ofertas exclusivas</p>
+
+    <!-- Campos -->
+    <div style="display:flex;flex-direction:column;gap:0.75rem;">
+
+      <div>
+        <label style="font-size:0.75rem;color:#888;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:0.3rem;">
+          Nombre *</label>
+        <input id="lead-nombre" type="text" placeholder="Tu nombre"
+          style="width:100%;background:#1a1a1a;border:1px solid #333;color:#e8e0d0;padding:0.65rem 0.9rem;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.9rem;outline:none;box-sizing:border-box;"
+          onfocus="this.style.borderColor='#C9993A'" onblur="this.style.borderColor='#333'">
+      </div>
+
+      <div>
+        <label style="font-size:0.75rem;color:#888;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:0.3rem;">
+          Celular *</label>
+        <input id="lead-celular" type="tel" placeholder="Ej: 2976 123456"
+          style="width:100%;background:#1a1a1a;border:1px solid #333;color:#e8e0d0;padding:0.65rem 0.9rem;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.9rem;outline:none;box-sizing:border-box;"
+          onfocus="this.style.borderColor='#C9993A'" onblur="this.style.borderColor='#333'">
+      </div>
+
+      <div>
+        <label style="font-size:0.75rem;color:#888;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:0.3rem;">
+          Provincia / Ciudad *</label>
+        <input id="lead-ciudad" type="text" placeholder="Ej: Comodoro Rivadavia, Chubut"
+          style="width:100%;background:#1a1a1a;border:1px solid #333;color:#e8e0d0;padding:0.65rem 0.9rem;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.9rem;outline:none;box-sizing:border-box;"
+          onfocus="this.style.borderColor='#C9993A'" onblur="this.style.borderColor='#333'">
+      </div>
+
+      <div>
+        <label style="font-size:0.75rem;color:#888;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:0.3rem;">
+          ¿Qué te interesa?</label>
+        <select id="lead-interes"
+          style="width:100%;background:#1a1a1a;border:1px solid #333;color:#e8e0d0;padding:0.65rem 0.9rem;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.9rem;outline:none;box-sizing:border-box;appearance:none;">
+          <option value="">Seleccioná una opción</option>
+          <option value="Alianzas">💍 Alianzas</option>
+          <option value="Joyas en general">💎 Joyas en general</option>
+          <option value="Oro 18k">✨ Oro 18k</option>
+          <option value="Todo">🌟 Todo me interesa</option>
+        </select>
+      </div>
+
+      <div>
+        <label style="font-size:0.75rem;color:#888;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:0.3rem;">
+          Email (opcional)</label>
+        <input id="lead-email" type="email" placeholder="tu@email.com"
+          style="width:100%;background:#1a1a1a;border:1px solid #333;color:#e8e0d0;padding:0.65rem 0.9rem;border-radius:8px;font-family:Montserrat,sans-serif;font-size:0.9rem;outline:none;box-sizing:border-box;"
+          onfocus="this.style.borderColor='#C9993A'" onblur="this.style.borderColor='#333'">
+      </div>
+
+    </div>
+
+    <!-- Botones -->
+    <div style="display:flex;flex-direction:column;gap:0.6rem;margin-top:1.25rem;">
+      <button onclick="enviarLead()"
+        style="background:linear-gradient(135deg,#9A7020,#C9993A);color:#111;border:none;padding:0.9rem;border-radius:10px;font-family:Montserrat,sans-serif;font-weight:700;font-size:0.95rem;cursor:pointer;width:100%;">
+        📲 Enviar y ver catálogo
+      </button>
+      <button onclick="cerrarWelcome()"
+        style="background:transparent;color:#555;border:none;padding:0.4rem;font-family:Montserrat,sans-serif;font-size:0.8rem;cursor:pointer;text-decoration:underline;">
+        Prefiero no dejar mis datos
+      </button>
+    </div>
+
+    <p style="color:#444;font-size:0.7rem;text-align:center;margin-top:0.75rem;">
+      🔒 Tus datos son confidenciales y nunca se comparten con terceros.</p>
   </div>
 </div>
 
@@ -1353,16 +1425,53 @@ function consultarPorWA() {
 
 
 
+/* ── LEAD CAPTURE ── */
+function enviarLead() {
+  var nombre  = (document.getElementById('lead-nombre').value  || '').trim();
+  var celular = (document.getElementById('lead-celular').value || '').trim();
+  var ciudad  = (document.getElementById('lead-ciudad').value  || '').trim();
+  var interes = (document.getElementById('lead-interes').value || '').trim();
+  var email   = (document.getElementById('lead-email').value   || '').trim();
+
+  if (!nombre || !celular || !ciudad) {
+    alert('Por favor completá Nombre, Celular y Ciudad para continuar.');
+    return;
+  }
+
+  var msg = '🌟 NUEVO CONTACTO - Catalogo Online
+
+' +
+    '👤 Nombre: ' + nombre + '
+' +
+    '📱 Celular: ' + celular + '
+' +
+    '📍 Ciudad: ' + ciudad + '
+' +
+    (interes ? '💎 Interés: ' + interes + '
+' : '') +
+    (email   ? '📧 Email: ' + email + '
+'   : '') +
+    '
+¡Gracias por tu interés en Joyas Eduardo! ✨';
+
+  window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
+  cerrarWelcome();
+}
+
 /* ── WELCOME ── */
 function cerrarWelcome() {
-  document.getElementById('welcomeModal').classList.remove('active');
+  var modal = document.getElementById('welcomeModal');
+  modal.classList.remove('active');
+  modal.style.display = 'none';
+  sessionStorage.setItem('welcomed', '1');
 }
 
 /* ── INIT ── */
 window.addEventListener('DOMContentLoaded', function(){
   if (!sessionStorage.getItem('welcomed')) {
-    document.getElementById('welcomeModal').classList.add('active');
-    sessionStorage.setItem('welcomed','1');
+    var modal = document.getElementById('welcomeModal');
+    modal.classList.add('active');
+    modal.style.display = 'flex';
   }
   cargarJoyas();
   cargarOro();
