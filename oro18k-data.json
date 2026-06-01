@@ -1,0 +1,1894 @@
+{
+  "joyas": [
+    {
+      "sku": "291435",
+      "nombre": "Animal simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7740",
+      "notas": "Lagartija en Au amarilla",
+      "peso": "1.4",
+      "stock": true
+    },
+    {
+      "sku": "312542",
+      "nombre": "Solitario Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7730",
+      "notas": "Cabujón oval de zafiro",
+      "peso": "1.1",
+      "stock": true
+    },
+    {
+      "sku": "508824",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7717",
+      "notas": "Con dos cubik en lomitas",
+      "peso": "1.8",
+      "stock": true
+    },
+    {
+      "sku": "676685",
+      "nombre": "Solitario",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7725",
+      "notas": "Con zafiro al ras",
+      "peso": "1.5",
+      "stock": true
+    },
+    {
+      "sku": "718377",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7756",
+      "notas": "Calado virola botón Aguamarina",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "725351",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7752",
+      "notas": "Cinturón en diagonal",
+      "peso": "2",
+      "stock": true
+    },
+    {
+      "sku": "732512",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7747",
+      "notas": "Mordido y pulido",
+      "peso": "2",
+      "stock": true
+    },
+    {
+      "sku": "742052",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7759",
+      "notas": "Solitario con cubik central",
+      "peso": "1.1",
+      "stock": true
+    },
+    {
+      "sku": "750716",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7713",
+      "notas": "Con zafiro central",
+      "peso": "2.6",
+      "stock": true
+    },
+    {
+      "sku": "754329",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7720",
+      "notas": "Piedra central circon brillante y línea desfasada con circones",
+      "peso": "2.8",
+      "stock": true
+    },
+    {
+      "sku": "767553",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7711",
+      "notas": "Zafiro central c/cubik",
+      "peso": "1.9",
+      "stock": true
+    },
+    {
+      "sku": "767554",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7736",
+      "notas": "La O con circones engarzados",
+      "peso": "2.7",
+      "stock": true
+    },
+    {
+      "sku": "768531",
+      "nombre": "Piedra",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7751",
+      "notas": "Solitario oval c/cubik",
+      "peso": "2.2",
+      "stock": true
+    },
+    {
+      "sku": "769224",
+      "nombre": "Piedra",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7750",
+      "notas": "Circón elíptico elevado",
+      "peso": "1.9",
+      "stock": true
+    },
+    {
+      "sku": "787779",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7748",
+      "notas": "Diagonal satinada y pulida",
+      "peso": "2.1",
+      "stock": true
+    },
+    {
+      "sku": "872619",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7742",
+      "notas": "Onda cubik-ojito aguamarina",
+      "peso": "2.2",
+      "stock": true
+    },
+    {
+      "sku": "872638",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7700",
+      "notas": "Medio sin fin desfasado cubik-zafiro",
+      "peso": "2.1",
+      "stock": true
+    },
+    {
+      "sku": "1315169",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7744",
+      "notas": "ROSETA DE cubicks",
+      "peso": "1.9",
+      "stock": true
+    },
+    {
+      "sku": "1332941",
+      "nombre": "Sello",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7716",
+      "notas": "Rectangular BB tallado en lomo",
+      "peso": "1.2",
+      "stock": true
+    },
+    {
+      "sku": "1379754",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7754",
+      "notas": "Esmeralda en cabujón central y cuatro circones",
+      "peso": "2.5",
+      "stock": true
+    },
+    {
+      "sku": "1428774",
+      "nombre": "Sello",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7732",
+      "notas": "Nene/a oro rojo para grabar",
+      "peso": "1.1",
+      "stock": true
+    },
+    {
+      "sku": "1491306",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7753",
+      "notas": "Amatista en baguette y dos circones",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "1491673",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7737",
+      "notas": "Filas de circones engarzados",
+      "peso": "2.8",
+      "stock": true
+    },
+    {
+      "sku": "A041",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7722",
+      "notas": "Seis ZAFIROS NATURALES CUBIK CENTRAL y PAVÉ EN LOMOS",
+      "peso": "2.9",
+      "stock": true
+    },
+    {
+      "sku": "A049",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7706",
+      "notas": "DOBLE GANCHO C/ROSA DE FRANCIA CENTRAL",
+      "peso": "2.1",
+      "stock": true
+    },
+    {
+      "sku": "A090",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7709",
+      "notas": "Medio sin fin esmeraldas cubicks",
+      "peso": "2.5",
+      "stock": true
+    },
+    {
+      "sku": "A092",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7712",
+      "notas": "Cinco piedras muticolores en navette y circones",
+      "peso": "3.2",
+      "stock": true
+    },
+    {
+      "sku": "A094",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7714",
+      "notas": "Amatista central cabujon tallado y engarces de cubicks",
+      "peso": "2.9",
+      "stock": true
+    },
+    {
+      "sku": "A097",
+      "nombre": "Sello",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7728",
+      "notas": "Cleopatra mesa grande lisa pulida",
+      "peso": "2.8",
+      "stock": true
+    },
+    {
+      "sku": "A100",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7755",
+      "notas": "Topacio tallado y diez cubicks circundantes",
+      "peso": "4.3",
+      "stock": true
+    },
+    {
+      "sku": "A102",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7746",
+      "notas": "Aguamarina tallada forma de ojo",
+      "peso": "1.2",
+      "stock": true
+    },
+    {
+      "sku": "A103",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7738",
+      "notas": "Roseta de esmeralda y circones",
+      "peso": "1.6",
+      "stock": true
+    },
+    {
+      "sku": "A104",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7729",
+      "notas": "Doble corazón de circones",
+      "peso": "1.1",
+      "stock": true
+    },
+    {
+      "sku": "A106",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7704",
+      "notas": "Esmeralda baguette y dobles circones",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "A107",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7757",
+      "notas": "Diseño engranaje",
+      "peso": "0.8",
+      "stock": true
+    },
+    {
+      "sku": "A110",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7731",
+      "notas": "Flor con Rosa de Francia",
+      "peso": "1.8",
+      "stock": true
+    },
+    {
+      "sku": "A111",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7718",
+      "notas": "Oro blanco záfiros en baguette y dos bandas de oro amarillo circones laterales",
+      "peso": "6.7",
+      "stock": true
+    },
+    {
+      "sku": "A112",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7721",
+      "notas": "Flor de záfiros azules y circones transparentes",
+      "peso": "2.8",
+      "stock": true
+    },
+    {
+      "sku": "A113",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7726",
+      "notas": "Záfiro grande facetado en cabujón rústico",
+      "peso": "2.2",
+      "stock": true
+    },
+    {
+      "sku": "A047",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7749",
+      "notas": "Záfiros navette en cruz  interior 4 circones",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "A127",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7739",
+      "notas": "Oro blanco Amatista cuadrada central y engarces de cubicks",
+      "peso": "3",
+      "stock": true
+    },
+    {
+      "sku": "A130",
+      "nombre": "Con piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7733",
+      "notas": "Piedra rubí rectangular con dos circones a ambos lados",
+      "peso": "2.4",
+      "stock": true
+    },
+    {
+      "sku": "A132",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7708",
+      "notas": "X de circones y filas de rubíes",
+      "peso": "2.3",
+      "stock": true
+    },
+    {
+      "sku": "A133",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7735",
+      "notas": "Medio sin fin de Záfiros Azules",
+      "peso": "2.3",
+      "stock": true
+    },
+    {
+      "sku": "A134",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7761",
+      "notas": "Tipo moño",
+      "peso": "1.6",
+      "stock": true
+    },
+    {
+      "sku": "A136",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7715",
+      "notas": "Diagonales de dobles amatistas y dobles circones",
+      "peso": "2.5",
+      "stock": true
+    },
+    {
+      "sku": "A137",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7743",
+      "notas": "Frutilla de circones transparentes",
+      "peso": "2.6",
+      "stock": true
+    },
+    {
+      "sku": "170146",
+      "nombre": "Roseta",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7727",
+      "notas": "Amatista circundado con circones transparentes",
+      "peso": "2.2",
+      "stock": true
+    },
+    {
+      "sku": "220620",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7707",
+      "notas": "Medio sin fin aguamarinas navette y circones",
+      "peso": "2",
+      "stock": true
+    },
+    {
+      "sku": "103461",
+      "nombre": "Piedras",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7705",
+      "notas": "7 Záfiros azules bombé y en cruz 2 circones",
+      "peso": "2.4",
+      "stock": true
+    },
+    {
+      "sku": "938011",
+      "nombre": "Sello para grabar",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7734",
+      "notas": "Oval 9x11 mm",
+      "peso": "2.2",
+      "stock": true
+    },
+    {
+      "sku": "A140",
+      "nombre": "Sello",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7703",
+      "notas": "Cleopatra mesa lisa pequeña",
+      "peso": "1.4",
+      "stock": true
+    },
+    {
+      "sku": "A141",
+      "nombre": "Solitario",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7741",
+      "notas": "Circón alto y dos pequeñitos a ambos lados",
+      "peso": "1.7",
+      "stock": true
+    },
+    {
+      "sku": "A142",
+      "nombre": "Egipcio bicolor",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7719",
+      "notas": "Jeroglíficos en oro amarillo y bordes oro rojo",
+      "peso": "5.8",
+      "stock": true
+    },
+    {
+      "sku": "A143",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7760",
+      "notas": "Lisa",
+      "peso": "1.2",
+      "stock": true
+    },
+    {
+      "sku": "A202",
+      "nombre": "Solitario piedra",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7758",
+      "notas": "Con cubick",
+      "peso": "1,6",
+      "stock": true
+    },
+    {
+      "sku": "754328",
+      "nombre": "Simple",
+      "categoria": "Anillos",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/7745",
+      "notas": "Pulido con dobles barras alternadas",
+      "peso": "2.9",
+      "stock": true
+    },
+    {
+      "sku": "278841",
+      "nombre": "Med.rectangular Sol Azteca en Au rojo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 518",
+      "notas": "Med.rectangular Sol Azteca en Au rojo",
+      "peso": "2.8",
+      "stock": true
+    },
+    {
+      "sku": "284362",
+      "nombre": "Medalla de la Virgen Desatanudos",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 519",
+      "notas": "Medalla de la Virgen Desatanudos",
+      "peso": "1.6",
+      "stock": true
+    },
+    {
+      "sku": "1058215",
+      "nombre": "CHAPA OVAL ROJA 15 AÑOS",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 520",
+      "notas": "CHAPA OVAL ROJA 15 AÑOS",
+      "peso": "1",
+      "stock": true
+    },
+    {
+      "sku": "1440611",
+      "nombre": "Carita de nena SMILE",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 521",
+      "notas": "Carita de nena SMILE",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "1440612",
+      "nombre": "Carita de nene SMILE",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 522",
+      "notas": "Carita de nene SMILE",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "1440615",
+      "nombre": "CARITA DE NENA SMILE",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 523",
+      "notas": "CARITA DE NENA SMILE",
+      "peso": "0.5",
+      "stock": true
+    },
+    {
+      "sku": "1440616",
+      "nombre": "Carita de nene smile",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 524",
+      "notas": "Carita de nene smile",
+      "peso": "0.5",
+      "stock": true
+    },
+    {
+      "sku": "733775",
+      "nombre": "Cruz con Cristo relieve",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 525",
+      "notas": "Cruz con Cristo relieve",
+      "peso": "3.4",
+      "stock": true
+    },
+    {
+      "sku": "D005",
+      "nombre": "Cuerno coral rojo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 526",
+      "notas": "Cuerno coral rojo",
+      "peso": "0.3",
+      "stock": true
+    },
+    {
+      "sku": "D006",
+      "nombre": "Dali en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 527",
+      "notas": "Dali en Au amarillo",
+      "peso": "2.5",
+      "stock": true
+    },
+    {
+      "sku": "D007",
+      "nombre": "Elefante en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 528",
+      "notas": "Elefante en Au amarillo",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "D008",
+      "nombre": "Elefante Minidije en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 529",
+      "notas": "Elefante Minidije en Au amarillo",
+      "peso": "0.3",
+      "stock": true
+    },
+    {
+      "sku": "D009",
+      "nombre": "Fluorita Arcoiris",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 530",
+      "notas": "Fluorita Arcoiris",
+      "peso": "2.6",
+      "stock": true
+    },
+    {
+      "sku": "D011",
+      "nombre": "Inicial G bombe en Au rojo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 531",
+      "notas": "Inicial G bombe en Au rojo",
+      "peso": "0.4",
+      "stock": true
+    },
+    {
+      "sku": "D012",
+      "nombre": "Luna minidije en Au rojo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 532",
+      "notas": "Luna minidije en Au rojo",
+      "peso": "0.2",
+      "stock": true
+    },
+    {
+      "sku": "D014",
+      "nombre": "Mafalda en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 533",
+      "notas": "Mafalda en Au amarillo",
+      "peso": "0.6",
+      "stock": true
+    },
+    {
+      "sku": "D015",
+      "nombre": "Mariposa minidije en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 534",
+      "notas": "Mariposa minidije en Au amarillo",
+      "peso": "0.3",
+      "stock": true
+    },
+    {
+      "sku": "D016",
+      "nombre": "Nene tallado",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 535",
+      "notas": "Nene tallado",
+      "peso": "0.4",
+      "stock": true
+    },
+    {
+      "sku": "D026",
+      "nombre": "MURANO ARBOL DE LA VIDA CHICO",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 536",
+      "notas": "MURANO ARBOL DE LA VIDA CHICO",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "D027",
+      "nombre": "MURANO ARBOL DE LA VIDA CHICO",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 537",
+      "notas": "MURANO ARBOL DE LA VIDA CHICO",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "D028",
+      "nombre": "MURANO ARBOL DE LA VIDA CHICO",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 538",
+      "notas": "MURANO ARBOL DE LA VIDA CHICO",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "D035",
+      "nombre": "Ositos minidijes  X tres en Au tricolor",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 539",
+      "notas": "Ositos minidijes  X tres en Au tricolor",
+      "peso": "0.6",
+      "stock": true
+    },
+    {
+      "sku": "D036",
+      "nombre": "Ositos minidijes  X tres en Au tricolor",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 540",
+      "notas": "Ositos minidijes  X tres en Au tricolor",
+      "peso": "0.6",
+      "stock": true
+    },
+    {
+      "sku": "D037",
+      "nombre": "Oso amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 541",
+      "notas": "Oso amarillo",
+      "peso": "0.8",
+      "stock": true
+    },
+    {
+      "sku": "D038",
+      "nombre": "Pantera en Au amarillo.",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 542",
+      "notas": "Pantera en Au amarillo.",
+      "peso": "1.5",
+      "stock": true
+    },
+    {
+      "sku": "D039",
+      "nombre": "Percha en Au rojo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 543",
+      "notas": "Percha en Au rojo",
+      "peso": "0.3",
+      "stock": true
+    },
+    {
+      "sku": "D040",
+      "nombre": "Perla simil",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 544",
+      "notas": "Perla simil",
+      "peso": "0.5",
+      "stock": true
+    },
+    {
+      "sku": "D041",
+      "nombre": "Pinguino en Ojo de Tigre",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 545",
+      "notas": "Pinguino en Ojo de Tigre",
+      "peso": "3.5",
+      "stock": true
+    },
+    {
+      "sku": "D043",
+      "nombre": "Swarowskys varios chicos rojo/amar.Diam.12 (9)",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 546",
+      "notas": "Swarowskys varios chicos rojo/amar.Diam.12 (9)",
+      "peso": "0.8",
+      "stock": true
+    },
+    {
+      "sku": "D051",
+      "nombre": "Vaquitas minidijes en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 547",
+      "notas": "Vaquitas minidijes en Au amarillo",
+      "peso": "0.3",
+      "stock": true
+    },
+    {
+      "sku": "D052",
+      "nombre": "Vaquitas minidijes en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 548",
+      "notas": "Vaquitas minidijes en Au amarillo",
+      "peso": "0.3",
+      "stock": true
+    },
+    {
+      "sku": "D053",
+      "nombre": "Elefante Minidije en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 549",
+      "notas": "Elefante Minidije en Au amarillo",
+      "peso": "0.3",
+      "stock": true
+    },
+    {
+      "sku": "D054",
+      "nombre": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 550",
+      "notas": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "peso": "0.9",
+      "stock": true
+    },
+    {
+      "sku": "D056",
+      "nombre": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 551",
+      "notas": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "peso": "0.9",
+      "stock": true
+    },
+    {
+      "sku": "D057",
+      "nombre": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 552",
+      "notas": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "peso": "0.9",
+      "stock": true
+    },
+    {
+      "sku": "D058",
+      "nombre": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 553",
+      "notas": "Imágenes chicas red/oval rojas/amar.c/piedras",
+      "peso": "0.9",
+      "stock": true
+    },
+    {
+      "sku": "D064",
+      "nombre": "Imagen de Rodrigo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 554",
+      "notas": "Imagen de Rodrigo",
+      "peso": "1.6",
+      "stock": true
+    },
+    {
+      "sku": "D069",
+      "nombre": "Nena lisa para grabar en Au amarillo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 555",
+      "notas": "Nena lisa para grabar en Au amarillo",
+      "peso": "0.9",
+      "stock": true
+    },
+    {
+      "sku": "D077",
+      "nombre": "LETRA S",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 556",
+      "notas": "LETRA S",
+      "peso": "1.2",
+      "stock": true
+    },
+    {
+      "sku": "D079",
+      "nombre": "PERCHITA C/TORNILLOS CARTIER BCOS",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 557",
+      "notas": "PERCHITA C/TORNILLOS CARTIER BCOS",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "D080",
+      "nombre": "Flecha original engarzada en Au rojo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 558",
+      "notas": "Flecha original engarzada en Au rojo",
+      "peso": "2.4",
+      "stock": true
+    },
+    {
+      "sku": "D200",
+      "nombre": "Dona oro blanco",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 559",
+      "notas": "Dona oro blanco",
+      "peso": "0.15",
+      "stock": true
+    },
+    {
+      "sku": "D201",
+      "nombre": "Seis esmeraldas en redondo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 560",
+      "notas": "Seis esmeraldas en redondo",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "D204",
+      "nombre": "Vaquita San Antonio",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 561",
+      "notas": "Vaquita San Antonio",
+      "peso": "0.6",
+      "stock": true
+    },
+    {
+      "sku": "D205",
+      "nombre": "Corazón inflado rojo",
+      "categoria": "Dijes",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/D 562",
+      "notas": "Corazón inflado rojo",
+      "peso": "0.6",
+      "stock": true
+    },
+    {
+      "sku": "1249702",
+      "nombre": "IDENTIDAD ORO ROJO",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1249702",
+      "notas": "IDENTIDAD ORO ROJO",
+      "peso": "1.7",
+      "stock": true
+    },
+    {
+      "sku": "1418971",
+      "nombre": "Tourbillón oro rojo",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1418971",
+      "notas": "Tourbillón oro rojo",
+      "peso": "5.5",
+      "stock": true
+    },
+    {
+      "sku": "1450851",
+      "nombre": "Identidad oro rojo c/ tornillos blancos",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1450851",
+      "notas": "Identidad oro rojo c/ tornillos blancos",
+      "peso": "1.7",
+      "stock": true
+    },
+    {
+      "sku": "2370404",
+      "nombre": "Mini Rolo piedras y chapitas redondas o rojo",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/2370404",
+      "notas": "Mini Rolo piedras y chapitas redondas o rojo",
+      "peso": "1.4",
+      "stock": true
+    },
+    {
+      "sku": "500",
+      "nombre": "LISA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/500",
+      "notas": "HILO",
+      "peso": "6",
+      "stock": true
+    },
+    {
+      "sku": "501",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/501",
+      "notas": "HILO FACETADO",
+      "peso": "6",
+      "stock": true
+    },
+    {
+      "sku": "502",
+      "nombre": "LISA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/502",
+      "notas": "3 MM",
+      "peso": "7",
+      "stock": true
+    },
+    {
+      "sku": "503",
+      "nombre": "LISA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/503",
+      "notas": "4 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "504",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/504",
+      "notas": "3,5 - 4 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "505",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/505",
+      "notas": "5,2 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "506",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/506",
+      "notas": "4,8 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "507",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/507",
+      "notas": "4 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "508",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/508",
+      "notas": "4,8 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "509",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/509",
+      "notas": "4 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "510",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/510",
+      "notas": "4,5 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "511",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/511",
+      "notas": "4 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "512",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/512",
+      "notas": "4,8 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "513",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/513",
+      "notas": "3 - 4 - 4,5 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "514",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/514",
+      "notas": "4,8 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "515",
+      "nombre": "FACETADA",
+      "categoria": "Pulseras",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/515",
+      "notas": "4,8 MM",
+      "peso": "10",
+      "stock": true
+    },
+    {
+      "sku": "CAD007",
+      "nombre": "TOURBILLON",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD007",
+      "notas": "Tourbillon en Au rojo 45 cm",
+      "peso": "1.8",
+      "stock": true
+    },
+    {
+      "sku": "1052112",
+      "nombre": "FÍGARO 3X1",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1052112",
+      "notas": "GARGANTILLA FIGARO 3X1 ROJA 50 CM",
+      "peso": "7.6",
+      "stock": true
+    },
+    {
+      "sku": "1412341",
+      "nombre": "FORCET",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1412341",
+      "notas": "Forcet oro rojo  45 cm",
+      "peso": "1.7",
+      "stock": true
+    },
+    {
+      "sku": "1447699",
+      "nombre": "SINGAPUR",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1447699",
+      "notas": "Singapur oro rojo 45 cm",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "1448325",
+      "nombre": "TOURBILLON",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1448325",
+      "notas": "Tourbillon oro rojo 45 cm",
+      "peso": "1.7",
+      "stock": true
+    },
+    {
+      "sku": "1448328",
+      "nombre": "TOURBILLON",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1448328",
+      "notas": "Tourbillón oro rojo 45 cm",
+      "peso": "1.7",
+      "stock": true
+    },
+    {
+      "sku": "1450841",
+      "nombre": "GROUMET",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1450841",
+      "notas": "Groumet oro rojo 50 cm",
+      "peso": "2.5",
+      "stock": true
+    },
+    {
+      "sku": "CAD068",
+      "nombre": "TOURBILLON",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD068",
+      "notas": "TOURBILLON ROJO 50 cm",
+      "peso": "1.9",
+      "stock": true
+    },
+    {
+      "sku": "CAD092",
+      "nombre": "GROUMET",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD092",
+      "notas": "Groumet oro amarillo 40 cm",
+      "peso": "2",
+      "stock": true
+    },
+    {
+      "sku": "CAD100",
+      "nombre": "SINGAPUR",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD100",
+      "notas": "Singapur oro rojo 45 cm",
+      "peso": "1",
+      "stock": true
+    },
+    {
+      "sku": "1509036",
+      "nombre": "SINGAPUR",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1509036",
+      "notas": "Singapur oro rojo 50 cm",
+      "peso": "1.1",
+      "stock": true
+    },
+    {
+      "sku": "1499151",
+      "nombre": "GROUMET",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1499151",
+      "notas": "Groumet oro rojo 50 cm",
+      "peso": "1.9",
+      "stock": true
+    },
+    {
+      "sku": "CAD101",
+      "nombre": "FORCET",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD101",
+      "notas": "Forcet oro rojo 50 cm",
+      "peso": "2",
+      "stock": true
+    },
+    {
+      "sku": "CAD102",
+      "nombre": "FORCET",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD102",
+      "notas": "Forcet oro rojo 45 cm",
+      "peso": "1.8",
+      "stock": true
+    },
+    {
+      "sku": "1504028",
+      "nombre": "TOURBILLON",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1504028",
+      "notas": "Tourbillón oro rojo 50 cm",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "CAD104",
+      "nombre": "SINGAPUR",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD104",
+      "notas": "Singapur amarillo 45 cm",
+      "peso": "0.9",
+      "stock": true
+    },
+    {
+      "sku": "CAD109",
+      "nombre": "ESPEJITO",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD109",
+      "notas": "Espejito amarillo 40 cm",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "CAD123",
+      "nombre": "ESPEJITO",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD123",
+      "notas": "Espejito amarillo 40 cm",
+      "peso": "0,8",
+      "stock": true
+    },
+    {
+      "sku": "CAD699",
+      "nombre": "Diseño de marcos y flores en tres oros",
+      "categoria": "Cadenas",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/CAD699",
+      "notas": "Diseño de marcos y flores en tres oros",
+      "peso": "3,8",
+      "stock": true
+    },
+    {
+      "sku": "AR215",
+      "nombre": "ARO SOL UNITARIO",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR215",
+      "notas": "ARO SOL UNITARIO",
+      "peso": "1.1",
+      "stock": true
+    },
+    {
+      "sku": "AR023",
+      "nombre": "Cubano chico en Au amarillo",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR23001",
+      "notas": "Cubano chico en Au amarillo",
+      "peso": "0.5",
+      "stock": true
+    },
+    {
+      "sku": "1452902",
+      "nombre": "Brisura Pendientes c/circones",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1452902",
+      "notas": "Brisura Pendientes c/circones",
+      "peso": "1.4",
+      "stock": true
+    },
+    {
+      "sku": "1452929",
+      "nombre": "Colgante brisura de Rosa Francia",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1452929",
+      "notas": "Colgante brisura de Rosa Francia",
+      "peso": "1.4",
+      "stock": true
+    },
+    {
+      "sku": "1424242",
+      "nombre": "Chinitos con rosca",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1424242",
+      "notas": "chinitos",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "1447989",
+      "nombre": "Sol oro rojo",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1447989",
+      "notas": "Soles oro rojo",
+      "peso": "0.8",
+      "stock": true
+    },
+    {
+      "sku": "1450166",
+      "nombre": "Corona Princesa",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1450166",
+      "notas": "Corona Princesa",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "1452942",
+      "nombre": "Brisura Pendientes c/rubí",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1452942",
+      "notas": "Brisura Pendientes c/rubí",
+      "peso": "0.9",
+      "stock": true
+    },
+    {
+      "sku": "1447976",
+      "nombre": "Angelitos del Renacimiento",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1447976",
+      "notas": "Angelitos del Renacimiento",
+      "peso": "0.8",
+      "stock": true
+    },
+    {
+      "sku": "653887",
+      "nombre": "OVALADOS C/RUBI",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/653887",
+      "notas": "OVALADOS C/RUBI",
+      "peso": "1.6",
+      "stock": true
+    },
+    {
+      "sku": "1452171",
+      "nombre": "Cubanos oro ojo",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/1452171",
+      "notas": "Cubanos oro ojo",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "773011",
+      "nombre": "FLOR C/CUBIK",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/773011",
+      "notas": "FLOR C/CUBIK",
+      "peso": "2.8",
+      "stock": true
+    },
+    {
+      "sku": "775076",
+      "nombre": "BARRAS C/CUBIK",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/775076",
+      "notas": "BARRAS C/CUBIK",
+      "peso": "1.5",
+      "stock": true
+    },
+    {
+      "sku": "AB16",
+      "nombre": "ABRIDOR PERLA 3 mm",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 16",
+      "notas": "ABRIDOR PERLA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB18",
+      "nombre": "ABRIDOR PIEDRA CHICA ROSADA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 18",
+      "notas": "ABRIDOR PIEDRA CHICA ROSADA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB21",
+      "nombre": "ABRIDOR GRIFA 2 mm CHICA BLANCA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 21",
+      "notas": "ABRIDOR GRIFA 2 mm CHICA BLANCA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB24",
+      "nombre": "ABRIDOR MARIPOSA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 24",
+      "notas": "ABRIDOR MARIPOSA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB25",
+      "nombre": "ABRIDOR MEDIA LUNA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 25",
+      "notas": "ABRIDOR MEDIA LUNA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB26",
+      "nombre": "ABRIDOR DELFIN",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 26",
+      "notas": "ABRIDOR DELFIN",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB30",
+      "nombre": "ABRIDOR BOLITA 3,1 mm N°2",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 30",
+      "notas": "ABRIDOR BOLITA N°2",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB31",
+      "nombre": "ABRIDOR BOLITA 4 mm N°4",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 31",
+      "notas": "ABRIDOR BOLITA N°4",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB32",
+      "nombre": "ABRIDOR BOLITA 5,1 mm N°6",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 32",
+      "notas": "ABRIDOR BOLITA N°6",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB33",
+      "nombre": "ABRIDOR PERLA SÍMIL 6 mm GRANDE",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 33",
+      "notas": "ABRIDOR PERLA SÍMIL GRANDE",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB34",
+      "nombre": "ABRIDOR GRIFA 2 mm CHICA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 34",
+      "notas": "ABRIDOR GRIFA CHICA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB36",
+      "nombre": "ABRIDOR GRIFA 3 mm MEDIANA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 36",
+      "notas": "ABRIDOR GRIFA MEDIANA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB37",
+      "nombre": "ABRIDOR CULTIVO 4,2 mm MEDIANA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 37",
+      "notas": "ABRIDOR CULTIVO MEDIANA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB39",
+      "nombre": "ABRIDOR TUBO C/CUBIK 4,4 mm",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 39",
+      "notas": "ABRIDOR TUBO C/CUBIK",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB40",
+      "nombre": "ABRIDOR DELFIN",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 40",
+      "notas": "ABRIDOR DELFIN",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB41",
+      "nombre": "ABRIDOR VAQUITA MEDIANA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 41",
+      "notas": "ABRIDOR VAQUITA MEDIANA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AB60",
+      "nombre": "ABRIDOR CHINITO",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AB 60",
+      "notas": "ABRIDOR CHINITO",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AR027",
+      "nombre": "Abridor manzanitas en Au amarillo",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR27001",
+      "notas": "Abridor manzanitas en Au amarillo",
+      "peso": "0.8",
+      "stock": true
+    },
+    {
+      "sku": "AR090",
+      "nombre": "Bolitas de oro rojo 3 mm pequeña",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR90001",
+      "notas": "Bolitas 3 mm de oro rojo",
+      "peso": "0.4",
+      "stock": true
+    },
+    {
+      "sku": "AR091",
+      "nombre": "Bolitas de oro rojo 4 mm mediana",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR91001",
+      "notas": "Bolitas 3,9 mm de oro rojo",
+      "peso": "0.6",
+      "stock": true
+    },
+    {
+      "sku": "AR092",
+      "nombre": "Bolitas de oro rojo 5 mm grande",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR92001",
+      "notas": "Bolitas 5 mm de oro rojo",
+      "peso": "0.8",
+      "stock": true
+    },
+    {
+      "sku": "AR093",
+      "nombre": "Corazones de oro blanco",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR93001",
+      "notas": "Corazones de oro blanco",
+      "peso": "0.4",
+      "stock": true
+    },
+    {
+      "sku": "AR094",
+      "nombre": "Abejitas italianas",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR094001",
+      "notas": "Abejitas italianas",
+      "peso": "1.3",
+      "stock": true
+    },
+    {
+      "sku": "AR095",
+      "nombre": "Perlas cultivadas 5,6 mm tornillo",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR95001",
+      "notas": "Perlas cultivadas",
+      "peso": "1",
+      "stock": true
+    },
+    {
+      "sku": "AR096",
+      "nombre": "Chinito grande",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR096",
+      "notas": "Chinito grande",
+      "peso": "0.5",
+      "stock": true
+    },
+    {
+      "sku": "AR37",
+      "nombre": "TORNILLO VAQUITA MEDIANA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR37001",
+      "notas": "TORNILLO VAQUITA MEDIANA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AR38",
+      "nombre": "TORNILLO VAQUITA MEDIANA",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR38001",
+      "notas": "TORNILLO VAQUITA MEDIANA",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AR39",
+      "nombre": "TORNILLO PERLA SIMIL 10 mm",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR39001",
+      "notas": "TORNILLO PERLA SIMIL 10 mm",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AR40",
+      "nombre": "TORNILLO OSO",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR40001",
+      "notas": "TORNILLO OSO",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AR41",
+      "nombre": "TORNILLO GRIFA CON CUBIK",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR41001",
+      "notas": "TORNILLO GRIFA C/CUBIK",
+      "peso": "",
+      "stock": true
+    },
+    {
+      "sku": "AR100",
+      "nombre": "Bolitas grandes 6,1 mm",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR10001",
+      "notas": "Bolitas 6,1 mm de oro rojo",
+      "peso": "0.7",
+      "stock": true
+    },
+    {
+      "sku": "AR097",
+      "nombre": "Aros criollos chicos",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR97001",
+      "notas": "Aros criollos chicos",
+      "peso": "1.8",
+      "stock": true
+    },
+    {
+      "sku": "AR098",
+      "nombre": "Aros criollos medianos",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR98001",
+      "notas": "Aros criollos medianos",
+      "peso": "2.6",
+      "stock": true
+    },
+    {
+      "sku": "AR19",
+      "nombre": "Cubanos grandes",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR19001",
+      "notas": "Cubanos grandes",
+      "peso": "5.7",
+      "stock": true
+    },
+    {
+      "sku": "AR20",
+      "nombre": "Aros triple piedra",
+      "categoria": "Aros",
+      "material": "Oro 18k",
+      "foto": "https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/AR20",
+      "notas": "Aros triple piedra",
+      "peso": "0.7",
+      "stock": true
+    }
+  ]
+}

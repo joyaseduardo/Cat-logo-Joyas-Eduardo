@@ -131,6 +131,22 @@
   .tab-content { display: none; }
   .tab-content.active { display: block; }
 
+  /* ── TAB ORO ── */
+  #tab-oro {
+    background: linear-gradient(135deg, #1a1200, #2a1f00);
+    color: #8a7040;
+    border-top-color: transparent;
+  }
+  #tab-oro.active {
+    background: linear-gradient(135deg, #0a0800, #1a1200);
+    color: #E8C060;
+    border-top-color: #E8C060;
+  }
+  #tab-oro:hover:not(.active) {
+    background: linear-gradient(135deg, #1f1700, #2f2200);
+    color: #C9993A;
+  }
+
   /* ── CATEGORÍAS GRID (Alianzas) ── */
   .categorias-grid {
     display: grid;
@@ -615,6 +631,9 @@
     <button class="tab-btn" onclick="cambiarTab('joyas')" id="tab-joyas">
       <img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/PUL_77" alt="Joyas" style="height:28px;width:28px;object-fit:cover;border-radius:50%;"> Joyas <span class="tab-badge" id="badge-joyas" style="display:none"></span>
     </button>
+    <button class="tab-btn" onclick="cambiarTab('oro')" id="tab-oro">
+      ✨ Oro 18k <span class="tab-badge" id="badge-oro" style="display:none"></span>
+    </button>
   </div>
 </header>
 
@@ -736,6 +755,38 @@
         Si ves esto, asegurate de que el archivo <strong>joyas-data.json</strong> esté en la misma carpeta.<br>
         Exportalo desde la app de gestión con el botón <strong>📤 Exportar catálogo</strong>.
       </small></p>
+    </div>
+  </div>
+
+</div>
+
+<!-- ══════════════════════════════════════════
+     TAB: ORO 18K
+═══════════════════════════════════════════ -->
+<div id="content-oro" class="tab-content">
+
+  <div class="joyas-hero" style="background:linear-gradient(180deg,#0a0800 0%,#1a1200 100%);">
+    <div style="font-size:2rem;margin-bottom:0.5rem;">✨</div>
+    <h2 style="color:#E8C060;">Colección Oro 18k</h2>
+    <p style="color:#8a7040;letter-spacing:0.15em;">ANILLOS · AROS · CADENAS · DIJES · PULSERAS</p>
+    <p style="color:#666;font-size:0.8rem;margin-top:0.5rem;font-style:italic;">Cada pieza certificada · Oro 18 kilates</p>
+  </div>
+
+  <div class="busqueda-container">
+    <span class="search-icon">🔍</span>
+    <input type="text" id="busquedaOro" placeholder="Buscar por nombre o código..."
+      oninput="filtrarOro()" autocomplete="off">
+  </div>
+
+  <div class="filtros-bar" id="filtrosBarOro">
+    <button class="filtro-btn active" onclick="setFiltroOro('todos',this)">Todos</button>
+  </div>
+
+  <p class="nota-sin-precio">💬 Consultá precio y disponibilidad — agregá las piezas que te interesan y te respondemos por WhatsApp.</p>
+
+  <div class="joyas-grid" id="oroGrid">
+    <div class="empty-state" style="grid-column:1/-1">
+      <div class="icon">⏳</div><p>Cargando colección...</p>
     </div>
   </div>
 
@@ -1037,6 +1088,146 @@ function renderJoyas(lista) {
   });
 }
 
+/* ── ORO 18K ── */
+var todasLasOro    = [];
+var filtroOro      = 'todos';
+
+function cargarOro() {
+  fetch('oro18k-data.json')
+    .then(function(r){ if(!r.ok) throw new Error('HTTP '+r.status); return r.json(); })
+    .then(function(data){
+      todasLasOro = Array.isArray(data) ? data : (data.joyas || []);
+      var badge = document.getElementById('badge-oro');
+      if (badge){ badge.textContent = todasLasOro.length; badge.style.display = ''; }
+      construirFiltrosOro();
+      renderOro(todasLasOro);
+    })
+    .catch(function(err){
+      document.getElementById('oroGrid').innerHTML =
+        '<div class="empty-state" style="grid-column:1/-1"><div class="icon">⚠️</div>' +
+        '<p>Error al cargar oro18k-data.json<br><small style="color:#c55">'+err.message+'</small></p></div>';
+    });
+}
+
+function construirFiltrosOro() {
+  var cats = [];
+  todasLasOro.forEach(function(j){
+    if (j.categoria && cats.indexOf(j.categoria) === -1) cats.push(j.categoria);
+  });
+  cats.sort();
+  var bar = document.getElementById('filtrosBarOro');
+  if (!bar) return;
+  bar.innerHTML = '<button class="filtro-btn active" onclick="setFiltroOro('todos',this)">Todos</button>';
+  cats.forEach(function(cat){
+    var btn = document.createElement('button');
+    btn.className = 'filtro-btn';
+    btn.textContent = cat;
+    btn.onclick = function(){ setFiltroOro(cat, this); };
+    bar.appendChild(btn);
+  });
+}
+
+function setFiltroOro(cat, btn) {
+  filtroOro = cat;
+  document.querySelectorAll('#filtrosBarOro .filtro-btn').forEach(function(b){ b.classList.remove('active'); });
+  btn.classList.add('active');
+  aplicarFiltrosOro();
+}
+
+function filtrarOro() { aplicarFiltrosOro(); }
+
+function aplicarFiltrosOro() {
+  var q = (document.getElementById('busquedaOro').value || '').toLowerCase().trim();
+  var lista = todasLasOro;
+  if (filtroOro !== 'todos') lista = lista.filter(function(j){ return j.categoria === filtroOro; });
+  if (q) lista = lista.filter(function(j){
+    return (j.nombre||'').toLowerCase().indexOf(q) !== -1 ||
+           (j.sku||'').toLowerCase().indexOf(q) !== -1 ||
+           (j.notas||'').toLowerCase().indexOf(q) !== -1;
+  });
+  renderOro(lista);
+}
+
+function renderOro(lista) {
+  var grid = document.getElementById('oroGrid');
+  if (!grid) return;
+  grid.innerHTML = '';
+  if (!lista.length) {
+    grid.innerHTML = '<div class="empty-state" style="grid-column:1/-1"><div class="icon">🔍</div><p>No se encontraron piezas.</p></div>';
+    return;
+  }
+  lista.forEach(function(j) {
+    var card = document.createElement('div');
+    card.className = 'joya-card';
+    card.style.cssText = 'border-color:#2a1f00;';
+    card.id = 'oro-card-' + j.sku;
+    var fotoUrl = j.foto || '';
+
+    // Foto
+    var fotoDiv = document.createElement('div');
+    fotoDiv.className = 'foto-container';
+    fotoDiv.style.cssText = 'background:linear-gradient(135deg,#0a0800,#1a1200);';
+    if (fotoUrl) {
+      var img = document.createElement('img');
+      img.src = fotoUrl;
+      img.alt = j.nombre || '';
+      img.loading = 'lazy';
+      img.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+      img.onerror = function(){ this.style.display='none'; };
+      fotoDiv.appendChild(img);
+      fotoDiv.style.cursor = 'zoom-in';
+      (function(div){ div.addEventListener('click', function(e){
+        e.stopPropagation();
+        var im = div.querySelector('img');
+        if (im && im.src) abrirLightbox(im.src,'','');
+      }); })(fotoDiv);
+    } else {
+      var ph = document.createElement('div');
+      ph.className = 'foto-placeholder';
+      ph.innerHTML = '<span>✨</span>';
+      fotoDiv.appendChild(ph);
+    }
+    var bdg = document.createElement('span');
+    bdg.className = 'badge-categoria';
+    bdg.style.cssText = 'background:rgba(201,153,58,0.2);border-color:rgba(201,153,58,0.5);color:#E8C060;';
+    bdg.textContent = j.categoria || '';
+    fotoDiv.appendChild(bdg);
+    card.appendChild(fotoDiv);
+
+    // Info
+    var info = document.createElement('div');
+    info.className = 'info';
+    var detalles = j.peso ? j.material + ' · ' + j.peso + 'g' : j.material || '';
+    info.innerHTML =
+      '<div class="sku" style="color:#6a5020;"># ' + (j.sku||'') + '</div>' +
+      '<div class="nombre" style="color:#e8d090;">' + (j.nombre||'') + '</div>' +
+      '<div class="material" style="color:#8a7040;">' + detalles + '</div>' +
+      (j.notas ? '<div class="notas-badge" style="color:#6a5020;">📝 ' + j.notas + '</div>' : '');
+
+    var actions = document.createElement('div');
+    actions.className = 'card-actions';
+
+    var btnC = document.createElement('button');
+    btnC.className = 'btn-carrito' + (carrito.indexOf(j.sku)!==-1?' en-carrito':'');
+    btnC.id = 'oro-btn-' + j.sku;
+    btnC.textContent = carrito.indexOf(j.sku)!==-1 ? '✓ Agregado' : '🛍️ Agregar';
+    (function(sku){ btnC.addEventListener('click', function(){ toggleCarrito(sku); }); })(j.sku);
+    actions.appendChild(btnC);
+
+    var btnW = document.createElement('a');
+    btnW.className = 'btn-consultar';
+    btnW.target = '_blank';
+    btnW.style.cssText = 'background:linear-gradient(135deg,#9A7020,#C9993A);';
+    btnW.href = 'https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent('Hola! Me interesa: '+(j.nombre||'')+' (Ref: '+(j.sku||'')+')');
+    btnW.textContent = '💬 Consultar';
+    actions.appendChild(btnW);
+
+    info.appendChild(actions);
+    card.appendChild(info);
+    grid.appendChild(card);
+  });
+}
+
 /* ── LIGHTBOX ── */
 
 
@@ -1166,6 +1357,7 @@ window.addEventListener('DOMContentLoaded', function(){
     sessionStorage.setItem('welcomed','1');
   }
   cargarJoyas();
+  cargarOro();
 
   // Escape cierra carrito
   document.addEventListener('keydown', function(e){
