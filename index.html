@@ -1438,23 +1438,16 @@ function enviarLead() {
     return;
   }
 
-  var msg = '🌟 NUEVO CONTACTO - Catalogo Online
+  var nl = '%0A';
+  var msg = encodeURIComponent('🌟 NUEVO CONTACTO - Catalogo Online') + nl + nl +
+    encodeURIComponent('👤 Nombre: ' + nombre) + nl +
+    encodeURIComponent('📱 Celular: ' + celular) + nl +
+    encodeURIComponent('📍 Ciudad: ' + ciudad) + nl +
+    (interes ? encodeURIComponent('💎 Interes: ' + interes) + nl : '') +
+    (email   ? encodeURIComponent('📧 Email: '  + email)   + nl : '') +
+    nl + encodeURIComponent('Gracias por tu interes en Joyas Eduardo!');
 
-' +
-    '👤 Nombre: ' + nombre + '
-' +
-    '📱 Celular: ' + celular + '
-' +
-    '📍 Ciudad: ' + ciudad + '
-' +
-    (interes ? '💎 Interés: ' + interes + '
-' : '') +
-    (email   ? '📧 Email: ' + email + '
-'   : '') +
-    '
-¡Gracias por tu interés en Joyas Eduardo! ✨';
-
-  window.open('https://wa.me/' + WA_NUMBER + '?text=' + encodeURIComponent(msg), '_blank');
+  window.open('https://wa.me/' + WA_NUMBER + '?text=' + msg, '_blank');
   cerrarWelcome();
 }
 
