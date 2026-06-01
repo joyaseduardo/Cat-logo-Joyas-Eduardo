@@ -1117,7 +1117,7 @@ function construirFiltrosOro() {
   cats.sort();
   var bar = document.getElementById('filtrosBarOro');
   if (!bar) return;
-  bar.innerHTML = '<button class="filtro-btn active" onclick="setFiltroOro('todos',this)">Todos</button>';
+  bar.innerHTML = '<button class="filtro-btn active" onclick="setFiltroOro(&apos;todos&apos;,this)">Todos</button>';
   cats.forEach(function(cat){
     var btn = document.createElement('button');
     btn.className = 'filtro-btn';
