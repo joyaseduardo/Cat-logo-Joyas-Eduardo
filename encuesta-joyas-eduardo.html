@@ -8,21 +8,21 @@
 <style>
   :root {
     --oro: #C9993A;
-    --oro-claro: #E8C97A;
-    --oro-oscuro: #8B6914;
-    --negro: #0D0D0D;
-    --gris-oscuro: #1A1A1A;
-    --gris-medio: #2A2A2A;
-    --gris-borde: #3A3A3A;
-    --blanco: #F5F0E8;
-    --blanco-suave: #EDE8DC;
+    --oro-claro: #9A7020;
+    --oro-oscuro: #7A5510;
+    --negro: #FFFFFF;
+    --gris-oscuro: #FAFAF8;
+    --gris-medio: #F5F2EC;
+    --gris-borde: #DDD5C0;
+    --blanco: #222222;
+    --blanco-suave: #333333;
   }
 
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    background: var(--negro);
-    color: var(--blanco);
+    background: #FDFCF9;
+    color: #222222;
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     min-height: 100vh;
@@ -35,9 +35,9 @@
     position: fixed;
     inset: 0;
     background:
-      radial-gradient(ellipse at 20% 50%, rgba(201,153,58,0.06) 0%, transparent 60%),
-      radial-gradient(ellipse at 80% 20%, rgba(201,153,58,0.04) 0%, transparent 50%),
-      radial-gradient(ellipse at 60% 80%, rgba(201,153,58,0.03) 0%, transparent 40%);
+      radial-gradient(ellipse at 20% 50%, rgba(201,153,58,0.08) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(201,153,58,0.05) 0%, transparent 50%),
+      radial-gradient(ellipse at 60% 80%, rgba(201,153,58,0.04) 0%, transparent 40%);
     pointer-events: none;
     z-index: 0;
   }
@@ -82,7 +82,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 32px;
     font-weight: 300;
-    color: var(--oro-claro);
+    color: var(--oro);
     letter-spacing: 4px;
     text-transform: uppercase;
   }
@@ -90,7 +90,7 @@
   .logo-sub {
     font-size: 11px;
     letter-spacing: 3px;
-    color: rgba(201,153,58,0.6);
+    color: rgba(150,100,20,0.7);
     text-transform: uppercase;
     margin-top: 4px;
   }
@@ -99,7 +99,7 @@
     font-family: 'Cormorant Garamond', serif;
     font-style: italic;
     font-size: 16px;
-    color: rgba(245,240,232,0.6);
+    color: #666666;
     margin-top: 20px;
     line-height: 1.6;
     padding: 0 12px;
@@ -117,7 +117,7 @@
     width: 6px;
     height: 6px;
     border-radius: 50%;
-    background: var(--gris-borde);
+    background: #CCCCCC;
     transition: all 0.4s ease;
   }
 
@@ -167,13 +167,13 @@
     font-family: 'Cormorant Garamond', serif;
     font-size: 24px;
     font-weight: 400;
-    color: var(--oro-claro);
+    color: var(--oro);
     letter-spacing: 1px;
   }
 
   .sec-desc {
     font-size: 12px;
-    color: rgba(245,240,232,0.45);
+    color: #888888;
     margin-top: 6px;
     letter-spacing: 0.5px;
   }
@@ -188,7 +188,7 @@
     font-size: 10px;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: rgba(201,153,58,0.7);
+    color: #9A7020;
     margin-bottom: 8px;
   }
 
@@ -196,10 +196,10 @@
   .campo select,
   .campo textarea {
     width: 100%;
-    background: var(--gris-medio);
-    border: 1px solid var(--gris-borde);
+    background: #FFFFFF;
+    border: 1px solid #D4C4A0;
     border-radius: 8px;
-    color: var(--blanco);
+    color: #222222;
     font-family: 'Jost', sans-serif;
     font-weight: 300;
     font-size: 15px;
@@ -219,7 +219,7 @@
 
   .campo input::placeholder,
   .campo textarea::placeholder {
-    color: rgba(245,240,232,0.25);
+    color: rgba(50,40,20,0.25);
   }
 
   .campo textarea {
@@ -228,7 +228,7 @@
   }
 
   .campo select option {
-    background: var(--gris-oscuro);
+    background: #F0EDE4;
   }
 
   /* Select con flecha dorada */
@@ -268,7 +268,7 @@
     border: 1px solid var(--gris-borde);
     border-radius: 40px;
     font-size: 13px;
-    color: rgba(245,240,232,0.6);
+    color: rgba(50,40,20,0.6);
     cursor: pointer;
     transition: all 0.25s ease;
     user-select: none;
@@ -302,7 +302,7 @@
     border-radius: 8px;
     cursor: pointer;
     font-size: 11px;
-    color: rgba(245,240,232,0.5);
+    color: rgba(50,40,20,0.5);
     transition: all 0.25s ease;
     line-height: 1.3;
   }
@@ -336,7 +336,7 @@
     border: 1px solid var(--gris-borde);
     border-radius: 8px;
     background: transparent;
-    color: rgba(245,240,232,0.5);
+    color: rgba(50,40,20,0.5);
     font-family: 'Jost', sans-serif;
     font-size: 13px;
     letter-spacing: 1px;
@@ -416,7 +416,7 @@
 
   .resultado-sub {
     font-size: 13px;
-    color: rgba(245,240,232,0.45);
+    color: rgba(50,40,20,0.45);
   }
 
   /* Tarjeta resumen */
@@ -455,7 +455,7 @@
 
   .resumen-key {
     font-size: 11px;
-    color: rgba(245,240,232,0.4);
+    color: rgba(50,40,20,0.4);
     letter-spacing: 0.5px;
     flex-shrink: 0;
     padding-top: 1px;
@@ -470,13 +470,13 @@
 
   /* Caja de texto copiable */
   .copia-box {
-    background: var(--negro);
+    background: #FDFCF9;
     border: 1px solid var(--gris-borde);
     border-radius: 10px;
     padding: 16px;
     font-size: 12px;
     line-height: 1.8;
-    color: rgba(245,240,232,0.7);
+    color: rgba(50,40,20,0.7);
     white-space: pre-wrap;
     word-break: break-word;
     font-family: 'Jost', monospace;
@@ -491,7 +491,7 @@
     background: transparent;
     border: 1px solid var(--gris-borde);
     border-radius: 8px;
-    color: rgba(245,240,232,0.5);
+    color: rgba(50,40,20,0.5);
     font-family: 'Jost', sans-serif;
     font-size: 12px;
     font-weight: 400;
@@ -587,7 +587,7 @@
     background: transparent;
     border: 1px solid var(--gris-borde);
     border-radius: 8px;
-    color: rgba(245,240,232,0.5);
+    color: rgba(50,40,20,0.5);
     font-family: 'Jost', sans-serif;
     font-size: 12px;
     letter-spacing: 1px;
