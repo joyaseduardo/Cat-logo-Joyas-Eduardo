@@ -1127,7 +1127,8 @@ function renderJoyas(lista) {
     bdg.textContent = j.categoria || '';
     fotoDiv.appendChild(bdg);
 
-    if (!j.stock) {
+    var sinStockOro = (j.stock === false) || (j.stock === undefined && j.cantidad !== undefined && Number(j.cantidad) < 1);
+    if (sinStockOro) {
       var ss = document.createElement('div');
       ss.className = 'sin-stock';
       ss.textContent = 'Sin stock';
@@ -1151,7 +1152,7 @@ function renderJoyas(lista) {
     btnC.className = 'btn-carrito' + (carrito.indexOf(j.sku)!==-1?' en-carrito':'');
     btnC.id = 'btn-' + j.sku;
     btnC.textContent = carrito.indexOf(j.sku)!==-1 ? '✓ Agregado' : '🛍️ Agregar';
-    if (!j.stock){ btnC.disabled=true; btnC.style.opacity='0.4'; }
+    if (sinStockOro){ btnC.disabled=true; btnC.style.opacity='0.4'; }
     (function(sku){ btnC.addEventListener('click', function(){ toggleCarrito(sku); }); })(j.sku);
     actions.appendChild(btnC);
 
