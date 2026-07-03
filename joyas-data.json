@@ -1,11 +1,31 @@
 [
   {
-    "sku": "AN-100",
-    "nombre": "ANILLO PLATA",
+    "sku": "AN-169",
+    "nombre": "ARBOL DE LA VIDA",
+    "material": "PLATA Y ORO",
+    "categoria": "Anillos",
+    "cantidad": 1,
+    "precioARS": 1,
+    "foto": "AN-169.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "AN-170",
+    "nombre": "ESPECIALES",
     "material": "PLATA",
     "categoria": "Anillos",
-    "cantidad": 6,
-    "precioARS": 12775,
+    "cantidad": 1,
+    "precioARS": 2,
+    "foto": "AN-170.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "AN-100",
+    "nombre": "DISEÑO",
+    "material": "PLATA Y ORO",
+    "categoria": "Anillos",
+    "cantidad": 1,
+    "precioARS": 3,
     "foto": "AN-100.jpg",
     "notas": ""
   },
@@ -677,26 +697,6 @@
     "cantidad": 1,
     "precioARS": 72670,
     "foto": "AN-168.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "AN-169",
-    "nombre": "Anillo Ejemplo 1",
-    "material": "Oro 18K",
-    "categoria": "Anillos",
-    "cantidad": 5,
-    "precioARS": 525000,
-    "foto": "AN-169.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "AN-170",
-    "nombre": "Anillo Ejemplo 2",
-    "material": "Oro 18K",
-    "categoria": "Anillos",
-    "cantidad": 2,
-    "precioARS": 945000,
-    "foto": "AN-170.jpg",
     "notas": ""
   },
   {
@@ -5140,6 +5140,3926 @@
     "notas": ""
   },
   {
+    "sku": "CAD-01",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 2475,
+    "foto": "CAD-01.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-02",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 2760,
+    "foto": "CAD-02.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-03",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 3055,
+    "foto": "CAD-03.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-04",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 3360,
+    "foto": "CAD-04.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-05",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 3675,
+    "foto": "CAD-05.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-06",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 4000,
+    "foto": "CAD-06.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-07",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 0,
+    "precioARS": 4335,
+    "foto": "CAD-07.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-08",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 4680,
+    "foto": "CAD-08.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-09",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 5035,
+    "foto": "CAD-09.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-10",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 5400,
+    "foto": "CAD-10.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-11",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 5775,
+    "foto": "CAD-11.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-12",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 6160,
+    "foto": "CAD-12.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-13",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 6555,
+    "foto": "CAD-13.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-14",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 6960,
+    "foto": "CAD-14.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-15",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 7375,
+    "foto": "CAD-15.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-16",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 7800,
+    "foto": "CAD-16.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-17",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 8235,
+    "foto": "CAD-17.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-18",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 8680,
+    "foto": "CAD-18.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-19",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 9135,
+    "foto": "CAD-19.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-20",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 9600,
+    "foto": "CAD-20.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-21",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 10075,
+    "foto": "CAD-21.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-22",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 10560,
+    "foto": "CAD-22.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-23",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 11055,
+    "foto": "CAD-23.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-24",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 11560,
+    "foto": "CAD-24.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-25",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 12075,
+    "foto": "CAD-25.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-26",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 12600,
+    "foto": "CAD-26.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-27",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 13135,
+    "foto": "CAD-27.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-28",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 13680,
+    "foto": "CAD-28.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-29",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 14235,
+    "foto": "CAD-29.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-30",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 14800,
+    "foto": "CAD-30.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-31",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 15375,
+    "foto": "CAD-31.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-32",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 15960,
+    "foto": "CAD-32.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-33",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 16555,
+    "foto": "CAD-33.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-34",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 17160,
+    "foto": "CAD-34.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-35",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 17775,
+    "foto": "CAD-35.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-36",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 18400,
+    "foto": "CAD-36.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-37",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 19035,
+    "foto": "CAD-37.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-38",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 19680,
+    "foto": "CAD-38.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-39",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 20335,
+    "foto": "CAD-39.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-40",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 21000,
+    "foto": "CAD-40.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-41",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-41.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-42",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 6,
+    "precioARS": 0,
+    "foto": "CAD-42.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-47",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-47.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-49",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-49.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-51",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 39,
+    "precioARS": 0,
+    "foto": "CAD-51.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-52",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 19,
+    "precioARS": 0,
+    "foto": "CAD-52.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-53",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-53.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-54",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-54.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-56",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 5,
+    "precioARS": 0,
+    "foto": "CAD-56.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-57",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-57.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-58",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 16,
+    "precioARS": 0,
+    "foto": "CAD-58.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-59",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-59.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-60",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-60.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-61",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-61.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-62",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-62.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-63",
+    "nombre": "CADENA PLATA Y ORO",
+    "material": "PLATA Y ORO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-63.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-64",
+    "nombre": "CADENA PLATA Y ORO",
+    "material": "PLATA Y ORO",
+    "categoria": "Cadenas",
+    "cantidad": 2,
+    "precioARS": 0,
+    "foto": "CAD-64.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-66",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-66.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-67",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-67.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-68",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 2,
+    "precioARS": 0,
+    "foto": "CAD-68.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-69",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-69.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-70",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-70.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-71",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-71.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-72",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-72.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-73",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-73.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-74",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-74.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-75",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-75.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-76",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-76.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-77",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-77.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-78",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-78.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-79",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-79.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-80",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-80.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-81",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-81.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-82",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-82.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-83",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-83.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-84",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-84.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-85",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-85.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-86",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-86.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-87",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-87.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-88",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-88.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-89",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-89.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-90",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 18,
+    "precioARS": 0,
+    "foto": "CAD-90.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-91",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-91.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-92",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-92.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-93",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 3,
+    "precioARS": 0,
+    "foto": "CAD-93.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-94",
+    "nombre": "CADENA VENECIANA 40CM",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-94.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-95",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-95.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-96",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-96.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-97",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-97.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-98",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-98.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-99",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-99.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-100",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-100.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-101",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-101.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-102",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-102.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-103",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-103.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-104",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-104.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-105",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-105.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-106",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 12,
+    "precioARS": 0,
+    "foto": "CAD-106.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-107",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-107.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-108",
+    "nombre": "CADEN PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 3,
+    "precioARS": 0,
+    "foto": "CAD-108.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-109",
+    "nombre": "CAD-109",
+    "material": "Sin especificar",
+    "categoria": "Cadenas",
+    "cantidad": 0,
+    "precioARS": 0,
+    "foto": "CAD-109.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-110",
+    "nombre": "CAD-110",
+    "material": "Sin especificar",
+    "categoria": "Cadenas",
+    "cantidad": 0,
+    "precioARS": 0,
+    "foto": "CAD-110.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-111",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-111.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-112",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-112.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-113",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-113.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-114",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-114.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-115",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-115.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-116",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-116.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-117",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-117.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-118",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-118.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-119",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-119.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-120",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-120.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-121",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-121.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-122",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-122.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-123",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-123.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-124",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-124.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-125",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-125.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-126",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-126.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-127",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-127.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-128",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-128.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-129",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-129.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-130",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-130.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-131",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-131.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-132",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 2,
+    "precioARS": 0,
+    "foto": "CAD-132.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-133",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 2,
+    "precioARS": 0,
+    "foto": "CAD-133.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-134",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 2,
+    "precioARS": 0,
+    "foto": "CAD-134.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-135",
+    "nombre": "CADENA PLATA Y ORO",
+    "material": "PLATA Y ORO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-135.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-136",
+    "nombre": "CADENA PERLAS",
+    "material": "OTROS",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-136.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-137",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-137.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-138",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-138.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-139",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 3,
+    "precioARS": 0,
+    "foto": "CAD-139.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-140",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-140.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-141",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 0,
+    "precioARS": 0,
+    "foto": "CAD-141.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-142",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-142.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-143",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-143.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-144",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-144.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-145",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-145.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-146",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-146.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-147",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-147.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-148",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-148.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-149",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-149.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-150",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-150.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-151",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-151.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-152",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-152.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-153",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-153.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-154",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-154.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-155",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-155.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-156",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-156.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-157",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-157.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-158",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-158.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-159",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-159.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-160",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-160.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-161",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-161.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-162",
+    "nombre": "CADENA ACERO",
+    "material": "ACERO",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-162.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-163",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-163.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-164",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-164.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-165",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-165.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-166",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-166.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-167",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-167.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-168",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-168.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-169",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 6,
+    "precioARS": 0,
+    "foto": "CAD-169.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-170",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-170.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-171",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-171.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-172",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-172.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-173",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-173.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-174",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-174.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-175",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-175.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-176",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-176.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-177",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-177.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-178",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-178.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-179",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-179.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-180",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-180.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-181",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-181.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-182",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-182.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-183",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-183.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-184",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-184.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-185",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-185.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-186",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-186.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-187",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-187.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-188",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-188.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-189",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-189.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-190",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-190.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-191",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-191.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-192",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-192.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-193",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-193.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-194",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-194.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-195",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-195.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-196",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-196.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-197",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-197.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-198",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-198.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-199",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-199.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-200",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-200.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-201",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-201.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-202",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-202.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-203",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-203.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-204",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-204.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-205",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-205.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-206",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-206.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-207",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-207.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-208",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-208.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-209",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-209.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-210",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-210.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-211",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-211.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-212",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-212.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-213",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-213.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-214",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-214.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-215",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-215.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-216",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-216.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-217",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-217.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-218",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-218.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-219",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-219.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-220",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-220.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-221",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-221.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-222",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-222.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-223",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-223.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-224",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-224.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-225",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-225.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-226",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-226.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-227",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-227.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-228",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-228.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-229",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-229.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-230",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-230.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-231",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-231.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-232",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-232.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-233",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-233.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-234",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-234.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-235",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-235.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-236",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-236.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-237",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-237.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-238",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-238.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-239",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-239.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-240",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-240.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-241",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-241.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-242",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-242.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-243",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-243.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-244",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-244.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-245",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-245.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-246",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-246.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-247",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-247.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-248",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-248.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-249",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-249.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-250",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-250.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-251",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-251.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-252",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-252.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-253",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-253.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-254",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-254.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-255",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-255.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-256",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-256.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-257",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-257.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-258",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-258.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-259",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-259.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-260",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-260.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-261",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-261.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-262",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-262.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-263",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-263.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-264",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-264.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-265",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-265.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-266",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-266.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-267",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-267.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-268",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-268.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-269",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-269.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-270",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-270.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-271",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-271.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-272",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-272.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-273",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-273.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-274",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-274.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-275",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-275.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-276",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-276.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-277",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-277.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-278",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-278.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-279",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-279.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-280",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-280.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-281",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-281.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-282",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-282.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-283",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-283.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-284",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-284.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-285",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-285.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-286",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-286.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-287",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-287.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-288",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-288.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-289",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-289.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-290",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-290.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-291",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-291.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-292",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-292.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-293",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-293.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-294",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-294.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-295",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-295.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-296",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-296.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-297",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-297.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-298",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-298.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-299",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-299.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-300",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-300.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-301",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-301.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-302",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-302.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-303",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-303.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-304",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-304.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-305",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-305.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-306",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-306.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-307",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-307.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-308",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-308.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-309",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-309.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-310",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-310.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-311",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-311.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-312",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-312.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-313",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-313.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-314",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-314.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-315",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-315.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-316",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-316.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-317",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-317.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-318",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-318.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-319",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-319.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-320",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-320.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-321",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-321.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-322",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-322.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-323",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-323.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-324",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-324.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-325",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-325.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-326",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-326.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-327",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-327.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-328",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-328.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-329",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-329.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-330",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-330.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-331",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-331.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-332",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-332.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-333",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-333.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-334",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-334.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-335",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-335.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-336",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-336.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-337",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-337.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-338",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-338.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-339",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-339.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-340",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-340.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-341",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-341.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-342",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-342.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-343",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-343.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-344",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-344.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-345",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-345.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-346",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-346.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-347",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-347.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-348",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-348.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-349",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-349.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-350",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-350.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-351",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-351.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-352",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-352.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-353",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-353.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-354",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-354.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-355",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-355.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-356",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-356.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-357",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-357.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-358",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-358.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-359",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-359.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-360",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-360.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-361",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-361.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-362",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-362.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-363",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-363.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-364",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-364.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-365",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-365.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-366",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-366.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-367",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-367.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-368",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-368.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-369",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-369.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-370",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-370.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-371",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-371.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-372",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-372.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-373",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-373.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-374",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-374.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-375",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-375.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-376",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-376.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-377",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-377.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-378",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-378.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-379",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-379.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-380",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-380.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-381",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-381.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-382",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-382.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-383",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-383.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-384",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-384.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-385",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-385.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-386",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-386.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-387",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-387.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-388",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-388.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-389",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-389.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-390",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-390.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-391",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-391.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-392",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-392.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-393",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-393.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-394",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-394.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-395",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-395.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-396",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-396.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-397",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-397.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-398",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-398.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-399",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-399.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "CAD-400",
+    "nombre": "CADENA PLATA",
+    "material": "PLATA",
+    "categoria": "Cadenas",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "CAD-400.jpg",
+    "notas": ""
+  },
+  {
     "sku": "DIJ-01",
     "nombre": "DIJE PLATA",
     "material": "PLATA",
@@ -7950,6 +11870,26 @@
     "notas": ""
   },
   {
+    "sku": "LLAV-1",
+    "nombre": "LLAVERO",
+    "material": "PLATA",
+    "categoria": "Otros",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "LLAV-1.jpg",
+    "notas": ""
+  },
+  {
+    "sku": "LLAV-2",
+    "nombre": "LLAVERO",
+    "material": "OTROS",
+    "categoria": "Otros",
+    "cantidad": 1,
+    "precioARS": 0,
+    "foto": "LLAV-2.jpg",
+    "notas": ""
+  },
+  {
     "sku": "PUL-01",
     "nombre": "PUL-01",
     "material": "PLATA Y ORO",
@@ -9347,3976 +13287,6 @@
     "cantidad": 1,
     "precioARS": 0,
     "foto": "PUL-140.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "LLAV-1",
-    "nombre": "LLAVERO",
-    "material": "PLATA",
-    "categoria": "Otros",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "LLAV-1.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "LLAV-2",
-    "nombre": "LLAVERO",
-    "material": "OTROS",
-    "categoria": "Otros",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "LLAV-2.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-01",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 2475,
-    "foto": "CAD-01.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-02",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 2760,
-    "foto": "CAD-02.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-03",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 3055,
-    "foto": "CAD-03.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-04",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 3360,
-    "foto": "CAD-04.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-05",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 3675,
-    "foto": "CAD-05.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-06",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 4000,
-    "foto": "CAD-06.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-07",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 0,
-    "precioARS": 4335,
-    "foto": "CAD-07.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-08",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 4680,
-    "foto": "CAD-08.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-09",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 5035,
-    "foto": "CAD-09.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-10",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 5400,
-    "foto": "CAD-10.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-11",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 5775,
-    "foto": "CAD-11.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-12",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 6160,
-    "foto": "CAD-12.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-13",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 6555,
-    "foto": "CAD-13.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-14",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 6960,
-    "foto": "CAD-14.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-15",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 7375,
-    "foto": "CAD-15.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-16",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 7800,
-    "foto": "CAD-16.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-17",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 8235,
-    "foto": "CAD-17.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-18",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 8680,
-    "foto": "CAD-18.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-19",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 9135,
-    "foto": "CAD-19.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-20",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 9600,
-    "foto": "CAD-20.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-21",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 10075,
-    "foto": "CAD-21.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-22",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 10560,
-    "foto": "CAD-22.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-23",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 11055,
-    "foto": "CAD-23.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-24",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 11560,
-    "foto": "CAD-24.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-25",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 12075,
-    "foto": "CAD-25.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-26",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 12600,
-    "foto": "CAD-26.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-27",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 13135,
-    "foto": "CAD-27.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-28",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 13680,
-    "foto": "CAD-28.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-29",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 14235,
-    "foto": "CAD-29.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-30",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 14800,
-    "foto": "CAD-30.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-31",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 15375,
-    "foto": "CAD-31.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-32",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 15960,
-    "foto": "CAD-32.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-33",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 16555,
-    "foto": "CAD-33.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-34",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 17160,
-    "foto": "CAD-34.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-35",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 17775,
-    "foto": "CAD-35.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-36",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 18400,
-    "foto": "CAD-36.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-37",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 19035,
-    "foto": "CAD-37.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-38",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 19680,
-    "foto": "CAD-38.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-39",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 20335,
-    "foto": "CAD-39.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-40",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 21000,
-    "foto": "CAD-40.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-41",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-41.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-42",
-    "nombre": "COLA DE RATON CUADRADA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 5,
-    "precioARS": 0,
-    "foto": "CAD-42.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-45",
-    "nombre": "COLA DE RATON CUADRADA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-45.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-47",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-47.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-48",
-    "nombre": "Rosario",
-    "material": "PLATA Y ORO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-48.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-49",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-49.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-51",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 39,
-    "precioARS": 0,
-    "foto": "CAD-51.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-52",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 19,
-    "precioARS": 0,
-    "foto": "CAD-52.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-53",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-53.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-54",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-54.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-56",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 5,
-    "precioARS": 0,
-    "foto": "CAD-56.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-57",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-57.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-58",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 16,
-    "precioARS": 0,
-    "foto": "CAD-58.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-59",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-59.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-60",
-    "nombre": "PINCET",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-60.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-61",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-61.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-62",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-62.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-63",
-    "nombre": "CADENA PLATA Y ORO",
-    "material": "PLATA Y ORO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-63.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-64",
-    "nombre": "CADENA PLATA Y ORO",
-    "material": "PLATA Y ORO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-64.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-65",
-    "nombre": "PLATA TRICOLOR",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-65.jpg",
-    "notas": "PLATA TRICOLOR"
-  },
-  {
-    "sku": "CAD-66",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-66.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-67",
-    "nombre": "TOURBILLÓN",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-67.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-68",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 2,
-    "precioARS": 0,
-    "foto": "CAD-68.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-69",
-    "nombre": "TOURBILLON",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-69.jpg",
-    "notas": "Largo 45 cm"
-  },
-  {
-    "sku": "CAD-70",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-70.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-71",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-71.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-72",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-72.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-73",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-73.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-74",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-74.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-75",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-75.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-76",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-76.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-77",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-77.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-78",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-78.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-79",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-79.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-80",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-80.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-81",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-81.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-82",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-82.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-83",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-83.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-84",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-84.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-85",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-85.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-86",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-86.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-87",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-87.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-88",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-88.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-89",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-89.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-90",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 18,
-    "precioARS": 0,
-    "foto": "CAD-90.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-91",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-91.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-92",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-92.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-93",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 3,
-    "precioARS": 0,
-    "foto": "CAD-93.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-94",
-    "nombre": "VENECIANA ",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-94.jpg",
-    "notas": "Largo 40 cm"
-  },
-  {
-    "sku": "CAD-95",
-    "nombre": "FÍGARO 3X1",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-95.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-96",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-96.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-97",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-97.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-98",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-98.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-99",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-99.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-100",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-100.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-101",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-101.jpg",
-    "notas": "Largo 45 cm"
-  },
-  {
-    "sku": "CAD-102",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-102.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-103",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-103.jpg",
-    "notas": "Largo 50 cm"
-  },
-  {
-    "sku": "CAD-104",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-104.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-105",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-105.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-106",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 13,
-    "precioARS": 0,
-    "foto": "CAD-106.jpg",
-    "notas": "Largo 45 cm"
-  },
-  {
-    "sku": "CAD-107",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-107.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-108",
-    "nombre": "CADEN PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 3,
-    "precioARS": 0,
-    "foto": "CAD-108.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-109",
-    "nombre": "CAD-109",
-    "material": "Sin especificar",
-    "categoria": "Cadenas",
-    "cantidad": 0,
-    "precioARS": 0,
-    "foto": "CAD-109.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-110",
-    "nombre": "CAD-110",
-    "material": "Sin especificar",
-    "categoria": "Cadenas",
-    "cantidad": 0,
-    "precioARS": 0,
-    "foto": "CAD-110.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-111",
-    "nombre": "VENECIANA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-111.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-112",
-    "nombre": "GROUMET",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-112.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-113",
-    "nombre": "FORCET",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-113.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-114",
-    "nombre": "GROUMET",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-114.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-115",
-    "nombre": "VENECIANA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-115.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-116",
-    "nombre": "FÍGARO",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-116.jpg",
-    "notas": "Largo 50 cm"
-  },
-  {
-    "sku": "CAD-117",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-117.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-118",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-118.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-119",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-119.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-120",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-120.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-121",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-121.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-122",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-122.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-123",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-123.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-124",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-124.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-125",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-125.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-126",
-    "nombre": "FÍRARO 3X1",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-126.jpg",
-    "notas": "Largo 38 cm"
-  },
-  {
-    "sku": "CAD-127",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-127.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-128",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-128.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-129",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-129.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-130",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-130.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-131",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-131.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-132",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 2,
-    "precioARS": 0,
-    "foto": "CAD-132.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-133",
-    "nombre": "FORCET ",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 2,
-    "precioARS": 0,
-    "foto": "CAD-133.jpg",
-    "notas": "Largo 45 cm"
-  },
-  {
-    "sku": "CAD-134",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 2,
-    "precioARS": 0,
-    "foto": "CAD-134.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-135",
-    "nombre": "CADENA PLATA Y ORO",
-    "material": "PLATA Y ORO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-135.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-136",
-    "nombre": "CADENA PERLAS",
-    "material": "OTROS",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-136.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-137",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-137.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-138",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-138.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-139",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 3,
-    "precioARS": 0,
-    "foto": "CAD-139.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-140",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-140.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-141",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 0,
-    "precioARS": 0,
-    "foto": "CAD-141.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-142",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-142.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-143",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-143.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-144",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-144.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-145",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-145.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-146",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-146.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-147",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-147.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-148",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-148.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-149",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-149.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-150",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-150.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-151",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-151.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-152",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-152.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-153",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-153.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-154",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-154.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-155",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-155.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-156",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-156.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-157",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-157.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-158",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-158.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-159",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-159.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-160",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-160.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-161",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-161.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-162",
-    "nombre": "CADENA ACERO",
-    "material": "ACERO",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-162.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-163",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-163.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-164",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-164.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-165",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-165.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-166",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-166.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-167",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-167.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-168",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-168.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-169",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 6,
-    "precioARS": 0,
-    "foto": "CAD-169.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-170",
-    "nombre": "VENECIANA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-170.jpg",
-    "notas": "Largo 40 cm"
-  },
-  {
-    "sku": "CAD-171",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-171.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-172",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-172.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-173",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-173.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-174",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-174.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-175",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-175.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-176",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-176.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-177",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-177.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-178",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-178.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-179",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-179.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-180",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-180.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-181",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-181.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-182",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-182.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-183",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-183.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-184",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-184.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-185",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-185.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-186",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-186.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-187",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-187.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-188",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-188.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-189",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-189.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-190",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-190.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-191",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-191.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-192",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-192.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-193",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-193.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-194",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-194.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-195",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-195.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-196",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-196.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-197",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-197.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-198",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-198.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-199",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-199.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-200",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-200.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-201",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-201.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-202",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-202.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-203",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-203.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-204",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-204.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-205",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-205.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-206",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-206.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-207",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-207.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-208",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-208.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-209",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-209.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-210",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-210.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-211",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-211.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-212",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-212.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-213",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-213.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-214",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-214.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-215",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-215.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-216",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-216.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-217",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-217.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-218",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-218.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-219",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-219.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-220",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-220.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-221",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-221.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-222",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-222.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-223",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-223.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-224",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-224.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-225",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-225.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-226",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-226.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-227",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-227.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-228",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-228.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-229",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-229.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-230",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-230.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-231",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-231.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-232",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-232.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-233",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-233.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-234",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-234.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-235",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-235.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-236",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-236.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-237",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-237.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-238",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-238.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-239",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-239.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-240",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-240.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-241",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-241.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-242",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-242.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-243",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-243.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-244",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-244.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-245",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-245.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-246",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-246.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-247",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-247.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-248",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-248.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-249",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-249.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-250",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-250.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-251",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-251.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-252",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-252.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-253",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-253.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-254",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-254.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-255",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-255.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-256",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-256.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-257",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-257.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-258",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-258.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-259",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-259.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-260",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-260.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-261",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-261.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-262",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-262.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-263",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-263.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-264",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-264.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-265",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-265.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-266",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-266.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-267",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-267.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-268",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-268.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-269",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-269.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-270",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-270.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-271",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-271.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-272",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-272.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-273",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-273.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-274",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-274.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-275",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-275.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-276",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-276.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-277",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-277.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-278",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-278.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-279",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-279.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-280",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-280.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-281",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-281.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-282",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-282.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-283",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-283.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-284",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-284.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-285",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-285.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-286",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-286.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-287",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-287.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-288",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-288.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-289",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-289.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-290",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-290.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-291",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-291.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-292",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-292.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-293",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-293.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-294",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-294.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-295",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-295.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-296",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-296.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-297",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-297.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-298",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-298.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-299",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-299.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-300",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-300.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-301",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-301.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-302",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-302.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-303",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-303.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-304",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-304.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-305",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-305.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-306",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-306.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-307",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-307.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-308",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-308.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-309",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-309.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-310",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-310.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-311",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-311.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-312",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-312.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-313",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-313.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-314",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-314.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-315",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-315.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-316",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-316.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-317",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-317.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-318",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-318.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-319",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-319.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-320",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-320.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-321",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-321.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-322",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-322.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-323",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-323.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-324",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-324.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-325",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-325.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-326",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-326.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-327",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-327.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-328",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-328.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-329",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-329.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-330",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-330.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-331",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-331.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-332",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-332.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-333",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-333.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-334",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-334.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-335",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-335.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-336",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-336.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-337",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-337.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-338",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-338.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-339",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-339.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-340",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-340.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-341",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-341.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-342",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-342.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-343",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-343.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-344",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-344.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-345",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-345.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-346",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-346.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-347",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-347.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-348",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-348.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-349",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-349.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-350",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-350.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-351",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-351.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-352",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-352.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-353",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-353.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-354",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-354.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-355",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-355.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-356",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-356.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-357",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-357.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-358",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-358.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-359",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-359.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-360",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-360.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-361",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-361.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-362",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-362.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-363",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-363.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-364",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-364.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-365",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-365.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-366",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-366.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-367",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-367.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-368",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-368.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-369",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-369.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-370",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-370.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-371",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-371.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-372",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-372.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-373",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-373.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-374",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-374.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-375",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-375.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-376",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-376.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-377",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-377.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-378",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-378.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-379",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-379.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-380",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-380.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-381",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-381.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-382",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-382.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-383",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-383.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-384",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-384.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-385",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-385.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-386",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-386.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-387",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-387.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-388",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-388.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-389",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-389.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-390",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-390.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-391",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-391.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-392",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-392.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-393",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-393.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-394",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-394.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-395",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-395.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-396",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-396.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-397",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-397.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-398",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-398.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-399",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-399.jpg",
-    "notas": ""
-  },
-  {
-    "sku": "CAD-400",
-    "nombre": "CADENA PLATA",
-    "material": "PLATA",
-    "categoria": "Cadenas",
-    "cantidad": 1,
-    "precioARS": 0,
-    "foto": "CAD-400.jpg",
     "notas": ""
   }
 ]
