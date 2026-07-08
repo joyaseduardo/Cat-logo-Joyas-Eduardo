@@ -60,7 +60,7 @@ footer{background:#0a0a0a;border-top:1px solid #222;padding:3rem 1rem;margin-top
   <img src="VIP.jpg" alt="Joyas Eduardo" onerror="this.style.display='none'">
   <h1>💍 Anillos Oro Mujer</h1>
   <a href="index.html" class="volver">← Volver al catálogo</a>
-  <div class="vistas">✨ <strong>73</strong> modelos disponibles</div>
+  <div class="vistas">✨ <strong>105</strong> modelos disponibles</div>
 </header>
 <div class="grid" id="grid"></div>
 
@@ -155,7 +155,7 @@ footer{background:#0a0a0a;border-top:1px solid #222;padding:3rem 1rem;margin-top
 </div>
 
 <script>
-var DATA=[{"codigo":"8501"},{"codigo":"8502"},{"codigo":"8503"},{"codigo":"8504"},{"codigo":"8505"},{"codigo":"8506"},{"codigo":"8507"},{"codigo":"8508"},{"codigo":"8509"},{"codigo":"8510"},{"codigo":"8511"},{"codigo":"8512"},{"codigo":"8513"},{"codigo":"8514"},{"codigo":"8515"},{"codigo":"8516"},{"codigo":"8517"},{"codigo":"8518"},{"codigo":"8519"},{"codigo":"8520"},{"codigo":"8521"},{"codigo":"8522"},{"codigo":"8523"},{"codigo":"8524"},{"codigo":"8525"},{"codigo":"8526"},{"codigo":"8527"},{"codigo":"8528"},{"codigo":"8529"},{"codigo":"8530"},{"codigo":"8531"},{"codigo":"8532"},{"codigo":"8533"},{"codigo":"8534"},{"codigo":"8535"},{"codigo":"8536"},{"codigo":"8537"},{"codigo":"8538"},{"codigo":"8539"},{"codigo":"8540"},{"codigo":"8541"},{"codigo":"8542"},{"codigo":"8543"},{"codigo":"8544"},{"codigo":"7700"},{"codigo":"7701"},{"codigo":"7702"},{"codigo":"7703"},{"codigo":"7704"},{"codigo":"7705"},{"codigo":"7706"},{"codigo":"7707"},{"codigo":"7708"},{"codigo":"7709"},{"codigo":"7710"},{"codigo":"7711"},{"codigo":"7712"},{"codigo":"7713"},{"codigo":"7714"},{"codigo":"7715"},{"codigo":"7716"},{"codigo":"7717"},{"codigo":"7718"},{"codigo":"7719"},{"codigo":"7720"},{"codigo":"7721"},{"codigo":"7722"},{"codigo":"7723"},{"codigo":"7724"},{"codigo":"7725"},{"codigo":"7726"},{"codigo":"7727"},{"codigo":"7728"}];
+var DATA=[{"codigo":"8501"},{"codigo":"8502"},{"codigo":"8503"},{"codigo":"8504"},{"codigo":"8505"},{"codigo":"8506"},{"codigo":"8507"},{"codigo":"8508"},{"codigo":"8509"},{"codigo":"8510"},{"codigo":"8511"},{"codigo":"8512"},{"codigo":"8513"},{"codigo":"8514"},{"codigo":"8515"},{"codigo":"8516"},{"codigo":"8517"},{"codigo":"8518"},{"codigo":"8519"},{"codigo":"8520"},{"codigo":"8521"},{"codigo":"8522"},{"codigo":"8523"},{"codigo":"8524"},{"codigo":"8525"},{"codigo":"8526"},{"codigo":"8527"},{"codigo":"8528"},{"codigo":"8529"},{"codigo":"8530"},{"codigo":"8531"},{"codigo":"8532"},{"codigo":"8533"},{"codigo":"8534"},{"codigo":"8535"},{"codigo":"8536"},{"codigo":"8537"},{"codigo":"8538"},{"codigo":"8539"},{"codigo":"8540"},{"codigo":"8541"},{"codigo":"8542"},{"codigo":"8543"},{"codigo":"8544"},{"codigo":"7700"},{"codigo":"7701"},{"codigo":"7702"},{"codigo":"7703"},{"codigo":"7704"},{"codigo":"7705"},{"codigo":"7706"},{"codigo":"7707"},{"codigo":"7708"},{"codigo":"7709"},{"codigo":"7710"},{"codigo":"7711"},{"codigo":"7712"},{"codigo":"7713"},{"codigo":"7714"},{"codigo":"7715"},{"codigo":"7716"},{"codigo":"7717"},{"codigo":"7718"},{"codigo":"7719"},{"codigo":"7720"},{"codigo":"7721"},{"codigo":"7722"},{"codigo":"7723"},{"codigo":"7724"},{"codigo":"7725"},{"codigo":"7726"},{"codigo":"7727"},{"codigo":"7728"},{"codigo":"7729"},{"codigo":"7730"},{"codigo":"7731"},{"codigo":"7732"},{"codigo":"7733"},{"codigo":"7734"},{"codigo":"7735"},{"codigo":"7736"},{"codigo":"7737"},{"codigo":"7738"},{"codigo":"7739"},{"codigo":"7740"},{"codigo":"7741"},{"codigo":"7742"},{"codigo":"7743"},{"codigo":"7744"},{"codigo":"7746"},{"codigo":"7747"},{"codigo":"7748"},{"codigo":"7749"},{"codigo":"7750"},{"codigo":"7751"},{"codigo":"7752"},{"codigo":"7753"},{"codigo":"7754"},{"codigo":"7755"},{"codigo":"7756"},{"codigo":"7757"},{"codigo":"7758"},{"codigo":"7759"},{"codigo":"7760"},{"codigo":"7761"}];
 var CARPETA="https://res.cloudinary.com/dfsnzdwqx/image/upload";
 var NOMBRE="Anillo Oro Mujer";
 var CAT="Anillos Oro Mujer";
@@ -169,7 +169,7 @@ window.onload = function() {
     var cod = DATA[i].codigo;
     html += "<div class='card'>"
           + "<div class='card-foto'>"
-          + "<img src='" + CARPETA + "/" + cod + ".jpg' alt='" + cod + "' onclick='abrirLightbox(this.src,this.alt)' onerror='this.style.display=\"none\";this.nextSibling.style.display=\"flex\"'>"
+          + "<img src='" + CARPETA + "/f_auto,q_auto/" + cod + "' alt='" + cod + "' onclick='abrirLightbox(this.src,this.alt)' onerror='this.style.display=\"none\";this.nextSibling.style.display=\"flex\"'>"
           + "<div class='placeholder' style='display:none'><span>💍</span><p>" + cod + "</p></div>"
           + "</div>"
           + "<div class='card-body'>"
