@@ -1421,6 +1421,8 @@ function consultarPorWA() {
     return j ? ('- ' + j.nombre + ' (Ref: ' + sku + ')') : '';
   }).filter(Boolean);
   var msg = 'Hola! Me gustaria consultar precio de:\n\n' + lineas.join('\n') + '\n\nGracias!';
+  // Pestaña aparte: nunca navega la pestaña actual, así el catálogo y el
+  // carrito quedan intactos pase lo que pase con la pestaña de WhatsApp.
   window.open('https://wa.me/'+WA_NUMBER+'?text='+encodeURIComponent(msg), '_blank');
 }
 
@@ -1448,8 +1450,44 @@ function enviarLead() {
     (email   ? encodeURIComponent('📧 Email: '  + email)   + nl : '') +
     nl + encodeURIComponent('Gracias por tu interes en Joyas Eduardo!');
 
-  window.open('https://wa.me/' + WA_NUMBER + '?text=' + msg, '_blank');
+  // El catálogo se muestra YA, sin ninguna navegación de por medio — esto es
+  // lo único 100% confiable en el celular (es lo mismo que hace el botón
+  // "Prefiero no dejar mis datos", que nunca falla).
   cerrarWelcome();
+
+  var waUrl = 'https://wa.me/' + WA_NUMBER + '?text=' + msg;
+
+  // IMPORTANTE: no se abre WhatsApp automáticamente. En el celular, sobre
+  // todo si el catálogo se abrió desde el navegador interno de Instagram,
+  // Facebook, etc., un link a wa.me puede sacar a la clienta de ese
+  // navegador por completo (no queda ninguna pestaña de vuelta, ni nueva ni
+  // vieja) — no hay forma de controlar eso desde la página. Por eso ahora
+  // WhatsApp es un botón que ella toca si quiere, nunca algo forzado.
+  mostrarAvisoWA(nombre, waUrl);
+}
+
+// Aviso chico y no invasivo con un botón manual de WhatsApp. El catálogo
+// queda visible siempre; avisarte por WhatsApp es opcional y a su criterio.
+function mostrarAvisoWA(nombre, waUrl) {
+  var previo = document.getElementById('avisoWA');
+  if (previo) previo.remove();
+  var aviso = document.createElement('div');
+  aviso.id = 'avisoWA';
+  aviso.style.cssText = 'position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:9998;' +
+    'background:linear-gradient(135deg,#1a1a1a,#242424);border:1px solid var(--gold-dark);' +
+    'border-radius:14px;padding:1rem 1.1rem;box-shadow:0 10px 30px rgba(0,0,0,0.4);' +
+    'display:flex;align-items:center;gap:0.8rem;flex-wrap:wrap;max-width:480px;margin:0 auto;';
+  aviso.innerHTML =
+    '<div style="flex:1;min-width:180px;font-size:0.85rem;color:#ccc;">' +
+      '¡Gracias' + (nombre ? ', ' + nombre : '') + '! 🙌 Mirá el catálogo con calma. Si querés, escribinos por WhatsApp.' +
+    '</div>' +
+    '<a href="' + waUrl + '" target="_blank" style="background:linear-gradient(135deg,#25D366,#1ea952);' +
+      'color:#0a0a0a;font-weight:700;padding:0.6rem 1rem;border-radius:10px;text-decoration:none;' +
+      'font-size:0.85rem;white-space:nowrap;">💬 Escribinos</a>' +
+    '<button onclick="document.getElementById(\'avisoWA\').remove()" style="background:transparent;' +
+      'border:none;color:#666;font-size:1.1rem;cursor:pointer;padding:0 0.3rem;">✕</button>';
+  document.body.appendChild(aviso);
+  setTimeout(function(){ var a = document.getElementById('avisoWA'); if (a) a.remove(); }, 20000);
 }
 
 /* ── WELCOME ── */
