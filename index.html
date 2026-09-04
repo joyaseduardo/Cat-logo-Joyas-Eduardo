@@ -15,6 +15,110 @@
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+<meta name="description" content="Joyería en Comodoro Rivadavia, Chubut. Alianzas de oro 18k, plata 925, Plan Canje y compra de oro con tasación transparente. Envío a todo el país, cuotas sin interés, certificado y garantía en cada pieza.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "JewelryStore",
+  "name": "Joyas Eduardo",
+  "description": "Joyería en Comodoro Rivadavia especializada en alianzas de oro 18k, plata 925, Plan Canje y compra de oro con tasación transparente.",
+  "telephone": "+54 9 297 6235421",
+  "email": "joyaseduardo@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Comodoro Rivadavia",
+    "addressRegion": "Chubut",
+    "addressCountry": "AR"
+  },
+  "areaServed": {
+    "@type": "City",
+    "name": "Comodoro Rivadavia"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+      "opens": "09:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Saturday"],
+      "opens": "09:00",
+      "closes": "13:00"
+    }
+  ],
+  "priceRange": "$$",
+  "sameAs": [
+    "https://www.facebook.com/profile.php?id=100063765571348",
+    "https://www.instagram.com/joyaseduardo"
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué diferencia hay entre plata 925 y oro 18k, y cuál conviene?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La plata 925 es más accesible y liviana; el oro 18k mantiene el valor en el tiempo y suele elegirse para alianzas y piezas de uso diario prolongado. Para un regalo de menor presupuesto, la plata 925 es una buena opción sin resignar calidad. Para una pieza de mayor duración o valor de reventa, el oro 18k es la opción más sólida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Ofrecen cuotas sin interés?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, hay opciones de hasta 6 cuotas sin interés en la mayoría de las piezas, según el medio de pago."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo funciona el Plan Canje?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Se traen joyas de oro o plata que ya no se usen y se tasan en el momento con una fórmula transparente basada en el peso y la cotización del día. Ese valor se aplica como parte de pago de la pieza nueva elegida."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Compran oro aunque no se quiera cambiar por una joya nueva?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí. Si se prefiere vender directamente en lugar de canjear, se tasan las piezas y se paga en el momento, con la balanza y el cálculo a la vista."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Las joyas tienen certificado o garantía?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, cada pieza de oro y plata vendida tiene certificado de autenticidad y garantía."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Tienen un local físico para atención al público?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No, por una cuestión de seguridad no se opera en un local a la calle. Cada entrega se coordina en un punto público de Comodoro Rivadavia, en el horario que resulte más cómodo. Todo el contacto previo es por WhatsApp."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Hacen envíos a otras provincias?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sí, se realizan envíos a todo el país."
+      }
+    }
+  ]
+}
+</script>
 <style>
   :root {
     --gold: #C9993A;
@@ -481,6 +585,54 @@
     text-transform: uppercase;
   }
 
+  /* ── FAQ ── */
+  .faq-section {
+    max-width: 800px;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
+  }
+
+  .faq-section .faq-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .faq-section .faq-heading h2 {
+    color: var(--gold);
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin: 0 0 0.5rem;
+  }
+
+  .faq-section .faq-heading p {
+    color: #888;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .faq-item {
+    background: var(--dark3);
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .faq-item h3 {
+    color: var(--text);
+    font-size: 1.05rem;
+    margin: 0 0 0.5rem;
+    font-weight: 700;
+  }
+
+  .faq-item p {
+    color: #999;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0;
+  }
+
   /* ── FOOTER ── */
   .site-footer {
     background: #0a0a0a;
@@ -643,6 +795,7 @@
       ✨ Oro 18k <span class="tab-badge" id="badge-oro" style="display:none"></span>
     </button>
   </div>
+  <p style="text-align:center;margin:0.75rem 0 0;"><a href="#faq" style="color:#888;font-size:0.8rem;text-decoration:none;border-bottom:1px dotted #555;">❓ Preguntas frecuentes</a></p>
 </header>
 
 <!-- ══════════════════════════════════════════
@@ -803,6 +956,51 @@
 <!-- ══════════════════════════════════════════
      FOOTER (compartido)
 ═══════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════
+     PREGUNTAS FRECUENTES
+═══════════════════════════════════════════ -->
+<section class="faq-section" id="faq">
+  <div class="faq-heading">
+    <h2>❓ Preguntas Frecuentes</h2>
+    <p>Todo lo que preguntan antes de escribirnos</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Qué diferencia hay entre plata 925 y oro 18k, y cuál conviene?</h3>
+    <p>La plata 925 es más accesible y liviana; el oro 18k mantiene el valor en el tiempo y suele elegirse para alianzas y piezas de uso diario prolongado. Para un regalo de menor presupuesto, la plata 925 es una buena opción sin resignar calidad. Para una pieza de mayor duración o valor de reventa, el oro 18k es la opción más sólida.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Ofrecen cuotas sin interés?</h3>
+    <p>Sí, hay opciones de hasta 6 cuotas sin interés en la mayoría de las piezas, según el medio de pago.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Cómo funciona el Plan Canje?</h3>
+    <p>Traés joyas de oro o plata que ya no uses y las tasamos en el momento con una fórmula transparente basada en el peso y la cotización del día. Ese valor se aplica como parte de pago de la pieza nueva que elijas.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Compran oro aunque no quiera cambiarlo por una joya nueva?</h3>
+    <p>Sí. Si preferís vender directamente en lugar de canjear, tasamos tus piezas y te pagamos en el momento, con la balanza y el cálculo a la vista.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Las joyas tienen certificado o garantía?</h3>
+    <p>Sí, cada pieza de oro y plata que vendemos tiene certificado de autenticidad y garantía.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Tienen un local físico para atención al público?</h3>
+    <p>No — por una cuestión de seguridad, no operamos en un local a la calle. Coordinamos cada entrega en un punto público de Comodoro Rivadavia, en el horario que te quede cómodo. Todo el contacto previo es por WhatsApp.</p>
+  </div>
+
+  <div class="faq-item">
+    <h3>¿Hacen envíos a otras provincias?</h3>
+    <p>Sí, hacemos envíos a todo el país.</p>
+  </div>
+</section>
+
 <footer class="site-footer">
   <div class="footer-grid">
     <div>
