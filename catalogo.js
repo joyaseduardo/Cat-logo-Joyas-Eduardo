@@ -114,7 +114,7 @@ function renderJoyas() {
     // Archivos de foto usan espacio en lugar de guion (ej: AN 185.jpg)
     var nombreFoto = j.foto ? j.foto.replace(/-/g, ' ') : '';
     var rutaFoto = nombreFoto ? 'https://res.cloudinary.com/dfsnzdwqx/image/upload/imagenes/' + carpeta + '/' + nombreFoto : '';
-    var precio = j.precioARS > 0 ? '$' + j.precioARS.toLocaleString('es-AR') : 'Consultar precio';
+    var precio = j.precioARS > 100 ? '$' + j.precioARS.toLocaleString('es-AR') : 'Consultar precio';
     var sinStock = j.cantidad === 0;
     var msgWA = encodeURIComponent('Hola! Me interesa 💎\n\nProducto: ' + j.nombre + '\nCódigo: ' + j.sku + '\nMaterial: ' + (j.material||'') + '\n\n¿Está disponible?');
     return '<div class="joya-card' + (sinStock ? ' opacity-50' : '') + '">' +
