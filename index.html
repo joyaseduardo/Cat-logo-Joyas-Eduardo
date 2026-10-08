@@ -839,13 +839,6 @@
       <span class="arrow">→</span>
     </a>
 
-    <a href="catalogo-anillos-mujer.html" class="categoria-card">
-      <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/8515" alt="Anillos Oro Mujer" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
-      <h3>Anillos Oro Mujer</h3>
-      <p>44 modelos</p>
-      <span class="arrow">→</span>
-    </a>
-
     <a href="catalogo-plata-oro.html" class="categoria-card">
       <div class="emoji-img"><img src="https://res.cloudinary.com/dfsnzdwqx/image/upload/f_auto,q_auto/145" alt="Plata y Oro 18k" style="width:64px;height:64px;object-fit:cover;border-radius:12px;"></div>
       <h3>Plata y Oro 18k</h3>
@@ -1351,10 +1344,15 @@ function renderJoyas(lista) {
     // ── Info ──
     var info = document.createElement('div');
     info.className = 'info';
+    // Material + peso (si está cargado en la app de gestión), igual que en la sección Oro 18k
+    var pesoNum = parseFloat(String(j.peso || '').replace(',', '.'));
+    var detallesJoya = (pesoNum > 0)
+      ? (j.material ? j.material + ' · ' : '') + String(j.peso).replace('.', ',') + 'g'
+      : (j.material || '');
     info.innerHTML =
       '<div class="sku"># ' + (j.sku||'') + '</div>' +
       '<div class="nombre">' + (j.nombre||'') + '</div>' +
-      '<div class="material">' + (j.material||'') + '</div>' +
+      '<div class="material">' + detallesJoya + '</div>' +
       (j.notas ? '<div class="notas-badge">📝 ' + j.notas + '</div>' : '');
 
     var actions = document.createElement('div');
