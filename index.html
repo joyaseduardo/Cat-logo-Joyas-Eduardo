@@ -49,9 +49,54 @@
     }
   ],
   "priceRange": "$$",
+  "image": "https://raw.githubusercontent.com/joyaseduardo/Cat-logo-Joyas-Eduardo/main/VIP.jpg",
+  "logo": "https://raw.githubusercontent.com/joyaseduardo/Cat-logo-Joyas-Eduardo/main/VIP.jpg",
   "sameAs": [
     "https://www.facebook.com/profile.php?id=100063765571348",
     "https://www.instagram.com/joyaseduardo"
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "4.8",
+    "reviewCount": "6"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Marcela Pederzoli" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Muy buena atención de Eduardo, también la responsabilidad en su trabajo y lo más importante es la confianza que transmite."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Ana Flores" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Realiza arreglo de joyas, los arreglos que mandé siempre fueron de muy buena calidad y las joyas son tratadas con cuidado. Muy buena atención y la calidad de los arreglos un 10."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Eve Garces" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Súper recomendable y buena atención. Realizaron las alianzas tal cual las queríamos."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Alicia Gammella" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Excelente atención personalizada. Bellísimas joyas de primera calidad y de una delicadeza exquisita."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Daria Sauco" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Excelente la atención de Eduardo, precioso todo el catálogo de joyas que tiene. Lo contacté para comprar un collar y terminé comprando además unos aros a juego."
+    },
+    {
+      "@type": "Review",
+      "author": { "@type": "Person", "name": "Visenta Ester" },
+      "reviewRating": { "@type": "Rating", "ratingValue": "5" },
+      "reviewBody": "Muy buenas joyas y atención personalizada, gracias Eduardo por tu tiempo para visitarme."
+    }
   ]
 }
 </script>
@@ -633,6 +678,81 @@
     margin: 0;
   }
 
+  /* ── RESEÑAS ── */
+  .reviews-section {
+    max-width: 1000px;
+    margin: 3rem auto 0;
+    padding: 0 1rem;
+  }
+
+  .reviews-section .reviews-heading {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .reviews-section .reviews-heading h2 {
+    color: var(--gold);
+    font-size: clamp(1.6rem, 4vw, 2.2rem);
+    margin: 0 0 0.5rem;
+  }
+
+  .reviews-section .reviews-heading .reviews-score {
+    color: #999;
+    font-size: 0.95rem;
+    margin: 0 0 0.25rem;
+  }
+
+  .reviews-section .reviews-heading .reviews-score strong {
+    color: var(--gold);
+  }
+
+  .reviews-section .reviews-heading p {
+    color: #888;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  .reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+
+  .review-card {
+    background: var(--dark3);
+    border: 1px solid #2a2a2a;
+    border-radius: 12px;
+    padding: 1.5rem 1.75rem;
+  }
+
+  .review-card .review-stars {
+    color: var(--gold);
+    font-size: 0.95rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 0.6rem;
+  }
+
+  .review-card p {
+    color: #bbb;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0 0 0.9rem;
+  }
+
+  .review-card .review-author {
+    color: var(--text);
+    font-size: 0.85rem;
+    font-weight: 700;
+  }
+
+  .review-card .review-meta {
+    color: #777;
+    font-size: 0.78rem;
+    margin-top: 0.15rem;
+  }
+
   /* ── FOOTER ── */
   .site-footer {
     background: #0a0a0a;
@@ -963,6 +1083,61 @@
 <!-- ══════════════════════════════════════════
      FOOTER (compartido)
 ═══════════════════════════════════════════ -->
+<!-- ══════════════════════════════════════════
+     RESEÑAS DE CLIENTES (Google)
+═══════════════════════════════════════════ -->
+<section class="reviews-section" id="resenas">
+  <div class="reviews-heading">
+    <h2>⭐ Lo que dicen nuestras clientas</h2>
+    <p class="reviews-score">4.8 ★★★★★ · 6 opiniones en Google</p>
+    <p>Reseñas reales de Google Business</p>
+  </div>
+
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Muy buena atención de Eduardo, también la responsabilidad en su trabajo y lo más importante es la confianza que transmite.❤️"</p>
+      <div class="review-author">Marcela Pederzoli</div>
+      <div class="review-meta">Hace 3 semanas · Google</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Realiza arreglo de joyas, los arreglos que mandé siempre fueron de muy buena calidad y las joyas son tratadas con cuidado. Muy buena atención y la calidad de los arreglos un 10!"</p>
+      <div class="review-author">Ana Flores</div>
+      <div class="review-meta">Local Guide · Hace 3 semanas · Google</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Súper recomendable y buen atención! Realizaron las alianzas tal cual las queríamos. Muchas gracias."</p>
+      <div class="review-author">Eve Garces</div>
+      <div class="review-meta">Hace 7 semanas · Google</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Excelente atención personalizada!! Bellísimas joyas de primera calidad y de una delicadeza exquisita!! Felicitaciones joyas Eduardo!! 👏🏻👏🏻👏🏻"</p>
+      <div class="review-author">Alicia Gammella</div>
+      <div class="review-meta">Hace 26 semanas · Google</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Excelente la atención de Eduardo, precioso todo el catálogo de joyas que tiene!! Lo contacte para comprar un collar y terminé comprando además de eso unos aros a juego, no podía dejar pasar la chance."</p>
+      <div class="review-author">Daria Sauco</div>
+      <div class="review-meta">Hace 34 semanas · Google</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p>"Muy buenas joyas y atención personalizada, gracias Eduardo por tu tiempo para visitarme. Espero ser clienta eterna jaja"</p>
+      <div class="review-author">Visenta Ester</div>
+      <div class="review-meta">Hace 34 semanas · Google</div>
+    </div>
+  </div>
+</section>
+
 <!-- ══════════════════════════════════════════
      PREGUNTAS FRECUENTES
 ═══════════════════════════════════════════ -->
