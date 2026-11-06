@@ -4,7 +4,33 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cómo medir tu talla de alianza – Joyas Eduardo</title>
-<meta name="description" content="Guía paso a paso para medir la talla de tu dedo antes de comprar una alianza en Joyas Eduardo, Comodoro Rivadavia.">
+<meta name="description" content="Guía paso a paso para medir la talla de tu dedo antes de comprar una alianza en Joyas Eduardo, Comodoro Rivadavia. Tabla verificada contra nuestro anillero real.">
+<link rel="canonical" href="https://joyaseduardo.github.io/Cat-logo-Joyas-Eduardo/guia-tallas.html">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  "name": "Cómo medir tu talla de alianza o anillo",
+  "description": "Tres métodos para encontrar tu talla de anillo en casa: con hilo o papel, con un anillo que ya tengas, o con nuestra tabla de conversión de milímetros a talla, verificada contra el anillero físico de Joyas Eduardo.",
+  "step": [
+    {
+      "@type": "HowToStep",
+      "name": "Método del hilo o papel",
+      "text": "Enrollá un hilo o una tira de papel alrededor del dedo, marcá dónde se cruzan los extremos y medí esa distancia en milímetros sobre una regla: ese número es tu circunferencia."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Tabla de conversión",
+      "text": "Buscá tu medida en milímetros en la tabla de conversión para encontrar tu talla."
+    },
+    {
+      "@type": "HowToStep",
+      "name": "Método con un anillo que ya tenés",
+      "text": "Medí el diámetro interior del anillo (de borde a borde, por dentro) y multiplicalo por 3,14 para obtener la circunferencia."
+    }
+  ]
+}
+</script>
 <style>
   *{box-sizing:border-box;margin:0;padding:0}
   body{background:#111827;color:#f3f4f6;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;min-height:100vh}
@@ -134,37 +160,59 @@
 
   <!-- TAB 1 — Tabla -->
   <div class="tab-content" id="tab1">
-    <p style="font-size:14px;color:#9ca3af;margin-bottom:12px">Tomá tu medida en mm y buscá tu número de talla:</p>
+
+    <div class="card card-yellow" style="margin-bottom:16px">
+      <div class="card-title yellow">🧮 Calculadora rápida</div>
+      <p style="margin-bottom:10px">Ingresá tu medida en milímetros (circunferencia del dedo) y te decimos la talla:</p>
+      <input type="number" id="mmInput" placeholder="Ej: 61" step="0.5" min="0"
+        style="width:100%;background:#111827;border:1px solid #374151;border-radius:8px;color:#f3f4f6;font-size:16px;text-align:center;padding:10px;margin-bottom:8px;box-sizing:border-box">
+      <div id="resultadoCalc" style="text-align:center;font-weight:700;color:#fcd34d;min-height:24px;font-size:15px"></div>
+    </div>
+
+    <p style="font-size:14px;color:#9ca3af;margin-bottom:12px">O buscá tu medida directamente en la tabla:</p>
     <div class="table-wrap">
       <div class="table-header">
         <span>Circunferencia (mm)</span>
         <span>Nº de Talla</span>
       </div>
-      <div class="table-row"><span class="mm">44 mm</span><span class="talla">14</span></div>
-      <div class="table-row"><span class="mm">45 mm</span><span class="talla">14,5</span></div>
-      <div class="table-row"><span class="mm">47 mm</span><span class="talla">15</span></div>
-      <div class="table-row"><span class="mm">48 mm</span><span class="talla">15,5</span></div>
-      <div class="table-row"><span class="mm">50 mm</span><span class="talla">16</span></div>
-      <div class="table-row"><span class="mm">51 mm</span><span class="talla">16,5</span></div>
-      <div class="table-row"><span class="mm">52 mm</span><span class="talla">17</span></div>
-      <div class="table-row"><span class="mm">54 mm</span><span class="talla">17,5</span></div>
-      <div class="table-row"><span class="mm">55 mm</span><span class="talla">18</span></div>
-      <div class="table-row"><span class="mm">57 mm</span><span class="talla">18,5</span></div>
-      <div class="table-row"><span class="mm">58 mm</span><span class="talla">19</span></div>
-      <div class="table-row"><span class="mm">60 mm</span><span class="talla">19,5</span></div>
-      <div class="table-row"><span class="mm">62 mm</span><span class="talla">20</span></div>
-      <div class="table-row"><span class="mm">63 mm</span><span class="talla">20,5</span></div>
-      <div class="table-row"><span class="mm">65 mm</span><span class="talla">21</span></div>
-      <div class="table-row"><span class="mm">67 mm</span><span class="talla">21,5</span></div>
-      <div class="table-row"><span class="mm">68 mm</span><span class="talla">22</span></div>
-      <div class="table-row"><span class="mm">70 mm</span><span class="talla">22,5</span></div>
-      <div class="table-row"><span class="mm">71 mm</span><span class="talla">23</span></div>
-      <div class="table-row"><span class="mm">73 mm</span><span class="talla">23,5</span></div>
-      <div class="table-row"><span class="mm">75 mm</span><span class="talla">24</span></div>
-      <div class="table-row"><span class="mm">76 mm</span><span class="talla">24,5</span></div>
-      <div class="table-row"><span class="mm">78 mm</span><span class="talla">25</span></div>
+      <div class="table-row"><span class="mm">42 mm</span><span class="talla">1</span></div>
+      <div class="table-row"><span class="mm">43 mm</span><span class="talla">2</span></div>
+      <div class="table-row"><span class="mm">44 mm</span><span class="talla">3</span></div>
+      <div class="table-row"><span class="mm">45 mm</span><span class="talla">4</span></div>
+      <div class="table-row"><span class="mm">46 mm</span><span class="talla">5</span></div>
+      <div class="table-row"><span class="mm">48 mm</span><span class="talla">6</span></div>
+      <div class="table-row"><span class="mm">49 mm</span><span class="talla">7</span></div>
+      <div class="table-row"><span class="mm">50 mm</span><span class="talla">8</span></div>
+      <div class="table-row"><span class="mm">51 mm</span><span class="talla">9</span></div>
+      <div class="table-row"><span class="mm">53 mm</span><span class="talla">10</span></div>
+      <div class="table-row"><span class="mm">54 mm</span><span class="talla">11</span></div>
+      <div class="table-row"><span class="mm">55 mm</span><span class="talla">12</span></div>
+      <div class="table-row"><span class="mm">56 mm</span><span class="talla">13</span></div>
+      <div class="table-row"><span class="mm">58 mm</span><span class="talla">14</span></div>
+      <div class="table-row"><span class="mm">59 mm</span><span class="talla">15</span></div>
+      <div class="table-row"><span class="mm">60 mm</span><span class="talla">16</span></div>
+      <div class="table-row"><span class="mm">61 mm</span><span class="talla">17</span></div>
+      <div class="table-row"><span class="mm">63 mm</span><span class="talla">18</span></div>
+      <div class="table-row"><span class="mm">64 mm</span><span class="talla">19</span></div>
+      <div class="table-row"><span class="mm">65 mm</span><span class="talla">20</span></div>
+      <div class="table-row"><span class="mm">66 mm</span><span class="talla">21</span></div>
+      <div class="table-row"><span class="mm">67 mm</span><span class="talla">22</span></div>
+      <div class="table-row"><span class="mm">69 mm</span><span class="talla">23</span></div>
+      <div class="table-row"><span class="mm">70 mm</span><span class="talla">24</span></div>
+      <div class="table-row"><span class="mm">71 mm</span><span class="talla">25</span></div>
+      <div class="table-row"><span class="mm">72 mm</span><span class="talla">26</span></div>
+      <div class="table-row"><span class="mm">74 mm</span><span class="talla">27</span></div>
+      <div class="table-row"><span class="mm">75 mm</span><span class="talla">28</span></div>
+      <div class="table-row"><span class="mm">76 mm</span><span class="talla">29</span></div>
+      <div class="table-row"><span class="mm">77 mm</span><span class="talla">30</span></div>
+      <div class="table-row"><span class="mm">79 mm</span><span class="talla">31</span></div>
+      <div class="table-row"><span class="mm">80 mm</span><span class="talla">32</span></div>
+      <div class="table-row"><span class="mm">81 mm</span><span class="talla">33</span></div>
+      <div class="table-row"><span class="mm">82 mm</span><span class="talla">34</span></div>
+      <div class="table-row"><span class="mm">84 mm</span><span class="talla">35</span></div>
+      <div class="table-row"><span class="mm">85 mm</span><span class="talla">36</span></div>
     </div>
-    <div class="table-note">Si tu medida queda entre dos valores, elegí siempre la talla más grande.</div>
+    <div class="table-note">Si tu medida queda entre dos valores, elegí siempre la talla más grande.<br>Tabla verificada en persona contra nuestro anillero (talla 17 a 26 medidas directamente; 1–16 y 27–36 calculadas por extrapolación matemática a partir de esas medidas).</div>
   </div>
 
   <!-- TAB 2 — Con alianza -->
@@ -201,8 +249,8 @@
       <p style="font-weight:700;color:#d1d5db;margin-bottom:8px">🧮 Ejemplo rápido:</p>
       <div class="ejemplo">
         <div><span class="dim">Diámetro: </span><span class="val">17 mm</span></div>
-        <div><span class="dim">17 × 3.14 = </span><span class="result">53 mm</span></div>
-        <div><span class="ok">→ Talla 17</span></div>
+        <div><span class="dim">17 × 3.14 = </span><span class="result">53,4 mm</span></div>
+        <div><span class="ok">→ Talla 11</span></div>
       </div>
     </div>
 
@@ -231,6 +279,28 @@
 function showTab(i) {
   document.querySelectorAll('.tab-btn').forEach((b,j) => b.classList.toggle('active', i===j));
   document.querySelectorAll('.tab-content').forEach((c,j) => c.classList.toggle('active', i===j));
+}
+
+// Fórmula verificada contra el anillero físico de Joyas Eduardo (4 mediciones reales, talla 17-26):
+// mm = 1.235 * talla + 40.279  →  talla = (mm - 40.279) / 1.235
+var MM_INPUT = document.getElementById('mmInput');
+var RESULT   = document.getElementById('resultadoCalc');
+
+function tallaDesdeMM(mm) {
+  var talla = (mm - 40.279) / 1.235;
+  // redondeo a la media talla más cercana hacia arriba (misma regla que la tabla)
+  return Math.ceil(talla * 2) / 2;
+}
+
+if (MM_INPUT) {
+  MM_INPUT.addEventListener('input', function () {
+    var mm = parseFloat(MM_INPUT.value);
+    if (!mm || mm <= 0) { RESULT.textContent = ''; return; }
+    var talla = tallaDesdeMM(mm);
+    if (talla < 1) { RESULT.textContent = 'Medida muy chica para nuestro anillero (mínimo talla 1)'; return; }
+    if (talla > 36) { RESULT.textContent = 'Medida muy grande — consultanos por WhatsApp'; return; }
+    RESULT.textContent = '→ Tu talla es ' + talla;
+  });
 }
 </script>
 </body>
